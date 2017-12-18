@@ -1,0 +1,130 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="S70941082468681">Chironic Hat</head>
+			<body>Jhakri Robe +1</body>
+			<hands>Acad. Bracers +1</hands>
+			<legs augment="D7370400354052">Psycloth Lappas</legs>
+			<feet>Acad. Loafers +2</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+			<ammo>Homiliary</ammo>
+		</set>
+		<set name="FastCast">
+			<ammo>Sapience Orb</ammo>
+			<head augment="D7434751185688">Psycloth Tiara</head>
+			<hands>Gendewitha Gages</hands>
+			<legs augment="D7370400354052">Psycloth Lappas</legs>
+			<feet>Acad. Loafers +2</feet>
+			<neck>Orunmila's Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+			<back augment="S018572">Lugh's Cape</back>
+		</set>
+		<set name="Helix">
+			<ammo>Ghastly Tathlum</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body>Jhakri Robe +1</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Mallquis Trews +1</legs>
+			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="ElementMagic">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body>Jhakri Robe +1</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Mallquis Trews +1</legs>
+			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
+			<neck>Saevus Pendant +1</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="CurePot">
+			<head augment="S70941082468681">Chironic Hat</head>
+			<hands augment="S151163054409">Chironic Gloves</hands>
+			<neck>Aife's Medal</neck>
+			<waist>Gishdubar Sash</waist>
+			<ear1>Mendi. Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+		</set>
+		<set name="Immanence">
+			<hands>Arbatel Bracers</hands>
+		</set>
+		<set name="EnhancingMagic">
+			<hands augment="S151163054409">Chironic Gloves</hands>
+			<neck>Henic Torque</neck>
+			<waist>Olympus Sash</waist>
+			<back>Merciful Cape</back>
+		</set>
+		<set name="Th">
+			<head>Wh. Rarab Cap +1</head>
+			<waist>Chaac Belt</waist>
+		</set>		
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Idle"/>
+		</if>
+		<else>
+			<equip set="NotEngaged"/>
+		</else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+		<command>/echo midmagic %ad_type %ad_name</command>
+		<if ad_name="Dia*">
+			<equip set="Th"/>
+		</if>
+		<elseif ad_name="Cur*">
+			<equip set="CurePot"/>
+		</elseif>
+		<elseif ad_name="*helix*"><equip set="Helix"/></elseif>
+		<elseif ad_type="blackmagic"><equip set="ElementMagic"/></elseif>
+		<elseif ad_type="enhancingmagic"><equip set="EnhancingMagic"/></elseif>
+	</midmagic>
+	<jobability>
+		<command>/echo jobability %ad_type %ad_name</command>
+		<if ad_name="Immanence"><equip set="Immanence"/></if>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

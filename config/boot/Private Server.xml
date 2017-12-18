@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting name="config_name">LegionDark (Private Server)</setting>
+    <setting name="auto_close">true</setting>
+    <setting name="pol_version">2</setting>
+    <setting name="test_server">false</setting>
+    <setting name="boot_file">.\\ffxi-bootmod\\pol.exe</setting>
+    <setting name="boot_command">--server legiondark.com</setting>
+    <setting name="startup_script">Default.txt</setting>
+    <setting name="log_level">4</setting>
+    <setting name="language">2</setting>
+    <setting name="windowed">true</setting>
+    <setting name="show_border">true</setting>
+    <setting name="window_x">1024</setting>
+    <setting name="window_y">768</setting>
+    <setting name="startpos_x">-1</setting>
+    <setting name="startpos_y">-1</setting>
+    <setting name="background_x">-1</setting>
+    <setting name="background_y">-1</setting>
+    <setting name="menu_x">-1</setting>
+    <setting name="menu_y">-1</setting>
+    <setting name="unhook_mouse">true</setting>
+    <setting name="d3d_presentparams_buffercount">1</setting>
+    <setting name="d3d_presentparams_swapeffect">1</setting>
+</settings>

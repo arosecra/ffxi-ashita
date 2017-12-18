@@ -1,0 +1,186 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="MidcastRanged">
+			<ammo>Decimating Bullet</ammo>
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Iskur Gorget</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Volley Earring</ear1>
+			<ear2>Navarch's Earring</ear2>
+			<ring1>Paqichikaji Ring</ring1>
+			<ring2>Longshot Ring</ring2>
+			<back augment="S7928335601510718574">Camulus's Mantle</back>
+		</set>
+		<set name="PrecastRanged">
+			<ammo>Decimating Bullet</ammo>
+			<head>Aurore Beret +1</head>
+			<body augment="D6300775362818">Pursuer's Doublet</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Meg. Jam. +1</feet>
+			<waist>Impulse Belt</waist>
+			<back>Navarch's Mantle</back>
+		</set>
+		<set name="QD">
+			<ammo>Animikii Bullet</ammo>
+			<head augment="S9465989">Taeon Chapeau</head>
+			<body augment="D14371095585026">Rawhide Vest</body>
+			<hands augment="S4618808102714228805">Herculean Gloves</hands>
+			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Hecate's Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2 augment="S145952901">Demon's Ring</ring2>
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="CorTH">
+			<ammo>Decimating Bullet</ammo>
+			<head>Wh. Rarab Cap +1</head>
+			<feet augment="S63163773754018502">Herculean Boots</feet>
+			<waist>Chaac Belt</waist>
+		</set>
+		<set name="PhantomRoll">
+			<head augment="M1424">Lanun Tricorne +1</head>
+			<body augment="M1425">Lanun Frac +1</body>
+			<hands>Chasseur's Gants +1</hands>
+			<legs augment="S558899540">Desultor Tassets</legs>
+			<ring1>Barataria Ring</ring1>
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="CorFstCast">
+			<body augment="S18073500037218">Taeon Tabard</body>
+			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<legs augment="S18996783777925">Taeon Tights</legs>
+			<neck>Orunmila's Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="PDT">
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<ring1>Defending Ring</ring1>
+			<ring2 augment="S26620479410231">Dark Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="LeadenSalute">
+			<ammo>Decimating Bullet</ammo>
+			<head augment="S9465989">Taeon Chapeau</head>
+			<body augment="D14371095585026">Rawhide Vest</body>
+			<hands augment="S4618808102714228805">Herculean Gloves</hands>
+			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1 augment="S145952901">Demon's Ring</ring1>
+			<ring2>Acumen Ring</ring2>
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="Wildfire">
+			<ammo>Decimating Bullet</ammo>
+			<head augment="S9465989">Taeon Chapeau</head>
+			<body augment="D14371095585026">Rawhide Vest</body>
+			<hands augment="S4618808102714228805">Herculean Gloves</hands>
+			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1 augment="S145952901">Demon's Ring</ring1>
+			<ring2>Acumen Ring</ring2>
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="LastStand">
+			<ammo>Decimating Bullet</ammo>
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
+			<neck>Iskur Gorget</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Volley Earring</ear1>
+			<ear2>Navarch's Earring</ear2>
+			<ring1>Paqichikaji Ring</ring1>
+			<ring2>Longshot Ring</ring2>
+			<back augment="S7928335601510718574">Camulus's Mantle</back>
+		</set>
+		<set name="WS">
+			<ammo>Decimating Bullet</ammo>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="NotEngaged">
+			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="th">no</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="PDT"/>
+		</if>
+		<else>
+			<equip set="PDT"/>
+			<equip set="NotEngaged"/>
+		</else>
+	</idlegear>
+	<preranged>
+		<equip set="PrecastRanged"/>
+		<if th="yes">
+			<equip set="CorTH"/>
+		</if>
+	</preranged>
+	<midranged>
+		<equip set="MidcastRanged"/>
+		<if th="yes">
+			<equip set="CorTH"/>
+			<setvar name="TH" value="no"/>
+		</if>
+	</midranged>
+	<premagic>
+		<equip set="CorFstCst"/>
+	</premagic>
+	<midmagic>
+		<if ad_name="Dia*">
+			<equip set="CorTh"/>
+		</if>
+	</midmagic>
+	<jobability>
+		<if ad_name="*Roll|Double-Up">
+			<equip set="PhantomRoll"/>
+		</if>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Last Stand"> <equip set="LastStand" /> </if>
+		<elseif ad_name="Leaden Salute"><equip set="Leaden Salute" /></elseif>
+		<elseif ad_name="Wildfire"><equip set="Wildfire" /></elseif>
+		<else> <equip set="WS"/> </else>
+	</weaponskill>
+</ashitacast>

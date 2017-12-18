@@ -1,0 +1,119 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="PupEng-PetOnly">
+			<head augment="S17700775530521110">Anwig Salade</head>
+			<body augment="S18073500037218">Taeon Tabard</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs augment="S26869456863349">Taeon Tights</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Domes. Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-PetMelee">
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands augment="S1215535211">Herculean Gloves</hands>
+			<legs augment="S78069762340970677732459">Herculean Trousers</legs>
+			<feet augment="S60486568892522">Herculean Boots</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Hurch'lan Sash</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>K'ayres Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-MstrMelee">
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Sera. +1</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Hurch'lan Sash</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>K'ayres Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupTh">
+			<head>Wh. Rarab Cap +1</head>
+			<feet augment="S63163773754018502">Herculean Boots</feet>
+			<waist>Chaac Belt</waist>
+		</set>
+		<set name="PupMnvr">
+			<body>Karagoz Farsetto</body>
+			<hands>Foire Dastanas +1</hands>
+			<neck>Buffoon's Collar</neck>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupFstCst">
+			<body augment="S18073500037218">Taeon Tabard</body>
+			<neck>Orunmila's Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+		</set>
+		<set name="WS">
+			<main augment="D2856564496514">Midnights</main>
+			<range>Animator P</range>
+			<head>Tali'ah Turban +1</head>
+			<body augment="D14371095585026">Rawhide Vest</body>
+			<hands augment="S12324424231328425">Herculean Gloves</hands>
+			<legs augment="S78069762340970677732459">Herculean Trousers</legs>
+			<feet augment="S60486568892522">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Strategy">MstrMelee</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="PupEng-$Strategy"/>
+		</if>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="PupFstCst"/>
+	</premagic>
+	<midmagic>
+		<if ad_name="Dia*">
+			<equip set="PupTh"/>
+		</if>
+	</midmagic>
+	<jobability>
+		<command>/echo %ad_name</command>
+		<if ad_name="*Maneuver">
+			<equip set="PupMnvr"/>
+		</if>
+	</jobability>
+	<weaponskill>
+		<equip set="WS"/>
+	</weaponskill>
+</ashitacast>

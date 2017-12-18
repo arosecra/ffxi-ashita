@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <!--
+    auto_close - Tells the launcher if it should close after launching this configuration.
+        -> Value    : boolean [true / false]
+        -> Default  : true
+    
+    pol_version - The version of PlayOnline to launch the game with. 
+        -> Value    : int [1 = Japanese, 2 = English, 3 = European (French), 4 = European (Deutsch)]
+        -> Default  : 2
+        
+    test_server - Flag to tell the launcher if we are playing on the official test server.
+        -> Value    : boolean [true / false]
+        -> Default  : false
+    
+    boot_file - The boot file to launch the game with. 
+        -> Value    : string [Path to loader, typically pol.exe. For private servers point this to the boot mod you use.]
+        -> Default  : (none)
+    
+    boot_command - The command arguments to pass to the game when launching.
+        -> Value    : string
+        -> Default  : /game eAZcFcB (This adds the shortcut icon inside of PlayOnline for FFXI.)
+        
+    startup_script - The initial startup script to execute when Ashita launches.
+        -> Value    : string
+        -> Default  : Default.txt
+    
+    log_level - The level of logging to have Ashita write. (For debug purposes.)
+        -> Value    : int [0 = none, 1 = error, 2 = warning, 3 = information, 4 = debug]
+        -> Default  : 4
+    
+    language - The language to use for resources and other langauge specific things inside of Ashita.
+        -> Value    : int [1 = Japanese, 2 = English, 3 = European (French), 4 = European (Deutsch)]
+        -> Default  : 2
+    
+    windowed - Flag to determine if we want to play in a window or fullscreen.
+        -> Value    : boolean [true / false]
+        -> Default  : true
+    
+    show_border - Flag to determine if we want to show the window border while playing.
+        -> Value    : boolean [true / false]
+        -> Default  : true
+        
+    window_x - The window width to launch the game with.
+        -> Value    : int
+        -> Default  : 800
+        
+    window_y - The window height to launch the game with.
+        -> Value    : int
+        -> Default  : 600
+        
+    startpos_x - The window startup position (x axis) to launch the game at.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will center the game on your main monitor.)
+        
+    startpos_y - The window startup position (y axis) to launch the game at.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will center the game on your main monitor.)
+        
+    background_x - The background resolution (x axis) used for the game view port.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will use what ever is currently in your registry.)
+        
+    background_y - The background resolution (y axis) used for the game view port.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will use what ever is currently in your registry.)
+
+    menu_x - The menu resolution (x axis) used for the game view port.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will use what ever is currently in your registry.)
+        
+    menu_y - The menu resolution (y axis) used for the game view port.
+        -> Value    : int
+        -> Default  : -1 (Using -1 will use what ever is currently in your registry.)
+        
+    unhook_mouse - Flag to determine if we should stop FFXI from snapping the mouse cursor to menus.
+        -> Value    : boolean [true / false]
+        -> Default  : true
+        
+        
+    !! WARNING !!
+    You should not edit the below configuration options unless you know what you are doing!
+    !! WARNING !!
+        
+    d3d_presentparams_buffercount - The back buffer count created by the game.
+        -> Value    : int [1 = default, 2 = double buffer, 3 = triple buffer]
+        -> Default  : 1
+        
+    d3d_presentparams_swapeffect - Alters the swap effect of the back buffer. (Useful for vsync.)
+        -> Value    : int [1 = discard, 2 = flip, 3 = copy, 4 = copy vsync]
+        -> Default  : 1
+    -->
+    
+    <setting name="auto_close">true</setting>
+    <setting name="pol_version">2</setting>
+    <setting name="test_server">false</setting>
+    <setting name="boot_file"></setting>
+    <setting name="boot_command">/game eAZcFcB</setting>
+    <setting name="startup_script">Default.txt</setting>
+    <setting name="log_level">4</setting>
+    <setting name="language">2</setting>
+    <setting name="windowed">false</setting>
+    <setting name="show_border">false</setting>
+    <setting name="window_x">800</setting>
+    <setting name="window_y">600</setting>
+    <setting name="startpos_x">-1</setting>
+    <setting name="startpos_y">-1</setting>
+    <setting name="background_x">-1</setting>
+    <setting name="background_y">-1</setting>
+    <setting name="menu_x">-1</setting>
+    <setting name="menu_y">-1</setting>
+    <setting name="unhook_mouse">true</setting>
+    <setting name="d3d_presentparams_buffercount">1</setting>
+    <setting name="d3d_presentparams_swapeffect">1</setting>
+</settings>

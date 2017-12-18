@@ -1,0 +1,462 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="PhysWs">
+			<ammo>Ginsen</ammo>
+			<head augment="S6167185957690020505">Valorous Mask</head>
+			<body>Vatic Byrnie</body>
+			<hands augment="S9685595112864420505">Valorous Mitts</hands>
+			<legs augment="S1232441083638448217">Valor. Hose</legs>
+			<feet>Thereoid Greaves</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Cho'j Band</ring1>
+			<ring2>Epona's Ring</ring2>
+			<back augment="S255463270518575">Artio's Mantle</back>
+		</set>
+		<set name="PrimalRend">
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<legs augment="S37383685320837">Valor. Hose</legs>
+			<feet augment="S289980549">Valorous Greaves</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2 augment="S145952901">Demon's Ring</ring2>
+			<back augment="S8139218567834218759">Artio's Mantle</back>
+		</set>
+		<set name="CloudSplitter">
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<legs augment="S37383685320837">Valor. Hose</legs>
+			<feet augment="S289980549">Valorous Greaves</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2 augment="S145952901">Demon's Ring</ring2>
+			<back augment="S8138789071104518759">Artio's Mantle</back>
+		</set>
+		<set name="Th">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="S94305489548834587588">Valorous Mitts</hands>
+			<waist>Chaac Belt</waist>
+		</set>
+		<set name="FstCst">
+			<ammo>Sapience Orb</ammo>
+			<head augment="S97024685506564236">Otomi Helm</head>
+			<body augment="S18073500037218">Taeon Tabard</body>
+			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<legs augment="S18996783777925">Taeon Tights</legs>
+			<feet augment="S411828273">Suzaku's Sune-Ate</feet>
+			<neck>Orunmila's Torque</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+			<back augment="S018572">Artio's Mantle</back>
+		</set>
+		<set name="CurePot">
+			<head augment="S97213236893803">Valorous Mask</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<hands>Macabre Gaunt. +1</hands>
+			<legs augment="M3336">Ankusa Trousers +1</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Aife's Medal</neck>
+			<waist>Gishdubar Sash</waist>
+			<ear1>Mendi. Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+			<back augment="S8138789071104518759">Artio's Mantle</back>
+		</set>
+		<set name="StnSkn">
+			<head augment="S88417656690789">Valorous Mask</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands>Stone Mufflers</hands>
+			<legs>Haven Hose</legs>
+			<feet augment="M1379">Ankusa Gaiters +1</feet>
+			<neck>Stone Gorget</neck>
+			<waist>Crudelis Belt</waist>
+			<ear1>Earthcry Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+			<back>Merciful Cape</back>
+		</set>
+		<set name="Phlnx">
+			<hands augment="S3676521001011428742">Valorous Mitts</hands>
+			<legs augment="S10376777539609">Valor. Hose</legs>
+			<neck>Melic Torque</neck>
+			<waist>Olympus Sash</waist>
+			<back>Merciful Cape</back>
+		</set>
+		<set name="Reward">
+			<ammo>Pet Food Theta</ammo>
+			<head>Brv. Warbonnet</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<legs augment="M3336">Ankusa Trousers +1</legs>
+			<feet augment="M1379">Ankusa Gaiters +1</feet>
+			<neck>Aife's Medal</neck>
+			<waist>Crudelis Belt</waist>
+			<ear1>Lifestorm Earring</ear1>
+			<ear2>Aqua Pearl</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+			<back augment="S8138789071104518759">Artio's Mantle</back>
+		</set>
+		<set name="CllBst">
+			<body augment="S558199108">Mirke Wardecors</body>
+			<hands augment="M1378">Ankusa Gloves +1</hands>
+			<feet augment="S558104687">Adaman Sollerets</feet>
+		</set>
+		<set name="Familiar">
+			<legs augment="M3336">Ankusa Trousers +1</legs>
+		</set>
+		<set name="NotEngaged">
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<feet>Skd. Jambeaux +1</feet>
+		</set>
+		<set name="Enhance">
+			<neck>Melic Torque</neck>
+			<waist>Olympus Sash</waist>
+			<back>Merciful Cape</back>
+		</set>
+		<set name="Enfeeble">
+			<ammo>Ghastly Tathlum</ammo>
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Sera. +1</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Henic Torque</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Lifestorm Earring</ear1>
+			<ear2>Aqua Pearl</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+			<back augment="S8138789071104518759">Artio's Mantle</back>
+		</set>
+		<set name="PetMag-Low">
+			<head augment="S88417656690789">Valorous Mask</head>
+			<body augment="S26869724780645">Acro Surcoat</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs augment="S18048107010149">Valor. Hose</legs>
+			<feet augment="S289980549">Valorous Greaves</feet>
+			<neck>Adad Amulet</neck>
+			<ear1>Hija Earring</ear1>
+			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<back>Argocham. Mantle</back>
+		</set>
+		<set name="PetPhys-Low">
+			<ammo>Demonry Core</ammo>
+			<head augment="S97213236893803">Valorous Mask</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs augment="S106010110908523">Valor. Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Hurch'lan Sash</waist>
+			<ear1>Hija Earring</ear1>
+			<ear2>Ferine Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		<set name="PetPhys-High">
+			<ammo>Demonry Core</ammo>
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Tali'ah Sera. +1</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Hurch'lan Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Hija Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		<set name="PetMag-High">
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Tali'ah Sera. +1</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Adad Amulet</neck>
+			<ear1>Hija Earring</ear1>
+			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<back>Argocham. Mantle</back>
+		</set>
+		<set name="Idle-PetMelee">
+			<ammo>Demonry Core</ammo>
+			<head augment="S97213236893803">Valorous Mask</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs>Tali'ah Sera. +1</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Hurch'lan Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		<set name="Idle-MasterMelee">
+			<ammo>Ginsen</ammo>
+			<head augment="S6167185957690020505">Valorous Mask</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands augment="S9685595112864420505">Valorous Mitts</hands>
+			<legs augment="S1232441083638448217">Valor. Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>K'ayres Ring</ring2>
+			<back augment="S255463270518575">Artio's Mantle</back>
+		</set>
+		<set name="Idle-PetOnly">
+			<ammo>Demonry Core</ammo>
+			<head augment="S17700775530521110">Anwig Salade</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs augment="S26869456863349">Taeon Tights</legs>
+			<feet augment="S26869591937124">Acro Leggings</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Handler's Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Defending Ring</ring2>
+			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
+		</set>
+		<set name="Idle-119PetOnly">
+			<ammo>Demonry Core</ammo>
+			<head augment="S7806587018250016491">Valorous Mask</head>
+			<body>Tot. Jackcoat +3</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs augment="S26869456863349">Taeon Tights</legs>
+			<feet augment="S26869591937124">Acro Leggings</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Handler's Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Defending Ring</ring2>
+			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
+		</set>
+
+		<set name="PreReady-CharmersSub">
+			<main>Aymur</main>
+			<sub>Charmer's Merlin</sub>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs augment="S558899540">Desultor Tassets</legs>
+		</set>
+		<set name="PreReady-CharmersMain">
+			<main>Charmer's Merlin</main>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs augment="S558899540">Desultor Tassets</legs>
+		</set>
+		<set name="PreReady-NoCharmers">
+			<hands>Nukumi Manoplas +1</hands>
+			<legs augment="S558899540">Desultor Tassets</legs>
+		</set>
+				
+		<set name="Idle-Main-Swap-Aymur">
+			<main>Aymur</main>
+		</set>
+		<set name="Idle-Main-Swap-PetDt">
+			<main>Izizoeksi</main>
+		</set>
+		<set name="Idle-Main-Swap-Arktoi">
+			<main augment="D32445013635340">Arktoi</main>
+		</set>		
+		<set name="Idle-Sub-Swap-Arktoi">
+			<sub augment="D32445013635340">Arktoi</sub>
+		</set>
+		<set name="Idle-Sub-Swap-PetPdt">
+			<sub augment="M1349931522">Astolfo</sub>
+		</set>
+		<set name="Idle-Sub-Swap-Adapa">
+			<sub>Adapa Shield</sub>
+		</set>
+		<set name="Idle-Sub-Swap-Beatific">
+			<sub augment="S1211439158">Beatific Shield +1</sub>
+		</set>
+		
+		<set name="PetReady-Swap-Main">
+			<main>Aymur</main>
+		</set>		
+		<set name="PetReady-Swap-Sub-Phys">
+			<sub augment="D32445013635340">Arktoi</sub>
+		</set>
+		<set name="PetReady-Swap-Sub-Mag">
+			<sub>Mdomo Axe</sub>
+		</set>
+		
+		<!-- Jugs -->
+		<set name="SharpwitHermes">
+			<ammo>Saline Broth</ammo>
+		</set>
+		<set name="WarlikePatrick">
+			<ammo>Livid Broth</ammo>
+		</set>
+		<set name="BouncingBertha">
+			<ammo>Bubbly Broth</ammo>
+		</set>
+		<set name="ScissorlegXerin">
+			<ammo>Spicy Broth</ammo>
+		</set>
+		<set name="BlackbeardRandy">
+			<ammo>Meaty Broth</ammo>
+		</set>
+		<set name="AttentiveIbuki">
+			<ammo>Salubrious Broth</ammo>
+		</set>
+		<set name="SwoopingZhivago">
+			<ammo>Windy Greens</ammo>
+		</set>
+		<set name="ThreestarLynn">
+			<ammo>Muddy Broth</ammo>
+		</set>
+		<set name="RhymingShizuna">
+			<ammo>Lyrical Broth</ammo>
+		</set>
+		<set name="AmiableRoche">
+			<ammo>Airy Broth</ammo>
+		</set>
+		<set name="BrainyWaluis">
+			<ammo>Crumbly Soil</ammo>
+		</set>
+		<set name="GenerousArthur">
+			<ammo>Dire Broth</ammo>
+		</set>
+		<set name="RedolentCandi">
+			<ammo>Electrified Broth</ammo>
+		</set>
+		
+		<set name="FleetReinhard">
+			<ammo>Rapid Broth</ammo>
+		</set>
+		<set name="AnklebiterJedd">
+			<ammo>Crackling Broth</ammo>
+		</set>
+		
+		<set name="CaringKiyomaro">
+			<ammo>Fizzy Broth</ammo>
+		</set>
+		
+		<set name="VivaciousVickie">
+			<ammo>Tantaliing Broth</ammo>
+		</set>
+		
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Strategy">MasterMelee</var>
+		<var name="Accuracy">Low</var>
+		<var name="CharmersStrategy">NoCharmers</var>
+		<var name="WeaponStrategy">NoSwap</var>
+		<var name="BlJug">NoJug</var>
+		<var name="CllBstJug">NoJug</var>
+		<var name="IdleMain">Aymur</var> <!-- NoSwap, Aymur, PetDt, Arktoi  -->
+		<var name="IdleSub">Adapa</var> <!-- NoSwap, Arktoi, PetPdt, Beatific, Adapa -->
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Idle-$Strategy"/>
+			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
+			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
+		</if>
+		<else>
+			<equip set="NotEngaged"/>
+		</else>
+	</idlegear>
+	<preranged>
+		<command>/echo preranged %ad_name</command>
+	</preranged>
+	<midranged>
+		<command>/echo midranged %ad_name</command>
+	</midranged>
+	<premagic>
+		<command>/echo premagic %ad_name</command>
+		<equip set="FstCst"/>
+	</premagic>
+	<midmagic>
+		<command>/echo midmagic %ad_name</command>
+		<if ad_name="Dia*">
+			<equip set="Th"/>
+		</if>
+		<if ad_name="Cur*">
+			<equip set="CurePot"/>
+		</if>
+	</midmagic>
+	<jobability>
+		<command>/echo jobability %ad_type %ad_name</command>
+		<if ad_type="ready"> <equip set="PreReady-$CharmersStrategy"/> </if>
+		<if ad_name="Bestial Loyalty|Call Beast">
+			<equip set="$BlJug"/>
+			<equip set="CllBst"/> 
+		</if>
+		<if ad_name="Call Beast"> 
+			<equip set="$CllBstJug"/>
+			<equip set="CllBst"/> 
+		</if>
+		<if ad_name="Familiar"> <equip set="Familiar"/> </if>
+		<if ad_name="Reward"> <equip set="Reward"/> </if>
+		
+		<if ad_name="Feral Howl|Quickstep|Box Step|Stutter Step|Desperate Flourish|Violent Flourish">
+			<equip set="Th"/>
+		</if>
+	</jobability>
+	<weaponskill>
+		<command>/echo weaponskill %ad_name</command>
+		<if ad_name="Primal Rend"> <equip set="Primal Rend" /> </if>
+		<elseif ad_name="Leaden Salute"><equip set="Leaden Salute" /></elseif>
+		<else> <equip set="WS"/> </else>
+	</weaponskill>
+	<petskill>
+		<command>/echo petskill %ad_name</command>
+		<if ad_name="Sweeping Gouge|Tickling Tendrils|Chomp Rush|Pentapeck|Wing Slap|Pecking Flurry">
+			<equip set="PetPhys-$Accuracy"/>
+			<equip set="PetReady-$WeaponStrategy-Main"/>
+			<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+		</if>
+		<elseif ad_name="Cursed Sphere|Venom|Toxic Spit|Venom Spray|Bubble Shower|Fireball|Plague Breath|Snow Cloud|Acid Spray|Silence Gas|Dark Spore|Charged Whisker|Purulent Ooze|Aqua Breath|Stink Bomb|Nectarous Deluge|Nepenthic Plunge|Foul Waters|Dust Cloud|Sheep Song|Scream|Dream Flower|Roar|Gloeosuccus|Palsy Pollen|Soporific|Geist Wall|Numbing Noise|Spoil|Hi-Freq Field|Sandpit|Sandblast|Filamented Hold|Spore|Infrasonics|Chaotic Eye|Blaster|Intimidate|Noisome Powder|TP Drainkiss|Jettatura|Spider Web|Corrosive Ooze|Molting Plumage|Swooping Frenzy|Pestilent Plume">
+			<equip set="PetMag-$Accuracy"/>
+			<equip set="PetReady-$WeaponStrategy-Main"/>
+			<equip set="PetReady-$WeaponStrategy-Sub-Mag"/>
+		</elseif>
+		<else>
+			<equip set="PetPhys-$Accuracy"/>
+			<equip set="PetReady-$WeaponStrategy-Main"/>
+			<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+		</else>
+	</petskill>
+	
+	<petspell>
+		<command>/echo petspell %ad_name</command>
+	</petspell>
+</ashitacast>

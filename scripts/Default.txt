@@ -1,0 +1,54 @@
+##########################################################################
+#
+# Ashita Default Script
+#
+# Comments start with '#'.
+# All commands start with '/'
+#
+##########################################################################
+
+/wait 4
+
+##########################################################################
+# Load Common Plugins
+##########################################################################
+
+/load WindowerInput
+/load Addons
+/load Screenshot
+
+##########################################################################
+# Load Common Addons
+##########################################################################
+
+/addon load distance
+/addon load fps
+/addon load timestamp
+/addon load tparty
+
+##########################################################################
+# Set Common Settings
+##########################################################################
+
+/ambient 255 255 255 255 
+
+##########################################################################
+# Set Common Keybinds
+##########################################################################
+
+/bind SYSRQ /screenshot hide
+/bind ^v /paste
+/bind F11 /ambient
+/bind F12 /fps show
+/bind ^F1 /input /ta <a10>
+/bind ^F2 /input /ta <a11>
+/bind ^F3 /input /ta <a12>
+/bind ^F4 /input /ta <a13>
+/bind ^F5 /input /ta <a14>
+/bind ^F6 /input /ta <a15>
+/bind !F1 /input /ta <a20>
+/bind !F2 /input /ta <a21>
+/bind !F3 /input /ta <a22>
+/bind !F4 /input /ta <a23>
+/bind !F5 /input /ta <a24>
+/bind !F6 /input /ta <a25>
