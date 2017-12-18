@@ -161,7 +161,7 @@
 		<equip set="MidcastRanged"/>
 		<if th="yes">
 			<equip set="CorTH"/>
-			<setvar name="TH" value="no"/>
+			<setvar name="th" value="no"/>
 		</if>
 	</midranged>
 	<premagic>

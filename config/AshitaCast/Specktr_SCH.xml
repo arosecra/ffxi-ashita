@@ -9,7 +9,7 @@
 		<set name="Idle">
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="S70941082468681">Chironic Hat</head>
-			<body>Jhakri Robe +1</body>
+			<body>Jhakri Robe +2</body>
 			<hands>Acad. Bracers +1</hands>
 			<legs augment="D7370400354052">Psycloth Lappas</legs>
 			<feet>Acad. Loafers +2</feet>
@@ -37,7 +37,7 @@
 		<set name="Helix">
 			<ammo>Ghastly Tathlum</ammo>
 			<head>Jhakri Coronal +1</head>
-			<body>Jhakri Robe +1</body>
+			<body>Jhakri Robe +2</body>
 			<hands>Jhakri Cuffs +1</hands>
 			<legs>Mallquis Trews +1</legs>
 			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
@@ -52,7 +52,7 @@
 		<set name="ElementMagic">
 			<ammo>Erlene's Notebook</ammo>
 			<head>Jhakri Coronal +1</head>
-			<body>Jhakri Robe +1</body>
+			<body>Jhakri Robe +2</body>
 			<hands>Jhakri Cuffs +1</hands>
 			<legs>Mallquis Trews +1</legs>
 			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>

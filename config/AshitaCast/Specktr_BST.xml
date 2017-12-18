@@ -153,7 +153,7 @@
 			<back augment="S8138789071104518759">Artio's Mantle</back>
 		</set>
 		<set name="PetMag-Low">
-			<head augment="S88417656690789">Valorous Mask</head>
+			<head augment="S86879008710757">Valorous Mask</head>
 			<body augment="S26869724780645">Acro Surcoat</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs augment="S18048107010149">Valor. Hose</legs>
@@ -165,7 +165,7 @@
 		</set>
 		<set name="PetPhys-Low">
 			<ammo>Demonry Core</ammo>
-			<head augment="S97213236893803">Valorous Mask</head>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs augment="S106010110908523">Valor. Hose</legs>
@@ -368,7 +368,7 @@
 		<set name="VivaciousVickie">
 			<ammo>Tantaliing Broth</ammo>
 		</set>
-		
+
 		<include>
 		</include>
 	</sets>
@@ -390,7 +390,14 @@
 			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
 			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
 		</if>
+		<elseif pet_status="engaged">
+			<equip set="Idle-$Strategy"/>
+			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
+			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
+		</elseif>
 		<else>
+			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
+			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
 			<equip set="NotEngaged"/>
 		</else>
 	</idlegear>
@@ -433,9 +440,9 @@
 	</jobability>
 	<weaponskill>
 		<command>/echo weaponskill %ad_name</command>
-		<if ad_name="Primal Rend"> <equip set="Primal Rend" /> </if>
-		<elseif ad_name="Leaden Salute"><equip set="Leaden Salute" /></elseif>
-		<else> <equip set="WS"/> </else>
+		<if ad_name="Primal Rend"> <equip set="PrimalRend" /> </if>
+		<elseif ad_name="CloudSplitter"><equip set="CloudSplitter" /></elseif>
+		<else> <equip set="PhysWs"/> </else>
 	</weaponskill>
 	<petskill>
 		<command>/echo petskill %ad_name</command>

@@ -16,6 +16,7 @@
 /load WindowerInput
 /load Addons
 /load Screenshot
+/load ashitacast
 
 ##########################################################################
 # Load Common Addons
@@ -30,7 +31,7 @@
 # Set Common Settings
 ##########################################################################
 
-/ambient 255 255 255 255 
+/ambient 1
 
 ##########################################################################
 # Set Common Keybinds
