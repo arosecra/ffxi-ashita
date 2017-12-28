@@ -34,7 +34,7 @@
 			<ring1>Prolix Ring</ring1>
 			<back augment="S018572">Lugh's Cape</back>
 		</set>
-		<set name="Helix">
+		<set name="Helix-NoBurst">
 			<ammo>Ghastly Tathlum</ammo>
 			<head>Jhakri Coronal +1</head>
 			<body>Jhakri Robe +2</body>
@@ -49,7 +49,22 @@
 			<ring2>Jhakri Ring</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
-		<set name="ElementMagic">
+		<set name="Helix-Burst">
+			<ammo>Ghastly Tathlum</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Mallquis Trews +1</legs>
+			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Locus Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="ElementMagic-NoBurst">
 			<ammo>Erlene's Notebook</ammo>
 			<head>Jhakri Coronal +1</head>
 			<body>Jhakri Robe +2</body>
@@ -62,6 +77,21 @@
 			<ear2>Hecate's Earring</ear2>
 			<ring1>Acumen Ring</ring1>
 			<ring2>Jhakri Ring</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="ElementMagic-Burst">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +1</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Jhakri Cuffs +1</hands>
+			<legs>Mallquis Trews +1</legs>
+			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Locus Ring</ring1>
+			<ring2>Mujin Band</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="CurePot">
@@ -91,8 +121,65 @@
 		</include>
 	</sets>
 	<variables>
+		<var name="BurstMode">NoBurst</var>
 	</variables>
 	<inputcommands>
+		<cmd input="/Liquefaction">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Fire" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Impaction">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Water" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Thunder" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Detonation">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Aero" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Scission">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Fire" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Stone" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Reverberation">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Water" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Fusion">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Fire" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Thunder" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
+		<cmd input="/Fragmentation">
+			<command >/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="1000">/ma "Ice" &lt;t&gt;</commmand>
+			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
+			<command delay="7000">/input /ma "Water" &lt;t&gt;</command>
+			<command delay="10000">/input /ac var set BurstMode Burst</command>
+			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
+		</cmd>
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
@@ -117,8 +204,8 @@
 		<elseif ad_name="Cur*">
 			<equip set="CurePot"/>
 		</elseif>
-		<elseif ad_name="*helix*"><equip set="Helix"/></elseif>
-		<elseif ad_type="blackmagic"><equip set="ElementMagic"/></elseif>
+		<elseif ad_name="*helix*"><equip set="Helix-$BurstMode"/></elseif>
+		<elseif ad_type="blackmagic"><equip set="ElementMagic-$BurstMode"/></elseif>
 		<elseif ad_type="enhancingmagic"><equip set="EnhancingMagic"/></elseif>
 	</midmagic>
 	<jobability>
