@@ -156,8 +156,8 @@
 			<head augment="S86879008710757">Valorous Mask</head>
 			<body augment="S26869724780645">Acro Surcoat</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs augment="S18048107010149">Valor. Hose</legs>
-			<feet augment="S289980549">Valorous Greaves</feet>
+			<legs augment="S86879142930533409671786">Valor. Hose</legs>
+			<feet augment="S141486181">Valorous Greaves</feet>
 			<neck>Adad Amulet</neck>
 			<ear1>Hija Earring</ear1>
 			<ear2 augment="S9230422179876">Diamond Earring</ear2>
@@ -387,15 +387,27 @@
 			<addtochat>Beastial Loyalty Jug Set to $BlJugDispName</addtochat>
 		</cmd>
 		<cmd input="/CycleMainHand">
-			<incvar name="JugIndex"/>
+			<incvar name="MainHandIndex"/>
 			<if advanced="$MainHandIndex=1">
 			</if>
 			<elseif advanced="$MainHandIndex=2">
 			</elseif>
+			<elseif advanced="$MainHandIndex=2">
+			</elseif>
+			<elseif advanced="$MainHandIndex=2">
+			</elseif>
+			<else>
+				<setvar name="MainHandIndex" value="0"/>
+			</else>
 		</cmd>
 		<cmd input="/CycleSubHand">
 		</cmd>
 		<cmd input="/CycleCharmersStrategy">
+			<incvar name="CharmersStrategyIndex"/>
+			<if advanced="$CharmersStrategyIndex=1">
+			</if>
+			<elseif advanced="$CharmersStrategyIndex=2">
+			</elseif>
 		</cmd>
 		<cmd input="/CycleWeaponStrategy">
 		</cmd>
@@ -428,13 +440,12 @@
 		<equip set="FstCst"/>
 	</premagic>
 	<midmagic>
-		<command>/echo midmagic %ad_name</command>
 		<if ad_skill="enhancingmagic"> <equip set="Enhance"/> </if>
-		<if ad_name="Dia*"> <equip set="Th"/> </if>
-		<if ad_name="Cur*"> <equip set="CurePot"/> </if>
-		<if ad_name="Phalanx"> <equip set="Phlnx"/> </if>
-		<if ad_name="Stoneskin"> <equip set="StnSkn"/> </if>
-		<if ad_skill="enfeeblingmagic"> <equip set="Enfeeble"/> </if>
+		<elseif ad_name="Dia*"> <command>/echo midmagic %ad_name</command> <equip set="Th"/> </elseif>
+		<elseif ad_name="Cur*"> <equip set="CurePot"/> </elseif>
+		<elseif ad_name="Phalanx"> <equip set="Phlnx"/> </elseif>
+		<elseif ad_name="Stoneskin"> <equip set="StnSkn"/> </elseif>
+		<elseif ad_skill="enfeeblingmagic"> <equip set="Enfeeble"/> </elseif>
 	</midmagic>
 	<jobability>
 		<command>/echo jobability %ad_type %ad_name</command>
