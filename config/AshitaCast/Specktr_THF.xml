@@ -7,8 +7,6 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<main>Anathema Harpe</main>
-			<sub>Jugo Kukri</sub>
 			<ammo>Ginsen</ammo>
 			<head>Meghanada Visor +1</head>
 			<body>Meg. Cuirie +1</body>
@@ -24,8 +22,6 @@
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="MagWS">
-			<main>Anathema Harpe</main>
-			<sub>Jugo Kukri</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body>Meg. Cuirie +1</body>

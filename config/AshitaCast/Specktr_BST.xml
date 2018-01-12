@@ -142,7 +142,7 @@
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Henic Torque</neck>
 			<waist>Eschan Stone</waist>
@@ -167,7 +167,7 @@
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Adad Amulet</neck>
 			<ear1>Hija Earring</ear1>
@@ -194,7 +194,7 @@
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
 			<waist>Klouskap Sash</waist>
@@ -209,7 +209,7 @@
 			<head augment="S97213236893803">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
 			<waist>Klouskap Sash</waist>
@@ -221,7 +221,7 @@
 		</set>
 		<set name="Idle-MasterMelee">
 			<ammo>Ginsen</ammo>
-			<head augment="S6167185957690020505">Valorous Mask</head>
+			<head augment="S63772086423575">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S9685595112864420505">Valorous Mitts</hands>
 			<legs augment="S1232441083638448217">Valor. Hose</legs>
@@ -251,7 +251,7 @@
 		</set>
 		<set name="Idle-119PetOnly">
 			<ammo>Demonry Core</ammo>
-			<head augment="S7806587018250016491">Valorous Mask</head>
+			<head augment="S130850884067435">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
 			<legs augment="S26869456863349">Taeon Tights</legs>

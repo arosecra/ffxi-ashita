@@ -176,10 +176,13 @@
 		<if ad_name="*Roll|Double-Up">
 			<equip set="PhantomRoll"/>
 		</if>
+		<elseif ad_name="*Shot">
+			<equip set="QD"/>
+		</elseif>
 	</jobability>
 	<weaponskill>
 		<if ad_name="Last Stand"> <equip set="LastStand" /> </if>
-		<elseif ad_name="Leaden Salute"><equip set="Leaden Salute" /></elseif>
+		<elseif ad_name="Leaden Salute"><equip set="LeadenSalute" /></elseif>
 		<elseif ad_name="Wildfire"><equip set="Wildfire" /></elseif>
 		<else> <equip set="WS"/> </else>
 	</weaponskill>
