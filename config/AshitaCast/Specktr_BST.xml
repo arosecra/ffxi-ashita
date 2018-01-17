@@ -162,6 +162,7 @@
 			<neck>Adad Amulet</neck>
 			<ear1>Hija Earring</ear1>
 			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<ring1>Tali'ah Ring</ring1>
 			<back>Argocham. Mantle</back>
 		</set>
 		<set name="PetMag-High">
@@ -173,6 +174,7 @@
 			<neck>Adad Amulet</neck>
 			<ear1>Hija Earring</ear1>
 			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<ring1>Tali'ah Ring</ring1>
 			<back>Argocham. Mantle</back>
 		</set>
 		<set name="PetPhys-Low">
@@ -205,6 +207,38 @@
 			<ring2>Varar Ring</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
+		
+		<set name="PetMultiHit-Low">
+			<ammo>Demonry Core</ammo>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
+			<body>Despair Mail</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Emicho Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Hija Earring</ear1>
+			<ear2>Ferine Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		<set name="PetMultiHit-High">
+			<ammo>Demonry Core</ammo>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
+			<body>Despair Mail</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Emicho Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Hija Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		
 		<set name="Idle-PetMelee">
 			<ammo>Demonry Core</ammo>
 			<head augment="S97213236893803">Valorous Mask</head>
@@ -479,7 +513,7 @@
 	<petskill>
 		<command>/echo petskill %ad_name %pet_tp</command>
 		<if ad_name="Sweeping Gouge|Tickling Tendrils|Chomp Rush|Pentapeck|Wing Slap|Pecking Flurry">
-			<equip set="PetPhys-$Accuracy"/>
+			<equip set="PetMultiHit-$Accuracy"/>
 			<equip set="PetReady-$WeaponStrategy-Main"/>
 			<if p_subjob="dnc">
 				<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>			
