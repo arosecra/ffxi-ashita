@@ -26,3 +26,4 @@ addons/libs/ltn12.lua
 addons/libs/logging.lua
 addons/libs/imguidef.lua
 addons/libs/common.lua
+addons/repeater/*
