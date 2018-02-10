@@ -299,6 +299,20 @@
 			<ring2>Defending Ring</ring2>
 			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
 		</set>
+		<set name="Idle-MasterDT">
+			<sub augment="S1211439158">Beatific Shield +1</sub>
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet>Skd. Jambeaux +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Nierenschutz</waist>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Impassive Mantle</back>
+		</set>
 
 		<set name="PreReady-CharmersSub">
 			<main>Aymur</main>
