@@ -100,6 +100,7 @@
 		<set name="Phlnx">
 			<hands augment="S3676521001011428742">Valorous Mitts</hands>
 			<legs augment="S10376777539609">Valor. Hose</legs>
+			<feet augment="S279713794622556214">Valorous Greaves</feet>
 			<neck>Melic Torque</neck>
 			<waist>Olympus Sash</waist>
 			<back>Merciful Cape</back>
@@ -142,7 +143,7 @@
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Henic Torque</neck>
 			<waist>Eschan Stone</waist>
@@ -153,25 +154,38 @@
 			<back augment="S8138789071104518759">Artio's Mantle</back>
 		</set>
 		<set name="PetMag-Low">
-			<head augment="S88417656690789">Valorous Mask</head>
+			<head augment="S86879008710757">Valorous Mask</head>
 			<body augment="S26869724780645">Acro Surcoat</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs augment="S18048107010149">Valor. Hose</legs>
-			<feet augment="S289980549">Valorous Greaves</feet>
+			<legs augment="S86879142930533409671786">Valor. Hose</legs>
+			<feet augment="S141486181">Valorous Greaves</feet>
 			<neck>Adad Amulet</neck>
 			<ear1>Hija Earring</ear1>
 			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<ring1>Tali'ah Ring</ring1>
+			<back>Argocham. Mantle</back>
+		</set>
+		<set name="PetMag-High">
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Adad Amulet</neck>
+			<ear1>Hija Earring</ear1>
+			<ear2 augment="S9230422179876">Diamond Earring</ear2>
+			<ring1>Tali'ah Ring</ring1>
 			<back>Argocham. Mantle</back>
 		</set>
 		<set name="PetPhys-Low">
 			<ammo>Demonry Core</ammo>
-			<head augment="S97213236893803">Valorous Mask</head>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs augment="S106010110908523">Valor. Hose</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
-			<waist>Hurch'lan Sash</waist>
+			<waist>Klouskap Sash</waist>
 			<ear1>Hija Earring</ear1>
 			<ear2>Ferine Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
@@ -183,36 +197,57 @@
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
-			<waist>Hurch'lan Sash</waist>
+			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
 			<ring2>Varar Ring</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
-		<set name="PetMag-High">
-			<head>Tali'ah Turban +1</head>
-			<body>Tali'ah Manteel +1</body>
+		
+		<set name="PetMultiHit-Low">
+			<ammo>Demonry Core</ammo>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
+			<body>Despair Mail</body>
 			<hands>Nukumi Manoplas +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
-			<feet>Tali'ah Crackows +1</feet>
-			<neck>Adad Amulet</neck>
+			<legs>Emicho Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
 			<ear1>Hija Earring</ear1>
-			<ear2 augment="S9230422179876">Diamond Earring</ear2>
-			<back>Argocham. Mantle</back>
+			<ear2>Ferine Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
+		<set name="PetMultiHit-High">
+			<ammo>Demonry Core</ammo>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
+			<body>Despair Mail</body>
+			<hands>Nukumi Manoplas +1</hands>
+			<legs>Emicho Hose</legs>
+			<feet>Tot. Gaiters +3</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Hija Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Artio's Mantle</back>
+		</set>
+		
 		<set name="Idle-PetMelee">
 			<ammo>Demonry Core</ammo>
 			<head augment="S97213236893803">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
-			<waist>Hurch'lan Sash</waist>
+			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
 			<ear2>Handler's Earring +1</ear2>
 			<ring1>Thur. Ring +1</ring1>
@@ -221,7 +256,7 @@
 		</set>
 		<set name="Idle-MasterMelee">
 			<ammo>Ginsen</ammo>
-			<head augment="S6167185957690020505">Valorous Mask</head>
+			<head augment="S63772086423575">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S9685595112864420505">Valorous Mitts</hands>
 			<legs augment="S1232441083638448217">Valor. Hose</legs>
@@ -251,7 +286,7 @@
 		</set>
 		<set name="Idle-119PetOnly">
 			<ammo>Demonry Core</ammo>
-			<head augment="S7806587018250016491">Valorous Mask</head>
+			<head augment="S130850884067435">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
 			<legs augment="S26869456863349">Taeon Tights</legs>
@@ -263,6 +298,20 @@
 			<ring1>Thur. Ring +1</ring1>
 			<ring2>Defending Ring</ring2>
 			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
+		</set>
+		<set name="Idle-MasterDT">
+			<sub augment="S1211439158">Beatific Shield +1</sub>
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S52945271470082">Jumalik Mail</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet>Skd. Jambeaux +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Nierenschutz</waist>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Impassive Mantle</back>
 		</set>
 
 		<set name="PreReady-CharmersSub">
@@ -281,94 +330,18 @@
 			<legs augment="S558899540">Desultor Tassets</legs>
 		</set>
 				
-		<set name="Idle-Main-Swap-Aymur">
-			<main>Aymur</main>
-		</set>
-		<set name="Idle-Main-Swap-PetDt">
-			<main>Izizoeksi</main>
-		</set>
-		<set name="Idle-Main-Swap-Arktoi">
-			<main augment="D32445013635340">Arktoi</main>
-		</set>		
-		<set name="Idle-Sub-Swap-Arktoi">
-			<sub augment="D32445013635340">Arktoi</sub>
-		</set>
-		<set name="Idle-Sub-Swap-PetPdt">
-			<sub augment="M1349931522">Astolfo</sub>
-		</set>
-		<set name="Idle-Sub-Swap-Adapa">
-			<sub>Adapa Shield</sub>
-		</set>
-		<set name="Idle-Sub-Swap-Beatific">
-			<sub augment="S1211439158">Beatific Shield +1</sub>
-		</set>
+		<set name="Idle-Main-Swap-Aymur"> <main>Aymur</main> </set>
+		<set name="Idle-Main-Swap-PetDt"> <main>Izizoeksi</main> </set>
+		<set name="Idle-Main-Swap-Arktoi"> <main augment="D32445013635340">Arktoi</main> </set>		
+		<set name="Idle-Sub-Swap-Arktoi"> <sub augment="D32445013635340">Arktoi</sub> </set>
+		<set name="Idle-Sub-Swap-PetPdt"> <sub augment="M1349931522">Astolfo</sub> </set>
+		<set name="Idle-Sub-Swap-Adapa"> <sub>Adapa Shield</sub> </set>
+		<set name="Idle-Sub-Swap-Beatific"> <sub augment="S1211439158">Beatific Shield +1</sub> </set>
 		
-		<set name="PetReady-Swap-Main">
-			<main>Aymur</main>
-		</set>		
-		<set name="PetReady-Swap-Sub-Phys">
-			<sub augment="D32445013635340">Arktoi</sub>
-		</set>
-		<set name="PetReady-Swap-Sub-Mag">
-			<sub>Mdomo Axe</sub>
-		</set>
-		
-		<!-- Jugs -->
-		<set name="SharpwitHermes">
-			<ammo>Saline Broth</ammo>
-		</set>
-		<set name="WarlikePatrick">
-			<ammo>Livid Broth</ammo>
-		</set>
-		<set name="BouncingBertha">
-			<ammo>Bubbly Broth</ammo>
-		</set>
-		<set name="ScissorlegXerin">
-			<ammo>Spicy Broth</ammo>
-		</set>
-		<set name="BlackbeardRandy">
-			<ammo>Meaty Broth</ammo>
-		</set>
-		<set name="AttentiveIbuki">
-			<ammo>Salubrious Broth</ammo>
-		</set>
-		<set name="SwoopingZhivago">
-			<ammo>Windy Greens</ammo>
-		</set>
-		<set name="ThreestarLynn">
-			<ammo>Muddy Broth</ammo>
-		</set>
-		<set name="RhymingShizuna">
-			<ammo>Lyrical Broth</ammo>
-		</set>
-		<set name="AmiableRoche">
-			<ammo>Airy Broth</ammo>
-		</set>
-		<set name="BrainyWaluis">
-			<ammo>Crumbly Soil</ammo>
-		</set>
-		<set name="GenerousArthur">
-			<ammo>Dire Broth</ammo>
-		</set>
-		<set name="RedolentCandi">
-			<ammo>Electrified Broth</ammo>
-		</set>
-		
-		<set name="FleetReinhard">
-			<ammo>Rapid Broth</ammo>
-		</set>
-		<set name="AnklebiterJedd">
-			<ammo>Crackling Broth</ammo>
-		</set>
-		
-		<set name="CaringKiyomaro">
-			<ammo>Fizzy Broth</ammo>
-		</set>
-		
-		<set name="VivaciousVickie">
-			<ammo>Tantaliing Broth</ammo>
-		</set>
-		
+		<set name="PetReady-Swap-Main"> <main>Aymur</main> </set>		
+		<set name="PetReady-Swap-Sub-Phys"> <sub augment="D32445013635340">Arktoi</sub> </set>
+		<set name="PetReady-Swap-Sub-Mag"> <sub>Mdomo Axe</sub> </set>
+
 		<include>
 		</include>
 	</sets>
@@ -379,10 +352,114 @@
 		<var name="WeaponStrategy">NoSwap</var>
 		<var name="BlJug">NoJug</var>
 		<var name="CllBstJug">NoJug</var>
+		<var name="BlJugDispName">None</var>
+		<var name="CllBstJugDispName">None</var>
+		<var name="JugIndex">0</var>
 		<var name="IdleMain">Aymur</var> <!-- NoSwap, Aymur, PetDt, Arktoi  -->
 		<var name="IdleSub">Adapa</var> <!-- NoSwap, Arktoi, PetPdt, Beatific, Adapa -->
+		<var name="MainHandIndex">0</var>
+		<var name="SubHandIndex">0</var>
+		<var name="WeaponsStrategyIndex">0</var>
+		<var name="CharmersStrategyIndex">0</var>
 	</variables>
 	<inputcommands>
+		<cmd input="/CycleJug">
+			<incvar name="JugIndex"/>
+			<if advanced="$JugIndex=1">
+				<setvar name="BlJug" value="Livid Broth"/>
+				<setvar name="CllBstJug" value="Livid Broth"/>
+				<setvar name="BlJugDispName" value="Lizard"/>
+				<setvar name="CllBstJugDispName" value="Lizard"/>
+			</if>
+			<elseif advanced="$JugIndex=2">
+				<setvar name="BlJug" value="Meaty Broth"/>
+				<setvar name="CllBstJug" value="Meaty Broth"/>
+				<setvar name="BlJugDispName" value="Tiger"/>
+				<setvar name="CllBstJugDispName" value="Tiger"/>
+			</elseif>
+			<elseif advanced="$JugIndex=3">
+				<setvar name="BlJug" value="Bubbly Broth"/>
+				<setvar name="CllBstJug" value="Spicy Broth"/>
+				<setvar name="BlJugDispName" value="HQ Cricket"/>
+				<setvar name="CllBstJugDispName" value="LQ Cricket"/>
+			</elseif>
+			<elseif advanced="$JugIndex=4">
+				<setvar name="BlJug" value="Windy Greens"/>
+				<setvar name="CllBstJug" value="Salubrious Broth"/>
+				<setvar name="BlJugDispName" value="HQ DT Bird"/>
+				<setvar name="CllBstJugDispName" value="LQ DT Bird"/>
+			</elseif>
+			<elseif advanced="$JugIndex=5">
+				<setvar name="BlJug" value="Electrified Broth"/>
+				<setvar name="CllBstJug" value="Electrified Broth"/>
+				<setvar name="BlJugDispName" value="LQ Snapweed"/>
+				<setvar name="CllBstJugDispName" value="LQ Snapweed"/>
+			</elseif>
+			<elseif advanced="$JugIndex=6">
+				<setvar name="BlJug" value="Blackwater Broth"/>
+				<setvar name="CllBstJug" value="Blackwater Broth"/>
+				<setvar name="BlJugDispName" value="Fly"/>
+				<setvar name="CllBstJugDispName" value="Fly"/>
+			</elseif>
+			<elseif advanced="$JugIndex=7">
+				<setvar name="BlJug" value="Tantalizing Broth"/>
+				<setvar name="CllBstJug" value="Fizzy Broth"/>
+				<setvar name="BlJugDispName" value="HQ Piggy"/>
+				<setvar name="CllBstJugDispName" value="LQ Piggy"/>
+			</elseif>
+			<elseif advanced="$JugIndex=8">
+				<setvar name="BlJug" value="Saline Broth"/>
+				<setvar name="CllBstJug" value="None"/>
+				<setvar name="BlJugDispName" value="HQ Mandy"/>
+				<setvar name="CllBstJugDispName" value="None"/>
+			</elseif>
+			<elseif advanced="$JugIndex=9">
+				<setvar name="BlJug" value="Rapid Broth"/>
+				<setvar name="CllBstJug" value="Rapid Broth"/>
+				<setvar name="BlJugDispName" value="Raptor"/>
+				<setvar name="CllBstJugDispName" value="Raptor"/>
+			</elseif>
+			<elseif advanced="$JugIndex=10">
+				<setvar name="BlJug" value="Airy Broth"/>
+				<setvar name="CllBstJug" value="Airy Broth"/>
+				<setvar name="BlJugDispName" value="Fish"/>
+				<setvar name="CllBstJugDispName" value="Fish"/>
+			</elseif>
+			<else>
+				<setvar name="JugIndex" value="0"/>
+				<setvar name="BlJug" value="None"/>
+				<setvar name="CllBstJug" value="None"/>
+				<setvar name="BlJugDispName" value="None"/>
+				<setvar name="CllBstJugDispName" value="None"/>
+			</else>
+			<addtochat>Call Beast Jug Set to $CllBstJugDispName</addtochat>
+			<addtochat>Beastial Loyalty Jug Set to $BlJugDispName</addtochat>
+		</cmd>
+		<cmd input="/CycleMainHand">
+			<incvar name="MainHandIndex"/>
+			<if advanced="$MainHandIndex=1">
+			</if>
+			<elseif advanced="$MainHandIndex=2">
+			</elseif>
+			<elseif advanced="$MainHandIndex=2">
+			</elseif>
+			<elseif advanced="$MainHandIndex=2">
+			</elseif>
+			<else>
+				<setvar name="MainHandIndex" value="0"/>
+			</else>
+		</cmd>
+		<cmd input="/CycleSubHand">
+		</cmd>
+		<cmd input="/CycleCharmersStrategy">
+			<incvar name="CharmersStrategyIndex"/>
+			<if advanced="$CharmersStrategyIndex=1">
+			</if>
+			<elseif advanced="$CharmersStrategyIndex=2">
+			</elseif>
+		</cmd>
+		<cmd input="/CycleWeaponStrategy">
+		</cmd>
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
@@ -390,7 +467,14 @@
 			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
 			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
 		</if>
+		<elseif pet_status="engaged">
+			<equip set="Idle-$Strategy"/>
+			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
+			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
+		</elseif>
 		<else>
+			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>
+			<equip set="Idle-Sub-$WeaponStrategy-$IdleSub"/>
 			<equip set="NotEngaged"/>
 		</else>
 	</idlegear>
@@ -405,23 +489,26 @@
 		<equip set="FstCst"/>
 	</premagic>
 	<midmagic>
-		<command>/echo midmagic %ad_name</command>
-		<if ad_name="Dia*">
-			<equip set="Th"/>
-		</if>
-		<if ad_name="Cur*">
-			<equip set="CurePot"/>
-		</if>
+		<if ad_skill="enhancingmagic"> <equip set="Enhance"/> </if>
+		<elseif ad_name="Dia*"> <command>/echo midmagic %ad_name</command> <equip set="Th"/> </elseif>
+		<elseif ad_name="Cur*"> <equip set="CurePot"/> </elseif>
+		<elseif ad_name="Phalanx"> <equip set="Phlnx"/> </elseif>
+		<elseif ad_name="Stoneskin"> <equip set="StnSkn"/> </elseif>
+		<elseif ad_skill="enfeeblingmagic"> <equip set="Enfeeble"/> </elseif>
 	</midmagic>
 	<jobability>
 		<command>/echo jobability %ad_type %ad_name</command>
 		<if ad_type="ready"> <equip set="PreReady-$CharmersStrategy"/> </if>
 		<if ad_name="Bestial Loyalty|Call Beast">
-			<equip set="$BlJug"/>
+			<equip>
+				<ammo>$BlJug</ammo>
+			</equip>
 			<equip set="CllBst"/> 
 		</if>
-		<if ad_name="Call Beast"> 
-			<equip set="$CllBstJug"/>
+		<if ad_name="Call Beast">
+			<equip>
+				<ammo>$CllBstJug</ammo>
+			</equip>
 			<equip set="CllBst"/> 
 		</if>
 		<if ad_name="Familiar"> <equip set="Familiar"/> </if>
@@ -433,26 +520,41 @@
 	</jobability>
 	<weaponskill>
 		<command>/echo weaponskill %ad_name</command>
-		<if ad_name="Primal Rend"> <equip set="Primal Rend" /> </if>
-		<elseif ad_name="Leaden Salute"><equip set="Leaden Salute" /></elseif>
-		<else> <equip set="WS"/> </else>
+		<if ad_name="Primal Rend"> <equip set="PrimalRend" /> </if>
+		<elseif ad_name="CloudSplitter"><equip set="CloudSplitter" /></elseif>
+		<else> <equip set="PhysWs"/> </else>
 	</weaponskill>
 	<petskill>
-		<command>/echo petskill %ad_name</command>
+		<command>/echo petskill %ad_name %pet_tp</command>
 		<if ad_name="Sweeping Gouge|Tickling Tendrils|Chomp Rush|Pentapeck|Wing Slap|Pecking Flurry">
-			<equip set="PetPhys-$Accuracy"/>
+			<equip set="PetMultiHit-$Accuracy"/>
 			<equip set="PetReady-$WeaponStrategy-Main"/>
-			<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+			<if p_subjob="dnc">
+				<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>			
+			</if>
+			<elseif p_subjob="nin">
+				<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+			</elseif>
 		</if>
 		<elseif ad_name="Cursed Sphere|Venom|Toxic Spit|Venom Spray|Bubble Shower|Fireball|Plague Breath|Snow Cloud|Acid Spray|Silence Gas|Dark Spore|Charged Whisker|Purulent Ooze|Aqua Breath|Stink Bomb|Nectarous Deluge|Nepenthic Plunge|Foul Waters|Dust Cloud|Sheep Song|Scream|Dream Flower|Roar|Gloeosuccus|Palsy Pollen|Soporific|Geist Wall|Numbing Noise|Spoil|Hi-Freq Field|Sandpit|Sandblast|Filamented Hold|Spore|Infrasonics|Chaotic Eye|Blaster|Intimidate|Noisome Powder|TP Drainkiss|Jettatura|Spider Web|Corrosive Ooze|Molting Plumage|Swooping Frenzy|Pestilent Plume">
 			<equip set="PetMag-$Accuracy"/>
 			<equip set="PetReady-$WeaponStrategy-Main"/>
-			<equip set="PetReady-$WeaponStrategy-Sub-Mag"/>
+			<if p_subjob="dnc">
+				<equip set="PetReady-$WeaponStrategy-Sub-Mag"/>
+			</if>
+			<elseif p_subjob="nin">
+				<equip set="PetReady-$WeaponStrategy-Sub-Mag"/>
+			</elseif>
 		</elseif>
 		<else>
 			<equip set="PetPhys-$Accuracy"/>
 			<equip set="PetReady-$WeaponStrategy-Main"/>
-			<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+			<if p_subjob="dnc">
+				<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+			</if>
+			<elseif p_subjob="nin">
+				<equip set="PetReady-$WeaponStrategy-Sub-Phys"/>
+			</elseif>
 		</else>
 	</petskill>
 	

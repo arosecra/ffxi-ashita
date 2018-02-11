@@ -18,7 +18,7 @@
 			<ear2>Domes. Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
 			<ring2>Varar Ring</ring2>
-			<back>Visucius's Mantle</back>
+			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
 		<set name="PupEng-PetMelee">
 			<head>Tali'ah Turban +1</head>
@@ -27,26 +27,26 @@
 			<legs augment="S78069762340970677732459">Herculean Trousers</legs>
 			<feet augment="S60486568892522">Herculean Boots</feet>
 			<neck>Shulmanu Collar</neck>
-			<waist>Hurch'lan Sash</waist>
-			<ear1>Brutal Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>K'ayres Ring</ring2>
-			<back>Visucius's Mantle</back>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Domes. Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
 		<set name="PupEng-MstrMelee">
 			<head>Tali'ah Turban +1</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Sera. +1</legs>
+			<legs>Tali'ah Sera. +2</legs>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Shulmanu Collar</neck>
-			<waist>Hurch'lan Sash</waist>
+			<waist>Klouskap Sash</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>K'ayres Ring</ring2>
-			<back>Visucius's Mantle</back>
+			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
 		<set name="PupTh">
 			<head>Wh. Rarab Cap +1</head>
@@ -57,7 +57,7 @@
 			<body>Karagoz Farsetto</body>
 			<hands>Foire Dastanas +1</hands>
 			<neck>Buffoon's Collar</neck>
-			<back>Visucius's Mantle</back>
+			<back augment="S018543">Visucius's Mantle</back>
 		</set>
 		<set name="PupFstCst">
 			<body augment="S18073500037218">Taeon Tabard</body>
@@ -67,20 +67,51 @@
 			<ring1>Prolix Ring</ring1>
 		</set>
 		<set name="WS">
-			<main augment="D2856564496514">Midnights</main>
-			<range>Animator P</range>
 			<head>Tali'ah Turban +1</head>
-			<body augment="D14371095585026">Rawhide Vest</body>
+			<body>Tali'ah Manteel +1</body>
 			<hands augment="S12324424231328425">Herculean Gloves</hands>
-			<legs augment="S78069762340970677732459">Herculean Trousers</legs>
-			<feet augment="S60486568892522">Herculean Boots</feet>
+			<legs augment="S22034551767721648663">Herculean Trousers</legs>
+			<feet>Tali'ah Crackows +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Begrudging Ring</ring2>
-			<back>Visucius's Mantle</back>
+			<back>Dispersal Mantle</back>
+		</set>
+		<set name="PuppetArcuballista">
+			<head>Karagoz Capello</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs augment="S78069762340970677732459">Herculean Trousers</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Varar Ring</ring1>
+			<ring2>Thur. Ring +1</ring2>
+			<back>Dispersal Mantle</back>
+		</set>
+		<set name="PuppetProvoke">
+			<ear1>Rimeice Earring</ear1>
+			<ear2>Domes. Earring</ear2>
+		</set>
+		<set name="temp">
+			<main>Denouements</main>
+			<range>Animator P</range>
+			<head>Tali'ah Turban +1</head>
+			<body>Tali'ah Manteel +1</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>K'ayres Ring</ring2>
 		</set>
 		<include>
 		</include>
@@ -89,11 +120,38 @@
 		<var name="Strategy">MstrMelee</var>
 	</variables>
 	<inputcommands>
+		<cmd input="/PuppetProvoke">
+			<equip set="PuppetProvoke"/>
+			<gearlock lenght="1"/>
+		</cmd>
+		<cmd input="/PuppetFlashbulb">
+			<equip set="PuppetFlashbulb"/>
+			<gearlock lenght="1"/>
+		</cmd>
+		<cmd input="/PuppetArcuballista">
+			<equip set="PuppetArcuballista"/>
+			<gearlock lenght="1"/>
+		</cmd>
+		<cmd input="/PuppetBone Crusher">
+			<equip set="PuppetBone Crusher"/>
+			<gearlock lenght="1"/>
+		</cmd>
+		<cmd input="/PuppetChimera Ripper">
+			<equip set="PuppetChimera Ripper"/>
+			<gearlock lenght="1"/>
+		</cmd>
+		<cmd input="/PuppetDaze">
+			<equip set="PuppetDaze"/>
+			<gearlock lenght="1"/>
+		</cmd>
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
 			<equip set="PupEng-$Strategy"/>
 		</if>
+		<elseif pet_status="engaged">
+			<equip set="PupEng-$Strategy"/>
+		</elseif>
 	</idlegear>
 	<preranged>
 	</preranged>
@@ -112,8 +170,18 @@
 		<if ad_name="*Maneuver">
 			<equip set="PupMnvr"/>
 		</if>
+		<if ad_name="Overdrive">
+			<equip><body>Pitre Tobe +1</body></equip>
+		</if>
 	</jobability>
 	<weaponskill>
 		<equip set="WS"/>
 	</weaponskill>
+	<petskill>
+		<command>/echo petskill %ad_name %pet_tp</command>
+	</petskill>
+	
+	<petspell>
+		<command>/echo petspell %ad_name</command>
+	</petspell>
 </ashitacast>
