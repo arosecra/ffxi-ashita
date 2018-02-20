@@ -30,3 +30,7 @@ addons/libs/common.lua
 addons/repeater/*
 docs/Oseem.txt
 docs/augmentlist.xml
+Ashita.dll
+Ashita.exe
+injector.exe
+ffxi-bootmod/pol.exe
