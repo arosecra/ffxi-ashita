@@ -241,22 +241,22 @@
 		
 		<set name="Idle-PetMelee">
 			<ammo>Demonry Core</ammo>
-			<head augment="S97213236893803">Valorous Mask</head>
+			<head augment="D3951697204099">Emicho Coronet +1</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
-			<legs>Tali'ah Sera. +2</legs>
+			<legs>Emicho Hose</legs>
 			<feet>Tot. Gaiters +3</feet>
 			<neck>Shulmanu Collar</neck>
 			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
-			<ear2>Handler's Earring +1</ear2>
+			<ear2>Hija Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
 			<ring2>Varar Ring</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		<set name="Idle-MasterMelee">
 			<ammo>Ginsen</ammo>
-			<head augment="S63772086423575">Valorous Mask</head>
+			<head augment="S16742104807066228742">Valorous Mask</head>
 			<body>Tot. Jackcoat +3</body>
 			<hands augment="S9685595112864420505">Valorous Mitts</hands>
 			<legs augment="S1232441083638448217">Valor. Hose</legs>
@@ -489,11 +489,11 @@
 		<equip set="FstCst"/>
 	</premagic>
 	<midmagic>
-		<if ad_skill="enhancingmagic"> <equip set="Enhance"/> </if>
-		<elseif ad_name="Dia*"> <command>/echo midmagic %ad_name</command> <equip set="Th"/> </elseif>
+		<if ad_name="Dia*"> <command>/echo midmagic %ad_name</command> <equip set="Th"/> </if>
 		<elseif ad_name="Cur*"> <equip set="CurePot"/> </elseif>
 		<elseif ad_name="Phalanx"> <equip set="Phlnx"/> </elseif>
 		<elseif ad_name="Stoneskin"> <equip set="StnSkn"/> </elseif>
+		<elseif ad_skill="enhancingmagic"> <equip set="Enhance"/> </elseif>
 		<elseif ad_skill="enfeeblingmagic"> <equip set="Enfeeble"/> </elseif>
 	</midmagic>
 	<jobability>

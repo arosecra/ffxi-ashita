@@ -7,12 +7,31 @@
 	</settings>
 	<sets>
 		<set name="Idle">
+			<feet>Skd. Jambeaux +1</feet>
+			<ring2>Defending Ring</ring2>
+		</set>
+		<set name="TP-On">
 			<ammo>Ginsen</ammo>
 			<head>Meghanada Visor +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="M3333">Plun. Armlets +1</hands>
 			<legs>Meg. Chausses +1</legs>
-			<feet>Skd. Jambeaux +1</feet>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="TP-Off">
+			<ammo>Ginsen</ammo>
+			<head>Meghanada Visor +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
@@ -61,13 +80,17 @@
 		</include>
 	</sets>
 	<variables>
+		<var name="TH">On</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
-			<equip set="Idle"/>
+			<equip set="TP-$TH"/>
 		</if>
+		<else>
+			<equip set="Idle"/>
+		</else>
 	</idlegear>
 	<preranged>
 	</preranged>
