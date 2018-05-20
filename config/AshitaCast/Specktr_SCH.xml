@@ -12,7 +12,7 @@
 			<body>Jhakri Robe +2</body>
 			<hands>Acad. Bracers +1</hands>
 			<legs augment="D7370400354052">Psycloth Lappas</legs>
-			<feet>Acad. Loafers +2</feet>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
 			<neck>Loricate Torque +1</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
@@ -29,69 +29,40 @@
 			<legs augment="D7370400354052">Psycloth Lappas</legs>
 			<feet>Acad. Loafers +2</feet>
 			<neck>Orunmila's Torque</neck>
+			<waist>Channeler's Stone</waist>
 			<ear1>Loquac. Earring</ear1>
 			<ear2>Enchntr. Earring +1</ear2>
 			<ring1>Prolix Ring</ring1>
 			<back augment="S018572">Lugh's Cape</back>
 		</set>
-		<set name="Helix-NoBurst">
+		<set name="Helix">
 			<ammo>Ghastly Tathlum</ammo>
-			<head>Jhakri Coronal +1</head>
+			<head augment="S81382135988294814026787">Merlinic Hood</head>
 			<body>Jhakri Robe +2</body>
 			<hands>Jhakri Cuffs +1</hands>
-			<legs>Mallquis Trews +1</legs>
-			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet>Arbatel Loafers +1</feet>
 			<neck>Mizu. Kubikazari</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Hecate's Earring</ear2>
-			<ring1>Acumen Ring</ring1>
-			<ring2>Jhakri Ring</ring2>
+			<ring2>Mujin Band</ring2>
+			<ring2>Locus Ring</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
-		<set name="Helix-Burst">
-			<ammo>Ghastly Tathlum</ammo>
-			<head>Jhakri Coronal +1</head>
-			<body>Jhakri Robe +2</body>
-			<hands>Jhakri Cuffs +1</hands>
-			<legs>Mallquis Trews +1</legs>
-			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
-			<neck>Mizu. Kubikazari</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
-			<ring1>Locus Ring</ring1>
-			<ring2>Jhakri Ring</ring2>
-			<back augment="S255541914018565">Lugh's Cape</back>
-		</set>
-		<set name="ElementMagic-NoBurst">
+		<set name="ElementMagic">
 			<ammo>Erlene's Notebook</ammo>
-			<head>Jhakri Coronal +1</head>
+			<head augment="S81382135988294814026787">Merlinic Hood</head>
 			<body>Jhakri Robe +2</body>
 			<hands>Jhakri Cuffs +1</hands>
-			<legs>Mallquis Trews +1</legs>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
 			<neck>Saevus Pendant +1</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Hecate's Earring</ear2>
-			<ring1>Acumen Ring</ring1>
-			<ring2>Jhakri Ring</ring2>
-			<back augment="S255541914018565">Lugh's Cape</back>
-		</set>
-		<set name="ElementMagic-Burst">
-			<ammo>Erlene's Notebook</ammo>
-			<head>Jhakri Coronal +1</head>
-			<body>Jhakri Robe +2</body>
-			<hands>Jhakri Cuffs +1</hands>
-			<legs>Mallquis Trews +1</legs>
-			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
-			<neck>Mizu. Kubikazari</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
-			<ring1>Locus Ring</ring1>
 			<ring2>Mujin Band</ring2>
+			<ring2>Locus Ring</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="CurePot">
@@ -104,11 +75,17 @@
 			<ring1>Neptune's Ring</ring1>
 			<ring2>Neptune's Ring</ring2>
 		</set>
+		<set name="Perpetuance">
+			<hands>Arbatel Bracers</hands>
+		</set>
 		<set name="Immanence">
 			<hands>Arbatel Bracers</hands>
 		</set>
 		<set name="EnhancingMagic">
-			<hands augment="S151163054409">Chironic Gloves</hands>
+			<head augment="S66932770340864">Telchine Cap</head>
+			<body augment="S40544491274240">Telchine Chas.</body>
+			<legs augment="S22952305229824">Telchine Braconi</legs>
+			<feet augment="S58136677318656">Telchine Pigaches</feet>
 			<neck>Henic Torque</neck>
 			<waist>Olympus Sash</waist>
 			<back>Merciful Cape</back>
@@ -116,70 +93,13 @@
 		<set name="Th">
 			<head>Wh. Rarab Cap +1</head>
 			<waist>Chaac Belt</waist>
-		</set>		
+		</set>
 		<include>
 		</include>
 	</sets>
 	<variables>
-		<var name="BurstMode">NoBurst</var>
 	</variables>
 	<inputcommands>
-		<cmd input="/Liquefaction">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Fire" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Impaction">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Water" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Thunder" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Detonation">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Aero" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Scission">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Fire" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Stone" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Reverberation">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Stone" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Water" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Fusion">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Fire" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Thunder" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
-		<cmd input="/Fragmentation">
-			<command >/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="1000">/ma "Ice" &lt;t&gt;</commmand>
-			<command delay="5000">/input /ja "Immanence" &lt;me&gt;</command>
-			<command delay="7000">/input /ma "Water" &lt;t&gt;</command>
-			<command delay="10000">/input /ac var set BurstMode Burst</command>
-			<command delay="15000">/input /ac var set BurstMode NoBurst</command>
-		</cmd>
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
@@ -197,20 +117,62 @@
 		<equip set="FastCast"/>
 	</premagic>
 	<midmagic>
-		<command>/echo midmagic %ad_type %ad_name</command>
+		<command>/echo midmagic %ad_type %ad_name %ad_skill</command>
 		<if ad_name="Dia*">
 			<equip set="Th"/>
 		</if>
 		<elseif ad_name="Cur*">
 			<equip set="CurePot"/>
 		</elseif>
-		<elseif ad_name="*helix*"><equip set="Helix-$BurstMode"/></elseif>
-		<elseif ad_type="blackmagic"><equip set="ElementMagic-$BurstMode"/></elseif>
-		<elseif ad_type="enhancingmagic"><equip set="EnhancingMagic"/></elseif>
+		<elseif ad_name="*helix*"><equip set="Helix"/></elseif>
+		<elseif ad_skill="enhancingmagic">
+			<equip set="EnhancingMagic"/>
+			<if BuffActive="469">
+				<equip><hands>Arbatel Bracers</hands></equip>
+			</if>
+			<else>
+				<equip><hands augment="S49340584296448">Telchine Gloves</hands></equip>
+			</else>
+		</elseif>
+		<elseif ad_skill="elementalmagic">
+			<equip set="ElementMagic"/>
+		</elseif>
 	</midmagic>
 	<jobability>
 		<command>/echo jobability %ad_type %ad_name</command>
-		<if ad_name="Immanence"><equip set="Immanence"/></if>
+		<if ad_name="Light Arts">
+			<if BuffActive="358">
+				<registerbuff id="358" />
+				<clearbuff id="401" />
+				<change id="234" />
+			</if>
+			<else>
+				<registerbuff id="401" />
+				<clearbuff id="358" />
+			</else>
+			<registerbuff id="359" active="false" />
+			<registerbuff id="402" active="false" />
+		</if>
+		<if ad_name="Dark Arts">
+			<if BuffActive="359">
+				<registerbuff id="359" />
+				<clearbuff id="402" />
+				<change id="235" />
+			</if>
+			<else>
+				<registerbuff id="402" />
+				<clearbuff id="359" />
+			</else>
+			<registerbuff id="358" active="false" />
+			<registerbuff id="401" active="false" />
+		</if>
+		<if ad_name="Penury"><registerbuff id="360" /></if>
+		<if ad_name="Parsimony"><registerbuff id="361" /></if>
+		<if ad_name="Celerity"><registerbuff id="362" /></if>
+		<if ad_name="Alacrity"><registerbuff id="363" /></if>
+		<if ad_name="Rapture"><registerbuff id="364" /></if>
+		<if ad_name="Ebullience"><registerbuff id="365" /></if>
+		<if ad_name="Perpetuance"><registerbuff id="469" /></if>
 	</jobability>
 	<weaponskill>
 	</weaponskill>
