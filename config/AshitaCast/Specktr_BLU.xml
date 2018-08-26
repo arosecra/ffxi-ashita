@@ -1,0 +1,175 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="FastCast">
+			<ammo>Sapience Orb</ammo>                                          <!-- 02 -->
+			<head augment="D7434751185688">Psycloth Tiara</head>               <!-- 10 -->
+			<body>Pinga Tunic</body>                                           <!-- 13 -->
+			<hands augment="S35756141903895140">Leyline Gloves</hands>         <!-- 08 -->
+			<legs augment="D7370400354052">Psycloth Lappas</legs>              <!-- 07 -->
+			<!-- feet -->
+			<neck>Orunmila's Torque</neck>                                     <!-- 05 -->
+			<!-- back -->
+			<waist>Windbuffet Belt +1</waist>                                  <!-- 02 -->
+			<ear1>Loquac. Earring</ear1>                                       <!-- 02 -->
+			<ear2>Enchntr. Earring +1</ear2>                                   <!-- 02 -->
+			<ring1>Prolix Ring</ring1>                                         <!-- 02 -->
+		</set>                                                                 <!-- 48 -->
+		<set name="TP">
+			<ammo>Ginsen</ammo>                                                
+			<head>Aya. Zucchetto +1</head>
+			<body>Ayanmo Corazza +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back>Vassal's Mantle</back>
+		</set>
+		<set name="NotEngaged">
+			<body>Jhakri Robe +2</body>
+		</set>
+		<set name="CDC">
+			<ammo>Ginsen</ammo>
+			<head>Aya. Zucchetto +1</head>
+			<body>Ayanmo Corazza +1</body>
+			<hands augment="S12324424231328425">Herculean Gloves</hands>
+			<legs augment="S18996783777925">Taeon Tights</legs>
+			<feet>Aya. Gambieras +1</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="BLU_PHYS">
+			<ammo>Ginsen</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="S12324424231328425">Herculean Gloves</hands>
+			<legs augment="S22034551767721648663">Herculean Trousers</legs>
+			<feet>Aya. Gambieras +1</feet>
+			<neck>Deceiver's Torque</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Bladeborn Earring</ear1>
+			<ear2>Steelflash Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Pyrosoul Ring</ring2>
+			<back>Vassal's Mantle</back>
+		</set>
+		<set name="BLU_MAB">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Yamabuki-no-Obi</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back>Argocham. Mantle</back>
+		</set>
+		<set name="temp">
+			<main>Nibiru Blade</main>
+			<sub>Iris</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Jhakri Robe +2</body>
+			<neck>Sanctity Necklace</neck>
+			<waist>Yamabuki-no-Obi</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back>Argocham. Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	    <var name="BluMagPhys">Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide</var>
+        <var name="BluMagMag"></var>       
+        <var name="BluMagDebuff">Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar</var>      
+        <var name="BluMagBuff">Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Battery Charge|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard</var>
+		<var name="BluMagCure">Pollen|Healing Breeze|Wild Carrot|Magic Fruit|White Wind|Plenilune Embrace</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="TP"/>
+		</if>
+		<else>
+			<equip set="NotEngaged"/>
+		</else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+		<if ad_name="$BluMagPhys">
+            <equip set="BluPhys" />
+			<!--<if BuffActive="164">
+			  <equip><feet>Assim. Charuqs +1</feet></equip>
+			</if>-->
+		</if>
+        <elseif ad_name="$BluMagDebuff">
+            <equip set="BLU_MAB" />
+			<!--<if BuffActive="165">
+			  <equip><rring>Mujin Band</rring></equip>
+			</if>-->
+        </elseif>
+        <elseif ad_name="$BluMagBuff">
+            <equip set="BluSkill" />
+        </elseif>
+        <elseif ad_name="$BluMagCure">
+            <equip set="Cure" />
+        </elseif>
+        <else>
+		
+			<if ad_name="Evryone. Grudge|Tenebral Crush"><equip set="BluDark" lock="true" /></if>	
+			<equip set="BLU_MAB" />
+			<!--<if BuffActive="164">
+				<equip><feet>Assim. Charuqs +1</feet></equip>
+			</if>
+			<if BuffActive="165">
+				<equip><rring>Mujin Band</rring></equip>
+			</if>-->
+		</else>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<command>/echo weaponskill %ad_name</command>
+		<if ad_name="Savage Blade">
+			<equip set="Savage" />
+		</if>
+		<elseif ad_name="Chant du Cygne">
+			<equip set="CDC" />
+		</elseif>
+		<elseif ad_name="Sanguine Blade">
+			<equip set="Sanguine" />
+		</elseif>
+		<else>
+			<equip set="MultiWS" />
+		</else>
+	</weaponskill>
+</ashitacast>
