@@ -12,11 +12,11 @@
 		</set>
 		<set name="TP-On">
 			<ammo>Ginsen</ammo>
-			<head>Meghanada Visor +1</head>
+			<head augment="S19791621435417">Herculean Helm</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="M3333">Plun. Armlets +1</hands>
-			<legs>Meg. Chausses +1</legs>
-			<feet>Skulk. Poulaines +1</feet>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
@@ -27,11 +27,11 @@
 		</set>
 		<set name="TP-Off">
 			<ammo>Ginsen</ammo>
-			<head>Meghanada Visor +1</head>
+			<head augment="S19791621435417">Herculean Helm</head>
 			<body>Meg. Cuirie +1</body>
-			<hands>Meg. Gloves +1</hands>
-			<legs>Meg. Chausses +1</legs>
-			<feet>Meg. Jam. +1</feet>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
@@ -44,7 +44,7 @@
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body>Meg. Cuirie +1</body>
-			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
 			<feet augment="S5499290488429428805">Herculean Boots</feet>
 			<neck>Stoicheion Medal</neck>

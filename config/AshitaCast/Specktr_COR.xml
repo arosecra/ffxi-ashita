@@ -7,7 +7,7 @@
 	</settings>
 	<sets>
 		<set name="MidcastRanged">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head>Meghanada Visor +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands>Meg. Gloves +1</hands>
@@ -16,13 +16,13 @@
 			<neck>Iskur Gorget</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Volley Earring</ear1>
-			<ear2>Navarch's Earring</ear2>
+			<ear1>Enervating Earring</ear1>
 			<ring1>Paqichikaji Ring</ring1>
 			<ring2>Longshot Ring</ring2>
 			<back augment="S7928335601510718574">Camulus's Mantle</back>
 		</set>
 		<set name="PrecastRanged">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head>Aurore Beret +1</head>
 			<body augment="D6300775362818">Pursuer's Doublet</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
@@ -47,7 +47,7 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="CorTH">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
@@ -81,7 +81,7 @@
 			<back>Solemnity Cape</back>
 		</set>
 		<set name="LeadenSalute">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head>Pixie Hairpin +1</head>
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
@@ -96,7 +96,7 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="Wildfire">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
@@ -111,7 +111,7 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="LastStand">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head>Meghanada Visor +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands>Meg. Gloves +1</hands>
@@ -126,12 +126,15 @@
 			<back augment="S7928335601510718574">Camulus's Mantle</back>
 		</set>
 		<set name="WS">
-			<ammo>Decimating Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="NotEngaged">
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="MDB">
@@ -148,6 +151,20 @@
 			<ring2 augment="S26620479410231">Dark Ring</ring2>
 			<back>Solemnity Cape</back>
 		</set>
+		<set name="TP">
+			<head augment="S19791621435417">Herculean Helm</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Apate Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
 		<include>
 		</include>
 	</sets>
@@ -158,12 +175,8 @@
 	</inputcommands>
 	<idlegear>
 		<if p_status="engaged">
-			<equip set="MDB"/>
+			<equip set="TP"/>
 		</if>
-		<else>
-			<equip set="PDT"/>
-			<equip set="NotEngaged"/>
-		</else>
 	</idlegear>
 	<preranged>
 		<equip set="PrecastRanged"/>
