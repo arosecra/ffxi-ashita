@@ -12,7 +12,7 @@
 		</set>
 		<set name="TP-On">
 			<ammo>Ginsen</ammo>
-			<head augment="S19791621435417">Herculean Helm</head>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="M3333">Plun. Armlets +1</hands>
 			<legs augment="S17691248205849">Herculean Trousers</legs>
@@ -27,7 +27,7 @@
 		</set>
 		<set name="TP-Off">
 			<ammo>Ginsen</ammo>
-			<head augment="S19791621435417">Herculean Helm</head>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S17691248205849">Herculean Trousers</legs>

@@ -22,7 +22,7 @@
 		</set>                                                                 <!-- 48 -->
 		<set name="TP">
 			<ammo>Ginsen</ammo>
-			<head augment="S19791621435417">Herculean Helm</head>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Ayanmo Corazza +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S17691248205849">Herculean Trousers</legs>
@@ -40,7 +40,7 @@
 		</set>
 		<set name="CDC">
 			<ammo>Ginsen</ammo>
-			<head augment="S19791621435417">Herculean Helm</head>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Ayanmo Corazza +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S17691248205849">Herculean Trousers</legs>

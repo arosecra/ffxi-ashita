@@ -102,9 +102,11 @@
 			<hands>Arbatel Bracers</hands>
 		</set>
 		<set name="EnhancingMagic">
+			<ammo>Savant's Treatise</ammo>
 			<head augment="S66932770340864">Telchine Cap</head>
-			<body augment="S40544491274240">Telchine Chas.</body>
-			<legs augment="S22952305229824">Telchine Braconi</legs>
+			<body augment="S66932770340864">Telchine Chas.</body>
+			<hands augment="S49340584296448">Telchine Gloves</hands>
+			<legs augment="D7370400354052">Psycloth Lappas</legs>
 			<feet augment="S58136677318656">Telchine Pigaches</feet>
 			<neck>Henic Torque</neck>
 			<waist>Olympus Sash</waist>
