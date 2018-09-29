@@ -16,7 +16,7 @@
 			<neck>Iskur Gorget</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Volley Earring</ear1>
-			<ear1>Enervating Earring</ear1>
+			<ear2>Enervating Earring</ear2>
 			<ring1>Paqichikaji Ring</ring1>
 			<ring2>Longshot Ring</ring2>
 			<back augment="S7928335601510718574">Camulus's Mantle</back>
@@ -37,7 +37,7 @@
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
-			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<feet augment="M1296">Lanun Bottes +2</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Hecate's Earring</ear1>
@@ -86,7 +86,7 @@
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
-			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<feet augment="M1296">Lanun Bottes +2</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
@@ -101,7 +101,7 @@
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
-			<feet augment="S5499290488429428805">Herculean Boots</feet>
+			<feet augment="M1296">Lanun Bottes +2</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
@@ -119,8 +119,8 @@
 			<feet>Meg. Jam. +1</feet>
 			<neck>Iskur Gorget</neck>
 			<waist>Eschan Stone</waist>
-			<ear1>Volley Earring</ear1>
-			<ear2>Navarch's Earring</ear2>
+			<ear1>Enervating Earring</ear1>
+			<ear2>Volley Earring</ear2>
 			<ring1>Paqichikaji Ring</ring1>
 			<ring2>Longshot Ring</ring2>
 			<back augment="S7928335601510718574">Camulus's Mantle</back>

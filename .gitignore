@@ -1,4 +1,3 @@
-addons/
 assets/
 plugins/
 updates/
@@ -6,6 +5,8 @@ config/Dressme/
 docs/
 logs/
 screenshots/
+addons/blusets/bluemage.lua
+addons/blusets/blusets.lua
 addons/distance/
 addons/fps/
 addons/tparty/
@@ -34,3 +35,6 @@ Ashita.dll
 Ashita.exe
 injector.exe
 ffxi-bootmod/pol.exe
+addons/filterscan/
+addons/ibar/
+addons/libs/

@@ -7,6 +7,7 @@
 	</settings>
 	<sets>
 		<set name="Idle">
+			<main>Akademos</main>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="S70941082468681">Chironic Hat</head>
 			<body>Jhakri Robe +2</body>
@@ -23,8 +24,9 @@
 			<ammo>Homiliary</ammo>
 		</set>
 		<set name="FastCast">
+			<main augment="S63130384408716">Grioavolr</main>           <!-- 09 --> 
 			<ammo>Sapience Orb</ammo>                                  <!-- 02 -->
-			<head augment="D7434751185688">Psycloth Tiara</head>       <!-- 10 -->
+			<head augment="M1442">Peda. M.Board +2</head>              <!-- 12 -->   
 			<body>Pinga Tunic</body>                                   <!-- 13 -->
 			<hands>Gendewitha Gages</hands>                            <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>      <!-- 07 -->
@@ -40,8 +42,9 @@
 																	   <!-- 76 -->
 		</set>
 		<set name="Helix">
+			<main>Akademos</main>
 			<ammo>Ghastly Tathlum</ammo>
-			<head augment="S81382135988294814026787">Merlinic Hood</head>
+			<head augment="M1442">Peda. M.Board +2</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
@@ -55,8 +58,9 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="ElementMagic">
+			<main>Akademos</main>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="S81382135988294814026787">Merlinic Hood</head>
+			<head augment="M1442">Peda. M.Board +2</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
@@ -70,8 +74,9 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="EnfeeblingMagic">
+			<main>Akademos</main>
 			<ammo>Savant's Treatise</ammo>
-			<head augment="S81382135988294814026787">Merlinic Hood</head>
+			<head augment="M1442">Peda. M.Board +2</head>
 			<body>Jhakri Robe +2</body>
 			<hands>Jhakri Cuffs +1</hands>
 			<legs augment="D7370400354052">Psycloth Lappas</legs>
@@ -85,6 +90,7 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="CurePot">
+			<main>Akademos</main>
 			<head augment="S70941082468681">Chironic Hat</head>
 			<body>Pinga Tunic</body> 
 			<hands augment="S151163054409">Chironic Gloves</hands>
@@ -102,6 +108,7 @@
 			<hands>Arbatel Bracers</hands>
 		</set>
 		<set name="EnhancingMagic">
+			<main>Akademos</main>
 			<ammo>Savant's Treatise</ammo>
 			<head augment="S66932770340864">Telchine Cap</head>
 			<body augment="S66932770340864">Telchine Chas.</body>

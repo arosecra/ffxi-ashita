@@ -1,0 +1,1 @@
+[ "Delta Thrust", "Barbed Crescent", "Glutinous Dart", "Spectral Floe", "Subduction", "Entomb", "Tenebral Crush", "Cocoon", "Barrier Tusk", "Occultation", "Diamondhide", "Dream Flower", "Magic Fruit", "Magic Hammer", "Battery Charge", "Anvil Lightning", "Fantod", "Memento Mori", "Searing Tempest" ]
