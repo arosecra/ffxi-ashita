@@ -42,35 +42,37 @@
 																	   <!-- 76 -->
 		</set>
 		<set name="Helix">
-			<main>Akademos</main>
-			<ammo>Ghastly Tathlum</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
-			<hands augment="D20976940616643">Amalric Gages +1</hands>
-			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
-			<feet>Arbatel Loafers +1</feet>
-			<neck>Mizu. Kubikazari</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
-			<ring2>Mujin Band</ring2>
-			<ring2>Locus Ring</ring2>
-			<back augment="S255541914018565">Lugh's Cape</back>
-		</set>
-		<set name="ElementMagic">
-			<main>Akademos</main>
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +2</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
-			<feet augment="S286012847391421216686115">Merlinic Crackows</feet>
-			<neck>Saevus Pendant +1</neck>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Friomisi Earring</ear1>
 			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
 			<ring2>Mujin Band</ring2>
-			<ring2>Locus Ring</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="ElementMagic">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="EnfeeblingMagic">
@@ -123,6 +125,23 @@
 			<head>Wh. Rarab Cap +1</head>
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<waist>Chaac Belt</waist>
+		</set>
+		<set name="temp">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<include>
 		</include>
