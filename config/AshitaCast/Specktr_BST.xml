@@ -335,6 +335,7 @@
 		<set name="Idle-Main-Swap-Arktoi"> <main augment="D32445013635340">Arktoi</main> </set>		
 		<set name="Idle-Sub-Swap-Arktoi"> <sub augment="D32445013635340">Arktoi</sub> </set>
 		<set name="Idle-Sub-Swap-PetPdt"> <sub augment="M1349931522">Astolfo</sub> </set>
+		<set name="Idle-Sub-Swap-PetDt"> <sub augment="S62097047591013">Kumbhakarna</sub> </set>
 		<set name="Idle-Sub-Swap-Adapa"> <sub>Adapa Shield</sub> </set>
 		<set name="Idle-Sub-Swap-Beatific"> <sub augment="S1211439158">Beatific Shield +1</sub> </set>
 		

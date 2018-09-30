@@ -62,6 +62,7 @@
 		<set name="PupFstCst">
 			<body augment="S18073500037218">Taeon Tabard</body>
 			<neck>Orunmila's Torque</neck>
+			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
 			<ear2>Enchntr. Earring +1</ear2>
 			<ring1>Prolix Ring</ring1>
