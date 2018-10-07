@@ -40,11 +40,11 @@
 			<body>Jhakri Robe +2</body>
 		</set>
 		<set name="CDC">
-			<ammo>Ginsen</ammo>
+			<ammo> Jukukik Feather</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Ayanmo Corazza +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S79263899353156">Herculean Boots</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
