@@ -6,6 +6,47 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
+		<set name="PDT">
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<feet augment="S114448266678297">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="MDB">
+			<head>Mummu Bonnet +1</head>
+			<body>Mummu Jacket +1</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Mummu Kecks +1</legs>
+			<feet>Mummu Gamash. +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Genmei Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Defending Ring</ring1>
+			<ring2 augment="S26620479410231">Dark Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="TP">
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Steelflash Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Apate Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
 		<set name="MidcastRanged">
 			<ammo>Living Bullet</ammo>
 			<head>Meghanada Visor +1</head>
@@ -32,7 +73,7 @@
 			<back>Navarch's Mantle</back>
 		</set>
 		<set name="QD">
-			<ammo>Animikii Bullet</ammo>
+			<ammo>Living Bullet</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body augment="D14371095585026">Rawhide Vest</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
@@ -60,26 +101,17 @@
 			<ring1>Barataria Ring</ring1>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
-		<set name="CorFstCast">
+		<set name="FastCast">
 			<body augment="S18073500037218">Taeon Tabard</body>
-			<hands augment="S35756141903895140">Leyline Gloves</hands>
+			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
 			<legs augment="S18996783777925">Taeon Tights</legs>
+			<feet augment="S10200959176774">Taeon Boots</feet>                 <!-- 04 -->
 			<neck>Orunmila's Torque</neck>
+			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
 			<ear2>Enchntr. Earring +1</ear2>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
-		</set>
-		<set name="PDT">
-			<head>Meghanada Visor +1</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
-			<legs>Meg. Chausses +1</legs>
-			<feet>Meg. Jam. +1</feet>
-			<neck>Loricate Torque +1</neck>
-			<ring1>Defending Ring</ring1>
-			<ring2 augment="S26620479410231">Dark Ring</ring2>
-			<back>Solemnity Cape</back>
 		</set>
 		<set name="LeadenSalute">
 			<ammo>Living Bullet</ammo>
@@ -132,52 +164,47 @@
 			<waist>Fotia Belt</waist>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
-		<set name="NotEngaged">
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
-			<back augment="S8137930077645118759">Camulus's Mantle</back>
-		</set>
-		<set name="MDB">
-			<head>Mummu Bonnet +1</head>
-			<body>Mummu Jacket +1</body>
-			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
-			<legs>Mummu Kecks +1</legs>
-			<feet>Mummu Gamash. +1</feet>
-			<neck>Loricate Torque +1</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Genmei Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Defending Ring</ring1>
-			<ring2 augment="S26620479410231">Dark Ring</ring2>
-			<back>Solemnity Cape</back>
-		</set>
-		<set name="TP">
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
-			<neck>Sanctity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Steelflash Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Apate Ring</ring2>
-			<back>Ground. Mantle +1</back>
-		</set>
 		<include>
 		</include>
 	</sets>
 	<variables>
+		<var name="IdleMode">TP</var>
 		<var name="th">no</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="TP"/>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
 		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="$IdleMode"/>
 	</idlegear>
 	<preranged>
 		<equip set="PrecastRanged"/>
@@ -193,7 +220,7 @@
 		</if>
 	</midranged>
 	<premagic>
-		<equip set="CorFstCst"/>
+		<equip set="FastCast"/>
 	</premagic>
 	<midmagic>
 		<if ad_name="Dia*">

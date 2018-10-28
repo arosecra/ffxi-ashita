@@ -9,20 +9,19 @@
 		<set name="Idle">
 			<main>Akademos</main>
 			<sub>Umbra Strap</sub>
-			<ammo>Erlene's Notebook</ammo>
+			<ammo>Homiliary</ammo>
 			<head augment="S70941082468681">Chironic Hat</head>
 			<body>Jhakri Robe +2</body>
-			<hands>Acad. Bracers +1</hands>
-			<legs augment="D7370400354052">Psycloth Lappas</legs>
+			<hands augment="S631930638080675698756">Chironic Gloves</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S59312917964934886">Merlinic Crackows</feet>
 			<neck>Loricate Torque +1</neck>
-			<waist>Eschan Stone</waist>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Hecate's Earring</ear2>
+			<waist>Isa Belt</waist>
+			<ear1>Genmei Earring</ear1>
+			<ear2>Ethereal Earring</ear2>
 			<ring1 augment="S26620479410231">Dark Ring</ring1>
 			<ring2>Defending Ring</ring2>
 			<back>Solemnity Cape</back>
-			<ammo>Homiliary</ammo>
 		</set>
 		<set name="FastCast">
 			<main augment="S176073661360268426385541">Grioavolr</main> <!-- 10 --> 
@@ -61,6 +60,40 @@
 			<ring2>Mujin Band</ring2>
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
+		<set name="Helix-Low">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="Helix-High">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs>Jhakri Slops +1</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
 		<set name="ElementMagic">
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
@@ -69,6 +102,41 @@
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		<set name="ElementMagic-Low">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back augment="S255541914018565">Lugh's Cape</back>
+		</set>
+		
+		<set name="ElementMagic-High">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Erlene's Notebook</ammo>
+			<head augment="M1442">Peda. M.Board +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs>Jhakri Slops +1</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
 			<neck>Mizu. Kubikazari</neck>
 			<waist>Eschan Stone</waist>
@@ -134,16 +202,12 @@
 		</include>
 	</sets>
 	<variables>
+		<var name="Accuracy">Low</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="Idle"/>
-		</if>
-		<else>
-			<equip set="NotEngaged"/>
-		</else>
+		<equip set="Idle"/>
 	</idlegear>
 	<preranged>
 	</preranged>
@@ -160,7 +224,7 @@
 		<elseif ad_name="Cur*">
 			<equip set="CurePot"/>
 		</elseif>
-		<elseif ad_name="*helix*"><equip set="Helix"/></elseif>
+		<elseif ad_name="*helix*"><equip set="Helix-$Accuracy"/></elseif>
 		<elseif ad_skill="enhancingmagic">
 			<equip set="EnhancingMagic"/>
 			<if BuffActive="469">
@@ -171,7 +235,7 @@
 			</else>
 		</elseif>
 		<elseif ad_skill="elementalmagic">
-			<equip set="ElementMagic"/>
+			<equip set="ElementMagic-$Accuracy"/>
 		</elseif>
 		<elseif ad_skill="enfeeblingmagic">
 			<equip set="EnfeeblingMagic"/>

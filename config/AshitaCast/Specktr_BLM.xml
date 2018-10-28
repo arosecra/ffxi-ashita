@@ -1,0 +1,70 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+		</set>
+		<set name="FastCast">
+		</set>
+		<set name="ElementMagic">
+		</set>
+		<set name="EnfeeblingMagic">
+		</set>
+		<set name="CurePot">
+		</set>
+		<set name="EnhancingMagic">
+		</set>
+		<set name="Th">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="S631930638080675698756">Chironic Gloves</hands>
+			<waist>Chaac Belt</waist>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_status="engaged">
+			<equip set="Idle"/>
+		</if>
+		<else>
+			<equip set="NotEngaged"/>
+		</else>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+		<command>/echo midmagic %ad_type %ad_name %ad_skill</command>
+		<if ad_name="Dia*">
+			<equip set="Th"/>
+		</if>
+		<elseif ad_name="Cur*">
+			<equip set="CurePot"/>
+		</elseif>
+		<elseif ad_skill="enhancingmagic">
+			<equip set="EnhancingMagic"/>
+		</elseif>
+		<elseif ad_skill="elementalmagic">
+			<equip set="ElementMagic"/>
+		</elseif>
+		<elseif ad_skill="enfeeblingmagic">
+			<equip set="EnfeeblingMagic"/>
+		</elseif>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

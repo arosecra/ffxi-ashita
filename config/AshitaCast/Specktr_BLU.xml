@@ -10,9 +10,9 @@
 			<ammo>Sapience Orb</ammo>                                          <!-- 02 -->
 			<head augment="D7434751185688">Psycloth Tiara</head>               <!-- 10 -->
 			<body>Pinga Tunic</body>                                           <!-- 13 -->
-			<hands augment="S35756141903895140">Leyline Gloves</hands>         <!-- 08 -->
+			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>              <!-- 07 -->
-			<!-- feet -->
+			<feet augment="S10200959176774">Taeon Boots</feet>                 <!-- 04 -->
 			<neck>Orunmila's Torque</neck>                                     <!-- 05 -->
 			<!-- back -->
 			<waist>Windbuffet Belt +1</waist>                                  <!-- 02 -->
@@ -24,26 +24,53 @@
 		<set name="TP">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Ayanmo Corazza +1</body>
+			<body>Ayanmo Corazza +2</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Cessance Earring</ear1>
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back>Vassal's Mantle</back>
+			<back augment="S4618633796659318759">Rosmerta's Cape</back>
+		</set>                                                               <!-- 48 -->
+		<set name="TP-High">
+			<ammo>Ginsen</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs>Aya. Cosciales +1</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back augment="S4618633796659318759">Rosmerta's Cape</back>
 		</set>
-		<set name="NotEngaged">
-			<body>Jhakri Robe +2</body>
+		<set name="DT">
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body>Ayanmo Corazza +2</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Aya. Cosciales +1</legs>
+			<feet augment="S114448266678297">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
 		</set>
 		<set name="CDC">
 			<ammo> Jukukik Feather</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Ayanmo Corazza +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<body>Assim. Jubbah +2</body>
+			<hands>Jhakri Cuffs +2</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S79263899353156">Herculean Boots</feet>
 			<neck>Fotia Gorget</neck>
@@ -52,7 +79,7 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Begrudging Ring</ring2>
-			<back>Ground. Mantle +1</back>
+			<back augment="S4618633796659318759">Rosmerta's Cape</back>
 		</set>
 		<set name="BLU_PHYS">
 			<ammo>Ginsen</ammo>
@@ -74,7 +101,7 @@
 			<head>Jhakri Coronal +2</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
-			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<legs>Jhakri Slops +1</legs>
 			<feet>Jhakri Pigaches +1</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Yamabuki-no-Obi</waist>
@@ -84,12 +111,22 @@
 			<ring2>Jhakri Ring</ring2>
 			<back>Argocham. Mantle</back>
 		</set>
+		<set name="BLU_SKILL">
+			<ammo>Mavi Tathlum</ammo>
+			<head>Luh. Keffiyeh +1</head>
+			<body>Assim. Jubbah +2</body>
+			<hands>Rawhide Gloves</hands>
+			<legs>Hashishin Tayt +1</legs>
+			<feet>Luhlaza Charuqs +1</feet>
+			<neck>Deceiver's Torque</neck>
+			<back>Cornflower Cape</back>
+		</set>
 		<set name="BLU_DRK">
 			<ammo>Erlene's Notebook</ammo>
 			<head>Pixie Hairpin +1</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
-			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<legs>Jhakri Slops +1</legs>
 			<feet>Jhakri Pigaches +1</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Yamabuki-no-Obi</waist>
@@ -99,34 +136,153 @@
 			<ring2>Jhakri Ring</ring2>
 			<back>Argocham. Mantle</back>
 		</set>
+		<set name="Refresh">
+			<body>Jhakri Robe +2</body>
+			<hands augment="S9389100947491541474884">Herculean Gloves</hands>
+		</set>
+		<set name="CurePot">
+			<ammo>Hydrocera</ammo>
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body>Pinga Tunic</body>
+			<hands augment="S49340584296448">Telchine Gloves</hands>
+			<legs augment="D7370400354052">Psycloth Lappas</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Gishdubar Sash</waist>
+			<ear1>Mendi. Earring</ear1>
+			<ear2>Lifestorm Earring</ear2>
+			<ring1>Neptune's Ring</ring1>
+			<ring2>Neptune's Ring</ring2>
+		</set>
+		<set name="EnhancingMagic">
+			<neck>Henic Torque</neck>
+			<head augment="S66932770340864">Telchine Cap</head>
+			<body augment="S66932770340864">Telchine Chas.</body>
+			<hands augment="S49340584296448">Telchine Gloves</hands>
+			<legs augment="S84524956385280">Telchine Braconi</legs>
+			<feet augment="S58136677318656">Telchine Pigaches</feet>
+			<neck>Henic Torque</neck>
+			<waist>Olympus Sash</waist>
+			<back>Merciful Cape</back>
+		</set>
+		<set name="BatteryCharge" base="BLU_SKILL">
+			<waist>Gishdubar Sash</waist>
+		</set>
 		<include>
 		</include>
 	</sets>
 	<variables>
+		<var name="IdleMode">TP</var>
 	    <var name="BluMagPhys">Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide</var>
         <var name="BluMagMag">Subduction</var>       
         <var name="BluMagDebuff">Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar</var>      
-        <var name="BluMagBuff">Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Battery Charge|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard</var>
+        <var name="BluMagBuff">Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard</var>
 		<var name="BluMagCure">Pollen|Healing Breeze|Wild Carrot|Magic Fruit|White Wind|Plenilune Embrace</var>
+		<var name="BluEnhDuration">Battery Charge</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="TP"/>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
 		</if>
-		<else>
-			<equip set="NotEngaged"/>
-		</else>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="$IdleMode"/>
 	</idlegear>
 	<preranged>
 	</preranged>
 	<midranged>
 	</midranged>
 	<premagic>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
 		<equip set="FastCast"/>
 	</premagic>
 	<midmagic>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
 		<if ad_name="$BluMagPhys">
             <equip set="BluPhys" />
 			<!--<if BuffActive="164">
@@ -140,11 +296,20 @@
 			</if>-->
         </elseif>
         <elseif ad_name="$BluMagBuff">
-            <equip set="BluSkill" />
+            <equip set="BLU_SKILL" />
         </elseif>
         <elseif ad_name="$BluMagCure">
             <equip set="Cure" />
         </elseif>
+		<elseif ad_name="Battery Charge">
+			<equip set="BatteryCharge"/>
+		</elseif>
+		<elseif ad_skill="enhancingmagic">
+			<equip set="EnhancingMagic"/>
+		</elseif>
+		<elseif ad_name="Cur*">
+			<equip set="CurePot"/>
+		</elseif>
         <else>
 		
 			<if ad_name="Evryone. Grudge|Tenebral Crush"><equip set="BLU_DRK" lock="true" /></if>	
@@ -162,6 +327,36 @@
 	<jobability>
 	</jobability>
 	<weaponskill>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
 		<command>/echo weaponskill %ad_name</command>
 		<if ad_name="Savage Blade">
 			<equip set="Savage" />
