@@ -6,10 +6,11 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
-		<set name="PDT">
+		<set name="DT">
 			<head augment="S70476420356167">Herculean Helm</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Mummu Kecks +1</legs>
 			<feet augment="S114448266678297">Herculean Boots</feet>
 			<neck>Loricate Torque +1</neck>
 			<waist>Flume Belt</waist>
@@ -37,8 +38,8 @@
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Steelflash Earring</ear1>
@@ -87,7 +88,7 @@
 			<ring2 augment="S145952901">Demon's Ring</ring2>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
-		<set name="CorTH">
+		<set name="TH" > 
 			<ammo>Living Bullet</ammo>
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
@@ -164,6 +165,23 @@
 			<waist>Fotia Belt</waist>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
+		<set name="temp">
+			<main>Fettering Blade</main>
+			<sub>Arendsi Fleuret</sub>
+			<range>Death Penalty</range>
+			<ammo>Living Bullet</ammo>
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<feet augment="S114448266678297">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
 		<include>
 		</include>
 	</sets>
@@ -215,7 +233,7 @@
 	<midranged>
 		<equip set="MidcastRanged"/>
 		<if th="yes">
-			<equip set="CorTH"/>
+			<equip set="TH"/>
 			<setvar name="th" value="no"/>
 		</if>
 	</midranged>

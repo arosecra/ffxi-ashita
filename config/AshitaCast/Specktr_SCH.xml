@@ -27,7 +27,7 @@
 			<main augment="S176073661360268426385541">Grioavolr</main> <!-- 10 --> 
 			<sub>Clerisy Strap</sub>                                   <!-- 02 -->
 			<ammo>Sapience Orb</ammo>                                  <!-- 02 -->
-			<head augment="M1442">Peda. M.Board +2</head>              <!-- 12 -->   
+			<head augment="M1442">Peda. M.Board +3</head><!-- 12 -->   
 			<body>Pinga Tunic</body>                                   <!-- 13 -->
 			<hands>Gendewitha Gages</hands>                            <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>      <!-- 07 -->
@@ -47,8 +47,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -64,8 +64,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -81,8 +81,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs>Jhakri Slops +1</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -98,8 +98,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -115,8 +115,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -133,8 +133,8 @@
 			<main augment="D15496478199491">Akademos</main>
 			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands augment="D20976940616643">Amalric Gages +1</hands>
 			<legs>Jhakri Slops +1</legs>
 			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
@@ -149,10 +149,10 @@
 		<set name="EnfeeblingMagic">
 			<main>Akademos</main>
 			<ammo>Savant's Treatise</ammo>
-			<head augment="M1442">Peda. M.Board +2</head>
-			<body>Jhakri Robe +2</body>
+			<head augment="S1612953670">Merlinic Hood</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
 			<hands>Jhakri Cuffs +1</hands>
-			<legs augment="D7370400354052">Psycloth Lappas</legs>
+			<legs>Jhakri Slops +1</legs>
 			<feet augment="S59312917964934886">Merlinic Crackows</feet>
 			<neck>Henic Torque</neck>
 			<waist>Eschan Stone</waist>
@@ -169,6 +169,7 @@
 			<hands augment="S151163054409">Chironic Gloves</hands>
 			<neck>Aife's Medal</neck>
 			<waist>Gishdubar Sash</waist>
+			<back>Tempered Cape +1</back>
 			<ear1>Mendi. Earring</ear1>
 			<ear2>Lifestorm Earring</ear2>
 			<ring1>Neptune's Ring</ring1>
