@@ -6,6 +6,20 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
+		<set name="PupEng-119PetOnly">
+			<head>Tali'ah Turban +1</head>
+			<body augment="S18073500037218">Taeon Tabard</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs augment="S26869456863349">Taeon Tights</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Domes. Earring</ear2>
+			<ring1>Thur. Ring +1</ring1>
+			<ring2>Varar Ring</ring2>
+			<back augment="S7958144906662018543">Visucius's Mantle</back>
+		</set>
 		<set name="PupEng-PetOnly">
 			<head augment="S17700775530521110">Anwig Salade</head>
 			<body augment="S18073500037218">Taeon Tabard</body>
@@ -132,12 +146,7 @@
 		</cmd>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="PupEng-$Strategy"/>
-		</if>
-		<elseif pet_status="engaged">
-			<equip set="PupEng-$Strategy"/>
-		</elseif>
+		<equip set="PupEng-$Strategy"/>
 	</idlegear>
 	<preranged>
 	</preranged>

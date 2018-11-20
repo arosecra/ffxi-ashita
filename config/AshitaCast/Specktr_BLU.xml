@@ -24,7 +24,7 @@
 		<set name="TP">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Ayanmo Corazza +2</body>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S70476530497559">Herculean Boots</feet>
@@ -69,7 +69,7 @@
 		<set name="CDC">
 			<ammo> Jukukik Feather</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Assim. Jubbah +2</body>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands>Jhakri Cuffs +2</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S79263899353156">Herculean Boots</feet>
@@ -110,6 +110,21 @@
 			<ring1>Acumen Ring</ring1>
 			<ring2>Jhakri Ring</ring2>
 			<back>Argocham. Mantle</back>
+		</set>
+		<set name="BLU_MACC">
+			<ammo>Hydrocera</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs>Jhakri Slops +1</legs>
+			<feet>Jhakri Pigaches +1</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1>Jhakri Ring</ring1>
+			<ring2>Acumen Ring</ring2>
+			<back augment="S2648709699175314635">Cornflower Cape</back>
 		</set>
 		<set name="BLU_SKILL">
 			<ammo>Mavi Tathlum</ammo>
@@ -174,22 +189,6 @@
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
-		</set>
-		<set name="temp">
-			<main augment="D15479225921796">Nibiru Cudgel</main>
-			<sub augment="D15479225921796">Nibiru Cudgel</sub>
-			<ammo>Ginsen</ammo>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet augment="S70476530497559">Herculean Boots</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Petrov Ring</ring2>
-			<back augment="S4618633796659318759">Rosmerta's Cape</back>
 		</set>
 		<include>
 		</include>
@@ -313,11 +312,13 @@
 			</if>-->
 		</if>
         <elseif ad_name="$BluMagDebuff">
-            <equip set="BLU_MAB" />
+            <equip set="BLU_MACC" />
 			<!--<if BuffActive="165">
 			  <equip><rring>Mujin Band</rring></equip>
 			</if>-->
         </elseif>
+		<elseif ad_name="Reactor Cool"> <equip set="EnhancingMagic"/> </elseif>
+		<elseif ad_name="Erratic Flutter"> <equip set="EnhancingMagic"/> </elseif>
         <elseif ad_name="$BluMagBuff"> <equip set="BLU_SKILL" /> </elseif>
         <elseif ad_name="$BluMagCure"> <equip set="CurePot" /> </elseif>
 		<elseif ad_name="Battery Charge"> <equip set="BatteryCharge"/> </elseif>

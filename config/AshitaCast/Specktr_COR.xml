@@ -36,14 +36,14 @@
 		</set>
 		<set name="TP">
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S70476530497559">Herculean Boots</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
-			<ear1>Steelflash Earring</ear1>
-			<ear2>Cessance Earring</ear2>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Apate Ring</ring2>
 			<back>Ground. Mantle +1</back>
