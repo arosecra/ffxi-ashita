@@ -1,0 +1,1 @@
+[ "Delta Thrust", "Barbed Crescent", "Erratic Flutter", "Spectral Floe", "Subduction", "Magic Hammer", "Reactor Cool", "Cursed Sphere", "Sound Blast", "Entomb", "Tenebral Crush", "Magic Fruit", "Occultation", "Diamondhide", "Water Bomb", "Battery Charge", "Retinal Glare", "Glutinous Dart", "Magic Barrier", "Dream Flower" ]
