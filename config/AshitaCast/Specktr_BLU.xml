@@ -35,13 +35,13 @@
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
 			<back augment="S4618633796659318759">Rosmerta's Cape</back>
-		</set>                                                               <!-- 48 -->
+		</set>                                                               
 		<set name="TP-High">
 			<ammo>Ginsen</ammo>
 			<head>Jhakri Coronal +2</head>
 			<body>Ayanmo Corazza +2</body>
 			<hands>Jhakri Cuffs +2</hands>
-			<legs>Aya. Cosciales +1</legs>
+			<legs>Aya. Cosciales +2</legs>
 			<feet augment="S70476530497559">Herculean Boots</feet>
 			<neck>Sanctity Necklace</neck>
 			<waist>Eschan Stone</waist>
@@ -56,7 +56,7 @@
 			<head augment="S70476420356167">Herculean Helm</head>
 			<body>Ayanmo Corazza +2</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
-			<legs>Aya. Cosciales +1</legs>
+			<legs>Aya. Cosciales +2</legs>
 			<feet augment="S114448266678297">Herculean Boots</feet>
 			<neck>Loricate Torque +1</neck>
 			<waist>Flume Belt</waist>

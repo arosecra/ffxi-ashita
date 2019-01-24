@@ -38,3 +38,5 @@ ffxi-bootmod/pol.exe
 addons/filterscan/
 addons/ibar/
 addons/libs/
+addons/enternity/enternity.lua
+addons/enternity/settings/settings.json

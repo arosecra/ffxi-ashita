@@ -163,7 +163,8 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="CurePot">
-			<main>Akademos</main>
+			<main augment="D15479225921796">Nibiru Cudgel</main>
+			<sub>Legion Scutum</sub>
 			<head augment="S70941082468681">Chironic Hat</head>
 			<body>Pinga Tunic</body> 
 			<hands augment="S151163054409">Chironic Gloves</hands>
@@ -198,6 +199,23 @@
 			<head>Wh. Rarab Cap +1</head>
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<waist>Chaac Belt</waist>
+		</set>
+		<set name="temp">
+			<main augment="D15479225921796">Nibiru Cudgel</main>
+			<sub>Legion Scutum</sub>
+			<ammo>Homiliary</ammo>
+			<head augment="S70941082468681">Chironic Hat</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="S631930638080675698756">Chironic Gloves</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Genmei Earring</ear1>
+			<ear2>Ethereal Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
 		</set>
 		<include>
 		</include>

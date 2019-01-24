@@ -189,7 +189,7 @@
 			<ear1>Hija Earring</ear1>
 			<ear2>Ferine Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		<set name="PetPhys-High">
@@ -204,7 +204,7 @@
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		
@@ -220,7 +220,7 @@
 			<ear1>Hija Earring</ear1>
 			<ear2>Ferine Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		<set name="PetMultiHit-High">
@@ -235,7 +235,7 @@
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		
@@ -251,7 +251,7 @@
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
 			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
 		<set name="Idle-MasterMelee">

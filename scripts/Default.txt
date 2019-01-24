@@ -23,6 +23,7 @@
 ##########################################################################
 
 /addon load distance
+/addon load enternity
 /addon load fps
 /addon load timestamp
 /addon load tparty

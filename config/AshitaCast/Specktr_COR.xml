@@ -76,7 +76,7 @@
 		<set name="QD">
 			<ammo>Living Bullet</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
-			<body augment="D14371095585026">Rawhide Vest</body>
+			<body augment="M1425">Lanun Frac +2</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
 			<feet augment="M1296">Lanun Bottes +2</feet>
@@ -96,7 +96,7 @@
 		</set>
 		<set name="PhantomRoll">
 			<head augment="M1424">Lanun Tricorne +1</head>
-			<body augment="M1425">Lanun Frac +1</body>
+			<body>Lanun Frac +2</body>
 			<hands>Chasseur's Gants +1</hands>
 			<legs augment="S558899540">Desultor Tassets</legs>
 			<ring1>Barataria Ring</ring1>
@@ -117,7 +117,7 @@
 		<set name="LeadenSalute">
 			<ammo>Living Bullet</ammo>
 			<head>Pixie Hairpin +1</head>
-			<body augment="D14371095585026">Rawhide Vest</body>
+			<body augment="M1425">Lanun Frac +2</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
 			<feet augment="M1296">Lanun Bottes +2</feet>
@@ -132,7 +132,7 @@
 		<set name="Wildfire">
 			<ammo>Living Bullet</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
-			<body augment="D14371095585026">Rawhide Vest</body>
+			<body augment="M1425">Lanun Frac +2</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
 			<legs augment="S88264807878798">Herculean Trousers</legs>
 			<feet augment="M1296">Lanun Bottes +2</feet>
@@ -181,6 +181,22 @@
 			<ring1 augment="S26620479410231">Dark Ring</ring1>
 			<ring2>Defending Ring</ring2>
 			<back>Solemnity Cape</back>
+		</set>
+		<set name="temp">
+			<main>Fettering Blade</main>
+			<sub>Arendsi Fleuret</sub>
+			<range>Death Penalty</range>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Ground. Mantle +1</back>
 		</set>
 		<include>
 		</include>
