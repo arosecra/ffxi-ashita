@@ -51,7 +51,7 @@
 		<set name="MidcastRanged">
 			<ammo>Living Bullet</ammo>
 			<head>Meghanada Visor +1</head>
-			<body>Meg. Cuirie +1</body>
+			<body>Nisroch Jerkin</body>
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
 			<feet>Meg. Jam. +1</feet>
@@ -103,10 +103,11 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="FastCast">
-			<body augment="S18073500037218">Taeon Tabard</body>
+			<head augment="S18073768456325">Taeon Chapeau</head>
+			<body augment="S26869861494882">Taeon Tabard</body>
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
-			<legs augment="S18996783777925">Taeon Tights</legs>
-			<feet augment="S10200959176774">Taeon Boots</feet>                 <!-- 04 -->
+			<legs augment="S26869727264885">Taeon Tights</legs>
+			<feet augment="S18073768476771">Taeon Boots</feet>
 			<neck>Orunmila's Torque</neck>
 			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
@@ -196,6 +197,22 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Warp Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="temp">
+			<main>Fettering Blade</main>
+			<range>Death Penalty</range>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body>Nisroch Jerkin</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Apate Ring</ring2>
 			<back>Ground. Mantle +1</back>
 		</set>
 		<include>

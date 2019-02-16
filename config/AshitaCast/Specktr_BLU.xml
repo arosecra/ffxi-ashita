@@ -12,7 +12,7 @@
 			<body>Pinga Tunic</body>                                           <!-- 13 -->
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>              <!-- 07 -->
-			<feet augment="S10200959176774">Taeon Boots</feet>                 <!-- 04 -->
+			<feet augment="S18073768476771">Taeon Boots</feet>
 			<neck>Orunmila's Torque</neck>                                     <!-- 05 -->
 			<!-- back -->
 			<waist>Windbuffet Belt +1</waist>                                  <!-- 02 -->
@@ -34,7 +34,7 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back augment="S4618633796659318759">Rosmerta's Cape</back>
+			<back augment="S46186337966593143">Rosmerta's Cape</back>
 		</set>                                                               
 		<set name="TP-High">
 			<ammo>Ginsen</ammo>
@@ -49,7 +49,7 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back augment="S4618633796659318759">Rosmerta's Cape</back>
+			<back augment="S46186337966593143">Rosmerta's Cape</back>
 		</set>
 		<set name="DT">
 			<ammo>Staunch Tathlum</ammo>
@@ -109,7 +109,7 @@
 			<ear2>Hecate's Earring</ear2>
 			<ring1>Acumen Ring</ring1>
 			<ring2>Jhakri Ring</ring2>
-			<back>Argocham. Mantle</back>
+			<back augment="S3740313063270818565">Rosmerta's Cape</back>
 		</set>
 		<set name="BLU_MACC">
 			<ammo>Hydrocera</ammo>
@@ -124,7 +124,7 @@
 			<ear2>Genmei Earring</ear2>
 			<ring1>Jhakri Ring</ring1>
 			<ring2>Acumen Ring</ring2>
-			<back augment="S2648709699175314635">Cornflower Cape</back>
+			<back augment="S3740313063270818565">Rosmerta's Cape</back>
 		</set>
 		<set name="BLU_SKILL">
 			<ammo>Mavi Tathlum</ammo>
@@ -189,6 +189,22 @@
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
+		</set>
+		<set name="temp">
+			<main augment="S96951404343808">Vampirism</main>
+			<sub augment="D15496561560000">Nibiru Blade</sub>
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Warp Ring</ring2>
 		</set>
 		<include>
 		</include>

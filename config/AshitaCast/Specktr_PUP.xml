@@ -6,11 +6,26 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
-		<set name="PupEng-119PetOnly">
-			<head>Tali'ah Turban +1</head>
-			<body augment="S18073500037218">Taeon Tabard</body>
+		<set name="PupEng-MstrDT">
+			<main augment="D2856564496514">Midnights</main>
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body augment="S26869593059426">Taeon Tabard</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
 			<legs augment="S26869456863349">Taeon Tights</legs>
+			<feet augment="S114448266678297">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Domes. Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="PupEng-119PetOnly">
+			<head augment="S18073768456325">Taeon Chapeau</head>
+			<body augment="S26869861494882">Taeon Tabard</body>
+			<legs augment="S26869727264885">Taeon Tights</legs>
+			<feet augment="S18073768476771">Taeon Boots</feet>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Shepherd's Chain</neck>
 			<waist>Isa Belt</waist>
@@ -22,9 +37,9 @@
 		</set>
 		<set name="PupEng-PetOnly">
 			<head augment="S17700775530521110">Anwig Salade</head>
-			<body augment="S18073500037218">Taeon Tabard</body>
+			<body augment="S26869861494882">Taeon Tabard</body>
 			<hands augment="S26869591091317">Taeon Gloves</hands>
-			<legs augment="S26869456863349">Taeon Tights</legs>
+			<legs augment="S26869727264885">Taeon Tights</legs>
 			<feet>Tali'ah Crackows +1</feet>
 			<neck>Shepherd's Chain</neck>
 			<waist>Isa Belt</waist>
@@ -73,9 +88,11 @@
 			<back augment="S018543">Visucius's Mantle</back>
 		</set>
 		<set name="FastCast">
-			<body augment="S18073500037218">Taeon Tabard</body>
+			<head augment="S18073768456325">Taeon Chapeau</head>
+			<body augment="S26869861494882">Taeon Tabard</body>
+			<legs augment="S26869727264885">Taeon Tights</legs>
+			<feet augment="S18073768476771">Taeon Boots</feet>
 			<neck>Orunmila's Torque</neck>
-			<feet augment="S10200959176774">Taeon Boots</feet>                 <!-- 04 -->
 			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
 			<ear2>Enchntr. Earring +1</ear2>
@@ -116,26 +133,17 @@
 		<set name="temp">
 			<main augment="D2856564496514">Midnights</main>
 			<range>Animator P</range>
-			<neck>Shepherd's Chain</neck>
-			<waist>Isa Belt</waist>
-			<ear1>Handler's Earring +1</ear1>
-			<ear2>Domes. Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
-			<ring2>Varar Ring +1</ring2>
-			<back augment="S7958144906662018543">Visucius's Mantle</back>
-		</set>
-		<set name="tmep">
-			<main>Denouements</main>
-			<range>Animator P</range>
-			<head>Tali'ah Turban +1</head>
+			<head augment="S18073365803141">Taeon Chapeau</head>
 			<body>Tali'ah Manteel +1</body>
-			<legs>Tali'ah Sera. +2</legs>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S18073363857507">Taeon Boots</feet>
 			<neck>Shulmanu Collar</neck>
 			<waist>Klouskap Sash</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
-			<ring2>Begrudging Ring</ring2>
+			<ring2>Warp Ring</ring2>
 			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
 		<include>
