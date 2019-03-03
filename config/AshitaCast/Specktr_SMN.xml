@@ -1,0 +1,375 @@
+    <ashitacast>
+        <settings>
+            <buffupdate>true</buffupdate>
+            <statusupdate>true</statusupdate>
+            <hpupdate>false</hpupdate>
+            <autoupdate>true</autoupdate>
+        </settings>
+        <sets>
+            <set name="Perp">
+                <main augment="D16047163983235">Gridarvor</main>
+                <sub>Vox Grip</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head>Beckoner's Horn +1</head>
+                <body augment="S123718414338058138">Witching Robe</body>
+                <hands>Asteria Mitts</hands>
+                <legs>Assid. Pants +1</legs>
+                <feet augment="D7095613133698">Apogee Pumps</feet>
+                <neck>Sanctity Necklace</neck>
+                <waist>Lucidity Sash</waist>
+                <ear1>Gelos Earring</ear1>
+                <ear2>Handlers Earring</ear2>
+                <ring1>Thurandaut Ring</ring1>
+                <ring2>Varar Ring</ring2>
+                <back augment="S4080006368302">Campestres's Cape</back>
+            </set>
+            <set name="PrePact">
+                <main augment="D3956159876853">Espiritus</main>
+                <ammo>Sancus Sachet</ammo>
+                <head>Beckoner's Horn +1</head>
+                <body>Con. Doublet +1</body>
+                <hands augment="M1413">Glyphic Bracers</hands>
+                <legs augment="M1414">Glyphic Spats</legs>
+                <back augment="S367709666716544462">Conveyance Cape</back>
+            </set>
+            <set name="SmnSkill">
+                <main augment="D3956159876853">Espiritus</main>
+                <sub>Vox Grip</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head>Beckoners Horn +1</head>
+                <body>Beckoners Doublet</body>
+                <hands augment="M1413">Glyphic Bracers</hands>
+                <legs augment="M1414">Glyphic Spats</legs>
+                <waist>Lucidity Sash</waist>
+                <ring1>Evokers Ring</ring1>
+                <ring2>Fervor Ring</ring2>
+                <back augment="S367709666716544462">Conveyance Cape</back>
+            </set>
+            <set name="AvMab">
+                <main augment="D3956159808889">Espiritus</main>
+                <sub>Elan Strap</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head augment="S868669457552376244">Merlinic Hood</head>
+                <body>Shomonjijoe</body>
+                <hands augment="S62003380084837">Merlinic Dastanas</hands>
+                <legs augment="D7095613133698">Apogee Slacks</legs>
+                <feet augment="D7095613133698">Apogee Pumps</feet>
+                <neck>Deino Collar</neck>
+                <waist>Incarnation Sash</waist>
+                <ear1>Gelos Earring</ear1>
+                <ring1>Speakers Ring</ring1>
+                <ring2>Varar Ring</ring2>
+                <back augment="S79706003118205">Campestres's Cape</back>
+            </set>
+            <set name="AvMabMerit">
+                <main augment="D3956159808889">Espiritus</main>
+                <sub>Elan Strap</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head augment="S868669457552376244">Merlinic Hood</head>
+                <body>Shomonjijoe</body>
+                <hands augment="S62003380084837">Merlinic Dastanas</hands>
+                <legs augment="S482519345161">Enticers Pants</legs>
+                <feet augment="D7095613133698">Apogee Pumps</feet>
+                <neck>Deino Collar</neck>
+                <waist>Incarnation Sash</waist>
+                <ear1>Gelos Earring</ear1>
+                <ring1>Speakers Ring</ring1>
+                <ring2>Varar Ring</ring2>
+                <back augment="S79706003118205">Campestres's Cape</back>
+            </set>
+            <set name="AvAtk">
+                <main augment="D16047163983235">Gridarvor</main>
+                <sub>Elan Strap</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head augment="D7095613133698">Apogee Crown</head>
+                <body>Con. Doublet +1</body>
+                <hands augment="D7095781047044">Apogee Mitts</hands>
+                <legs augment="D7095613133698">Apogee Slacks</legs>
+                <feet augment="D7095613133698">Apogee Pumps</feet>
+                <neck>Empath Necklace</neck>
+                <waist>Incarnation Sash</waist>
+                <ear1>Gelos Earring</ear1>
+                <ring1>Thurandaut Ring</ring1>
+                <ring2>Varar Ring</ring2>
+                <back augment="S4080006368302">Campestres's Cape</back>
+            </set>
+            <set name="AvDebuff">
+                <main augment="D3956159876853">Espiritus</main>
+                <sub>Elan Strap</sub>
+                <ammo>Sancus Sachet</ammo>
+                <head>Beckoners Horn +1</head>
+                <body>Beckoners Doublet</body>
+                <hands augment="D7095781047044">Apogee Mitts</hands>
+                <legs augment="M1414">Glyphic Spats</legs>
+                <neck>Deino Collar</neck>
+                <waist>Incarnation Sash</waist>
+                <ring1>Fervor Ring</ring1>
+                <ring2>Evokers Ring</ring2>
+                <back augment="S79706003118205">Campestres's Cape</back>
+            </set>
+            <set name="FastCast">
+                <head augment="D1610775539972">Vanya Hood</head>
+                <body>Inyanga Jubbah</body>
+                <feet augment="S901874918769341350909987">Merlinic Crackows</feet>
+                <waist>Witful Belt</waist>
+            </set>
+            <set name="Cure">
+                <head augment="D1610775539972">Vanya Hood</head>
+                <hands augment="S70412654936064">Telchine Gloves</hands>
+                <legs augment="S22953132097536">Telchine Braconi</legs>
+                <feet augment="D1911352398064">Vanya Clogs</feet>
+                <neck>Nodens Gorget</neck>
+                <ear1>Mendi. Earring</ear1>
+            </set>
+            <set name="Enhancing">
+                <head augment="S40544768884736">Telchine Cap</head>
+                <body augment="S75729421428806">Telchine Chas.</body>
+                <legs augment="S22953132097536">Telchine Braconi</legs>
+                <neck>Nodens Gorget</neck>
+            </set>
+            <include>
+            </include>
+        </sets>
+       
+        <variables>
+            <var name="PactPhys">Punch|Rock Throw|Barracuda Dive|Claw|Axe Kick|Shock Strike|Camisado|Regal Scratch|Poison Nails|
+                    Moonlit Charge|Crescent Fang|Rock Buster|Tail Whip|Double Punch|Megalith Throw|Double Slap|Eclipse Bite|
+                    Mountain Buster|Spinning Dive|Predator Claws|Rush|Chaotic Strike|Crag Throw|Volt Strike</var>
+        </variables>
+       
+        <inputcommands>
+            <cmd input="/console gs c pact bp70">
+                <if pet_name="Carbuncle">
+                    <command>/pet 'Meteorite'</command>
+                </if>
+                <if pet_name="Ifrit">
+                    <command>/pet 'Flaming Crush'</command>
+                </if>
+                <if pet_name="Shiva">
+                    <command>/pet 'Rush'</command>
+                </if>
+                <if pet_name="Garuda">
+                    <command>/pet 'Predator Claws'</command>
+                </if>
+                <if pet_name="Titan">
+                    <command>/pet 'Mountain Buster'</command>
+                </if>
+                <if pet_name="Ramuh">
+                    <command>/pet 'Chaotic Strike'</command>
+                </if>
+                <if pet_name="Leviathan">
+                    <command>/pet 'Spinning Dive'</command>
+                </if>
+                <if pet_name="Cait Sith">
+                    <command>/pet 'Regal Gash'</command>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Eclipse Bite'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <command>/pet 'Eclipse Bite'</command>
+                </if>
+            </cmd>
+            <cmd input="/console gs c pact bp75">
+                <if pet_name="Carbuncle">
+                    <command>/pet 'Holy Mist'</command>
+                </if>
+                <if pet_name="Ifrit">
+                    <command>/pet 'Meteor Strike'</command>
+                </if>
+                <if pet_name="Shiva">
+                    <command>/pet 'Heavenly Strike'</command>
+                </if>
+                <if pet_name="Garuda">
+                    <command>/pet 'Wind Blade'</command>
+                </if>
+                <if pet_name="Titan">
+                    <command>/pet 'Geocrush'</command>
+                </if>
+                <if pet_name="Ramuh">
+                    <command>/pet 'Thunderstorm'</command>
+                </if>
+                <if pet_name="Leviathan">
+                    <command>/pet 'Grand Fall'</command>
+                </if>
+                <if pet_name="Cait Sith">
+                    <command>/pet 'Level ? Holy'</command>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Lunar Bay'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <command>/pet 'Night Terror'</command>
+                </if>
+            </cmd>
+            <cmd input="/console gs c pact bp99">
+                <if pet_name="Carbuncle">
+                    <addtochat color="35">Carbuncle has no 99 pact</addtochat>
+                </if>
+                <if pet_name="Ifrit">
+                    <command>/pet 'Conflag Strike'</command>
+                </if>
+                <if pet_name="Shiva">
+                    <addtochat color="35">Shiva has no 99 pact</addtochat>
+                </if>
+                <if pet_name="Garuda">
+                    <addtochat color="35">Garuda has no 99 pact</addtochat>
+                </if>
+                <if pet_name="Titan">
+                    <command>/pet 'Crag Throw'</command>
+                </if>
+                <if pet_name="Ramuh">
+                    <command>/pet 'Volt Strike'</command>
+                </if>
+                <if pet_name="Leviathan">
+                    <addtochat color="35">Leviathan has no 99 pact</addtochat>
+                </if>
+                <if pet_name="Cait Sith">
+                    <addtochat color="35">Cait Sith has no 99 pact</addtochat>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Impact'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <command>/pet 'Blindside'</command>
+                </if>
+            </cmd>
+            <cmd input="/console gs c pact buffDefense">
+                <if pet_name="Carbuncle">
+                    <command>/pet 'Shining Ruby'</command>
+                </if>
+                <if pet_name="Ifrit">
+                    <addtochat color="35">Ifrit has no defense pact</addtochat>
+                </if>
+                <if pet_name="Shiva">
+                    <command>/pet 'Frost Armor'</command>
+                </if>
+                <if pet_name="Garuda">
+                    <command>/pet 'Aerial Armor'</command>
+                </if>
+                <if pet_name="Titan">
+                    <command>/pet 'Earthen Ward'</command>
+                </if>
+                <if pet_name="Ramuh">
+                    <command>/pet 'Lightning Armor'</command>
+                </if>
+                <if pet_name="Leviathan">
+                    <addtochat color="35">Leviathan has no defense pact</addtochat>
+                </if>
+                <if pet_name="Cait Sith">
+                    <command>/pet 'Reraise II'</command>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Ecliptic Howl'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <command>/pet 'Noctoshield'</command>
+                </if>
+            </cmd>
+            <cmd input="/console gs c pact buffSpecial">
+                <if pet_name="Carbuncle">
+                    <command>/pet 'Soothing Ruby'</command>
+                </if>
+                <if pet_name="Ifrit">
+                    <command>/pet 'Inferno Howl'</command>
+                </if>
+                <if pet_name="Shiva">
+                    <addtochat color="35">Shiva has no special pact</addtochat>
+                </if>
+                <if pet_name="Garuda">
+                    <command>/pet 'Fleet Wind'</command>
+                </if>
+                <if pet_name="Titan">
+                    <command>/pet 'Earthen Armor''</command>
+                </if>
+                <if pet_name="Ramuh">
+                    <addtochat color="35">Leviathan has no special pact</addtochat>
+                </if>
+                <if pet_name="Leviathan">
+                    <addtochat color="35">Leviathan has no special pact</addtochat>
+                </if>
+                <if pet_name="Cait Sith">
+                    <command>/pet 'Raise II'</command>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Heavenward Howl'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <command>/pet 'Dream Shroud'</command>
+                </if>
+            </cmd>
+            <cmd input="/console gs c pact buffOffense">
+                <if pet_name="Carbuncle">
+                    <command>/pet 'Glittering Ruby'</command>
+                </if>
+                <if pet_name="Ifrit">
+                    <command>/pet 'Crimson Howl'</command>
+                </if>
+                <if pet_name="Shiva">
+                    <command>/pet 'Crystal Blessing'</command>
+                </if>
+                <if pet_name="Garuda">
+                    <command>/pet 'Hastega II'</command>
+                </if>
+                <if pet_name="Titan">
+                    <addtochat color="35">Titan has no offense pact</addtochat>
+                </if>
+                <if pet_name="Ramuh">
+                    <command>/pet 'Rolling Thunder'</command>
+                </if>
+                <if pet_name="Leviathan">
+                    <addtochat color="35">Leviathan has no offense pact</addtochat>
+                </if>
+                <if pet_name="Cait Sith">
+                    <addtochat color="35">Cait Sith has no offense pact</addtochat>
+                </if>
+                <if pet_name="Fenrir">
+                    <command>/pet 'Ecliptic Growl'</command>
+                </if>
+                <if pet_name="Diabolos">
+                    <addtochat color="35">Diabolos has no offense pact</addtochat>
+                </if>
+            </cmd>
+        </inputcommands>
+       
+        <idlegear>
+            <equip set="Perp" />
+        </idlegear>
+       
+        <preranged>
+        </preranged>
+       
+        <midranged>
+        </midranged>
+       
+        <premagic>
+            <equip set="FastCast" />
+        </premagic>
+       
+        <midmagic>
+        </midmagic>
+       
+        <jobability>
+            <if ad_type="bloodpactrage|bloodpactward">
+                <equip set="PrePact" />
+            </if>
+        </jobability>
+       
+        <weaponskill>
+        </weaponskill>
+       
+        <petskill>
+            <if ad_type="bloodpactrage">
+                <if ad_name="$PactPhys">
+                    <equip set="AvAtk" />
+                </if>
+                <else>
+                    <equip set="AvMab" />
+                </else>
+            </if>
+            <elseif ad_type="bloodpactward">
+                <equip set="SmnSkill" />
+            </elseif>
+        </petskill>
+       
+    </ashitacast>
