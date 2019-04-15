@@ -6,31 +6,27 @@
             <autoupdate>true</autoupdate>
         </settings>
         <sets>
-            <set name="Perp">
-                <main augment="D16047163983235">Gridarvor</main>
-                <sub>Vox Grip</sub>
-                <ammo>Sancus Sachet</ammo>
-                <head>Beckoner's Horn +1</head>
-                <body augment="S123718414338058138">Witching Robe</body>
-                <hands>Asteria Mitts</hands>
-                <legs>Assid. Pants +1</legs>
-                <feet augment="D7095613133698">Apogee Pumps</feet>
-                <neck>Sanctity Necklace</neck>
-                <waist>Lucidity Sash</waist>
-                <ear1>Gelos Earring</ear1>
-                <ear2>Handlers Earring</ear2>
-                <ring1>Thurandaut Ring</ring1>
-                <ring2>Varar Ring</ring2>
-                <back augment="S4080006368302">Campestres's Cape</back>
+            <set name="Idle">
+				<head>Beckoner's Horn +1</head>
+				<body augment="D20976940633860">Amalric Doublet +1</body>
+				<hands>Tali'ah Gages +1</hands>
+				<legs>Tali'ah Sera. +2</legs>
+				<feet augment="S59312917964934886">Merlinic Crackows</feet>
+				<neck>Caller's Pendant</neck>
+				<waist>Klouskap Sash</waist>
+				<ear1>Handler's Earring +1</ear1>
+				<ear2>Handler's Earring</ear2>
+				<ring1>Varar Ring +1</ring1>
+				<ring2>Varar Ring +1</ring2>
+				<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="PrePact">
-                <main augment="D3956159876853">Espiritus</main>
-                <ammo>Sancus Sachet</ammo>
                 <head>Beckoner's Horn +1</head>
-                <body>Con. Doublet +1</body>
-                <hands augment="M1413">Glyphic Bracers</hands>
-                <legs augment="M1414">Glyphic Spats</legs>
-                <back augment="S367709666716544462">Conveyance Cape</back>
+				<neck>Melic Toque</neck>
+				<body>Con. Doublet +2</body>
+				<hands augment="M1413">Glyphic Bracers +1</hands>
+				<legs>Beck. Spats +1</legs>
+				<feet augment="M1415">Glyph. Pigaches +1</feet>
             </set>
             <set name="SmnSkill">
                 <main augment="D3956159876853">Espiritus</main>
@@ -46,87 +42,102 @@
                 <back augment="S367709666716544462">Conveyance Cape</back>
             </set>
             <set name="AvMab">
-                <main augment="D3956159808889">Espiritus</main>
-                <sub>Elan Strap</sub>
-                <ammo>Sancus Sachet</ammo>
-                <head augment="S868669457552376244">Merlinic Hood</head>
-                <body>Shomonjijoe</body>
-                <hands augment="S62003380084837">Merlinic Dastanas</hands>
-                <legs augment="D7095613133698">Apogee Slacks</legs>
-                <feet augment="D7095613133698">Apogee Pumps</feet>
-                <neck>Deino Collar</neck>
-                <waist>Incarnation Sash</waist>
-                <ear1>Gelos Earring</ear1>
-                <ring1>Speakers Ring</ring1>
-                <ring2>Varar Ring</ring2>
-                <back augment="S79706003118205">Campestres's Cape</back>
+				<head augment="D7434751185688">Psycloth Tiara</head>
+				<body>Con. Doublet +2</body>
+				<hands>Tali'ah Gages +1</hands>
+				<legs>Tali'ah Sera. +2</legs>
+				<feet>Con. Pigaches +1</feet>
+				<neck>Adad Amulet</neck>
+				<waist>Klouskap Sash</waist>
+				<ear1 augment="S9230422179876">Diamond Earring</ear1>
+				<ring1>Varar Ring +1</ring1>
+				<ring2>Varar Ring +1</ring2>
+			<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="AvMabMerit">
-                <main augment="D3956159808889">Espiritus</main>
-                <sub>Elan Strap</sub>
-                <ammo>Sancus Sachet</ammo>
-                <head augment="S868669457552376244">Merlinic Hood</head>
-                <body>Shomonjijoe</body>
-                <hands augment="S62003380084837">Merlinic Dastanas</hands>
-                <legs augment="S482519345161">Enticers Pants</legs>
-                <feet augment="D7095613133698">Apogee Pumps</feet>
-                <neck>Deino Collar</neck>
-                <waist>Incarnation Sash</waist>
-                <ear1>Gelos Earring</ear1>
-                <ring1>Speakers Ring</ring1>
-                <ring2>Varar Ring</ring2>
-                <back augment="S79706003118205">Campestres's Cape</back>
+				<head augment="D7434751185688">Psycloth Tiara</head>
+				<body>Con. Doublet +2</body>
+				<hands>Tali'ah Gages +1</hands>
+				<legs>Tali'ah Sera. +2</legs>
+				<feet>Con. Pigaches +1</feet>
+				<neck>Adad Amulet</neck>
+				<waist>Klouskap Sash</waist>
+				<ear1 augment="S9230422179876">Diamond Earring</ear1>
+				<ring1>Varar Ring +1</ring1>
+				<ring2>Varar Ring +1</ring2>
+			<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="AvAtk">
-                <main augment="D16047163983235">Gridarvor</main>
-                <sub>Elan Strap</sub>
-                <ammo>Sancus Sachet</ammo>
-                <head augment="D7095613133698">Apogee Crown</head>
-                <body>Con. Doublet +1</body>
-                <hands augment="D7095781047044">Apogee Mitts</hands>
-                <legs augment="D7095613133698">Apogee Slacks</legs>
-                <feet augment="D7095613133698">Apogee Pumps</feet>
-                <neck>Empath Necklace</neck>
-                <waist>Incarnation Sash</waist>
-                <ear1>Gelos Earring</ear1>
-                <ring1>Thurandaut Ring</ring1>
-                <ring2>Varar Ring</ring2>
-                <back augment="S4080006368302">Campestres's Cape</back>
+				<head>Tali'ah Turban +1</head>
+				<body>Con. Doublet +2</body>
+				<hands>Tali'ah Gages +1</hands>
+				<legs>Tali'ah Sera. +2</legs>
+				<feet>Con. Pigaches +1</feet>
+				<neck>Shulmanu Collar</neck>
+				<waist>Klouskap Sash</waist>
+				<ear1>Domes. Earring</ear1>
+				<ring1>Varar Ring +1</ring1>
+				<ring2>Varar Ring +1</ring2>
+			<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="AvDebuff">
-                <main augment="D3956159876853">Espiritus</main>
-                <sub>Elan Strap</sub>
-                <ammo>Sancus Sachet</ammo>
-                <head>Beckoners Horn +1</head>
-                <body>Beckoners Doublet</body>
-                <hands augment="D7095781047044">Apogee Mitts</hands>
-                <legs augment="M1414">Glyphic Spats</legs>
-                <neck>Deino Collar</neck>
-                <waist>Incarnation Sash</waist>
-                <ring1>Fervor Ring</ring1>
-                <ring2>Evokers Ring</ring2>
-                <back augment="S79706003118205">Campestres's Cape</back>
+				<head>Tali'ah Turban +1</head>
+				<body>Tali'ah Manteel +1</body>
+				<hands>Tali'ah Gages +1</hands>
+				<legs>Tali'ah Sera. +2</legs>
+				<feet>Tali'ah Crackows +1</feet>
+				<neck>Adad Amulet</neck>
+				<waist>Klouskap Sash</waist>
+				<ring1>Tali'ah Ring</ring1>
             </set>
             <set name="FastCast">
-                <head augment="D1610775539972">Vanya Hood</head>
-                <body>Inyanga Jubbah</body>
-                <feet augment="S901874918769341350909987">Merlinic Crackows</feet>
-                <waist>Witful Belt</waist>
+				<head augment="D7434751185688">Psycloth Tiara</head>
+				<body>Tali'ah Manteel +1</body>
+				<legs augment="D7370400354052">Psycloth Lappas</legs>
+				<feet augment="S123718280093836">Merlinic Crackows</feet>
+				<neck>Orunmila's Torque</neck>
+				<back>Swith Cape +1</back>                                         <!-- 04 -->
+				<ear1>Loquac. Earring</ear1>
+				<ear2>Enchntr. Earring +1</ear2>
+				<ring1>Prolix Ring</ring1>
             </set>
             <set name="Cure">
-                <head augment="D1610775539972">Vanya Hood</head>
-                <hands augment="S70412654936064">Telchine Gloves</hands>
-                <legs augment="S22953132097536">Telchine Braconi</legs>
-                <feet augment="D1911352398064">Vanya Clogs</feet>
-                <neck>Nodens Gorget</neck>
-                <ear1>Mendi. Earring</ear1>
+				<neck>Henic Torque</neck>
+				<head augment="S66932770340864">Telchine Cap</head>
+				<body augment="S66932770340864">Telchine Chas.</body>
+				<hands augment="S49340584296448">Telchine Gloves</hands>
+				<legs augment="S84524956385280">Telchine Braconi</legs>
+				<feet augment="S58136677318656">Telchine Pigaches</feet>
+				<neck>Henic Torque</neck>
+				<waist>Olympus Sash</waist>
+				<back>Merciful Cape</back>
             </set>
             <set name="Enhancing">
-                <head augment="S40544768884736">Telchine Cap</head>
-                <body augment="S75729421428806">Telchine Chas.</body>
-                <legs augment="S22953132097536">Telchine Braconi</legs>
-                <neck>Nodens Gorget</neck>
+				<neck>Henic Torque</neck>
+				<head augment="S66932770340864">Telchine Cap</head>
+				<body augment="S66932770340864">Telchine Chas.</body>
+				<hands augment="S49340584296448">Telchine Gloves</hands>
+				<legs augment="S84524956385280">Telchine Braconi</legs>
+				<feet augment="S58136677318656">Telchine Pigaches</feet>
+				<waist>Olympus Sash</waist>
+				<back>Merciful Cape</back>
             </set>
+		<set name="temp">
+			<main augment="S15876655966859314381">Grioavolr</main>
+			<sub>Umbra Strap</sub>
+			<ammo>Seraphicaller</ammo>
+			<head>Beckoner's Horn +1</head>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
+			<neck>Caller's Pendant</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Handler's Earring</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Trizek Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
             <include>
             </include>
         </sets>
@@ -333,7 +344,7 @@
         </inputcommands>
        
         <idlegear>
-            <equip set="Perp" />
+            <equip set="Idle" />
         </idlegear>
        
         <preranged>
@@ -368,7 +379,7 @@
                 </else>
             </if>
             <elseif ad_type="bloodpactward">
-                <equip set="SmnSkill" />
+                <!--<equip set="SmnSkill" />-->
             </elseif>
         </petskill>
        

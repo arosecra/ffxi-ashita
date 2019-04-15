@@ -7,10 +7,8 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<main>Akademos</main>
-			<sub>Umbra Strap</sub>
 			<ammo>Homiliary</ammo>
-			<head augment="S70941082468681">Chironic Hat</head>
+			<head augment="M1442">Peda. M.Board +3</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
@@ -24,28 +22,23 @@
 			<back>Solemnity Cape</back>
 		</set>
 		<set name="FastCast">
-			<main augment="S176073661360268426385541">Grioavolr</main> <!-- 10 --> 
-			<sub>Clerisy Strap</sub>                                   <!-- 02 -->
 			<ammo>Sapience Orb</ammo>                                  <!-- 02 -->
-			<head augment="M1442">Peda. M.Board +3</head><!-- 12 -->   
+			<head augment="M1442">Peda. M.Board +3</head>              <!-- 12 -->   
 			<body>Pinga Tunic</body>                                   <!-- 13 -->
 			<hands>Gendewitha Gages</hands>                            <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>      <!-- 07 -->
-			<feet>Acad. Loafers +2</feet>                              <!-- xx -->
+			<feet augment="S59312917964934886">Merlinic Crackows</feet><!-- 10 -->
 			<neck>Orunmila's Torque</neck>                             <!-- 05 -->
 			<waist>Channeler's Stone</waist>                           <!-- 02 -->
 			<ear1>Loquac. Earring</ear1>                               <!-- 02 -->
 			<ear2>Enchntr. Earring +1</ear2>                           <!-- 02 -->
 			<ring1>Prolix Ring</ring1>                                 <!-- 02 -->
 			<back>Swith Cape +1</back>                                 <!-- 04 -->
-			                                                           <!-- 58 -->
-																   <!-- Arts10 -->   
-																   <!-- RDM 15 -->
-																	   <!-- 83 -->
+			                                                           <!-- 69 -->
+																   <!-- Arts10 --> 
+                                                                       <!-- 79 -->
 		</set>
 		<set name="Helix">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -61,8 +54,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="Helix-Low">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -78,8 +69,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="Helix-High">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -95,8 +84,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="ElementMagic">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -112,8 +99,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="ElementMagic-Low">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -130,8 +115,6 @@
 		</set>
 		
 		<set name="ElementMagic-High">
-			<main augment="D15496478199491">Akademos</main>
-			<sub>Niobid Strap</sub>
 			<ammo>Erlene's Notebook</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -147,7 +130,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="EnfeeblingMagic">
-			<main>Akademos</main>
 			<ammo>Savant's Treatise</ammo>
 			<head augment="S1612953670">Merlinic Hood</head>
 			<body augment="D20976940633860">Amalric Doublet +1</body>
@@ -163,8 +145,6 @@
 			<back augment="S255541914018565">Lugh's Cape</back>
 		</set>
 		<set name="CurePot">
-			<main augment="D15479225921796">Nibiru Cudgel</main>
-			<sub>Legion Scutum</sub>
 			<head augment="S70941082468681">Chironic Hat</head>
 			<body>Pinga Tunic</body> 
 			<hands augment="S151163054409">Chironic Gloves</hands>
@@ -183,15 +163,12 @@
 			<hands>Arbatel Bracers</hands>
 		</set>
 		<set name="EnhancingMagic">
-			<main>Akademos</main>
-			<ammo>Savant's Treatise</ammo>
 			<neck>Henic Torque</neck>
 			<head augment="S66932770340864">Telchine Cap</head>
 			<body augment="S66932770340864">Telchine Chas.</body>
 			<hands augment="S49340584296448">Telchine Gloves</hands>
 			<legs augment="S84524956385280">Telchine Braconi</legs>
 			<feet augment="S58136677318656">Telchine Pigaches</feet>
-			<neck>Henic Torque</neck>
 			<waist>Olympus Sash</waist>
 			<back>Merciful Cape</back>
 		</set>
@@ -199,23 +176,6 @@
 			<head>Wh. Rarab Cap +1</head>
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<waist>Chaac Belt</waist>
-		</set>
-		<set name="temp">
-			<main augment="D15479225921796">Nibiru Cudgel</main>
-			<sub>Legion Scutum</sub>
-			<ammo>Homiliary</ammo>
-			<head augment="S70941082468681">Chironic Hat</head>
-			<body>Jhakri Robe +2</body>
-			<hands augment="S631930638080675698756">Chironic Gloves</hands>
-			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
-			<feet augment="S59312917964934886">Merlinic Crackows</feet>
-			<neck>Loricate Torque +1</neck>
-			<waist>Isa Belt</waist>
-			<ear1>Genmei Earring</ear1>
-			<ear2>Ethereal Earring</ear2>
-			<ring1 augment="S26620479410231">Dark Ring</ring1>
-			<ring2>Defending Ring</ring2>
-			<back>Solemnity Cape</back>
 		</set>
 		<include>
 		</include>

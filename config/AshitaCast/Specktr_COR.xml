@@ -54,7 +54,7 @@
 			<body>Nisroch Jerkin</body>
 			<hands>Meg. Gloves +1</hands>
 			<legs>Meg. Chausses +1</legs>
-			<feet>Meg. Jam. +1</feet>
+			<feet>Meg. Jam. +2</feet>
 			<neck>Iskur Gorget</neck>
 			<waist>Eschan Stone</waist>
 			<ear1>Volley Earring</ear1>
@@ -69,7 +69,7 @@
 			<body augment="D6300775362818">Pursuer's Doublet</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
 			<legs>Nahtirah Trousers</legs>
-			<feet>Meg. Jam. +1</feet>
+			<feet>Meg. Jam. +2</feet>
 			<waist>Impulse Belt</waist>
 			<back>Navarch's Mantle</back>
 		</set>
@@ -89,7 +89,6 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="TH" > 
-			<ammo>Living Bullet</ammo>
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
@@ -103,11 +102,11 @@
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
 		<set name="FastCast">
-			<head augment="S18073768456325">Taeon Chapeau</head>
+			<head augment="S26869861478533">Taeon Chapeau</head>
 			<body augment="S26869861494882">Taeon Tabard</body>
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
 			<legs augment="S26869727264885">Taeon Tights</legs>
-			<feet augment="S18073768476771">Taeon Boots</feet>
+			<feet augment="S26869861498979">Taeon Boots</feet>
 			<neck>Orunmila's Torque</neck>
 			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
@@ -166,55 +165,6 @@
 			<waist>Fotia Belt</waist>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
 		</set>
-		<set name="temp">
-			<main>Fettering Blade</main>
-			<sub>Arendsi Fleuret</sub>
-			<range>Death Penalty</range>
-			<ammo>Living Bullet</ammo>
-			<head augment="S70476420356167">Herculean Helm</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
-			<feet augment="S114448266678297">Herculean Boots</feet>
-			<neck>Loricate Torque +1</neck>
-			<waist>Flume Belt</waist>
-			<ear1>Ethereal Earring</ear1>
-			<ear2>Genmei Earring</ear2>
-			<ring1 augment="S26620479410231">Dark Ring</ring1>
-			<ring2>Defending Ring</ring2>
-			<back>Solemnity Cape</back>
-		</set>
-		<set name="temp">
-			<main>Fettering Blade</main>
-			<sub>Arendsi Fleuret</sub>
-			<range>Death Penalty</range>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet augment="S70476530497559">Herculean Boots</feet>
-			<neck>Sanctity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Warp Ring</ring2>
-			<back>Ground. Mantle +1</back>
-		</set>
-		<set name="temp">
-			<main>Fettering Blade</main>
-			<range>Death Penalty</range>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Nisroch Jerkin</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet augment="S70476530497559">Herculean Boots</feet>
-			<neck>Sanctity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Apate Ring</ring2>
-			<back>Ground. Mantle +1</back>
-		</set>
 		<include>
 		</include>
 	</sets>
@@ -260,7 +210,7 @@
 	<preranged>
 		<equip set="PrecastRanged"/>
 		<if th="yes">
-			<equip set="CorTH"/>
+			<equip set="TH"/>
 		</if>
 	</preranged>
 	<midranged>
@@ -275,7 +225,7 @@
 	</premagic>
 	<midmagic>
 		<if ad_name="Dia*">
-			<equip set="CorTh"/>
+			<equip set="TH"/>
 		</if>
 	</midmagic>
 	<jobability>

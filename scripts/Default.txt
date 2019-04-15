@@ -17,6 +17,7 @@
 /load Addons
 /load Screenshot
 /load ashitacast
+/load multisend
 
 ##########################################################################
 # Load Common Addons
@@ -27,6 +28,7 @@
 /addon load fps
 /addon load timestamp
 /addon load tparty
+/addon load blusets
 
 ##########################################################################
 # Set Common Settings

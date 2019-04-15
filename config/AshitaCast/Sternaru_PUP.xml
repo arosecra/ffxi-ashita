@@ -1,0 +1,56 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="PupEng-MstrMelee">
+			<head>Tali'ah Turban</head>
+			<body>Tali'ah Manteel</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Seraweels</legs>
+			<feet>Tali'ah Crackows +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Kuku Stone</waist>
+			<ear1>Handler's Earring</ear1>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Warp Ring</ring2>
+			<back augment="S3903618543">Visucius's Mantle</back>
+		</set>
+		<set name="PupMnvr">
+			<neck>Buffoon's Collar</neck>
+			<back augment="S3903618543">Visucius's Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Strategy">MstrMelee</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<equip set="PupEng-$Strategy"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+		<if ad_name="*Maneuver">
+			<equip set="PupMnvr"/>
+		</if>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+	<petskill>
+	</petskill>
+	<petspell>
+	</petspell>
+</ashitacast>
