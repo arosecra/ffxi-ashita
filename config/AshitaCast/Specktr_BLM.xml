@@ -7,10 +7,47 @@
 	</settings>
 	<sets>
 		<set name="Idle">
+			<ammo>Sapience Orb</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
+			<neck>Orunmila's Torque</neck>
+			<waist>Chaac Belt</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+			<back>Swith Cape +1</back>
 		</set>
 		<set name="FastCast">
+			<ammo>Sapience Orb</ammo>
+			<head augment="D7434751185688">Psycloth Tiara</head>
+			<body>Jhakri Robe +2</body>
+			<hands>Jhakri Cuffs +2</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Orunmila's Torque</neck>
+			<waist>Channeler's Stone</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Enchntr. Earring +1</ear2>
+			<ring1>Prolix Ring</ring1>
+			<back>Swith Cape +1</back>
 		</set>
 		<set name="ElementMagic">
+			<ammo>Erlene's Notebook</ammo>
+			<head>Jhakri Coronal +2</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S22002531328701753567267">Merlinic Crackows</feet>
+			<neck>Saevus Pendant +1</neck>
+			<waist>Yamabuki-no-Obi</waist>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Hecate's Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Mujin Band</ring2>
+			<back>Swith Cape +1</back>
 		</set>
 		<set name="EnfeeblingMagic">
 		</set>
@@ -20,7 +57,6 @@
 		</set>
 		<set name="Th">
 			<head>Wh. Rarab Cap +1</head>
-			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<waist>Chaac Belt</waist>
 		</set>
 		<include>
@@ -31,12 +67,37 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="Idle"/>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
 		</if>
-		<else>
-			<equip set="NotEngaged"/>
-		</else>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="Idle"/>
 	</idlegear>
 	<preranged>
 	</preranged>
