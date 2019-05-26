@@ -2,8 +2,8 @@
 <settings>
   <setting name="config_name">(2) Sternaru</setting>
   <setting name="pol_version">2</setting>
-  <setting name="window_x">1440</setting>
-  <setting name="window_y">900</setting>
+  <setting name="window_x">1160</setting>
+  <setting name="window_y">720</setting>
   <setting name="windowed">True</setting>
   <setting name="boot_file"></setting>
   <setting name="boot_command">/game eAZcFcB</setting>
