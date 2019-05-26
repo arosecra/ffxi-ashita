@@ -1,0 +1,3 @@
+/unload MultiSend
+/load MultiSend
+/ms followme on
