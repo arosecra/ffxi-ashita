@@ -174,3 +174,37 @@ local function parse_charstats(packet)
     return charstats
 end
 packets_parser.parse_charstats = parse_charstats
+
+-------------------------------------------------------------------------------
+-- Server ID 0x0044: Character Jobs (Extra).
+-------------------------------------------------------------------------------
+local function parse_charachter_jobs_extra(packet)
+
+	local result = {
+		job        = struct.unpack('B', packet, 0x04 + 1),
+		subjob     = struct.unpack('i2', packet, 0x05 + 1),
+		unknown1   = struct.unpack('i1', packet, 0x06 + 1),
+		auto       = {}
+	}
+	--print('0x044 : ' .. string.format("%04x", result.job) .. ' ' .. result.subjob .. ' ' .. result.unknown1)
+	if result.job == 0x012 then
+		result.auto = {
+			head = struct.unpack('B', packet, 0x08 + 1),
+			frame = struct.unpack('B', packet, 0x09 + 1),
+			slots = {},
+			
+			name = struct.unpack('c16', packet, 0x58 + 1),
+		}
+		for i = 1, 12 do
+			result.auto.slots[i] = struct.unpack('B', packet, 0x09+1+i)
+		end
+		
+		--print('0x044 0x012: ' .. string.format("%04x", result.auto.head) .. ' ' .. string.format("%04x", result.auto.frame))
+		--for i = 1, 12 do
+		--	print('0x044 0x012: ' .. i .. ' ' .. result.auto.slots[i] )
+		--end
+		--print('0x044 0x012: ' .. result.auto.name)
+	end
+	return result
+end
+packets_parser.parse_charachter_jobs_extra = parse_charachter_jobs_extra
