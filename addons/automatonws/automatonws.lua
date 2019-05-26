@@ -1,0 +1,192 @@
+_addon.author = 'arosecra';
+_addon.name = 'automatonws';
+_addon.version = '1.0';
+
+require 'common'
+require 'ffxi.targets'
+require 'logging'
+require 'windower.shim'
+monster_abilities = require 'windower4res/monster_abilities'
+
+local handle = AshitaCore:GetHandle()
+
+windower.register_event('status change', function(new, old) 
+	print(new);
+	print(old);
+end);
+
+--ashita.register_event('incoming_packet', function(id, size, packet, packet_modified, blocked)
+--	
+--    -- Obtain the local player..
+--    local player = GetPlayerEntity();
+--    if (player == nil) then
+--        return false;
+--    end
+--    
+--    -- Obtain the players pet index..
+--    if (player.PetTargetIndex == 0) then
+--        return false;
+--    end
+--    
+--    -- Obtain the players pet..
+--    local pet = GetEntity(player.PetTargetIndex);
+--    if (pet == nil) then
+--        return false;
+--    end
+--	
+--	if id == 0x028 then
+--		local actorId = struct.unpack('I', packet, 0x05 + 1)
+--		
+--		if pet.ServerId == actorId then
+--			local actionPacket = parse_action_packet(packet, size)
+--			
+--			if actionPacket.action_type == 7 then 
+--				if monster_abilities[actionPacket.targets[1].actions[1].param] then
+--					AshitaCore:GetChatManager():QueueCommand("/Puppet" .. monster_abilities[actionPacket.targets[1].actions[1].param].en, 1);
+--				end
+--			end
+--			if actionPacket.action_type == 11 then 
+--				if monster_abilities[actionPacket.actor_param] then
+--					AshitaCore:GetChatManager():QueueCommand("/Puppet" .. monster_abilities[actionPacket.actor_param].en, 1);
+--				end
+--			end
+--
+--		end
+--	end
+--	return false;
+--end);
+--
+--function parse_action_packet(packet, size)
+--	local actor_id = struct.unpack('I', packet, 0x05 + 1)
+--	local target_count = struct.unpack('b', packet, 0x09 + 1);
+--		
+--	-- holds the bitOffset for unpacking bits
+--	local bitOffset = 82;
+--
+--	-- unpack the action type
+--	-- 82 bits in. 0x0A:0x02 = 82
+--	-- action type is 4 bits wide
+--	local action_type = ashita.bits.unpack_be(packet, bitOffset, 4);
+--	-- adjust the offset
+--	bitOffset = bitOffset + 4;
+--	local actor_param = ashita.bits.unpack_be(packet, bitOffset, 16);
+--	
+--	-- adjust the bitOffset
+--	bitOffset = bitOffset + 64;
+--	
+--	-- create our targets table, empty
+--	local targets = { };
+--
+--	-- loop through how many targets there are
+--	for x = 1, target_count do
+--		-- empty target
+--		targets[x] = { };
+--
+--		-- get the id of the target
+--		targets[x].id = ashita.bits.unpack_be(packet, bitOffset, 32);
+--		-- adjust the offset
+--		bitOffset = bitOffset + 32;
+--
+--
+--		-- get the action count
+--		targets[x].action_count = ashita.bits.unpack_be(packet, bitOffset, 4) + 1;
+--		-- adjust the offset
+--		bitOffset = bitOffset + 4;
+--		
+--		-- empty actions table
+--		targets[x].actions = { };
+--
+--		-- loop through the action count
+--		for i = 1, targets[x].action_count do
+--			targets[x].actions[i] = { };
+--			-- get the targets reaction
+--			targets[x].actions[i].reaction = ashita.bits.unpack_be(packet, bitOffset, 5);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 5;
+--
+--			-- get the targets animation
+--			targets[x].actions[i].animation = ashita.bits.unpack_be(packet, bitOffset, 12);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 12;
+--
+--			-- get the targets special effect
+--			targets[x].actions[i].effect = ashita.bits.unpack_be(packet, bitOffset, 7);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 7;
+--
+--			-- get the targets knockback
+--			targets[x].actions[i].knockback = ashita.bits.unpack_be(packet, bitOffset, 3);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 3;
+--
+--			-- get the targets param
+--			-- use for damage debuffs (dia, bio, helix, blue magic)
+--			targets[x].actions[i].param = ashita.bits.unpack_be(packet, bitOffset, 17);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 17;
+--			-- simplify name
+--			act_param = targets[x].actions[i].param
+--			-- get the targets message id
+--			-- use for all normal debuffs (paralyze, slow, silence)
+--			targets[x].actions[i].message_id = ashita.bits.unpack_be(packet, bitOffset, 10);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 10;
+--
+--			-- adjust the offset manually
+--			bitOffset = bitOffset + 31;
+--
+--			-- get if there is a subeffect. 0 = false 1 = true
+--			targets[x].actions[i].subeffect = ashita.bits.unpack_be(packet, bitOffset, 1);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 1;
+--			
+--			-- check if there's a sub effect
+--			if (targets[x].actions[i].subeffect == 1) then
+--				-- get the targets add_effect
+--				targets[x].actions[i].add_effect = ashita.bits.unpack_be(packet, bitOffset, 10);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 10;
+--
+--				-- get the targets add_effect_param
+--				targets[x].actions[i].add_effect_param = ashita.bits.unpack_be(packet, bitOffset, 17);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 17;
+--
+--				-- get the targets add_effect_message
+--				targets[x].actions[i].add_effect_message = ashita.bits.unpack_be(packet, bitOffset, 10);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 10;
+--			end
+--
+--			-- get if there is a spikes. 0 = false 1 = true
+--			targets[x].actions[i].spikes = ashita.bits.unpack_be(packet, bitOffset, 1);
+--			-- adjust the offset
+--			bitOffset = bitOffset + 1;
+--
+--			-- check if there's spikes
+--			if (targets[x].actions[i].spikes == 1) then
+--				-- get the targets spikes_effect
+--				targets[x].actions[i].spikes_effect = ashita.bits.unpack_be(packet, bitOffset, 10);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 10;
+--
+--				-- get the targets spikes_param
+--				targets[x].actions[i].spikes_param = ashita.bits.unpack_be(packet, bitOffset, 14);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 17;
+--
+--				-- get the targets spikes_message
+--				targets[x].actions[i].spikes_message = ashita.bits.unpack_be(packet, bitOffset, 10);
+--				-- adjust the offset
+--				bitOffset = bitOffset + 10;
+--			end
+--		end
+--	end
+--	return {
+--		actor_id = actor_id,
+--		target_count = target_count,
+--		action_type = action_type,
+--		actor_param = actor_param,
+--		targets = targets
+--	};
+--end
