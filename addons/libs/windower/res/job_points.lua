@@ -47,7 +47,7 @@ return {
     [326] = {id=326,en="Magic Accuracy Bonus",ja="魔法命中アップ",endesc="Increases magic accuracy.\nIncrease magic accuracy by 1.",jadesc="魔法命中をアップします。\n能力値1で魔法命中を+1します。"},
     [328] = {id=328,en="Composure Effect",ja="コンポージャー効果アップ",endesc="Increases physical accuracy while under the effects of Composure.\nIncrease physical accuracy by 1.",jadesc="コンポージャー中、物理命中をアップします。\n能力値1で物理命中を+1します。"},
     [330] = {id=330,en="Magic Atk. Bonus",ja="魔法攻撃力アップ",endesc="Enhances Magic Atk. Bonus.\nEnhance Magic Atk. Bonus by 1.",jadesc="魔法攻撃力をアップします。\n能力値1で魔法攻撃力を+1します。"},
-    [332] = {id=332,en="Saboteur Effect",ja="サボトゥール効果アップ",endesc="Increases enfeebling magic accuracy while under the effects of Saboteur.\nIncrease enfeebling magic accuracy by 2.",jadesc="サボトゥール中、弱体魔法の命中をアップします。\n能力値1で弱体魔法の命中を+2します。"},
+    [332] = {id=332,en="Saboteur Effect",ja="サボトゥール効果アップ",endesc="Increases magic accuracy while under the effects of Saboteur.\nIncrease magic accuracy by 2.",jadesc="サボトゥール中、魔法命中をアップします。\n能力値1で魔法命中を+2します。"},
     [334] = {id=334,en="Enfeebling Magic Duration",ja="弱体魔法効果時間延長",endesc="Increases enfeebling magic effect duration.\nIncrease effect duration by 1.",jadesc="弱体魔法の効果時間を延長します。\n能力値1で効果時間を+1秒します。"},
     [336] = {id=336,en="Quick Magic Effect",ja="クイックマジック効果アップ",endesc="Reduces MP consumption while under the effects of Quick Magic.\nReduce MP consumption by 2 percent.",jadesc="クイックマジック中、MP消費量を軽減します。\n能力値1でMP消費量を-2%します。"},
     [338] = {id=338,en="Enhancing Magic Duration",ja="強化魔法効果時間延長",endesc="Increases enhancing magic effect duration.\nIncrease effect duration by 1 second.",jadesc="強化魔法の効果時間を延長します。\n能力値1で効果時間を+1秒します。"},
@@ -90,7 +90,7 @@ return {
     [588] = {id=588,en="Ready Effect",ja="しじをさせろ効果アップ",endesc="Increases pet special ability damage.\nIncrease damage by 1 percent.",jadesc="よびだしたペットの技のダメージをアップします。\n能力値1でダメージを+1%します。"},
     [590] = {id=590,en="Spur Effect",ja="きばれ効果アップ",endesc="Increases pet physical attack while under the effects of Spur.\nIncrease physical attack by 3.",jadesc="きばれ中、ペットの物理攻撃力をアップします。\n能力値1で物理攻撃力を+3します。"},
     [592] = {id=592,en="Run Wild Duration",ja="ふりしぼれ効果時間延長",endesc="Increases the effect duration of Run Wild.\nIncrease effect duration by 2 seconds.",jadesc="ふりしぼれの効果時間を延長します。\n能力値1で効果時間を+2秒します。"},
-    [594] = {id=594,en="Pet Enmity",ja="ペットの敵対心アップ",endesc="Increases the enmity of summoned pets.\nIncrease enmity by 1.",jadesc="よびだしたペットの敵対心をアップします。\n能力値1で敵対心を+1します。"},
+    [594] = {id=594,en="Pet Magic Accuracy Bonus",ja="ペットの魔法命中アップ",endesc="Increases the deployed pet's magic accuracy.\nIncrease magic accuracy by 1.",jadesc="使役しているペットの魔法命中をアップします。\n能力値1で魔法命中を+1します。"},
     [640] = {id=640,en="Soul Voice Effect",ja="ソウルボイス効果アップ",endesc="Reduces the casting time of songs while under the effects of Soul Voice.\nReduce song casting time by 2 percent.",jadesc="ソウルボイス中、歌の詠唱時間を短縮します。\n能力値1で詠唱時間を-2%します。"},
     [642] = {id=642,en="Minne Effect",ja="ミンネ効果アップ",endesc="Increases physical defense granted by Minne.\nIncrease physical defense by 1.",jadesc="ミンネの物理防御力をアップします。\n能力値1で物理防御力を+1します。"},
     [644] = {id=644,en="Clarion Call Effect",ja="クラリオンコール効果アップ",endesc="Increases the effect duration of songs while under the effects of Clarion Call.\nIncrease effect duration by 2 seconds.",jadesc="クラリオンコール中、歌の効果時間を延長します。\n能力値1で歌の効果時間を+2秒します。"},
@@ -224,7 +224,7 @@ return {
 }, {"id", "en", "ja", "endesc", "jadesc"}
 
 --[[
-Copyright © 2013-2018, Windower
+Copyright © 2013-2019, Windower
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
