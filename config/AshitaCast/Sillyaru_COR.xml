@@ -1,0 +1,87 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Idle">
+			<head augment="M1424">Lanun Tricorne +1</head>
+			<body>Rawhide Vest</body>
+			<hands>Meghanada Gloves</hands>
+			<legs>Meg. Chausses</legs>
+			<feet>Meg. Jambeaux</feet>
+			<ring1>Barataria Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Camulus's Mantle</back>
+		</set>
+		<set name="PhantomRoll">
+			<head augment="M1424">Lanun Tricorne +1</head>
+			<hands>Chasseur's Gants +1</hands>
+			<ring1>Barataria Ring</ring1>
+			<back>Camulus's Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="IdleMode">Idle</var>
+		<var name="th">no</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="$IdleMode"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+		<if ad_name="*Roll|Double-Up">
+			<equip set="PhantomRoll"/>
+		</if>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+</ashitacast>

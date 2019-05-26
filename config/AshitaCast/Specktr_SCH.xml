@@ -177,6 +177,23 @@
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>
 			<waist>Chaac Belt</waist>
 		</set>
+		<set name="temp">
+			<main augment="D15496478199491">Akademos</main>
+			<sub>Niobid Strap</sub>
+			<ammo>Homiliary</ammo>
+			<head augment="M1442">Peda. M.Board +3</head>
+			<body>Jhakri Robe +2</body>
+			<hands augment="S631930638080675698756">Chironic Gloves</hands>
+			<legs augment="S22258887497018227">Merlinic Shalwar</legs>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Genmei Earring</ear1>
+			<ear2>Ethereal Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
 		<include>
 		</include>
 	</sets>
@@ -214,6 +231,11 @@
 		<if eq_rring="Warp Ring">
 			<equip lock="true">
 				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
 			</equip>
 		</if>
 		<equip set="Idle"/>

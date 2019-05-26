@@ -92,6 +92,11 @@
 			<back augment="S26530015289419">Mecisto. Mantle</back>              
 			</equip>
 		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<if eq_rring="Warp Ring">
 			<equip lock="true">
 				<rring>Warp Ring</rring>				

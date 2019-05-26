@@ -76,13 +76,28 @@
 			<ring1>Epona's Ring</ring1>
 			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
+		<set name="PupEng-Overdrive">
+			<range>Animator P +1</range>
+			<head>Karagoz Capello +1</head>
+			<body>Kara. Farsetto +1</body>
+			<hands>Karagoz Guanti +1</hands>
+			<legs>Kara. Pantaloni +1</legs>
+			<feet augment="D26947036078982">Naga Kyahan</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Rimeice Earring</ear1>
+			<ear2>Domes. Earring</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back augment="S158853694032384">Dispersal Mantle</back>
+		</set>
 		<set name="PupTh">
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
 		</set>
 		<set name="PupMnvr">
-			<body>Karagoz Farsetto</body>
+			<body>Kara. Farsetto +1</body>
 			<hands>Foire Dastanas +1</hands>
 			<neck>Buffoon's Collar</neck>
 			<back augment="S018543">Visucius's Mantle</back>
@@ -130,6 +145,20 @@
 			<ear1>Rimeice Earring</ear1>
 			<ear2>Domes. Earring</ear2>
 		</set>
+		<set name="overdrive">
+			<head>Karagoz Capello +1</head>
+			<body>Kara. Farsetto +1</body>
+			<hands>Karagoz Guanti +1</hands>
+			<legs>Kara. Pantaloni +1</legs>
+			<feet augment="D26947036078982">Naga Kyahan</feet>
+			<neck>Shulmanu Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Domes. Earring</ear1>
+			<ear2>Rimeice Earring</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back augment="S158853694032384">Dispersal Mantle</back>
+		</set>
 		<include>
 		</include>
 	</sets>
@@ -163,6 +192,41 @@
 		</cmd>
 	</inputcommands>
 	<idlegear>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<equip set="PupEng-$Strategy"/>
 	</idlegear>
 	<preranged>
@@ -178,7 +242,6 @@
 		</if>
 	</midmagic>
 	<jobability>
-		<command>/echo %ad_name</command>
 		<if ad_name="*Maneuver">
 			<equip set="PupMnvr"/>
 		</if>
@@ -190,10 +253,8 @@
 		<equip set="WS"/>
 	</weaponskill>
 	<petskill>
-		<command>/echo petskill %ad_name %pet_tp</command>
 	</petskill>
 	
 	<petspell>
-		<command>/echo petspell %ad_name</command>
 	</petspell>
 </ashitacast>

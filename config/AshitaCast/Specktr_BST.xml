@@ -131,7 +131,6 @@
 		<set name="NotEngaged">
 			<head augment="S80601244060165138">Jumalik Helm</head>
 			<body augment="S52945271470082">Jumalik Mail</body>
-			<feet>Skd. Jambeaux +1</feet>
 		</set>
 		<set name="Enhance">
 			<neck>Melic Torque</neck>
@@ -188,7 +187,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Hija Earring</ear1>
 			<ear2>Ferine Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
@@ -203,7 +202,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
@@ -219,7 +218,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Hija Earring</ear1>
 			<ear2>Ferine Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
@@ -234,7 +233,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
@@ -250,7 +249,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Domes. Earring</ear1>
 			<ear2>Hija Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Artio's Mantle</back>
 		</set>
@@ -280,7 +279,6 @@
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring +1</ear1>
 			<ear2>Handler's Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
 			<ring2>Defending Ring</ring2>
 			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
 		</set>
@@ -295,7 +293,6 @@
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring +1</ear1>
 			<ear2>Handler's Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
 			<ring2>Defending Ring</ring2>
 			<back augment="S1147617960924546256">Pastoralist's Mantle</back>
 		</set>
@@ -305,7 +302,6 @@
 			<body augment="S52945271470082">Jumalik Mail</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
 			<legs>Tali'ah Sera. +2</legs>
-			<feet>Skd. Jambeaux +1</feet>
 			<neck>Loricate Torque +1</neck>
 			<waist>Nierenschutz</waist>
 			<ear2>Genmei Earring</ear2>
@@ -343,23 +339,6 @@
 		<set name="PetReady-Swap-Sub-Phys"> <sub augment="D32445013635340">Arktoi</sub> </set>
 		<set name="PetReady-Swap-Sub-Mag"> <sub>Mdomo Axe</sub> </set>
 
-		<set name="temp">
-			<main>Aymur</main>
-			<sub>Adapa Shield</sub>
-			<ammo>Ginsen</ammo>
-			<head augment="S26869861478533">Taeon Chapeau</head>
-			<body augment="S52945271470082">Jumalik Mail</body>
-			<hands augment="S9685595112864420505">Valorous Mitts</hands>
-			<legs augment="S1232441083638448217">Valor. Hose</legs>
-			<feet augment="S26869861498979">Taeon Boots</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Warp Ring</ring2>
-			<back augment="S255463270518575">Artio's Mantle</back>
-		</set>
 		<include>
 		</include>
 	</sets>
@@ -480,6 +459,41 @@
 		</cmd>
 	</inputcommands>
 	<idlegear>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<if p_status="engaged">
 			<equip set="Idle-$Strategy"/>
 			<equip set="Idle-Main-$WeaponStrategy-$IdleMain"/>

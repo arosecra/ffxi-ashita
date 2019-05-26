@@ -205,6 +205,11 @@
 				<rring>Warp Ring</rring>				
 			</equip>
 		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<equip set="$IdleMode"/>
 	</idlegear>
 	<preranged>

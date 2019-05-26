@@ -6,7 +6,7 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
-		<set name="PupEng-MstrMelee">
+		<set name="temp">
 			<head>Tali'ah Turban</head>
 			<body>Tali'ah Manteel</body>
 			<hands>Tali'ah Gages +1</hands>
@@ -23,6 +23,19 @@
 			<neck>Buffoon's Collar</neck>
 			<back augment="S3903618543">Visucius's Mantle</back>
 		</set>
+		<set name="PupEng-MstrMelee">
+			<head>Karagoz Capello</head>
+			<body augment="M7441">Pitre Tobe +1</body>
+			<hands>Karagoz Guanti +1</hands>
+			<legs>Karagoz Pantaloni</legs>
+			<feet augment="D26947036078982">Naga Kyahan</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<back augment="S3903618543">Visucius's Mantle</back>
+		</set>
 		<include>
 		</include>
 	</sets>
@@ -32,6 +45,41 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back>Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<equip set="PupEng-$Strategy"/>
 	</idlegear>
 	<preranged>

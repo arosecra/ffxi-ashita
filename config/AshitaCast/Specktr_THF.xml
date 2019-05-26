@@ -7,8 +7,19 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<feet>Skd. Jambeaux +1</feet>
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S17691248205849">Herculean Trousers</legs>
+			<feet augment="S79263899353156">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
 			<ring2>Defending Ring</ring2>
+			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="TP-On">
 			<ammo>Ginsen</ammo>
@@ -86,12 +97,42 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if p_status="engaged">
-			<equip set="TP-$TH"/>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
 		</if>
-		<else>
-			<equip set="Idle"/>
-		</else>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back>Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<equip set="Idle"/>
 	</idlegear>
 	<preranged>
 	</preranged>
