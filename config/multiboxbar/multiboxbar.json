@@ -63,14 +63,374 @@
 						"Specktr.MainJob": "Blue Mage",
 						"Mode": "Settings"
 					}
-				} 
+				}, 
+				{
+					"Command": "/ac var set IdleMode TP",
+					"Name": "CorTP",
+					"Conditions": {
+						"Specktr.MainJob": "Corsair",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode DT",
+					"Name": "CorDT",
+					"Conditions": {
+						"Specktr.MainJob": "Corsair",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode Refresh",
+					"Name": "CorRefr",
+					"Conditions": {
+						"Specktr.MainJob": "Corsair",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode TP-High",
+					"Name": "CorTPHigh",
+					"Conditions": {
+						"Specktr.MainJob": "Corsair",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Script": "LeadenSalute.txt",
+					"Name": "CorTPHigh",
+					"Conditions": {
+						"Specktr.MainJob": "Corsair",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy MstrMelee",
+					"Name": "MstrMlee",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy PetOnly",
+					"Name": "PetOnly",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy PetMelee",
+					"Name": "PetMelee",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy 119PetOnly",
+					"Name": "119PetOnly",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy MstrDT",
+					"Name": "MstrDT",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Strategy Overdrive",
+					"Name": "Overdrive",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ja Deploy <t>",
+					"Name": "Deploy",
+					"Conditions": {
+						"Specktr.MainJob": "Puppetmaster",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/ac var set Accuracy Low",
+					"Name": "CntntLow",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set Accuracy High",
+					"Name": "CntntHigh",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar fire",
+					"Name": "fire",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar fire",
+					"Name": "fire",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar stone",
+					"Name": "stone",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar water",
+					"Name": "water",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar wind",
+					"Name": "wind",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar ice",
+					"Name": "ice",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar thunder",
+					"Name": "thunder",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar light",
+					"Name": "light",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar dark",
+					"Name": "dark",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/scholar stormI",
+					"Name": "stormI",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar stormII",
+					"Name": "stormII",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/ma Klimaform <me>",
+					"Name": "klimaform",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar helixI",
+					"Name": "helixI",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar helixII",
+					"Name": "helixII",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar nukeI",
+					"Name": "nukeI",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar nukeII",
+					"Name": "nukeII",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar nukeIII",
+					"Name": "nukeIII",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar nukeIV",
+					"Name": "nukeIV",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}, 
+				{
+					"Command": "/scholar nukeV",
+					"Name": "nukeV",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Liquefaction.txt",
+					"Name": "LIq/Fire",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Scission.txt",
+					"Name": "Sci/Sto",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Reverberation.txt",
+					"Name": "Rev/Wat",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Detonation.txt",
+					"Name": "Det/Wind",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Induration.txt",
+					"Name": "Ind/Ice",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Impaction.txt",
+					"Name": "Imp/Thu",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Transfiction.txt",
+					"Name": "Trns/Light",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Compression.txt",
+					"Name": "Com/Dark",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Fragmentation.txt",
+					"Name": "Frag/Wind/Thu",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Fusion.txt",
+					"Name": "Fus/Fire/Light",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Gravitation.txt",
+					"Name": "Grav/Dark/Sto",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				},
+				{
+					"Script": "Distortion.txt",
+					"Name": "Dist/Wat/Ice",
+					"Conditions": {
+						"Specktr.MainJob": "Scholar",
+						"Mode": "Actions"
+					}
+				}
 			]
 		},
 		{
 			"Name": "Sternaru",
 			"Macros": [ 
 				{
-					"Name": "Pupat",
+					"Name": "Deploy",
 					"Command" : "/ms sendto Sternaru /ja Deploy [t]",
 					"Conditions": {
 						"Sternaru.MainJob": "Puppetmaster"
@@ -82,7 +442,7 @@
 			"Name": "Sillyaru",
 			"Macros": [ 
 				{
-					"Name": "Pupat",
+					"Name": "Deploy",
 					"Command" : "/ms sendto Sillyaru /ja Deploy [t]",
 					"Conditions": {
 						"Sillyaru.MainJob": "Puppetmaster"

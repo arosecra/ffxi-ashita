@@ -14,7 +14,7 @@ local default_config =
 };
 
 local modes = {
-	"Actions", "Buffs", "Settings"
+	"Actions", "Buffs", "Settings", "Items"
 };
 
 local hotbar_variables = {
@@ -166,13 +166,14 @@ ashita.register_event('render', function()
 	
 	for hotbar_user_id,hotbar_user in pairs(hotbar_config) do
 		imgui.Text(hotbar_user.Name);
-		
+		local user_buttons = 0
 		for hotbar_macro_index,hotbar_macro in ipairs(hotbar_user.Macros) do
 			if display_macro_button(hotbar_user, hotbar_macro, hotbar_variables) then
 				local label = hotbar_macro.Name
 				if #label > 12 then
 					label = string.sub(label,1,10) .. '..'
 				end
+				user_buttons = user_buttons+1
 				if (imgui.SmallButton(label)) then 
 					if hotbar_macro.Script then
 						msg(hotbar_macro.Script)
@@ -182,7 +183,9 @@ ashita.register_event('render', function()
 						AshitaCore:GetChatManager():QueueCommand(hotbar_macro.Command, 1)
 					end
 				end
-				if hotbar_macro_index % 12 ~= 0 then
+				if user_buttons % 8 == 0 then
+					imgui.Separator();
+				else
 					imgui.SameLine();
 				end
 			end
