@@ -1,0 +1,173 @@
+[
+		{
+			"Name": "MBox",
+			"Static": true,
+			"Macros": [
+				{
+					"Name": "follon",
+					"Script": "follon.txt"
+				}, 
+				{
+					"Name": "follof",
+					"Script": "follof.txt"
+				}, 
+				{
+					"Command": "/ms send /mount Raptor",
+					"Name": "mount"
+				}, 
+				{
+					"Command": "/ms send /dismount",
+					"Name": "dismnt"
+				}, 
+				{
+					"Name": "group",
+					"Script": "group.txt"
+				}, 
+				{
+					"Name": "warp2me",
+					"Script": "warp2me.txt"
+				} 
+			]
+		},
+		{
+			"Name": "Specktr",
+			"Macros" : [ 
+				{
+					"Command": "/ac var set IdleMode TP",
+					"Name": "BluTP",
+					"Conditions": {
+						"Specktr.MainJob": "Blue Mage",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode DT",
+					"Name": "BluDT",
+					"Conditions": {
+						"Specktr.MainJob": "Blue Mage",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode Refresh",
+					"Name": "BluRefr",
+					"Conditions": {
+						"Specktr.MainJob": "Blue Mage",
+						"Mode": "Settings"
+					}
+				}, 
+				{
+					"Command": "/ac var set IdleMode TP-High",
+					"Name": "BluTPHigh",
+					"Conditions": {
+						"Specktr.MainJob": "Blue Mage",
+						"Mode": "Settings"
+					}
+				} 
+			]
+		},
+		{
+			"Name": "Sternaru",
+			"Macros": [ 
+				{
+					"Name": "Pupat",
+					"Command" : "/ms sendto Sternaru /ja Deploy [t]",
+					"Conditions": {
+						"Sternaru.MainJob": "Puppetmaster"
+					}
+				}
+			]
+		},
+		{
+			"Name": "Sillyaru",
+			"Macros": [ 
+				{
+					"Name": "Pupat",
+					"Command" : "/ms sendto Sillyaru /ja Deploy [t]",
+					"Conditions": {
+						"Sillyaru.MainJob": "Puppetmaster"
+					}
+				}, 
+				{
+					"Name": "DblUp",
+					"Command" : "/ms sendto Sillyaru /ja \"Double-Up\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				},
+				{
+					"Name": "SnakeEye",
+					"Command" : "/ms sendto Sillyaru /ja \"Snake Eye\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "Fold",
+					"Command" : "/ms sendto Sillyaru /ja Fold <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				},
+				{
+					"Name": "Exp+",
+					"Command" : "/ms sendto Sillyaru /ja \"Corsair\'s Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "PetAtt+",
+					"Command" : "/ms sendto Sillyaru /ja \"Beast Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "PetMab+",
+					"Command" : "/ms sendto Sillyaru /ja \"Puppet\'s Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "PetAcc+",
+					"Command" : "/ms sendto Sillyaru /ja \"Drachen Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "PetRegen",
+					"Command" : "/ms sendto Sillyaru /ja \"Companion\'s Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "Refresh",
+					"Command" : "/ms sendto Sillyaru /ja \"Evoker\'s Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}, 
+				{
+					"Name": "Mab+",
+					"Command" : "/ms sendto Sillyaru /ja \"Wizard\'s Roll\" <me>",
+					"Conditions": {
+						"Sillyaru.MainJob": "Corsair",
+						"Mode": "Buffs"
+					}
+				}
+			]
+		}
+	]
