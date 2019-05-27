@@ -31,7 +31,7 @@
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring +1</ear1>
 			<ear2>Domes. Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
@@ -45,7 +45,7 @@
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring +1</ear1>
 			<ear2>Domes. Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
@@ -59,7 +59,7 @@
 			<waist>Klouskap Sash</waist>
 			<ear1>Handler's Earring +1</ear1>
 			<ear2>Domes. Earring</ear2>
-			<ring1>Thur. Ring +1</ring1>
+			<ring1>Varar Ring +1</ring1>
 			<ring2>Varar Ring +1</ring2>
 			<back augment="S7958144906662018543">Visucius's Mantle</back>
 		</set>
@@ -138,7 +138,7 @@
 			<ear1>Domes. Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Varar Ring +1</ring1>
-			<ring2>Thur. Ring +1</ring2>
+			<ring2>Varar Ring +1</ring2>
 			<back>Dispersal Mantle</back>
 		</set>
 		<set name="PuppetProvoke">
