@@ -175,9 +175,9 @@
 						"Specktr.MainJob": "Scholar",
 						"Mode": "Settings"
 					}
-				}, 
+				},  
 				{
-					"Command": "/scholar fire",
+					"Command": "/nuke setelement fire",
 					"Name": "fire",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -185,15 +185,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar fire",
-					"Name": "fire",
-					"Conditions": {
-						"Specktr.MainJob": "Scholar",
-						"Mode": "Settings"
-					}
-				}, 
-				{
-					"Command": "/scholar stone",
+					"Command": "/nuke setelement stone",
 					"Name": "stone",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -201,7 +193,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar water",
+					"Command": "/nuke setelement water",
 					"Name": "water",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -209,7 +201,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar wind",
+					"Command": "/nuke setelement wind",
 					"Name": "wind",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -217,7 +209,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar ice",
+					"Command": "/nuke setelement ice",
 					"Name": "ice",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -225,7 +217,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar thunder",
+					"Command": "/nuke setelement thunder",
 					"Name": "thunder",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -233,7 +225,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar light",
+					"Command": "/nuke setelement light",
 					"Name": "light",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -241,7 +233,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar dark",
+					"Command": "/nuke setelement dark",
 					"Name": "dark",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -249,19 +241,19 @@
 					}
 				}, 
 				{
-					"Command": "/scholar stormI",
+					"Command": "/nuke stormI",
 					"Name": "stormI",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
-						"Mode": "Actions"
+						"Mode": "Buffs"
 					}
 				}, 
 				{
-					"Command": "/scholar stormII",
+					"Command": "/nuke stormII",
 					"Name": "stormII",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
-						"Mode": "Actions"
+						"Mode": "Buffs"
 					}
 				}, 
 				{
@@ -269,11 +261,11 @@
 					"Name": "klimaform",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
-						"Mode": "Actions"
+						"Mode": "Buffs"
 					}
 				}, 
 				{
-					"Command": "/scholar helixI",
+					"Command": "/nuke helixI",
 					"Name": "helixI",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -281,7 +273,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar helixII",
+					"Command": "/nuke helixII",
 					"Name": "helixII",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -289,7 +281,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar nukeI",
+					"Command": "/nuke nukeI",
 					"Name": "nukeI",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -297,7 +289,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar nukeII",
+					"Command": "/nuke nukeII",
 					"Name": "nukeII",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -305,7 +297,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar nukeIII",
+					"Command": "/nuke nukeIII",
 					"Name": "nukeIII",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -313,7 +305,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar nukeIV",
+					"Command": "/nuke nukeIV",
 					"Name": "nukeIV",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -321,7 +313,7 @@
 					}
 				}, 
 				{
-					"Command": "/scholar nukeV",
+					"Command": "/nuke nukeV",
 					"Name": "nukeV",
 					"Conditions": {
 						"Specktr.MainJob": "Scholar",
@@ -430,7 +422,7 @@
 			"Name": "Sternaru",
 			"Macros": [ 
 				{
-					"Name": "Deploy",
+					"Name": "StrnDply",
 					"Command" : "/ms sendto Sternaru /ja Deploy [t]",
 					"Conditions": {
 						"Sternaru.MainJob": "Puppetmaster"
@@ -442,7 +434,7 @@
 			"Name": "Sillyaru",
 			"Macros": [ 
 				{
-					"Name": "Deploy",
+					"Name": "SillyDply",
 					"Command" : "/ms sendto Sillyaru /ja Deploy [t]",
 					"Conditions": {
 						"Sillyaru.MainJob": "Puppetmaster"
