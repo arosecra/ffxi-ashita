@@ -1,0 +1,3 @@
+/pcmd add Sillyaru
+/wait 1
+/pcmd add Sternaru
