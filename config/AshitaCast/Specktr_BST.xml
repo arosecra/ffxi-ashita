@@ -8,11 +8,11 @@
 	<sets>
 		<set name="PhysWs">
 			<ammo>Ginsen</ammo>
-			<head augment="S6167185957690020505">Valorous Mask</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="S9685595112864420505">Valorous Mitts</hands>
-			<legs augment="S1232441083638448217">Valor. Hose</legs>
-			<feet>Meg. Jam. +1</feet>
+			<head augment="M1376">Ankusa Helm +3</head>
+			<body augment="M1377">An. Jackcoat +3</body>
+			<hands augment="M1378">Ankusa Gloves +3</hands>
+			<legs augment="M3336">Ankusa Trousers +3</legs>
+			<feet augment="M1379">Ankusa Gaiters +3</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear1>Brutal Earring</ear1>
@@ -23,7 +23,7 @@
 		</set>
 		<set name="PrimalRend">
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="S80601244060165138">Jumalik Helm</head>
+			<head augment="M1376">Ankusa Helm +3</head>
 			<body augment="S52945271470082">Jumalik Mail</body>
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>
 			<legs augment="S37383685320837">Valor. Hose</legs>
@@ -38,7 +38,7 @@
 		</set>
 		<set name="CloudSplitter">
 			<ammo>Erlene's Notebook</ammo>
-			<head augment="S80601244060165138">Jumalik Helm</head>
+			<head augment="M1376">Ankusa Helm +3</head>
 			<body augment="S52945271470082">Jumalik Mail</body>
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>
 			<legs augment="S37383685320837">Valor. Hose</legs>
@@ -122,7 +122,7 @@
 		</set>
 		<set name="CllBst">
 			<body augment="S558199108">Mirke Wardecors</body>
-			<hands augment="M1378">Ankusa Gloves +1</hands>
+			<hands augment="M1378">Ankusa Gloves +3</hands>
 			<feet augment="S558104687">Adaman Sollerets</feet>
 		</set>
 		<set name="Familiar">
@@ -339,38 +339,6 @@
 		<set name="PetReady-Swap-Sub-Phys"> <sub augment="D32445013635340">Arktoi</sub> </set>
 		<set name="PetReady-Swap-Sub-Mag"> <sub>Mdomo Axe</sub> </set>
 
-		<set name="temp">
-			<main>Aymur</main>
-			<ammo>Demonry Core</ammo>
-			<head augment="S80601244060165138">Jumalik Helm</head>
-			<body augment="S52945271470082">Jumalik Mail</body>
-			<hands>Nukumi Manoplas +1</hands>
-			<legs augment="S106010110908523">Valor. Hose</legs>
-			<feet>Tot. Gaiters +3</feet>
-			<neck>Shulmanu Collar</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Hija Earring</ear1>
-			<ear2>Ferine Earring</ear2>
-			<ring1>Levia. Ring</ring1>
-			<ring2>Warp Ring</ring2>
-			<back augment="S7958144906662018543">Artio's Mantle</back>
-		</set>
-		<set name="temp">
-			<main>Aymur</main>
-			<ammo>Demonry Core</ammo>
-			<head augment="M1376">Ankusa Helm +2</head>
-			<body>Tot. Jackcoat +3</body>
-			<hands augment="M1378">Ankusa Gloves +1</hands>
-			<legs augment="M3336">Ankusa Trousers +3</legs>
-			<feet augment="M1379">Ankusa Gaiters +3</feet>
-			<neck>Shulmanu Collar</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Hija Earring</ear1>
-			<ear2>Ferine Earring</ear2>
-			<ring1>Levia. Ring</ring1>
-			<ring2>Levia. Ring</ring2>
-			<back augment="S7958144906662018543">Artio's Mantle</back>
-		</set>
 		<include>
 		</include>
 	</sets>

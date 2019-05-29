@@ -6,26 +6,13 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
-		<set name="temp">
-			<head>Tali'ah Turban</head>
-			<body>Tali'ah Manteel</body>
-			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Seraweels</legs>
-			<feet>Tali'ah Crackows +1</feet>
-			<neck>Shepherd's Chain</neck>
-			<waist>Kuku Stone</waist>
-			<ear1>Handler's Earring</ear1>
-			<ring1>Varar Ring +1</ring1>
-			<ring2>Warp Ring</ring2>
-			<back augment="S3903618543">Visucius's Mantle</back>
-		</set>
 		<set name="PupMnvr">
 			<neck>Buffoon's Collar</neck>
 			<back augment="S3903618543">Visucius's Mantle</back>
 		</set>
 		<set name="PupEng-MstrMelee">
 			<head>Karagoz Capello</head>
-			<body augment="M7441">Pitre Tobe +1</body>
+			<body augment="M7441">Pitre Tobe +2</body>
 			<hands>Karagoz Guanti +1</hands>
 			<legs>Karagoz Pantaloni</legs>
 			<feet augment="D26947036078982">Naga Kyahan</feet>

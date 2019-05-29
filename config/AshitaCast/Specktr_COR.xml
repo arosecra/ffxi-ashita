@@ -65,7 +65,7 @@
 		</set>
 		<set name="PrecastRanged">
 			<ammo>Living Bullet</ammo>
-			<head>Aurore Beret +1</head>
+			<head augment="S36091026669568">Taeon Chapeau</head>
 			<body augment="D6300775362818">Pursuer's Doublet</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
 			<legs>Nahtirah Trousers</legs>
@@ -164,6 +164,23 @@
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<back augment="S8137930077645118759">Camulus's Mantle</back>
+		</set>
+		<set name="temp">
+			<main>Fettering Blade</main>
+			<sub>Arendsi Fleuret</sub>
+			<range>Death Penalty</range>
+			<ammo>Living Bullet</ammo>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Apate Ring</ring2>
+			<back>Ground. Mantle +1</back>
 		</set>
 		<include>
 		</include>
