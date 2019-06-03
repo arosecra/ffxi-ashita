@@ -427,6 +427,22 @@
 					"Conditions": {
 						"Sternaru.MainJob": "Puppetmaster"
 					}
+				},
+				{
+					"Name": "StrnOvrdrive",
+					"Command" : "/ms sendto Sternaru /ac var set Strategy Overdrive",
+					"Conditions": {
+						"Sternaru.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
+				},
+				{
+					"Name": "StrnPetDT",
+					"Command" : "/ms sendto Sternaru /ac var set Strategy PetDT",
+					"Conditions": {
+						"Sternaru.MainJob": "Puppetmaster",
+						"Mode": "Settings"
+					}
 				}
 			]
 		},

@@ -8,9 +8,10 @@
 	<sets>
 		<set name="PupMnvr">
 			<neck>Buffoon's Collar</neck>
+			<!--<body>Kara. Farsetto +1</body>-->
 			<back augment="S3903618543">Visucius's Mantle</back>
 		</set>
-		<set name="PupEng-MstrMelee">
+		<set name="PupEng-Overdrive">
 			<head>Karagoz Capello</head>
 			<body augment="M7441">Pitre Tobe +2</body>
 			<hands>Karagoz Guanti +1</hands>
@@ -25,24 +26,23 @@
 		</set>
 		<set name="PupEng-PetDT">
 			<range>Animator P</range>
-			<head augment="S17700775530521110">Anwig Salade</head>
-			<body augment="M7441">Pitre Tobe +2</body>
-			<hands augment="D3955992263814">Rao Kote +1</hands>
-			<legs augment="D2856447079046">Rao Haidate +1</legs>
-			<feet augment="D2856447079046">Rao Sune-Ate +1</feet>
+			<head>Anwig Salade</head>
+			<body>Pitre Tobe +2</body>
+			<hands>Rao Kote +1</hands>
+			<legs>Rao Haidate +1</legs>
+			<feet>Rao Sune-Ate +1</feet>
 			<neck>Shepherd's Chain</neck>
-			<waist>Klouskap Sash</waist>
+			<waist>Selemnus Belt</waist>
 			<ear1>Handler's Earring</ear1>
 			<ear2>Handler's Earring +1</ear2>
 			<ring1>Varar Ring +1</ring1>
-			<ring2>Warp Ring</ring2>
 			<back augment="S3903618543">Visucius's Mantle</back>
 		</set>
 		<include>
 		</include>
 	</sets>
 	<variables>
-		<var name="Strategy">MstrMelee</var>
+		<var name="Strategy">Overdrive</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
