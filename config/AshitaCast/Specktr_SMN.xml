@@ -17,7 +17,7 @@
 				<ear1>Handler's Earring +1</ear1>
 				<ear2>Handler's Earring</ear2>
 				<ring1>Varar Ring +1</ring1>
-				<ring2>Varar Ring +1</ring2>
+                <ring2>Evoker's Ring</ring2>
 				<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="PrePact">
@@ -27,6 +27,7 @@
 				<hands augment="M1413">Glyphic Bracers +1</hands>
 				<legs>Beck. Spats +1</legs>
 				<feet augment="M1415">Glyph. Pigaches +1</feet>
+				<back>Conveyance Cape</back>
             </set>
             <set name="SmnSkill">
                 <main augment="D3956159876853">Espiritus</main>
@@ -37,9 +38,9 @@
                 <hands augment="M1413">Glyphic Bracers</hands>
                 <legs augment="M1414">Glyphic Spats</legs>
                 <waist>Lucidity Sash</waist>
-                <ring1>Evokers Ring</ring1>
-                <ring2>Fervor Ring</ring2>
-                <back augment="S367709666716544462">Conveyance Cape</back>
+                <ring1>Fervor Ring</ring1>
+                <ring2>Evoker's Ring</ring2>
+                <back>Conveyance Cape</back>
             </set>
             <set name="AvMab">
 				<head augment="D7434751185688">Psycloth Tiara</head>
@@ -137,6 +138,23 @@
 			<ring1>Varar Ring +1</ring1>
 			<ring2>Trizek Ring</ring2>
 			<back>Solemnity Cape</back>
+		</set>
+		<set name="temp">
+			<main augment="S15876655966859314381">Grioavolr</main>
+			<sub>Umbra Strap</sub>
+			<ammo>Sancus Sachet +1</ammo>
+			<head>Beckoner's Horn +1</head>
+			<body augment="D20976940633860">Amalric Doublet +1</body>
+			<hands>Tali'ah Gages +1</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet augment="S59312917964934886">Merlinic Crackows</feet>
+			<neck>Caller's Pendant</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring +1</ear1>
+			<ear2>Handler's Earring</ear2>
+			<ring1></ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Swith Cape +1</back>
 		</set>
             <include>
             </include>
