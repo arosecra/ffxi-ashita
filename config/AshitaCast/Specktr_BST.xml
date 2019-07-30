@@ -130,7 +130,7 @@
 		</set>
 		<set name="NotEngaged">
 			<head augment="S80601244060165138">Jumalik Helm</head>
-			<body augment="S52945271470082">Jumalik Mail</body>
+			<body>Tartarus Platemail</body>
 		</set>
 		<set name="Enhance">
 			<neck>Melic Torque</neck>
@@ -299,7 +299,7 @@
 		<set name="Idle-MasterDT">
 			<sub augment="S1211439158">Beatific Shield +1</sub>
 			<head augment="S80601244060165138">Jumalik Helm</head>
-			<body augment="S52945271470082">Jumalik Mail</body>
+			<body>Tartarus Platemail</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
 			<legs>Tali'ah Sera. +2</legs>
 			<neck>Loricate Torque +1</neck>

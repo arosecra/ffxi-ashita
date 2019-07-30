@@ -10,7 +10,7 @@
 				<head>Beckoner's Horn +1</head>
 				<body augment="D20976940633860">Amalric Doublet +1</body>
 				<hands>Tali'ah Gages +1</hands>
-				<legs>Tali'ah Sera. +2</legs>
+				<legs>Assid. Pants +1</legs>
 				<feet augment="S59312917964934886">Merlinic Crackows</feet>
 				<neck>Caller's Pendant</neck>
 				<waist>Klouskap Sash</waist>
@@ -18,7 +18,7 @@
 				<ear2>Handler's Earring</ear2>
 				<ring1>Varar Ring +1</ring1>
                 <ring2>Evoker's Ring</ring2>
-				<back augment="S32893">Campestres's Cape</back>
+				<back>Campestres's Cape</back>
             </set>
             <set name="PrePact">
                 <head>Beckoner's Horn +1</head>
@@ -123,39 +123,6 @@
 				<waist>Olympus Sash</waist>
 				<back>Merciful Cape</back>
             </set>
-		<set name="temp">
-			<main augment="S15876655966859314381">Grioavolr</main>
-			<sub>Umbra Strap</sub>
-			<ammo>Seraphicaller</ammo>
-			<head>Beckoner's Horn +1</head>
-			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Sera. +2</legs>
-			<feet augment="S59312917964934886">Merlinic Crackows</feet>
-			<neck>Caller's Pendant</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Handler's Earring +1</ear1>
-			<ear2>Handler's Earring</ear2>
-			<ring1>Varar Ring +1</ring1>
-			<ring2>Trizek Ring</ring2>
-			<back>Solemnity Cape</back>
-		</set>
-		<set name="temp">
-			<main augment="S15876655966859314381">Grioavolr</main>
-			<sub>Umbra Strap</sub>
-			<ammo>Sancus Sachet +1</ammo>
-			<head>Beckoner's Horn +1</head>
-			<body augment="D20976940633860">Amalric Doublet +1</body>
-			<hands>Tali'ah Gages +1</hands>
-			<legs>Tali'ah Sera. +2</legs>
-			<feet augment="S59312917964934886">Merlinic Crackows</feet>
-			<neck>Caller's Pendant</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Handler's Earring +1</ear1>
-			<ear2>Handler's Earring</ear2>
-			<ring1></ring1>
-			<ring2>Varar Ring +1</ring2>
-			<back>Swith Cape +1</back>
-		</set>
             <include>
             </include>
         </sets>

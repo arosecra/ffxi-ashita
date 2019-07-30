@@ -4,6 +4,7 @@ _addon.name     = 'multiboxbar';
 _addon.version  = '1.0.0';
 
 require 'common'
+require 'stringex'
 local jobs = require 'windower/res/jobs'
 
 ----------------------------------------------------------------------------------------------------
@@ -14,11 +15,18 @@ local default_config =
 };
 
 local modes = {
-	"Actions", "Buffs", "Settings", "Items"
+	"Settings 1",
+	"Settings 2",
+	"Actions 1",
+	"Actions 2", 
+	"Actions 3", 
+	"WS", 
+	"Buff",  
+	"Item",
 };
 
 local hotbar_variables = {
-	['Mode'] = "Settings"
+	['Mode'] = "Settings 1"
 }
 
 local hotbar_config = default_config;
@@ -26,6 +34,9 @@ local function msg(s)
     local txt = '\31\200[\31\05Multiboxbar\31\200]\31\130 ' .. s;
     print(txt);
 end
+
+local current_hotbar = {
+}
 
 ----------------------------------------------------------------------------------------------------
 -- func: load
@@ -71,25 +82,28 @@ ashita.register_event('command', function(cmd, nType)
 		end
         return true;
     end
-	
+    if (args[2] == 'setmode') then
+		for k,v in ipairs(modes) do
+			if k == tonumber(args[3]) then
+				hotbar_variables['Mode'] = v
+			end
+		end
+        return true;
+    end
+    if (args[2] == 'run') then --[mbb|multiboxbar] run #sectionNumber #macroNumber
+		local current_section = current_hotbar[tonumber(args[3])]
+		if current_section ~= nil then
+			local macro = current_section[tonumber(args[4])]
+			if macro ~= nil then
+				run_macro(macro)
+			end
+		end
+		
+        return true;
+    end
 	
     return true;
 end);
-
---ashita.register_event('key', function(key, down, blocked)
---	
---	if key == 29 then
---		msg('blocking')
---		return true;
---	else
---		if down then
---			msg('key event ' .. key .. ' down')
---		else
---			msg('key event ' .. key .. ' up')
---		end
---	end
---    return false;
---end);
 
 function display_macro_button(hotbar_user, macro, hotbar_variables)
 	local result = false
@@ -112,6 +126,47 @@ function display_macro_button(hotbar_user, macro, hotbar_variables)
 	return result
 end
 
+function display_macro_section(conditions, hotbar_variables)
+	local result = false
+	local playerEntity = GetPlayerEntity()
+    local player = AshitaCore:GetDataManager():GetPlayer();
+	local party  = AshitaCore:GetDataManager():GetParty();
+	
+	if conditions.Static == true then
+		result = true
+	elseif conditions ~= nil then
+		result = true
+		for k,v in pairs(conditions) do
+			if hotbar_variables[k] ~= nil and hotbar_variables[k] ~= v then
+				result = false
+				break
+			end
+		end
+	end
+	
+	return result
+end
+
+function get_active_macros(hotbar_section, hotbar_variables) 
+	local result = {}
+	for conditions_id,conditions in ipairs(hotbar_section.Conditions) do
+		if display_macro_section(conditions, hotbar_variables) then
+			result = conditions.Macros;
+			break;
+		end
+	end
+	return result
+end
+
+function run_macro(hotbar_macro) 
+	if hotbar_macro.Script then
+		msg(hotbar_macro.Script)
+		AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
+	elseif hotbar_macro.Command then
+		msg(hotbar_macro.Command)
+		AshitaCore:GetChatManager():QueueCommand(hotbar_macro.Command, 1)
+	end
+end
 
 ashita.register_event('prerender', function()
 
@@ -150,13 +205,20 @@ ashita.register_event('render', function()
     -- Obtain the local player..
     
     -- Display the pet information..
-    imgui.SetNextWindowSize(800, 215, ImGuiSetCond_Always);
+    imgui.SetNextWindowSize(890, 110, ImGuiSetCond_Always);
     if (imgui.Begin('multiboxbar') == false) then
         imgui.End();
         return;
     end
+	
+	local typesLabel =  hotbar_variables['Mode'] 
+	typesLabel = typesLabel .. string.rep(' ', 12 - #typesLabel)
+	imgui.Text(typesLabel);
+	imgui.SameLine();
 	for index,mode in ipairs(modes) do
-		if imgui.SmallButton(mode) then
+		local modeDisplay = mode .. string.rep(' ', 12 - #mode)
+		--print(mode .. ' ' .. modeLength .. ' ' .. padlength .. ' ' .. modeDisplay)
+		if imgui.SmallButton(modeDisplay) then
 			hotbar_variables['Mode'] = mode
 		end
 		imgui.SameLine()
@@ -164,33 +226,35 @@ ashita.register_event('render', function()
 	
 	imgui.Separator();
 	
-	for hotbar_user_id,hotbar_user in pairs(hotbar_config) do
-		imgui.Text(hotbar_user.Name);
-		local user_buttons = 0
-		for hotbar_macro_index,hotbar_macro in ipairs(hotbar_user.Macros) do
-			if display_macro_button(hotbar_user, hotbar_macro, hotbar_variables) then
-				local label = hotbar_macro.Name
+	for hotbar_section_id,hotbar_section in ipairs(hotbar_config) do
+		local sectionName = hotbar_section.Name
+		sectionName = sectionName .. string.rep(' ', 12 - #sectionName)
+		imgui.Text(sectionName);
+		imgui.SameLine();
+		local macros = get_active_macros(hotbar_section, hotbar_variables)
+		
+		current_hotbar[hotbar_section_id] = macros;
+		
+		for i=1,8 do
+			local label = string.rep(' ', 12)
+			if macros ~= nil and #macros >= i then
+				label = macros[i].Name
 				if #label > 12 then
-					label = string.sub(label,1,10) .. '..'
-				end
-				user_buttons = user_buttons+1
-				if (imgui.SmallButton(label)) then 
-					if hotbar_macro.Script then
-						msg(hotbar_macro.Script)
-						AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
-					elseif hotbar_macro.Command then
-						msg(hotbar_macro.Command)
-						AshitaCore:GetChatManager():QueueCommand(hotbar_macro.Command, 1)
-					end
-				end
-				if user_buttons % 8 == 0 then
-					imgui.Separator();
+					label = string.sub(label,1,12) .. '..'
 				else
-					imgui.SameLine();
+					label = label .. string.rep(' ', 12 - #label)
 				end
 			end
-		end		
-		
+			
+			if (imgui.SmallButton(label)) then 
+				if macros ~= nil and #macros >= i then
+					local hotbar_macro = macros[i]
+					run_macro(hotbar_macro)
+				end
+			end	
+			imgui.SameLine();			
+		end
+				
 		imgui.Separator();
 	end
 
