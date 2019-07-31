@@ -1,0 +1,3 @@
+/ma "Sneak" <me>
+/wait 10
+/ma "Invisible" <me>

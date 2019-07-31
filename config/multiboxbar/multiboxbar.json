@@ -23,7 +23,10 @@
 						}, {
 							"Name": "warp2me",
 							"Script": "warp2me.txt"
-						} 
+						}, {
+							"Name": "sneak",
+							"Command": "/ms send /sneakinvis"
+						}  
 					]
 			}
 		]

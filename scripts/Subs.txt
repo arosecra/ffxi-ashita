@@ -33,6 +33,7 @@
 /addon load HomePoint
 /addon load SurvivalGuide
 /addon load warptome
+/addon load sneakinvis
 
 ##########################################################################
 # Set Common Settings
