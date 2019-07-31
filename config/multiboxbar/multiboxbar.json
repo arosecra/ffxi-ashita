@@ -32,7 +32,7 @@
 		"Name": "Specktr",
 		"Conditions": [
 			{
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Specktr.MainJob": "Blue Mage",
 				"Macros": [ 
 						{
@@ -46,13 +46,13 @@
 							"Name": "BluRefr"
 						}, {
 							"Command": "/ac var set IdleMode TP-High",
-							"Name": "BluTPHigh"
+							"Name": "BluTP+"
 						} 
 					]
 			}, 
 			{
 				"Specktr.MainJob": "Corsair",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 					{
 						"Command": "/ac var set IdleMode TP",
@@ -68,23 +68,23 @@
 					}, 
 					{
 						"Command": "/ac var set IdleMode TP-High",
-						"Name": "CorTPHigh"
+						"Name": "CorTP+"
 					}
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Corsair",
-				"Mode": "Abilities 1",
+				"Mode": "Actns1",
 				"Macros": [
 					{
 					"Script": "LeadenSalute.txt",
-					"Name": "CorTPHigh"
+					"Name": "LS"
 					}
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Puppetmaster",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 					{
 						"Command": "/ac var set Strategy MstrMelee",
@@ -100,7 +100,7 @@
 					}, 
 					{
 						"Command": "/ac var set Strategy 119PetOnly",
-						"Name": "119PetOnly"
+						"Name": "119PO"
 					}, 
 					{
 						"Command": "/ac var set Strategy MstrDT",
@@ -108,13 +108,13 @@
 					}, 
 					{
 						"Command": "/ac var set Strategy Overdrive",
-						"Name": "Overdrive"
+						"Name": "Overdr"
 					}
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Puppetmaster",
-				"Mode": "Actions 1",
+				"Mode": "Actns1",
 				"Macros": [
 					{
 						"Command": "/ja Deploy <t>",
@@ -124,7 +124,7 @@
 			}, 
 			{
 				"Specktr.MainJob": "Scholar",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 					{
 						"Command": "/ac var set Accuracy Low",
@@ -138,7 +138,7 @@
 			}, 
 			{
 				"Specktr.MainJob": "Scholar",
-				"Mode": "Settings 2",
+				"Mode": "Sttngs2",
 				"Macros": [
 					{
 						"Command": "/nuke setelement fire",
@@ -194,7 +194,7 @@
 			}, 
 			{
 				"Specktr.MainJob": "Scholar",
-				"Mode": "Actions 1",
+				"Mode": "Actns1",
 				"Macros": [
 				{
 					"Command": "/nuke helixI",
@@ -228,7 +228,7 @@
 			}, 
 			{
 				"Specktr.MainJob": "Beastmaster",
-				"Mode": "Actions 2",
+				"Mode": "Actns2",
 				"Macros": [{
 					"Script": "Liquefaction.txt",
 					"Name": "LIq/Fire"
@@ -257,7 +257,7 @@
 			}, 
 			{
 				"Specktr.MainJob": "Scholar",
-				"Mode": "Actions 3",
+				"Mode": "Actns3",
 				"Macros": [
 					{
 						"Script": "Transfiction.txt",
@@ -287,25 +287,25 @@
 			}, 
 			{
 				"Specktr.MainJob": "Beastmaster",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Black Mage",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Ninja",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 				]
 			}, 
 			{
 				"Specktr.MainJob": "Ranger",
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Macros": [
 				]
 			}
@@ -315,25 +315,25 @@
 		"Name": "Sternaru",
 		"Conditions": [
 			{
-				"Mode": "Settings 1",
+				"Mode": "Sttngs1",
 				"Specktr.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "StrnOvrdrive",
+							"Name": "StOvr",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy Overdrive"
 						},
 						{
-							"Name": "StrnPetDT",
+							"Name": "StPtDT",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy PetDT"
 						}
 					]
 			},
 			{
-				"Mode": "Actions 1",
+				"Mode": "Actns1",
 				"Specktr.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "StrnDply",
+							"Name": "StDply",
 							"Command" : "/ms sendto Sternaru /ja Deploy [t]"
 						}
 					]
@@ -344,17 +344,17 @@
 		"Name": "Sillyaru",
 		"Conditions": [
 			{
-				"Mode": "Actions 1",
+				"Mode": "Actns1",
 				"Specktr.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "SillyDply",
+							"Name": "SlyDply",
 							"Command" : "/ms sendto Sillyaru /ja Deploy [t]"
 						}
 					]
 			},
 			{
-				"Mode": "Actions 1",
+				"Mode": "Actns1",
 				"Specktr.MainJob": "Corsair",
 				"Macros": [
 						{
