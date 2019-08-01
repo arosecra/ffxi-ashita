@@ -1,0 +1,10 @@
+{
+	"Strategy": [
+		{"Value": "MstrMelee" }, 
+		{"Value":"PetOnly"}, 
+		{"Value":"PetMelee"}, 
+		{"Value":"119PetOnly"}, 
+		{"Value":"MstrDT"}, 
+		{"Value":"Overdrive"}
+	]
+}

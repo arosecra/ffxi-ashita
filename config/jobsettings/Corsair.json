@@ -1,0 +1,9 @@
+{
+	"IdleMode": [
+		{"Value":"TP"}, 
+		{"Value":"DT"}, 
+		{"Value":"Refresh"}, 
+		{"Value":"TP-High"}, 
+		{"Value":"TH"}
+	]
+}

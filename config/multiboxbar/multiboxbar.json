@@ -58,20 +58,12 @@
 				"Mode": "Sttngs1",
 				"Macros": [
 					{
-						"Command": "/ac var set IdleMode TP",
-						"Name": "CorTP"
+						"Command": "/jobsettings IdleMode",
+						"Name": "IdleMode"
 					}, 
 					{
 						"Command": "/ac var set IdleMode DT",
 						"Name": "CorDT"
-					}, 
-					{
-						"Command": "/ac var set IdleMode Refresh",
-						"Name": "CorRefr"
-					}, 
-					{
-						"Command": "/ac var set IdleMode TP-High",
-						"Name": "CorTP+"
 					}
 				]
 			}, 
@@ -90,28 +82,12 @@
 				"Mode": "Sttngs1",
 				"Macros": [
 					{
-						"Command": "/ac var set Strategy MstrMelee",
-						"Name": "MstrMlee"
-					}, 
-					{
-						"Command": "/ac var set Strategy PetOnly",
-						"Name": "PetOnly"
-					}, 
-					{
-						"Command": "/ac var set Strategy PetMelee",
-						"Name": "PetMelee"
-					}, 
-					{
-						"Command": "/ac var set Strategy 119PetOnly",
-						"Name": "119PO"
-					}, 
+						"Command": "/jobsettings Strategy",
+						"Name": "Strat"
+					},
 					{
 						"Command": "/ac var set Strategy MstrDT",
 						"Name": "MstrDT"
-					}, 
-					{
-						"Command": "/ac var set Strategy Overdrive",
-						"Name": "Overdr"
 					}
 				]
 			}, 
@@ -230,7 +206,7 @@
 				]
 			}, 
 			{
-				"Specktr.MainJob": "Beastmaster",
+				"Specktr.MainJob": "Scholar",
 				"Mode": "Actns2",
 				"Macros": [{
 					"Script": "Liquefaction.txt",
@@ -292,6 +268,102 @@
 				"Specktr.MainJob": "Beastmaster",
 				"Mode": "Sttngs1",
 				"Macros": [
+					{
+						"Command": "/jobsettings Jug",
+						"Name": "Jug"
+					},
+					{
+						"Command": "/jobsettings Accuracy",
+						"Name": "Acc"
+					},
+					{
+						"Command": "/jobsettings CharmersStrategy",
+						"Name": "ChrmStrt"
+					},
+					{
+						"Command": "/jobsettings IdleMain",
+						"Name": "IdleMain"
+					},
+					{
+						"Command": "/jobsettings IdleSub",
+						"Name": "IdleSub"
+					},
+					{
+						"Command": "/jobsettings WeaponStrategy",
+						"Name": "WepStrat"
+					},
+					{
+						"Command": "/jobsettings Strategy",
+						"Name": "Strategy"
+					},
+					{
+						"Command": "/ac var set Strategy MasterDT",
+						"Name": "MstrDT"
+					}
+				]
+			},  
+			{
+				"Specktr.MainJob": "Beastmaster",
+				"Mode": "Actns1",
+				"Macros": [
+					{
+						"Command": "/pet \"Fight\" <stnpc>",
+						"Name": "PetFght"
+					},
+					{
+						"Command": "/ja \"Reward\" <me>",
+						"Name": "Reward"
+					},
+					{
+						"Command": "/bstpet 1 <me>",
+						"Name": "Pet1"
+					},
+					{
+						"Command": "/bstpet 2 <me>",
+						"Name": "Pet2"
+					},
+					{
+						"Command": "/bstpet 3 <me>",
+						"Name": "Pet3"
+					},
+					{
+						"Command": "/bstpet 4 <me>",
+						"Name": "Pet4"
+					}
+				]
+			}, 
+			{
+				"Specktr.MainJob": "Beastmaster",
+				"Mode": "Actns2",
+				"Macros": [
+					{
+						"Command": "/pet \"Stay\" <me>",
+						"Name": "PetStay"
+					},
+					{
+						"Command": "/pet \"Heel\" <me>",
+						"Name": "PetHeel"
+					},
+					{
+						"Command": "/ja \"Spur\" <me>",
+						"Name": "Spur"
+					},
+					{
+						"Command": "/ja \"Call Beast\" <me>",
+						"Name": "CllBst"
+					},
+					{
+						"Command": "/ja \"Bestial Loyalty\" <me>",
+						"Name": "BL"
+					},
+					{
+						"Command": "/ja \"Familiar\" <me>",
+						"Name": "Fam"
+					},
+					{
+						"Command": "/ja \"Unleash\" <me>",
+						"Name": "Unlsh"
+					}
 				]
 			}, 
 			{
@@ -319,7 +391,7 @@
 		"Conditions": [
 			{
 				"Mode": "Sttngs1",
-				"Specktr.MainJob": "Puppetmaster",
+				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
 							"Name": "StOvr",
@@ -333,7 +405,7 @@
 			},
 			{
 				"Mode": "Actns1",
-				"Specktr.MainJob": "Puppetmaster",
+				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
 							"Name": "StDply",
@@ -348,7 +420,7 @@
 		"Conditions": [
 			{
 				"Mode": "Actns1",
-				"Specktr.MainJob": "Puppetmaster",
+				"Sillyaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
 							"Name": "SlyDply",
@@ -358,7 +430,7 @@
 			},
 			{
 				"Mode": "Actns1",
-				"Specktr.MainJob": "Corsair",
+				"Sillyaru.MainJob": "Corsair",
 				"Macros": [
 						{
 							"Name": "DblUp",
@@ -377,7 +449,7 @@
 
 			{
 				"Mode": "Buff",
-				"Specktr.MainJob": "Corsair",
+				"Sillyaru.MainJob": "Corsair",
 				"Macros": [
 						{
 							"Name": "Exp+",
