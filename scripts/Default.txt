@@ -31,9 +31,11 @@
 /addon load blusets
 /addon load HomePoint
 /addon load SurvivalGuide
+/addon load equipviewer
 /addon load warptome
 /addon load multiboxbar
 /addon load sneakinvis
+/addon load jobsettings
 
 ##########################################################################
 # Set Common Settings
