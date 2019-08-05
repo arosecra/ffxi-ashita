@@ -9,8 +9,8 @@
   <setting name="windowed">True</setting>
   <setting name="show_border">True</setting>
   <setting name="unhook_mouse">True</setting>
-  <setting name="window_x">1440</setting>
-  <setting name="window_y">900</setting>
+  <setting name="window_x">1680</setting>
+  <setting name="window_y">1050</setting>
   <setting name="startpos_x">-1</setting>
   <setting name="startpos_y">-1</setting>
   <setting name="background_x">-1</setting>
