@@ -100,34 +100,11 @@ ashita.register_event('command', function(cmd, nType)
     if (args[2] == 'button_from_controller') then
 	
 		--determine the mode, since we can't rely on keybinds entirely (stupid keyboard?)
-		local section = 0
-		if      control_key_states[ALT]     == true and
-		        control_key_states[WIN]     == false and
-		        control_key_states[CONTROL] == false and
-		        control_key_states[MENU]    == false then
-			print('run macro section 1 ' .. args[3])
-			run_macro_command(1, tonumber(args[3]))	
-		elseif control_key_states[ALT]     == false and
-		        control_key_states[WIN]     == true and
-		        control_key_states[CONTROL] == false and
-		        control_key_states[MENU]    == false then
-			print('run macro section 2 ' .. args[3])
-			run_macro_command(2, tonumber(args[3]))	
-		elseif control_key_states[ALT]     == false and
-		        control_key_states[WIN]     == false and
-		        control_key_states[CONTROL] == true and
-		        control_key_states[MENU]    == false then
-			print('run macro section 3 ' .. args[3])
-			run_macro_command(3, tonumber(args[3]))	
-		elseif control_key_states[ALT]     == false and
-		        control_key_states[WIN]     == false and
-		        control_key_states[CONTROL] == false and
-		        control_key_states[MENU]    == true then
-			print('run macro section 4 ' .. args[3])
-			run_macro_command(4, tonumber(args[3]))
+		local section = get_current_macro_row_number()
+		if section == 0 then
+			run_set_mode_command(tonumber(args[3]))	
 		else
-			print('run set mode ' .. args[3])
-			run_set_mode_command(tonumber(args[3]))		
+			run_macro_command(section, tonumber(args[3]))	
 		end
         return true;
     end
@@ -166,8 +143,10 @@ ashita.register_event('key', function(key, down, blocked)
 	--msg('key event ' .. key)
 	if key == ALT or key == WIN or key == CONTROL or key == MENU then
 		if down then
+			--print("key down " .. key)
 			control_key_states[key] = true
 		else
+			--print("key up " .. key)
 			control_key_states[key] = false
 		end
 	end
@@ -270,18 +249,41 @@ ashita.register_event('prerender', function()
 	end
 end);
 
+function get_current_macro_row_number()
+	local section = 0
+	if      control_key_states[ALT]     == true and
+	        control_key_states[WIN]     == false and
+	        control_key_states[CONTROL] == false and
+	        control_key_states[MENU]    == false then
+		section = 1;
+	elseif control_key_states[ALT]     == false and
+	        control_key_states[WIN]     == true and
+	        control_key_states[CONTROL] == false and
+	        control_key_states[MENU]    == false then
+		section = 2;
+	elseif control_key_states[ALT]     == false and
+	        control_key_states[WIN]     == false and
+	        control_key_states[CONTROL] == true and
+	        control_key_states[MENU]    == false then
+		section = 3
+	elseif control_key_states[ALT]     == false and
+	        control_key_states[WIN]     == false and
+	        control_key_states[CONTROL] == false and
+	        control_key_states[MENU]    == true then
+		section = 4	
+	end
+	return section
+end
+
 function get_button_label_text(original_label, size)
 	return original_label .. string.rep(' ', size - #original_label)
 end
-
-
-
 
 ashita.register_event('render', function()
     -- Obtain the local player..
     
     -- Display the pet information..
-    imgui.SetNextWindowSize(630, 125, ImGuiSetCond_Always);
+    imgui.SetNextWindowSize(680, 125, ImGuiSetCond_Always);
     if (imgui.Begin('multiboxbar') == false) then
         imgui.End();
         return;
@@ -291,14 +293,12 @@ ashita.register_event('render', function()
 	imgui.Text(get_button_label_text(hotbar_variables['Mode'] , 8));
 	imgui.SameLine();
 	
-	imgui.Text("    L         U         D         R");
+	imgui.Text("            L         U         D         R");
 	imgui.SameLine();
 	imgui.Text("        X         Y         A         B");
 	
-	imgui.Text(get_button_label_text("Pages", 8));
+	imgui.Text(get_button_label_text("Pages", 16));
 	imgui.SameLine();
-	
-	
 	
 	for index,mode in ipairs(modes) do
 		local modeDisplay = mode .. string.rep(' ', 8 - #mode)
@@ -311,9 +311,14 @@ ashita.register_event('render', function()
 	
 	imgui.Separator();
 	
+	local section = get_current_macro_row_number()
 	for hotbar_section_id,hotbar_section in ipairs(hotbar_config) do
 		local sectionName = hotbar_section.Name
-		sectionName = sectionName .. string.rep(' ', 8 - #sectionName)
+		if hotbar_section_id == section then
+			sectionName = "(*) " .. sectionName .. string.rep(' ', 12 - #sectionName)
+		else 
+			sectionName = "( ) " .. sectionName .. string.rep(' ', 12 - #sectionName)
+		end
 		imgui.Text(sectionName);
 		imgui.SameLine();
 		local macros = get_active_macros(hotbar_section, hotbar_variables)
