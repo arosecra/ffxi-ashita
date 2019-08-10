@@ -1,0 +1,9 @@
+/party (Starting Gear) (Skillchain) (Fragmentation) MB: (Aero/Thunder)
+/ja "Immanence” <me>
+/wait 1
+/ma "Blizzard" <t>
+/wait 5
+/p (Closed Position) (Skillchain in 3)
+/ja "Immanence” <me>
+/wait 1
+/ma "Water" <t>

@@ -1,0 +1,9 @@
+/party (Starting Gear) (Skillchain) (Distortion) MB: (Water/Blizzard)
+/ja "Immanence” <me>
+/wait 1
+/ma "Luminohelix”” <t>
+/wait 5
+/p (Closed Position) (Skillchain in 3)
+/ja "Immanence” <me>
+/wait 1
+/ma "Stone” <t>
