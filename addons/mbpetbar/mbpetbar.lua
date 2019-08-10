@@ -53,39 +53,26 @@ ashita.register_event('render', function()
 		--print(entityId)
 		if entityId ~= 0 then
 			local entity = GetEntity(entityId)
-			local petTargetIndex = entity.PetTargetIndex
-			if petTargetIndex ~= 0 then
-				local petEntity = GetEntity(entity.PetTargetIndex)
-				--print(petEntity.Name)
-				--print(petEntity.HealthPercent)
-				
-				imgui.Text(petEntity.Name .. "(" .. name .. ")");
-				imgui.Separator();
-				
-				-- Set the progressbar color for health..
-				imgui.PushStyleColor(ImGuiCol_PlotHistogram, 1.0, 0.61, 0.61, 0.6);
-				imgui.Text('HP:');
-				imgui.SameLine();
-				imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
-				imgui.ProgressBar(tonumber(petEntity.HealthPercent) / 100, -1, 14);
-				imgui.PopStyleColor(2);
-				
-				--imgui.PushStyleColor(ImGuiCol_PlotHistogram, 0.0, 0.61, 0.61, 0.6);
-				--imgui.Text('MP:');
-				--imgui.SameLine();
-				--imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
-				--imgui.ProgressBar(tonumber(petEntity.ManaPercent) / 100, -1, 14);
-				--imgui.PopStyleColor(2);
-				
-				--imgui.PushStyleColor(ImGuiCol_PlotHistogram, 0.4, 1.0, 0.4, 0.6);
-				--imgui.Text('TP:');
-				--imgui.SameLine();
-				--imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
-				--imgui.ProgressBar(tonumber(petEntity.pettp) / 3000, -1, 14, tostring(v.pettp));
-				--imgui.PopStyleColor(2);
-				
-				imgui.End();
-				
+			if entity ~= nil then
+				local petTargetIndex = entity.PetTargetIndex
+				if petTargetIndex ~= 0 then
+					local petEntity = GetEntity(entity.PetTargetIndex)
+					--print(petEntity.Name)
+					--print(petEntity.HealthPercent)
+					
+					imgui.Text(petEntity.Name .. "(" .. name .. ")");
+					imgui.Separator();
+					
+					-- Set the progressbar color for health..
+					imgui.PushStyleColor(ImGuiCol_PlotHistogram, 1.0, 0.61, 0.61, 0.6);
+					imgui.Text('HP:');
+					imgui.SameLine();
+					imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
+					imgui.ProgressBar(tonumber(petEntity.HealthPercent) / 100, -1, 14);
+					imgui.PopStyleColor(2);
+										
+					imgui.End();
+				end
 			end
 		end
 	end   
