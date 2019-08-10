@@ -372,6 +372,11 @@
 				<rring>Capacity Ring</rring>                
 			</equip>
 		</if>
+		<if eq_rring="Endorsement Ring">
+			<equip lock="true">
+				<rring>Endorsement Ring</rring>                
+			</equip>
+		</if>
 		<if eq_rring="Vocation Ring">
 			<equip lock="true">
 				<rring>Vocation Ring</rring>                

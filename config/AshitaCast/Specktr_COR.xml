@@ -197,6 +197,11 @@
 				<rring>Trizek Ring</rring>                
 			</equip>
 		</if>
+		<if eq_rring="Endorsement Ring">
+			<equip lock="true">
+				<rring>Endorsement Ring</rring>                
+			</equip>
+		</if>
 		<if eq_rring="Capacity Ring">
 			<equip lock="true">
 				<rring>Capacity Ring</rring>                
@@ -214,7 +219,7 @@
 		</if>
 		<if eq_back="Mecisto. Mantle">
 			<equip lock="true">
-			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			<back>Mecisto. Mantle</back>              
 			</equip>
 		</if>
 		<if eq_rring="Warp Ring">
