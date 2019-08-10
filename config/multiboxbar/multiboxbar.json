@@ -7,10 +7,10 @@
 				"Macros": [ 
 						{
 							"Name": "follon",
-							"Script": "follon.txt"
+							"Script": "mbox/follon.txt"
 						}, {
 							"Name": "follof",
-							"Script": "follof.txt"
+							"Script": "mbox/follof.txt"
 						}, {
 							"Command": "/ms send /mount Raptor",
 							"Name": "mount"
@@ -19,10 +19,10 @@
 							"Name": "dismnt"
 						}, {
 							"Name": "group",
-							"Script": "group.txt"
+							"Script": "mbox/group.txt"
 						}, {
 							"Name": "warp2me",
-							"Script": "warp2me.txt"
+							"Script": "mbox/warp2me.txt"
 						}, {
 							"Name": "sneak",
 							"Command": "/ms send /sneakinvis"
