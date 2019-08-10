@@ -36,7 +36,6 @@
 /addon load multiboxbar
 /addon load sneakinvis
 /addon load jobsettings
-/addon load ffxicompanion
 
 ##########################################################################
 # Set Common Settings
