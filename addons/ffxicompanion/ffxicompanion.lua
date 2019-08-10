@@ -90,11 +90,21 @@ ashita.register_event('prerender', function()
 	if send_update then
 		local data = ashita.settings.JSON:encode_pretty(new_details, nil, { pretty = true, align_keys = false, indent = '    ' });
 	
-		local sock = socket.connect('localhost', '11000');
-		if sock ~= nil then
-			sock:send(data);
-			sock:close();
+		--local sock = socket.connect('localhost', '11000');
+		--if sock ~= nil then
+		--	sock:send(data);
+		--	sock:close();
+		--end
+		
+		local f = io.open('\\\\.\\pipe\\testpipe', 'w');
+		if (f == nil) then
+			error('Failed to save configuration.');
+		else 
+			f:write(data);
+			f:flush();
+			f:close();
 		end
+
 	end
 	
 	last_details = new_details;
