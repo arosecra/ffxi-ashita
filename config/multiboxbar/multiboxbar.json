@@ -12,7 +12,7 @@
 							"Name": "follof",
 							"Script": "mbox/follof.txt"
 						}, {
-							"Command": "/ms send /mount Raptor",
+							"Command": "/ms send /mount \"Red Crab\"",
 							"Name": "mount"
 						}, {
 							"Command": "/ms send /dismount",

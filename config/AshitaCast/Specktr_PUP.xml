@@ -51,7 +51,7 @@
 		</set>
 		<set name="PupEng-PetMelee">
 			<head>Tali'ah Turban +1</head>
-			<body augment="M7441">Pitre Tobe +1</body>
+			<body>Pitre Tobe +2</body>
 			<hands augment="S1215535211">Herculean Gloves</hands>
 			<legs augment="S4288230322391422629">Herculean Trousers</legs>
 			<feet augment="S780709702759478293">Herculean Boots</feet>
@@ -65,7 +65,7 @@
 		</set>
 		<set name="PupEng-MstrMelee">
 			<head>Tali'ah Turban +1</head>
-			<body>Tali'ah Manteel +2</body>
+			<body>Pitre Tobe +2</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet augment="S70476530497559">Herculean Boots</feet>
@@ -197,6 +197,11 @@
 				<rring>Trizek Ring</rring>                
 			</equip>
 		</if>
+		<if eq_rring="Endorsement Ring">
+			<equip lock="true">
+				<rring>Endorsement Ring</rring>                
+			</equip>
+		</if>
 		<if eq_rring="Capacity Ring">
 			<equip lock="true">
 				<rring>Capacity Ring</rring>                
@@ -214,7 +219,7 @@
 		</if>
 		<if eq_back="Mecisto. Mantle">
 			<equip lock="true">
-			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			<back>Mecisto. Mantle</back>              
 			</equip>
 		</if>
 		<if eq_rring="Warp Ring">
