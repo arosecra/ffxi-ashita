@@ -3,7 +3,7 @@
 		"Name": "MBox",
 		"Conditions": [
 			{
-				"Static": true,
+				"Mode": "Actns1",
 				"Macros": [ 
 						{
 							"Name": "follon",
@@ -27,6 +27,23 @@
 							"Name": "sneak",
 							"Command": "/ms send /sneakinvis"
 						}  
+					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
+						},   
+						{
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
+						},   
+						{
+							"Command": "/ms send /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
+						}
 					]
 			}
 		]
