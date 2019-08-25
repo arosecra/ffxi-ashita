@@ -1,0 +1,122 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="DT">
+			<head augment="S70476420356167">Herculean Helm</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Mummu Kecks +1</legs>
+			<feet augment="S114448266678297">Herculean Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Flume Belt</waist>
+			<ear1>Ethereal Earring</ear1>
+			<ear2>Genmei Earring</ear2>
+			<ring1 augment="S26620479410231">Dark Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
+		<set name="TP">
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Sanctity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Begrudging Ring</ring1>
+			<ring2>Epona's Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="MidcastRanged">
+			<head>Meghanada Visor +1</head>
+			<body>Nisroch Jerkin</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +2</feet>
+			<neck>Iskur Gorget</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Volley Earring</ear1>
+			<ear2>Enervating Earring</ear2>
+			<ring1>Paqichikaji Ring</ring1>
+			<ring2>Longshot Ring</ring2>
+		</set>
+		<set name="PrecastRanged">
+			<head augment="S36091026669568">Taeon Chapeau</head>
+			<body augment="D6300775362818">Pursuer's Doublet</body>
+			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
+			<legs>Nahtirah Trousers</legs>
+			<feet>Meg. Jam. +2</feet>
+			<waist>Impulse Belt</waist>
+			<back>Navarch's Mantle</back>
+		</set>
+		<set name="WS">
+			<head>Meghanada Visor +1</head>
+			<body>Nisroch Jerkin</body>
+			<hands>Meg. Gloves +1</hands>
+			<legs>Meg. Chausses +1</legs>
+			<feet>Meg. Jam. +2</feet>
+			<neck>Iskur Gorget</neck>
+			<waist>Eschan Stone</waist>
+			<ear1>Volley Earring</ear1>
+			<ear2>Enervating Earring</ear2>
+			<ring1>Paqichikaji Ring</ring1>
+			<ring2>Longshot Ring</ring2>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="IdleMode">TP</var>
+		<var name="th">no</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<equip set="$IdleMode"/>
+	</idlegear>
+	<preranged>
+		<equip set="PrecastRanged"/>
+		<if th="yes">
+			<equip set="TH"/>
+		</if>
+	</preranged>
+	<midranged>
+		<equip set="MidcastRanged"/>
+		<if th="yes">
+			<equip set="TH"/>
+			<setvar name="th" value="no"/>
+		</if>
+	</midranged>
+	<premagic>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+		<if ad_name="Dia*">
+			<equip set="TH"/>
+		</if>
+	</midmagic>
+	<jobability>
+		<if ad_name="*Roll|Double-Up">
+			<equip set="PhantomRoll"/>
+		</if>
+		<elseif ad_name="*Shot">
+			<equip set="QD"/>
+		</elseif>
+	</jobability>
+	<weaponskill>
+		<equip set="WS"/>
+	</weaponskill>
+</ashitacast>

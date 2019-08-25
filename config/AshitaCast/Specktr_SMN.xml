@@ -47,7 +47,7 @@
 				<body>Con. Doublet +2</body>
 				<hands>Tali'ah Gages +1</hands>
 				<legs>Tali'ah Sera. +2</legs>
-				<feet>Con. Pigaches +1</feet>
+				<feet augment="S114779267131493">Merlinic Crackows</feet>
 				<neck>Adad Amulet</neck>
 				<waist>Klouskap Sash</waist>
 				<ear1 augment="S9230422179876">Diamond Earring</ear1>
@@ -60,7 +60,7 @@
 				<body>Con. Doublet +2</body>
 				<hands>Tali'ah Gages +1</hands>
 				<legs>Tali'ah Sera. +2</legs>
-				<feet>Con. Pigaches +1</feet>
+				<feet augment="S114779267131493">Merlinic Crackows</feet>
 				<neck>Adad Amulet</neck>
 				<waist>Klouskap Sash</waist>
 				<ear1 augment="S9230422179876">Diamond Earring</ear1>
@@ -329,7 +329,7 @@
         </inputcommands>
        
         <idlegear>
-			<if eq_rring="Trizek Ring">
+			<!--<if eq_rring="Trizek Ring">
 				<equip lock="true">
 					<rring>Trizek Ring</rring>                
 				</equip>
@@ -358,7 +358,7 @@
 				<equip lock="true">
 					<rring>Warp Ring</rring>				
 				</equip>
-			</if>
+			</if>-->
 			<if p_ismoving="True">
 				<equip lock="true">
 					<lring>Shneddick Ring</lring>
