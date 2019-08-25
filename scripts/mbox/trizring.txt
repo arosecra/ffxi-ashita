@@ -1,0 +1,7 @@
+/ac disable rring
+/wait 1
+/equip ring2 "Trizek Ring"
+/wait 10
+/item "Trizek Ring" <me>
+/wait 10
+/ac enable

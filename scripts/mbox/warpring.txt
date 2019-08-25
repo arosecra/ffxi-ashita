@@ -1,0 +1,7 @@
+/ac disable rring
+/wait 1
+/equip ring2 "Warp Ring"
+/wait 30
+/item "Warp Ring" <me>
+/wait 10
+/ac enable
