@@ -124,11 +124,11 @@
 				"Macros": [
 					{
 						"Command": "/ac var set Accuracy Low",
-						"Name": "CntntLow"
+						"Name": "Cntnt-"
 					}, 
 					{
 						"Command": "/ac var set Accuracy High",
-						"Name": "CntntHigh"
+						"Name": "Cntnt+"
 					}
 				]
 			}, 
@@ -184,7 +184,7 @@
 					}, 
 					{
 						"Command": "/ma Klimaform <me>",
-						"Name": "klimaform"
+						"Name": "klima"
 					}
 				]
 			}, 
@@ -226,28 +226,28 @@
 				"Specktr.MainJob": "Scholar",
 				"Mode": "Actns2",
 				"Macros": [{
-					"Script": "Liquefaction.txt",
-					"Name": "LIq/Fire"
+					"Script": "scholar_self_sc/Liquefaction_Fire.txt",
+					"Name": "Liq/F"
 				},
 				{
-					"Script": "Scission.txt",
-					"Name": "Sci/Sto"
+					"Script": "scholar_self_sc/Scission_Stone.txt",
+					"Name": "Sci/S"
 				},
 				{
-					"Script": "Reverberation.txt",
-					"Name": "Rev/Wat"
+					"Script": "scholar_self_sc/Reverberation_Water.txt",
+					"Name": "Rev/W"
 				},
 				{
-					"Script": "Detonation.txt",
-					"Name": "Det/Wind"
+					"Script": "scholar_self_sc/Detonation_Aero.txt",
+					"Name": "Det/A"
 				},
 				{
-					"Script": "Induration.txt",
-					"Name": "Ind/Ice"
+					"Script": "scholar_self_sc/Induration_Blizzard.txt",
+					"Name": "Ind/B"
 				},
 				{
-					"Script": "Impaction.txt",
-					"Name": "Imp/Thu"
+					"Script": "scholar_self_sc/Impaction_Thunder.txt",
+					"Name": "Imp/T"
 				}
 				]
 			}, 
@@ -256,28 +256,28 @@
 				"Mode": "Actns3",
 				"Macros": [
 					{
-						"Script": "Transfiction.txt",
-						"Name": "Trns/Light"
+						"Script": "scholar_self_sc/Transfiction_Light.txt",
+						"Name": "Trns/L"
 					},
 					{
-						"Script": "Compression.txt",
-						"Name": "Com/Dark"
+						"Script": "scholar_self_sc/Compression_Dark.txt",
+						"Name": "Com/D"
 					},
 					{
-						"Script": "Fragmentation.txt",
-						"Name": "Frag/Wind/Thu"
+						"Script": "scholar_self_sc/Fragmentation_Aero_Thunder.txt",
+						"Name": "Frag/AT"
 					},
 					{
-						"Script": "Fusion.txt",
-						"Name": "Fus/Fire/Light"
+						"Script": "scholar_self_sc/Fusion_Fire_Light.txt",
+						"Name": "Fus/FL"
 					},
 					{
-						"Script": "Gravitation.txt",
-						"Name": "Grav/Dark/Sto"
+						"Script": "scholar_self_sc/Gravitation_Dark_Stone.txt",
+						"Name": "Grav/DS"
 					},
 					{
-						"Script": "Distortion.txt",
-						"Name": "Dist/Wat/Ice"
+						"Script": "scholar_self_sc/Distortion_Water_Blizzard.txt",
+						"Name": "Dist/WB"
 					}
 				]
 			}, 
