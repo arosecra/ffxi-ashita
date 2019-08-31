@@ -1,9 +1,9 @@
 /party (Starting Gear) (Skillchain) (Detonation) MB: (Aero)
-/ja "Immanence” <me>
+/ja "Immanence" <me>
 /wait 1
-/ma "Stone” <t>
+/ma "Stone" <t>
 /wait 5
 /p (Closed Position) (Skillchain in 3)
-/ja "Immanence” <me>
+/ja "Immanence" <me>
 /wait 1
-/ma "Aero” <t>
+/ma "Aero" <t>

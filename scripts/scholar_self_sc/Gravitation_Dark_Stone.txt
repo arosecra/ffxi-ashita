@@ -1,9 +1,9 @@
 /party (Starting Gear) (Skillchain) (Gravitation) MB: (Dark/Stone)
-/ja "Immanence” <me>
+/ja "Immanence" <me>
 /wait 1
-/ma "Aero” <t>
+/ma "Aero" <t>
 /wait 5
 /p (Closed Position) (Skillchain in 3)
-/ja "Immanence” <me>
+/ja "Immanence" <me>
 /wait 1
-/ma "Noctohelix” <t>
+/ma "Noctohelix" <t>
