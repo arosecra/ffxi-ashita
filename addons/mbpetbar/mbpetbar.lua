@@ -30,7 +30,7 @@ ashita.register_event('command', function(cmd, nType)
         return true;
     end
 	
-    return true;
+    return false;
 end);
 
 ashita.register_event('render', function()
