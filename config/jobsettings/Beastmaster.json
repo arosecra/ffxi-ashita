@@ -25,71 +25,71 @@
 		{
 			"Name":"Lizard",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Livid Broth" },
-				{ "Name": "CllBstJug",     "Value": "Livid Broth" }
+				{ "Name": "BlJug",         "Value": "\"Livid Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Livid Broth\"" }
 			]
 		},  
 		{
 			"Name":"Tiger",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Meaty Broth" },
-				{ "Name": "CllBstJug",     "Value": "Meaty Broth" }
+				{ "Name": "BlJug",         "Value": "\"Meaty Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Meaty Broth\"" }
 			]
 		},  
 		{
 			"Name":"Cricket",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Bubbly Broth" },
-				{ "Name": "CllBstJug",     "Value": "Spicy Broth" }
+				{ "Name": "BlJug",         "Value": "\"Bubbly Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Spicy Broth\"" }
 			]
 		},  
 		{
 			"Name":"Bird",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Windy Greens" },
-				{ "Name": "CllBstJug",     "Value": "Salubrious Broth" }
+				{ "Name": "BlJug",         "Value": "\"Windy Greens\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Salubrious Broth\"" }
 			]
 		},  
 		{
 			"Name":"Snapweed",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Electrified Broth" },
-				{ "Name": "CllBstJug",     "Value": "Electrified Broth" }
+				{ "Name": "BlJug",         "Value": "\"Electrified Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Electrified Broth\"" }
 			]
 		},  
 		{
 			"Name":"Fly",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Blackwater Broth" },
-				{ "Name": "CllBstJug",     "Value": "Blackwater Broth" }
+				{ "Name": "BlJug",         "Value": "\"Blackwater Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Blackwater Broth\"" }
 			]
 		},  
 		{
 			"Name":"Piggy",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Tantalizing Broth" },
-				{ "Name": "CllBstJug",     "Value": "Fizzy Broth" }
+				{ "Name": "BlJug",         "Value": "\"Tantalizing Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Fizzy Broth\"" }
 			]
 		},  
 		{
 			"Name":"Mandy",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Saline Broth" },
+				{ "Name": "BlJug",         "Value": "\"Saline Broth\"" },
 				{ "Name": "CllBstJug",     "Value": "None" }
 			]
 		},  
 		{
 			"Name":"Fish",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Airy Broth" },
-				{ "Name": "CllBstJug",     "Value": "Airy Broth" }
+				{ "Name": "BlJug",         "Value": "\"Airy Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Airy Broth\"" }
 			]
 		},  
 		{
 			"Name":"Raptor",
 			"Settings": [
-				{ "Name": "BlJug",         "Value": "Rapid Broth" },
-				{ "Name": "CllBstJug",     "Value": "Rapid Broth" }
+				{ "Name": "BlJug",         "Value": "\"Rapid Broth\"" },
+				{ "Name": "CllBstJug",     "Value": "\"Rapid Broth\"" }
 			]
 		}
 	
