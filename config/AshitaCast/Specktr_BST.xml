@@ -128,9 +128,21 @@
 		<set name="Familiar">
 			<legs augment="M3336">Ankusa Trousers +3</legs>
 		</set>
+
 		<set name="NotEngaged">
+			<ammo>Staunch Tathlum</ammo>
 			<head augment="S80601244060165138">Jumalik Helm</head>
 			<body>Tartarus Platemail</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet augment="S26869861498979">Taeon Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Hija Earring</ear1>
+			<ear2>Ferine Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
 		</set>
 		<set name="Enhance">
 			<neck>Melic Torque</neck>
@@ -298,6 +310,7 @@
 		</set>
 		<set name="Idle-MasterDT">
 			<sub augment="S1211439158">Beatific Shield +1</sub>
+			<ammo>Staunch Tathlum</ammo>
 			<head augment="S80601244060165138">Jumalik Helm</head>
 			<body>Tartarus Platemail</body>
 			<hands augment="S79281207580726">Iuitl Wristbands +1</hands>
@@ -362,41 +375,6 @@
 	<inputcommands>
 	</inputcommands>
 	<idlegear>
-		<if eq_rring="Trizek Ring">
-			<equip lock="true">
-				<rring>Trizek Ring</rring>                
-			</equip>
-		</if>
-		<if eq_rring="Capacity Ring">
-			<equip lock="true">
-				<rring>Capacity Ring</rring>                
-			</equip>
-		</if>
-		<if eq_rring="Endorsement Ring">
-			<equip lock="true">
-				<rring>Endorsement Ring</rring>                
-			</equip>
-		</if>
-		<if eq_rring="Vocation Ring">
-			<equip lock="true">
-				<rring>Vocation Ring</rring>                
-			</equip>
-		</if>
-		<if eq_rring="Facility Ring">
-			<equip lock="true">
-				<rring>Facility Ring</rring>                
-			</equip>
-		</if>
-		<if eq_back="Mecisto. Mantle">
-			<equip lock="true">
-			<back augment="S26530015289419">Mecisto. Mantle</back>              
-			</equip>
-		</if>
-		<if eq_rring="Warp Ring">
-			<equip lock="true">
-				<rring>Warp Ring</rring>				
-			</equip>
-		</if>
 		<if p_ismoving="True">
 			<equip lock="true">
 				<lring>Shneddick Ring</lring>
