@@ -34,6 +34,7 @@
 /addon load SurvivalGuide
 /addon load warptome
 /addon load sneakinvis
+/addon load automaneuver
 
 ##########################################################################
 # Set Common Settings
