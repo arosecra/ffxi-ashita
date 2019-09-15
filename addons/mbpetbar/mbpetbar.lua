@@ -80,23 +80,25 @@ ashita.register_event('render', function()
 						local petEntity = GetEntity(entity.PetTargetIndex)
 						--print(petEntity.Name)
 						--print(petEntity.HealthPercent)
-						
-						imgui.Text(petEntity.Name .. "(" .. name .. ")");
-						imgui.Separator();
-						
-						-- Set the progressbar color for health..
-						imgui.PushStyleColor(ImGuiCol_PlotHistogram, 1.0, 0.61, 0.61, 0.6);
-						imgui.Text('HP:');
-						imgui.SameLine();
-						imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
-						imgui.ProgressBar(tonumber(petEntity.HealthPercent) / 100, -1, 14);
-						imgui.PopStyleColor(2);
-											
-						imgui.End();
+						if petEntity ~= nil then
+							imgui.Text(petEntity.Name .. "(" .. name .. ")");
+							imgui.Separator();
+							
+							-- Set the progressbar color for health..
+							imgui.PushStyleColor(ImGuiCol_PlotHistogram, 1.0, 0.61, 0.61, 0.6);
+							imgui.Text('HP:');
+							imgui.SameLine();
+							imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
+							imgui.ProgressBar(tonumber(petEntity.HealthPercent) / 100, -1, 14);
+							imgui.PopStyleColor(2);
+						end
 					end
 				end
 			end
-		end   
+		end 
+
+												
+		imgui.End();		
 	end
     
 end);
