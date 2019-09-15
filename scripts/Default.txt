@@ -36,6 +36,7 @@
 /addon load multiboxbar
 /addon load sneakinvis
 /addon load jobsettings
+/addon load mbpetbar
 
 ##########################################################################
 # Set Common Settings
