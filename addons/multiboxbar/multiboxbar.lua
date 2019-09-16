@@ -28,10 +28,11 @@ local modes = {
 --my keyboard doesn't seem to reliably send some keycodes
 --along with the numpad keys. this is a work around for this situation
 
-local ALT     = 56;
+local ALT     = 56 ;
 local WIN     = 219;
-local CONTROL = 29;
+local CONTROL = 29 ;
 local MENU    = 221;
+local SHIFT   = 42 ;
 local control_key_states = {
 	[ALT]     = false,
 	[WIN]     = false,
@@ -52,6 +53,9 @@ end
 local current_hotbar = {
 }
 
+local HEIGHT = 25;
+local WIDTH = 690
+
 ----------------------------------------------------------------------------------------------------
 -- func: load
 -- desc: Event called when the addon is being loaded.
@@ -64,6 +68,8 @@ ashita.register_event('load', function()
 
     -- Load the configuration file..
     hotbar_config = ashita.settings.load_merged(_addon.path .. '../../config/multiboxbar/multiboxbar.json', hotbar_config);
+	
+	HEIGHT = ((2+#hotbar_config)*20)+5
 end);
 
 ashita.register_event('command', function(cmd, nType)
@@ -141,7 +147,7 @@ end
 ashita.register_event('key', function(key, down, blocked)
     
 	--msg('key event ' .. key)
-	if key == ALT or key == WIN or key == CONTROL or key == MENU then
+	if key == ALT or key == WIN or key == CONTROL or key == MENU or key == SHIFT then
 		if down then
 			--print("key down " .. key)
 			control_key_states[key] = true
@@ -254,23 +260,33 @@ function get_current_macro_row_number()
 	if      control_key_states[ALT]     == true and
 	        control_key_states[WIN]     == false and
 	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == false then
+	        control_key_states[MENU]    == false and 
+	        control_key_states[SHIFT]   == false then
 		section = 1;
-	elseif control_key_states[ALT]     == false and
+	elseif control_key_states[ALT]      == false and
 	        control_key_states[WIN]     == true and
 	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == false then
+	        control_key_states[MENU]    == false and 
+	        control_key_states[SHIFT]   == false then
 		section = 2;
-	elseif control_key_states[ALT]     == false and
+	elseif control_key_states[ALT]      == false and
 	        control_key_states[WIN]     == false and
 	        control_key_states[CONTROL] == true and
-	        control_key_states[MENU]    == false then
+	        control_key_states[MENU]    == false and 
+	        control_key_states[SHIFT]   == false then
 		section = 3
-	elseif control_key_states[ALT]     == false and
+	elseif control_key_states[ALT]      == false and
 	        control_key_states[WIN]     == false and
 	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == true then
+	        control_key_states[MENU]    == true and 
+	        control_key_states[SHIFT]   == false then
 		section = 4	
+	elseif control_key_states[ALT]      == false and
+	        control_key_states[WIN]     == false and
+	        control_key_states[CONTROL] == false and
+	        control_key_states[MENU]    == false and 
+	        control_key_states[SHIFT]   == true then
+		section = 5	
 	end
 	return section
 end
@@ -283,7 +299,7 @@ ashita.register_event('render', function()
     -- Obtain the local player..
     
     -- Display the pet information..
-    imgui.SetNextWindowSize(680, 125, ImGuiSetCond_Always);
+    imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
     if (imgui.Begin('multiboxbar') == false) then
         imgui.End();
         return;
