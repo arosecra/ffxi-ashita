@@ -54,7 +54,7 @@ local current_hotbar = {
 }
 
 local HEIGHT = 25;
-local WIDTH = 690
+local WIDTH = 805;
 
 ----------------------------------------------------------------------------------------------------
 -- func: load
@@ -155,6 +155,7 @@ ashita.register_event('key', function(key, down, blocked)
 			--print("key up " .. key)
 			control_key_states[key] = false
 		end
+		return true;
 	end
     return false;
 end);
@@ -305,17 +306,8 @@ ashita.register_event('render', function()
         return;
     end
 	
-	
-	imgui.Text(get_button_label_text(hotbar_variables['Mode'] , 8));
+	imgui.Text(get_button_label_text("Pages", 12));
 	imgui.SameLine();
-	
-	imgui.Text("            L         U         D         R");
-	imgui.SameLine();
-	imgui.Text("        X         Y         A         B");
-	
-	imgui.Text(get_button_label_text("Pages", 16));
-	imgui.SameLine();
-	
 	for index,mode in ipairs(modes) do
 		local modeDisplay = mode .. string.rep(' ', 8 - #mode)
 		--print(mode .. ' ' .. modeLength .. ' ' .. padlength .. ' ' .. modeDisplay)
@@ -327,13 +319,24 @@ ashita.register_event('render', function()
 	
 	imgui.Separator();
 	
+	imgui.Text(get_button_label_text(hotbar_variables['Mode'] , 8));
+	imgui.SameLine();
+	
+	imgui.Text("        L         U         D         R");
+	imgui.SameLine();
+	imgui.Text("        X         Y         A         B");
+	imgui.SameLine();
+	imgui.Text("        BK        ST");
+	
+	
+	
 	local section = get_current_macro_row_number()
 	for hotbar_section_id,hotbar_section in ipairs(hotbar_config) do
 		local sectionName = hotbar_section.Name
 		if hotbar_section_id == section then
-			sectionName = "(*) " .. sectionName .. string.rep(' ', 12 - #sectionName)
+			sectionName = "(*) " .. sectionName .. string.rep(' ', 8 - #sectionName)
 		else 
-			sectionName = "( ) " .. sectionName .. string.rep(' ', 12 - #sectionName)
+			sectionName = "( ) " .. sectionName .. string.rep(' ', 8 - #sectionName)
 		end
 		imgui.Text(sectionName);
 		imgui.SameLine();
@@ -341,7 +344,7 @@ ashita.register_event('render', function()
 		
 		current_hotbar[hotbar_section_id] = macros;
 		
-		for i=1,8 do
+		for i=1,10 do
 			local label = string.rep(' ', 8)
 			if macros ~= nil and #macros >= i then
 				label = macros[i].Name
