@@ -4,7 +4,9 @@ _addon.name     = 'mbpetbar';
 _addon.version  = '1.0.0';
 
 require 'common'
-
+local addon_settings = require 'addon_settings'
+local last_player_entity = nil
+local position_config = {}
 
 ashita.register_event('load', function()
 end);
@@ -23,10 +25,6 @@ ashita.register_event('command', function(cmd, nType)
 	
     if (args[2] == 'list') then
 
-	
-	
-	
-	
         return true;
     end
 	
@@ -39,9 +37,17 @@ ashita.register_event('render', function()
 	
 	local party  = AshitaCore:GetDataManager():GetParty();
 	if (party == nil) then
+		last_player_entity = nil	
+		position_config = {};
 		return;
 	end
-	
+	if last_player_entity == nil then
+		--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
+		position_config = addon_settings.onload(_addon.name, 'imgui', {}, true, true, true)
+	end
+	if position_config[1] == nil then
+		return;
+	end
 	
 	for i=1,5 do
 		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
@@ -62,6 +68,7 @@ ashita.register_event('render', function()
 	end 
     
 	if petCount > 0 then
+		imgui.SetNextWindowPos(position_config[1], position_config[2]);
 		imgui.SetNextWindowSize(200, 100, ImGuiSetCond_Always);
 		if (imgui.Begin('Pets') == false) then
 			imgui.End();

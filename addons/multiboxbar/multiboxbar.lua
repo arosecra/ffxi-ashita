@@ -6,13 +6,11 @@ _addon.version  = '1.0.0';
 require 'common'
 require 'stringex'
 local jobs = require 'windower/res/jobs'
+local addon_settings = require 'addon_settings'
 
 ----------------------------------------------------------------------------------------------------
 -- Default Configurations
 ----------------------------------------------------------------------------------------------------
-local default_config =
-{
-};
 
 local modes = {
 	"Sttngs1",
@@ -44,7 +42,8 @@ local hotbar_variables = {
 	['Mode'] = "Sttngs1"
 }
 
-local hotbar_config = default_config;
+local hotbar_config = {};
+local hotbar_position_config = {};
 local function msg(s)
     local txt = '\31\200[\31\05Multiboxbar\31\200]\31\130 ' .. s;
     print(txt);
@@ -52,6 +51,7 @@ end
 
 local current_hotbar = {
 }
+local last_player_entity = nil
 
 local HEIGHT = 25;
 local WIDTH = 805;
@@ -61,13 +61,8 @@ local WIDTH = 805;
 -- desc: Event called when the addon is being loaded.
 ----------------------------------------------------------------------------------------------------
 ashita.register_event('load', function()
-    -- Save the default settings if they don't exist..
-    if (not ashita.file.file_exists(_addon.path .. '../../config/multiboxbar/multiboxbar.json')) then
-        ashita.settings.save(_addon.path .. '../../config/multiboxbar/multiboxbar.json', hotbar_config);
-    end
-
-    -- Load the configuration file..
-    hotbar_config = ashita.settings.load_merged(_addon.path .. '../../config/multiboxbar/multiboxbar.json', hotbar_config);
+	--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
+	hotbar_config = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
 	
 	HEIGHT = ((2+#hotbar_config)*20)+5
 end);
@@ -102,7 +97,6 @@ ashita.register_event('command', function(cmd, nType)
         return true;
     end
 	
-	
     if (args[2] == 'button_from_controller') then
 	
 		--determine the mode, since we can't rely on keybinds entirely (stupid keyboard?)
@@ -122,6 +116,7 @@ ashita.register_event('command', function(cmd, nType)
 		run_macro_command(tonumber(args[3]), tonumber(args[4]))
         return true;
     end
+	addon_settings.save_command (args, _addon.name, 'imgui', hotbar_position_config, true);
 	
     return true;
 end);
@@ -234,8 +229,14 @@ ashita.register_event('prerender', function()
 	local party  = AshitaCore:GetDataManager():GetParty();
 	local playerEntity = GetPlayerEntity()
     if (player == nil or playerEntity == nil or party == nil) then
+		last_player_entity = nil	
+		hotbar_position_config = {};
         return;
     end
+	if last_player_entity == nil then
+		--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
+		hotbar_position_config = addon_settings.onload(_addon.name, 'imgui', {}, true, true, true)
+	end
 	
 	hotbar_variables[playerEntity.Name .. '.MainJob'] = jobs[player:GetMainJob()].en
 	hotbar_variables[playerEntity.Name .. '.SubJob'] = jobs[player:GetSubJob()].en
@@ -254,6 +255,7 @@ ashita.register_event('prerender', function()
 			hotbar_variables[hotbar_user.Name .. '.Engaged'] = (player.status == 1)
 		end
 	end
+	
 end);
 
 function get_current_macro_row_number()
@@ -298,8 +300,12 @@ end
 
 ashita.register_event('render', function()
     -- Obtain the local player..
+	if hotbar_position_config[1] == nil then
+		return;
+	end
     
     -- Display the pet information..
+	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
     imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
     if (imgui.Begin('multiboxbar') == false) then
         imgui.End();
@@ -327,8 +333,6 @@ ashita.register_event('render', function()
 	imgui.Text("        X         Y         A         B");
 	imgui.SameLine();
 	imgui.Text("        BK        ST");
-	
-	
 	
 	local section = get_current_macro_row_number()
 	for hotbar_section_id,hotbar_section in ipairs(hotbar_config) do
