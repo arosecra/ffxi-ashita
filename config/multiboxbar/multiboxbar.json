@@ -499,5 +499,54 @@
 					]
 			} 			
 		]
+	},
+	{
+		"Name": "Test",
+		"Conditions": [
+			{
+				"Mode": "Actns1",
+				"Macros": [ 
+						{
+							"Name": "follon",
+							"Script": "mbox/follon.txt"
+						}, {
+							"Name": "follof",
+							"Script": "mbox/follof.txt"
+						}, {
+							"Command": "/ms send /mount \"Red Crab\"",
+							"Name": "mount"
+						}, {
+							"Command": "/ms send /dismount",
+							"Name": "dismnt"
+						}, {
+							"Name": "group",
+							"Script": "mbox/group.txt"
+						}, {
+							"Name": "warp2me",
+							"Script": "mbox/warp2me.txt"
+						}, {
+							"Name": "sneak",
+							"Command": "/ms send /sneakinvis"
+						}  
+					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
+						},   
+						{
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
+						},   
+						{
+							"Command": "/ms send /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
+						}
+					]
+			}
+		]
 	}
 ]
