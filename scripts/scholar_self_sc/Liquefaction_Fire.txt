@@ -1,9 +1,9 @@
 /party (Starting Gear) (Skillchain) (Liquefaction) MB: (Fire)
-/wait 3
+/wait 1
 /ja "Immanence" <me>
 /wait 2
 /ma "Stone" <t>
-/wait 4
+/wait 1
 /p (Closed Position) (Skillchain in 3)
 /wait 3
 /ja "Immanence" <me>

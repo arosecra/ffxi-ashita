@@ -1,9 +1,11 @@
 /party (Starting Gear) (Skillchain) (Impaction) MB: (Thunder)
-/ja "Immanence" <me>
 /wait 1
+/ja "Immanence" <me>
+/wait 2
 /ma "Water" <t>
-/wait 5
-/p (Closed Position) (Skillchain in 3)
-/ja "Immanence" <me>
 /wait 1
+/p (Closed Position) (Skillchain in 3)
+/wait 3
+/ja "Immanence" <me>
+/wait 2
 /ma "Thunder" <t>
