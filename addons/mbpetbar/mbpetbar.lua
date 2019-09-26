@@ -36,7 +36,8 @@ ashita.register_event('render', function()
 	local petCount = 0;
 	
 	local party  = AshitaCore:GetDataManager():GetParty();
-	if (party == nil) then
+	local playerEntity = GetPlayerEntity()
+	if (party == nil or playerEntity == nil) then
 		last_player_entity = nil	
 		position_config = {};
 		return;
