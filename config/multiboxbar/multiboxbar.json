@@ -427,6 +427,10 @@
 						{
 							"Name": "StDply",
 							"Command" : "/ms sendto Sternaru /ja Deploy [t]"
+						},
+						{
+							"Name": "StRtr",
+							"Command" : "/ms sendto Sternaru /ja Retrieve <me>"
 						}
 					]
 			}			
