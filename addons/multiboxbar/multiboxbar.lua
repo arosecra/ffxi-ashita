@@ -53,7 +53,7 @@ local current_hotbar = {
 }
 local last_player_entity = nil
 
-local HEIGHT = 25;
+local HEIGHT = 0;
 local WIDTH = 805;
 
 ----------------------------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ ashita.register_event('load', function()
 	--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
 	hotbar_config = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
 	
-	HEIGHT = ((2+#hotbar_config)*20)+5
+	HEIGHT = ((1+#hotbar_config)*20)+5
 end);
 
 ashita.register_event('command', function(cmd, nType)
@@ -303,11 +303,20 @@ ashita.register_event('render', function()
 	if hotbar_position_config[1] == nil then
 		return;
 	end
+	
+	local playerEntity = GetPlayerEntity()
+    if (playerEntity == nil) then
+        return;
+    end
     
     -- Display the pet information..
 	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
     imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
-    if (imgui.Begin('multiboxbar') == false) then
+	local window_flags = 0
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoSavedSettings)
+    if (imgui.Begin('multiboxbar', true, window_flags) == false) then
         imgui.End();
         return;
     end
