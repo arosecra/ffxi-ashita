@@ -8,6 +8,9 @@ local function get_filename(addon_name, config_filename, user_specific)
 	local full_config_filename = _addon.path .. '../../config/' .. addon_name .. '/' .. config_filename .. '.json'
 	if user_specific then
 		full_config_filename = _addon.path .. '../../config/' .. addon_name .. '/' .. playerEntity.Name .. '_' .. config_filename .. '.json'
+		if not ashita.file.file_exists(full_config_filename) then
+			full_config_filename = _addon.path .. '../../config/' .. addon_name .. '/default_' .. config_filename .. '.json'
+		end
 	end
 	return full_config_filename
 end
