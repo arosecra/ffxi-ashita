@@ -1,3 +1,5 @@
 /pcmd add Sillyaru
 /wait 3
 /pcmd add Sternaru
+/wait 3
+/pcmd add Shyaru

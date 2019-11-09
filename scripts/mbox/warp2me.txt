@@ -1,3 +1,5 @@
 /warptome warp Sternaru
 /wait 1
 /warptome warp Sillyaru
+/wait 1
+/warptome warp Shyaru
