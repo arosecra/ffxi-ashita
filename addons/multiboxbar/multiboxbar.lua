@@ -26,16 +26,66 @@ local modes = {
 --my keyboard doesn't seem to reliably send some keycodes
 --along with the numpad keys. this is a work around for this situation
 
-local ALT     = 56 ;
-local WIN     = 219;
-local CONTROL = 29 ;
-local MENU    = 221;
-local SHIFT   = 42 ;
+--left control	29
+--right control	157
+--left win		219
+--left shift	42
+--right shift	54
+--right alt		184
+--left alt		56
+--menu			221
+--
+--numpad 0		82
+--numpad 1		79
+--numpad 2		80
+--numpad 3		81
+--numpad 4		75
+--numpad 5		76
+--numpad 6		77
+--numpad 7		71
+--numpad 8		72
+--numpad 9		73
+
+local LEFT_ALT		= 56 ;
+local RIGHT_ALT		= 184;
+local WIN			= 219;
+local LEFT_CONTROL	= 29 ;
+local RIGHT_CONTROL	= 157;
+local MENU			= 221;
+local LEFT_SHIFT	= 42 ;
+local RIGHT_SHIFT	= 54 ;
+
+local NUMPAD_0		= 82 ;
+local NUMPAD_1		= 79 ;
+local NUMPAD_2		= 80 ;
+local NUMPAD_3		= 81 ;
+local NUMPAD_4		= 75 ;
+local NUMPAD_5		= 76 ;
+local NUMPAD_6		= 77 ;
+local NUMPAD_7		= 71 ;
+local NUMPAD_8		= 72 ;
+local NUMPAD_9		= 73 ;
+
+
 local control_key_states = {
-	[ALT]     = false,
-	[WIN]     = false,
-	[CONTROL] = false,
-	[MENU]    = false,
+	[LEFT_ALT]		 = false,
+	[RIGHT_ALT]		 = false,
+	[WIN]			 = false,
+	[LEFT_CONTROL]	 = false,
+	[RIGHT_CONTROL]	 = false,
+	[MENU]			 = false,
+	[LEFT_SHIFT]	 = false,
+	[RIGHT_SHIFT]	 = false,
+}
+local control_key_sections = {
+	[LEFT_ALT]		 = 4,
+	[RIGHT_ALT]		 = 5,
+	[WIN]			 = 3,
+	[LEFT_CONTROL]	 = 2,
+	[RIGHT_CONTROL]	 = 7,
+	[MENU]			 = 6,
+	[LEFT_SHIFT]	 = 1,
+	[RIGHT_SHIFT]	 = 8,
 }
 
 local hotbar_variables = {
@@ -142,7 +192,15 @@ end
 ashita.register_event('key', function(key, down, blocked)
     
 	--msg('key event ' .. key)
-	if key == ALT or key == WIN or key == CONTROL or key == MENU or key == SHIFT then
+	if key == LEFT_ALT or 
+		key == RIGHT_ALT or
+		key == LEFT_CONTROL or 
+		key == RIGHT_CONTROL or
+		key == LEFT_SHIFT or
+		key == RIGHT_SHIFT or
+		key == WIN or 
+		key == MENU
+	then
 		if down then
 			--print("key down " .. key)
 			control_key_states[key] = true
@@ -260,36 +318,11 @@ end);
 
 function get_current_macro_row_number()
 	local section = 0
-	if      control_key_states[ALT]     == true and
-	        control_key_states[WIN]     == false and
-	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == false and 
-	        control_key_states[SHIFT]   == false then
-		section = 1;
-	elseif control_key_states[ALT]      == false and
-	        control_key_states[WIN]     == true and
-	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == false and 
-	        control_key_states[SHIFT]   == false then
-		section = 2;
-	elseif control_key_states[ALT]      == false and
-	        control_key_states[WIN]     == false and
-	        control_key_states[CONTROL] == true and
-	        control_key_states[MENU]    == false and 
-	        control_key_states[SHIFT]   == false then
-		section = 3
-	elseif control_key_states[ALT]      == false and
-	        control_key_states[WIN]     == false and
-	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == true and 
-	        control_key_states[SHIFT]   == false then
-		section = 4	
-	elseif control_key_states[ALT]      == false and
-	        control_key_states[WIN]     == false and
-	        control_key_states[CONTROL] == false and
-	        control_key_states[MENU]    == false and 
-	        control_key_states[SHIFT]   == true then
-		section = 5	
+	for i,j in pairs(control_key_states) do 
+		if j then
+			section = control_key_sections[i]
+			break
+		end
 	end
 	return section
 end
