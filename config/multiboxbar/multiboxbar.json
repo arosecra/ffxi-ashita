@@ -57,16 +57,16 @@
 				"Macros": [ 
 						{
 							"Command": "/ac var set IdleMode TP",
-							"Name": "BluTP"
+							"Name": "1TP"
 						}, {
 							"Command": "/ac var set IdleMode DT",
-							"Name": "BluDT"
+							"Name": "1DT"
 						}, {
 							"Command": "/ac var set IdleMode Refresh",
-							"Name": "BluRefr"
+							"Name": "1Refr"
 						}, {
 							"Command": "/ac var set IdleMode TP-High",
-							"Name": "BluTP+"
+							"Name": "1TP+"
 						} 
 					]
 			}, 
@@ -76,11 +76,11 @@
 				"Macros": [
 					{
 						"Command": "/jobsettings IdleMode",
-						"Name": "IdleMode"
+						"Name": "1IdlMd"
 					}, 
 					{
 						"Command": "/ac var set IdleMode DT",
-						"Name": "CorDT"
+						"Name": "1DT"
 					}
 				]
 			}, 
@@ -90,7 +90,7 @@
 				"Macros": [
 					{
 					"Script": "LeadenSalute.txt",
-					"Name": "LS"
+					"Name": "1LS"
 					}
 				]
 			}, 
@@ -100,11 +100,11 @@
 				"Macros": [
 					{
 						"Command": "/jobsettings Strategy",
-						"Name": "Strat"
+						"Name": "1Strat"
 					},
 					{
 						"Command": "/ac var set Strategy MstrDT",
-						"Name": "MstrDT"
+						"Name": "1MstrDT"
 					}
 				]
 			}, 
@@ -114,7 +114,7 @@
 				"Macros": [
 					{
 						"Command": "/ja Deploy <t>",
-						"Name": "Deploy"
+						"Name": "1Deploy"
 					}
 				]
 			}, 
@@ -124,11 +124,11 @@
 				"Macros": [
 					{
 						"Command": "/ac var set Accuracy Low",
-						"Name": "Cntnt-"
+						"Name": "1Cntnt-"
 					}, 
 					{
 						"Command": "/ac var set Accuracy High",
-						"Name": "Cntnt+"
+						"Name": "1Cntnt+"
 					}
 				]
 			}, 
@@ -138,35 +138,35 @@
 				"Macros": [
 					{
 						"Command": "/nuke setelement fire",
-						"Name": "fire"
+						"Name": "1fire"
 					}, 
 					{
 						"Command": "/nuke setelement stone",
-						"Name": "stone"
+						"Name": "1stone"
 					}, 
 					{
 						"Command": "/nuke setelement water",
-						"Name": "water"
+						"Name": "1water"
 					}, 
 					{
 						"Command": "/nuke setelement wind",
-						"Name": "wind"
+						"Name": "1wind"
 					}, 
 					{
 						"Command": "/nuke setelement ice",
-						"Name": "ice"
+						"Name": "1ice"
 					}, 
 					{
 						"Command": "/nuke setelement thunder",
-						"Name": "thunder"
+						"Name": "1thunder"
 					}, 
 					{
 						"Command": "/nuke setelement light",
-						"Name": "light"
+						"Name": "1light"
 					}, 
 					{
 						"Command": "/nuke setelement dark",
-						"Name": "dark"
+						"Name": "1dark"
 					}
 				]
 			}, 
@@ -176,15 +176,15 @@
 				"Macros": [
 					{
 						"Command": "/nuke stormI",
-						"Name": "stormI"
+						"Name": "1stormI"
 					}, 
 					{
 						"Command": "/nuke stormII",
-						"Name": "stormII"
+						"Name": "1stormII"
 					}, 
 					{
 						"Command": "/ma Klimaform <me>",
-						"Name": "klima"
+						"Name": "1klima"
 					}
 				]
 			}, 
@@ -194,31 +194,31 @@
 				"Macros": [
 				{
 					"Command": "/nuke helixI",
-					"Name": "helixI"
+					"Name": "1helixI"
 				}, 
 				{
 					"Command": "/nuke helixII",
-					"Name": "helixII"
+					"Name": "1helixII"
 				}, 
 				{
 					"Command": "/nuke nukeI",
-					"Name": "nukeI"
+					"Name": "1nukeI"
 				}, 
 				{
 					"Command": "/nuke nukeII",
-					"Name": "nukeII"
+					"Name": "1nukeII"
 				}, 
 				{
 					"Command": "/nuke nukeIII",
-					"Name": "nukeIII"
+					"Name": "1nukeIII"
 				}, 
 				{
 					"Command": "/nuke nukeIV",
-					"Name": "nukeIV"
+					"Name": "1nukeIV"
 				}, 
 				{
 					"Command": "/nuke nukeV",
-					"Name": "nukeV"
+					"Name": "1nukeV"
 				}
 				]
 			}, 
@@ -227,27 +227,27 @@
 				"Mode": "Actns2",
 				"Macros": [{
 					"Script": "scholar_self_sc/Liquefaction_Fire.txt",
-					"Name": "Liq/F"
+					"Name": "1Liq/F"
 				},
 				{
 					"Script": "scholar_self_sc/Scission_Stone.txt",
-					"Name": "Sci/S"
+					"Name": "1Sci/S"
 				},
 				{
 					"Script": "scholar_self_sc/Reverberation_Water.txt",
-					"Name": "Rev/W"
+					"Name": "1Rev/W"
 				},
 				{
 					"Script": "scholar_self_sc/Detonation_Aero.txt",
-					"Name": "Det/A"
+					"Name": "1Det/A"
 				},
 				{
 					"Script": "scholar_self_sc/Induration_Blizzard.txt",
-					"Name": "Ind/B"
+					"Name": "1Ind/B"
 				},
 				{
 					"Script": "scholar_self_sc/Impaction_Thunder.txt",
-					"Name": "Imp/T"
+					"Name": "1Imp/T"
 				}
 				]
 			}, 
@@ -257,27 +257,27 @@
 				"Macros": [
 					{
 						"Script": "scholar_self_sc/Transfiction_Light.txt",
-						"Name": "Trns/L"
+						"Name": "1Trns/L"
 					},
 					{
 						"Script": "scholar_self_sc/Compression_Dark.txt",
-						"Name": "Com/D"
+						"Name": "1Com/D"
 					},
 					{
 						"Script": "scholar_self_sc/Fragmentation_Aero_Thunder.txt",
-						"Name": "Frag/AT"
+						"Name": "1Frag/AT"
 					},
 					{
 						"Script": "scholar_self_sc/Fusion_Fire_Light.txt",
-						"Name": "Fus/FL"
+						"Name": "1Fus/FL"
 					},
 					{
 						"Script": "scholar_self_sc/Gravitation_Dark_Stone.txt",
-						"Name": "Grav/DS"
+						"Name": "1Grav/DS"
 					},
 					{
 						"Script": "scholar_self_sc/Distortion_Water_Blizzard.txt",
-						"Name": "Dist/WB"
+						"Name": "1Dist/WB"
 					}
 				]
 			}, 
@@ -287,35 +287,35 @@
 				"Macros": [
 					{
 						"Command": "/jobsettings Jug",
-						"Name": "Jug"
+						"Name": "1Jug"
 					},
 					{
 						"Command": "/jobsettings Accuracy",
-						"Name": "Acc"
+						"Name": "1Acc"
 					},
 					{
 						"Command": "/jobsettings CharmersStrategy",
-						"Name": "ChrmStrt"
+						"Name": "1ChrmStrt"
 					},
 					{
 						"Command": "/jobsettings IdleMain",
-						"Name": "IdleMain"
+						"Name": "1IdleMain"
 					},
 					{
 						"Command": "/jobsettings IdleSub",
-						"Name": "IdleSub"
+						"Name": "1IdleSub"
 					},
 					{
 						"Command": "/jobsettings WeaponStrategy",
-						"Name": "WepStrat"
+						"Name": "1WepStrat"
 					},
 					{
 						"Command": "/jobsettings Strategy",
-						"Name": "Strategy"
+						"Name": "1Strategy"
 					},
 					{
 						"Command": "/ac var set Strategy MasterDT",
-						"Name": "MstrDT"
+						"Name": "1MstrDT"
 					}
 				]
 			},  
@@ -325,27 +325,27 @@
 				"Macros": [
 					{
 						"Command": "/pet \"Fight\" <stnpc>",
-						"Name": "PetFght"
+						"Name": "1Fght"
 					},
 					{
 						"Command": "/ja \"Reward\" <me>",
-						"Name": "Reward"
+						"Name": "1Reward"
 					},
 					{
 						"Command": "/bstpet 1 <me>",
-						"Name": "Pet1"
+						"Name": "1Pet1"
 					},
 					{
 						"Command": "/bstpet 2 <me>",
-						"Name": "Pet2"
+						"Name": "1Pet2"
 					},
 					{
 						"Command": "/bstpet 3 <me>",
-						"Name": "Pet3"
+						"Name": "1Pet3"
 					},
 					{
 						"Command": "/bstpet 4 <me>",
-						"Name": "Pet4"
+						"Name": "1Pet4"
 					}
 				]
 			}, 
@@ -355,31 +355,31 @@
 				"Macros": [
 					{
 						"Command": "/pet \"Stay\" <me>",
-						"Name": "PetStay"
+						"Name": "1Stay"
 					},
 					{
 						"Command": "/pet \"Heel\" <me>",
-						"Name": "PetHeel"
+						"Name": "1Heel"
 					},
 					{
 						"Command": "/ja \"Spur\" <me>",
-						"Name": "Spur"
+						"Name": "1Spur"
 					},
 					{
 						"Command": "/ja \"Call Beast\" <me>",
-						"Name": "CllBst"
+						"Name": "1CllBst"
 					},
 					{
 						"Command": "/ja \"Bestial Loyalty\" <me>",
-						"Name": "BL"
+						"Name": "1BL"
 					},
 					{
 						"Command": "/ja \"Familiar\" <me>",
-						"Name": "Fam"
+						"Name": "1Fam"
 					},
 					{
 						"Command": "/ja \"Unleash\" <me>",
-						"Name": "Unlsh"
+						"Name": "1Unlsh"
 					}
 				]
 			}, 
@@ -411,11 +411,11 @@
 				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "StOvr",
+							"Name": "2Ovr",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy Overdrive"
 						},
 						{
-							"Name": "StPtDT",
+							"Name": "2PtDT",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy PetDT"
 						}
 					]
@@ -425,11 +425,11 @@
 				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "StDply",
+							"Name": "2Dply",
 							"Command" : "/ms sendto Sternaru /ja Deploy [t]"
 						},
 						{
-							"Name": "StRtr",
+							"Name": "2Rtr",
 							"Command" : "/ms sendto Sternaru /ja Retrieve <me>"
 						}
 					]
@@ -444,7 +444,7 @@
 				"Sillyaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "SlyDply",
+							"Name": "3Dply",
 							"Command" : "/ms sendto Sillyaru /ja Deploy [t]"
 						}
 					]
@@ -454,15 +454,15 @@
 				"Sillyaru.MainJob": "Corsair",
 				"Macros": [
 						{
-							"Name": "DblUp",
+							"Name": "3DblUp",
 							"Command" : "/ms sendto Sillyaru /ja \"Double-Up\" <me>"
 						},
 						{
-							"Name": "SnakeEye",
+							"Name": "3SnkEye",
 							"Command" : "/ms sendto Sillyaru /ja \"Snake Eye\" <me>"
 						}, 
 						{
-							"Name": "Fold",
+							"Name": "3Fold",
 							"Command" : "/ms sendto Sillyaru /ja Fold <me>"
 						}
 					]
@@ -473,31 +473,31 @@
 				"Sillyaru.MainJob": "Corsair",
 				"Macros": [
 						{
-							"Name": "Exp+",
+							"Name": "3Exp+",
 							"Command" : "/ms sendto Sillyaru /ja \"Corsair\'s Roll\" <me>"
 						}, 
 						{
-							"Name": "PetAtt+",
+							"Name": "3PetAtt+",
 							"Command" : "/ms sendto Sillyaru /ja \"Beast Roll\" <me>"
 						}, 
 						{
-							"Name": "PetMab+",
+							"Name": "3PetMab+",
 							"Command" : "/ms sendto Sillyaru /ja \"Puppet\'s Roll\" <me>"
 						}, 
 						{
-							"Name": "PetAcc+",
+							"Name": "3PetAcc+",
 							"Command" : "/ms sendto Sillyaru /ja \"Drachen Roll\" <me>"
 						}, 
 						{
-							"Name": "PetRegen",
+							"Name": "3PetRegen",
 							"Command" : "/ms sendto Sillyaru /ja \"Companion\'s Roll\" <me>"
 						}, 
 						{
-							"Name": "Refresh",
+							"Name": "3Refresh",
 							"Command" : "/ms sendto Sillyaru /ja \"Evoker\'s Roll\" <me>"
 						}, 
 						{
-							"Name": "Mab+",
+							"Name": "3Mab+",
 							"Command" : "/ms sendto Sillyaru /ja \"Wizard\'s Roll\" <me>"
 						}
 					]
@@ -507,6 +507,16 @@
 	{
 		"Name": "Shyaru",
 		"Conditions": [
+			{
+				"Mode": "Actns1",
+				"Shyaru.MainJob": "Red Mage",
+				"Macros": [
+						{
+							"Name": "4Dia",
+							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
+						}
+					]
+			}
 		]
 	}
 ]
