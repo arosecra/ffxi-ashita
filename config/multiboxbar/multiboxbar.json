@@ -114,7 +114,7 @@
 				"Macros": [
 					{
 						"Command": "/ja Deploy <t>",
-						"Name": "1Deploy"
+						"Name": "Dply"
 					}
 				]
 			}, 
@@ -415,6 +415,10 @@
 							"Command" : "/ms sendto Sternaru /ac var set Strategy Overdrive"
 						},
 						{
+							"Name": "2Ovr2",
+							"Command" : "/ms sendto Sternaru /ac var set Strategy Overdrive2"
+						},
+						{
 							"Name": "2PtDT",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy PetDT"
 						}
@@ -425,7 +429,7 @@
 				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "2Dply",
+							"Name": "Dply",
 							"Command" : "/ms sendto Sternaru /ja Deploy [t]"
 						},
 						{
@@ -444,7 +448,7 @@
 				"Sillyaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
-							"Name": "3Dply",
+							"Name": "Dply",
 							"Command" : "/ms sendto Sillyaru /ja Deploy [t]"
 						}
 					]
