@@ -38,6 +38,22 @@
 			<ring2>Overbearing Ring</ring2>
 			<back>Visucius's Mantle</back>
 		</set>
+		<set name="PupEng-Overdrive2">
+			<main augment="D10562490811660">Ohtas</main>
+			<range>Animator P +1</range>
+			<head augment="S176921855959298303">Anwig Salade</head>
+			<body augment="M7441">Pitre Tobe +2</body>
+			<hands augment="S9277540120683">Taeon Gloves</hands>
+			<legs augment="S18073767352426">Taeon Tights</legs>
+			<feet augment="S481581312106">Taeon Boots</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Rimeice Earring</ear1>
+			<ear2 augment="S3938437">Moonshade Earring</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Warp Ring</ring2>
+			<back augment="S39036618612846">Visucius's Mantle</back>
+		</set>
 		<include>
 		</include>
 	</sets>
