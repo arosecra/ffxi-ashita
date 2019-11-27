@@ -3,3 +3,7 @@
 /pcmd add Sternaru
 /wait 3
 /pcmd add Shyaru
+/wait 3
+/pcmd add Sassyaru
+/wait 3
+/pcmd add Sadaru

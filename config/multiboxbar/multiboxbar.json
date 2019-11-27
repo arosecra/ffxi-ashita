@@ -633,15 +633,15 @@
 		]
 	},
 	{
-		"Name": "Saucyaru",
+		"Name": "Sassyaru",
 		"Conditions": [
 			{
 				"Mode": "Actns1",
-				"Saucyaru.MainJob": "Red Mage",
+				"Sassyaru.MainJob": "Red Mage",
 				"Macros": [
 						{
 							"Name": "Dia",
-							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
+							"Command" : "/ms sendto Sassyaru /ma \"Dia\" [t]"
 						}
 					]
 			}
@@ -656,7 +656,7 @@
 				"Macros": [
 						{
 							"Name": "Dia",
-							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
+							"Command" : "/ms sendto Sadaru /ma \"Dia\" [t]"
 						}
 					]
 			}

@@ -3,3 +3,7 @@
 /warptome warp Sillyaru
 /wait 1
 /warptome warp Shyaru
+/wait 1
+/warptome warp Sassyaru
+/wait 1
+/warptome warp Sadaru
