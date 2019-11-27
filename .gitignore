@@ -29,6 +29,7 @@ addons/libs/logging.lua
 addons/libs/imguidef.lua
 addons/libs/common.lua
 addons/repeater/*
+config/boot
 docs/Oseem.txt
 docs/augmentlist.xml
 Ashita.dll
