@@ -35,6 +35,7 @@
 /addon load warptome
 /addon load sneakinvis
 /addon load automaneuver
+/addon load partyfollow
 
 ##########################################################################
 # Set Common Settings

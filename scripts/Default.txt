@@ -38,6 +38,7 @@
 /addon load jobsettings
 /addon load mbpetbar
 /addon load automaneuver
+/addon load partyfollow
 
 ##########################################################################
 # Set Common Settings
