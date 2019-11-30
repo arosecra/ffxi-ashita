@@ -12,7 +12,7 @@
 							"Name": "follof",
 							"Script": "mbox/follof.txt"
 						}, {
-							"Command": "/ms send /mount \"Red Crab\"",
+							"Command": "/ms send /mount \"Raptor\"",
 							"Name": "mount"
 						}, {
 							"Command": "/ms send /dismount",
@@ -417,6 +417,19 @@
 				"Mode": "Sttngs1",
 				"Macros": [
 				]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/pcmd leave",
+							"Name": "leavept"
+						},   
+						{
+							"Command": "/exec \"mbox/warpring.txt\"",
+							"Name": "warp"
+						}
+					]
 			}
 		]
 	},
@@ -438,6 +451,19 @@
 						{
 							"Name": "PtDT",
 							"Command" : "/ms sendto Sternaru /ac var set Strategy PetDT"
+						}
+					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Sternaru /pcmd leave",
+							"Name": "leavept1"
+						},   
+						{
+							"Command": "/ms sendto Sternaru /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
 						}
 					]
 			},
@@ -521,6 +547,19 @@
 						{
 							"Name": "Rtr",
 							"Command" : "/ms sendto Sillyaru /ja Retrieve <me>"
+						}
+					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Sillyaru /pcmd leave",
+							"Name": "leavept2"
+						},   
+						{
+							"Command": "/ms sendto Sillyaru /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
 						}
 					]
 			},
@@ -629,6 +668,19 @@
 							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
 						}
 					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Shyaru /pcmd leave",
+							"Name": "leavept3"
+						},   
+						{
+							"Command": "/ms sendto Shyaru /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
+						}
+					]
 			}
 		]
 	},
@@ -644,6 +696,19 @@
 							"Command" : "/ms sendto Sassyaru /ma \"Dia\" [t]"
 						}
 					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Sassyaru /pcmd leave",
+							"Name": "leavept4"
+						},   
+						{
+							"Command": "/ms sendto Sassyaru /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
+						}
+					]
 			}
 		]
 	},
@@ -657,6 +722,19 @@
 						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Sadaru /ma \"Dia\" [t]"
+						}
+					]
+			}, 
+			{
+				"Mode": "Item",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Sadaru /pcmd leave",
+							"Name": "leavept6"
+						},   
+						{
+							"Command": "/ms sendto Sadaru /exec \"mbox/warpring.txt\"",
+							"Name": "warp"
 						}
 					]
 			}

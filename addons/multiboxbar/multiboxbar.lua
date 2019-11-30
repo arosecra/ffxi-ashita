@@ -20,7 +20,7 @@ local modes = {
 	"Actns3", 
 	"WS", 
 	"Buff",  
-	"Item",
+	"Item"
 };
 
 --my keyboard doesn't seem to reliably send some keycodes
