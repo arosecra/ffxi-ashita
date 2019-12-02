@@ -39,6 +39,7 @@
 /addon load mbpetbar
 /addon load automaneuver
 /addon load partyfollow
+/addon load recast
 
 ##########################################################################
 # Set Common Settings
