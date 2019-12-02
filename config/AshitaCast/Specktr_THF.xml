@@ -56,7 +56,7 @@
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
-			<legs augment="S88264807878798">Herculean Trousers</legs>
+			<legs augment="S158631832283269">Herculean Trousers</legs>
 			<feet augment="S5499290488429428805">Herculean Boots</feet>
 			<neck>Stoicheion Medal</neck>
 			<waist>Eschan Stone</waist>
@@ -87,6 +87,21 @@
 			<ring1>Levia. Ring</ring1>
 			<ring2>Levia. Ring</ring2>
 			<back>Merciful Cape</back>
+		</set>
+		<set name="temp">
+			<main>Sandung</main>
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body>Meg. Cuirie +1</body>
+			<hands augment="M3333">Plun. Armlets +1</hands>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Chaac Belt</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Shneddick Ring</ring2>
+			<back>Ground. Mantle +1</back>
 		</set>
 		<include>
 		</include>
