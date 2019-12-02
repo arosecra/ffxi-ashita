@@ -547,9 +547,59 @@
 						{
 							"Name": "Rtr",
 							"Command" : "/ms sendto Sillyaru /ja Retrieve <me>"
+						},
+						{
+							"Name": "Actvt",
+							"Command" : "/ms sendto Sillyaru /ja Activate <me>"
+						},
+						{
+							"Name": "Deactvt",
+							"Command" : "/ms sendto Sillyaru /ja Deactivate <me>"
+						},
+						{
+							"Name": "Maint",
+							"Command" : "/ms sendto Sillyaru /ja Maintenance <me>"
 						}
 					]
-			}, 
+			},
+			{
+				"Mode": "Actns2",
+				"Sillyaru.MainJob": "Puppetmaster",
+				"Macros": [
+						{
+							"Name": "Fire",
+							"Command" : "/ms sendto Sillyaru /ja \"Fire Maneuver\" <me>"
+						},
+						{
+							"Name": "Ice",
+							"Command" : "/ms sendto Sillyaru /ja \"Ice Maneuver\" <me>"
+						},
+						{
+							"Name": "Wind",
+							"Command" : "/ms sendto Sillyaru /ja \"Wind Maneuver\" <me>"
+						},
+						{
+							"Name": "Earth",
+							"Command" : "/ms sendto Sillyaru /ja \"Earth Maneuver\" <me>"
+						},
+						{
+							"Name": "Thundr",
+							"Command" : "/ms sendto Sillyaru /ja \"Thunder Maneuver\" <me>"
+						},
+						{
+							"Name": "Water",
+							"Command" : "/ms sendto Sillyaru /ja \"Water Maneuver\" <me>"
+						},
+						{
+							"Name": "Light",
+							"Command" : "/ms sendto Sillyaru /ja \"Light Maneuver\" <me>"
+						},
+						{
+							"Name": "Dark",
+							"Command" : "/ms sendto Sillyaru /ja \"Dark Maneuver\" <me>"
+						}
+					]
+			}	, 
 			{
 				"Mode": "Item",
 				"Macros": [ 
