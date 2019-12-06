@@ -1,0 +1,79 @@
+<ashitacast>
+	<settings>
+		<!--Contains settings specific to this xml, must be set to true/false to override default-->
+		<buffupdate>true</buffupdate>
+		<!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate>
+		<!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate>
+		<!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate>
+		<!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+	</settings>
+	<sets>		
+		<set name="Precast">
+			<legs>Orvail Pants +1</legs>
+			<back>Swith Cape +1</back>
+		</set>
+
+
+		<set name="Idle">
+			<head>Weath. Corona +1</head>
+			<body>Vrikodara Jupon</body>
+			<hands>Weath. Cuffs +1</hands>
+			<legs>Weath. Pants +1</legs>
+			<feet>Weath. Souliers +1</feet>
+		</set>
+		<set name="Cure">
+			<body>Vrikodara Jupon</body>
+			<hands>Weath. Cuffs +1</hands>
+			<waist>Bishop's Sash</waist>
+			<ring1>Sirona's Ring</ring1>
+			<back>Tempered Cape +1</back>
+		</set>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+
+
+
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+
+	<midmagic>
+		<if ad_type="WhiteMagic">
+			<if ad_name="Cure*|Curaga*">
+				<equip set="Cure" />
+			</if>
+		<!--	<elseif ad_name="Stoneskin">
+				<equip set="Stoneskin" />
+			</elseif>
+			<elseif ad_name="Cursna">
+				<equip set="Cursna" />
+			</elseif>-->
+		</if>
+	</midmagic>
+
+	<preranged>
+		<equip>
+			<range></range>
+		</equip>
+	</preranged>
+
+	<idlegear>
+		<equip set="Idle" />
+	</idlegear>
+
+	<jobability>
+	</jobability>
+
+	<weaponskill>
+
+		<else>
+			<!--<equip set="MultiWS" />-->
+		</else>
+	</weaponskill>
+</ashitacast>
