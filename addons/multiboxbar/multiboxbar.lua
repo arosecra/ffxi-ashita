@@ -237,9 +237,6 @@ end
 
 function display_macro_section(conditions, hotbar_variables)
 	local result = false
-	local playerEntity = GetPlayerEntity()
-    local player = AshitaCore:GetDataManager():GetPlayer();
-	local party  = AshitaCore:GetDataManager():GetParty();
 	
 	if conditions.Static == true then
 		result = true
