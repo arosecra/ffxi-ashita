@@ -711,11 +711,15 @@
 		"Conditions": [
 			{
 				"Mode": "Actns1",
-				"Shyaru.MainJob": "Red Mage",
+				"Shyaru.MainJob": "White Mage",
 				"Macros": [
 						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
+						},
+						{
+							"Name": "Cure",
+							"Command" : "/ms sendto Shyaru /mbh cure"
 						}
 					]
 			}, 
