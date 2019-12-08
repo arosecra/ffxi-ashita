@@ -36,6 +36,7 @@
 /addon load sneakinvis
 /addon load automaneuver
 /addon load partyfollow
+/addon load multiboxhelper
 
 ##########################################################################
 # Set Common Settings
