@@ -4,6 +4,7 @@ _addon.name     = 'mbpetbar';
 _addon.version  = '1.0.0';
 
 require 'common'
+local jobs = require 'windower/res/jobs'
 local addon_settings = require 'addon_settings'
 local last_player_entity = nil
 local position_config = {}
@@ -50,21 +51,17 @@ ashita.register_event('render', function()
 		return;
 	end
 	
-	for i=1,5 do
+	for i=0,5 do
 		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
 		local entityId = AshitaCore:GetDataManager():GetParty():GetMemberTargetIndex(i)
-		--print(entityId)
-		if entityId ~= 0 then
-			local entity = GetEntity(entityId)
-			if entity ~= nil then
-				local petTargetIndex = entity.PetTargetIndex
-				if petTargetIndex ~= 0 then
-					local petEntity = GetEntity(entity.PetTargetIndex)
-					if petEntity ~= nil then
-						petCount = petCount + 1
-					end
-				end
-			end
+		local mainjob = jobs[AshitaCore:GetDataManager():GetParty():GetMemberMainJob(i)].en
+		--print(mainjob)
+		if mainjob == "Beastmaster" or
+			mainjob == "Puppetmaster" or
+			mainjob == "Summoner" or
+			mainjob == "Geomancer" 
+			then
+			petCount = petCount + 1
 		end
 	end 
     
@@ -76,9 +73,10 @@ ashita.register_event('render', function()
 			return
 		end
 		
-		for i=1,5 do
+		for i=0,5 do
 			local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
 			local entityId = AshitaCore:GetDataManager():GetParty():GetMemberTargetIndex(i)
+			local mainjob = jobs[AshitaCore:GetDataManager():GetParty():GetMemberMainJob(i)].en
 			--print(entityId)
 			if entityId ~= 0 then
 				local entity = GetEntity(entityId)
@@ -86,20 +84,24 @@ ashita.register_event('render', function()
 					local petTargetIndex = entity.PetTargetIndex
 					if petTargetIndex ~= 0 then
 						local petEntity = GetEntity(entity.PetTargetIndex)
-						--print(petEntity.Name)
-						--print(petEntity.HealthPercent)
 						if petEntity ~= nil then
-							imgui.Text(petEntity.Name .. "(" .. name .. ")");
-							imgui.Separator();
-							
-							-- Set the progressbar color for health..
-							imgui.PushStyleColor(ImGuiCol_PlotHistogram, 1.0, 0.61, 0.61, 0.6);
-							imgui.Text('HP:');
-							imgui.SameLine();
-							imgui.PushStyleColor(ImGuiCol_Text, 1.0, 1.0, 1.0, 1.0);
-							imgui.ProgressBar(tonumber(petEntity.HealthPercent) / 100, -1, 14);
-							imgui.PopStyleColor(2);
+							imgui.Text(name .. "(" .. petEntity.Name .. ")");
+							imgui.SameLine(175);
+							if petEntity.HealthPercent == 100 then
+								imgui.Text(petEntity.HealthPercent)
+							elseif petEntity.HealthPercent < 10 then
+								imgui.Text("  " .. petEntity.HealthPercent)
+							else
+								imgui.Text(" " .. petEntity.HealthPercent)
+							end
 						end
+					elseif mainjob == "Beastmaster" or
+							mainjob == "Puppetmaster" or
+							mainjob == "Summoner" or
+							mainjob == "Geomancer" then
+						imgui.Text(name .. "(None)");
+						imgui.SameLine(175);
+						imgui.Text("  0")
 					end
 				end
 			end
