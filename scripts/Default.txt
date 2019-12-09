@@ -33,6 +33,7 @@
 /addon load SurvivalGuide
 #/addon load equipviewer
 /addon load warptome
+/addon load autojoin
 /addon load multiboxbar
 /addon load sneakinvis
 /addon load jobsettings
