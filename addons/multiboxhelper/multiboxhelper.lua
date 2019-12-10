@@ -16,6 +16,11 @@ local config = {
 		rolls = {}
 	},
 	geo = {
+	},
+	whm = {
+	},
+	pup = {
+		maneuvers = {}
 	}
 };
 
@@ -35,7 +40,7 @@ ashita.register_event('load', function()
 	
 end);
 
-local function run_cure(args)
+local function run_cure(cure1, cure2, cure3, cure4, args)
 	local lowestHpp = 100;
 	local lowestHp = 0;
 	local lowestName;
@@ -45,7 +50,7 @@ local function run_cure(args)
 		local hp = AshitaCore:GetDataManager():GetParty():GetMemberCurrentHP(i)
 		local hpp = AshitaCore:GetDataManager():GetParty():GetMemberCurrentHPP(i)
 		if (name ~= "") then
-			if (hpp < lowestHpp) then
+			if (hpp < lowestHpp and hpp > 0) then
 				lowestHpp = hpp;
 				lowsetHp = hp;
 				lowestName = name;
@@ -59,10 +64,14 @@ local function run_cure(args)
 	--cure iii = 364
 	if lowestHpp < 100 then
 	
-		if hpMissing > 500 then
+		if hpMissing > cure4 then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure IV\" " .. lowestName, 1)
-		else
+		elseif hpMissing > cure3 then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure III\" " .. lowestName, 1)
+		elseif hpMissing > cure2 then
+			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure II\" " .. lowestName, 1)
+		elseif hpMissing > cure1 then
+			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure I\" " .. lowestName, 1)
 		end
 	end
 
@@ -94,6 +103,16 @@ end
 
 local function run_geo(args)
 end
+local function run_pup(args)
+end
+local function run_whm(args)
+	if (args[3] == 'cure') then
+		run_cure(100, 250, 500, 600, args)
+	elseif (args[3] == 'curega') then
+	elseif (args[3] == 'cure_t_o_t') then
+	elseif (args[3] == 'removedebuff') then
+	end
+end
 
 local function run_cor(args)
 	if (args[3] == 'addroll') then
@@ -116,11 +135,15 @@ local function run_cor(args)
 	end
 end
 
--- mbh cure
--- mbh cureToT
--- mbh brd setsong [n] [song name]
+-- mbh whm cure
+-- mbh whm curega
+-- mbh whm cure_t_o_t
+-- mbh whm removedebuff
+-- mbh brd addsong [song name]
 -- mbh brd singsong [n]
 -- mbh brd singdummysong [n]
+-- mbh brd setcarolelement [n]
+-- mbh brd setthrenodyelement [n]
 -- mbh cor setroll [n] [roll name]
 -- mbh cor roll [n]
 -- mbh geo setbubble [spell name]
@@ -129,6 +152,8 @@ end
 -- mbh geo bubble
 -- mbh geo entrust
 -- mbh geo luopan
+-- mbh pup addmaneuver [element]
+-- mbh pup maneuver
 ashita.register_event('command', function(cmd, nType)
     -- Skip commands that we should not handle..
     local args = cmd:args();
@@ -159,7 +184,15 @@ ashita.register_event('command', function(cmd, nType)
 		run_cure_t_o_t(args);
 	    return true;
     end
-    if (args[2] == 'bard') then
+    if (args[2] == 'whm') then
+		run_whm(args);
+	    return true;
+    end
+    if (args[2] == 'pup') then
+		run_pup(args);
+	    return true;
+    end
+    if (args[2] == 'brd') then
 		run_bard(args);
 	    return true;
     end
@@ -174,42 +207,3 @@ ashita.register_event('command', function(cmd, nType)
 	
     return true;
 end);
-
---ashita.register_event('prerender', function()
---
---	hotbar_variables = {
---		['Mode'] = hotbar_variables['Mode']
---	}
---	
---    local player = AshitaCore:GetDataManager():GetPlayer();
---	local party  = AshitaCore:GetDataManager():GetParty();
---	local playerEntity = GetPlayerEntity()
---    if (player == nil or playerEntity == nil or party == nil) then
---		last_player_entity = nil	
---		hotbar_position_config = {};
---        return;
---    end
---	if last_player_entity == nil then
---		--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
---		hotbar_position_config = addon_settings.onload(_addon.name, 'imgui', {}, true, true, true)
---	end
---	
---	hotbar_variables[playerEntity.Name .. '.MainJob'] = jobs[player:GetMainJob()].en
---	hotbar_variables[playerEntity.Name .. '.SubJob'] = jobs[player:GetSubJob()].en
---	
---	local party  = AshitaCore:GetDataManager():GetParty();
---	for i=1,5 do
---		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
---		local mainjob = AshitaCore:GetDataManager():GetParty():GetMemberMainJob(i)
---		local subjob  = AshitaCore:GetDataManager():GetParty():GetMemberSubJob(i)
---		hotbar_variables[name .. '.MainJob'] = jobs[mainjob].en
---		hotbar_variables[name .. '.SubJob'] = jobs[subjob].en
---	end
---	
---	for hotbar_user_id,hotbar_user in pairs(hotbar_config) do
---		if player == hotbar_user.Name then
---			hotbar_variables[hotbar_user.Name .. '.Engaged'] = (player.status == 1)
---		end
---	end
---	
---end);
