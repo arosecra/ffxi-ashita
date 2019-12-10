@@ -719,7 +719,19 @@
 						},
 						{
 							"Name": "Cure",
-							"Command" : "/ms sendto Shyaru /mbh cure"
+							"Command" : "/ms sendto Shyaru /mbh whm cure"
+						},
+						{
+							"Name": "Curega",
+							"Command" : "/ms sendto Shyaru /mbh whm curega"
+						},
+						{
+							"Name": "CurToT",
+							"Command" : "/ms sendto Shyaru /mbh whm core_t_o_t"
+						},
+						{
+							"Name": "debuff",
+							"Command" : "/ms sendto Shyaru /mbh whm removedebuff"
 						}
 					]
 			}, 
@@ -742,15 +754,71 @@
 		"Name": "Sassyaru",
 		"Conditions": [
 			{
-				"Mode": "Actns1",
-				"Sassyaru.MainJob": "Red Mage",
+				"Mode": "Sttngs1",
+				"Sassyaru.MainJob": "Bard",
 				"Macros": [
 						{
-							"Name": "Dia",
-							"Command" : "/ms sendto Sassyaru /ma \"Dia\" [t]"
+							"Name": "Ref3",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Mage's Ballad III\""
+						},
+						{
+							"Name": "Def5",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Knight's Mine V\""
+						},
+						{
+							"Name": "Att5",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Valor Minuet V\""
+						},
+						{
+							"Name": "AttDel1",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Advancing March\""
+						},
+						{
+							"Name": "AttDel2",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Victory March\""
+						},
+						{
+							"Name": "Acc1",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Sword Madrigal\""
+						},
+						{
+							"Name": "Acc2",
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Blade Madrigal\""
 						}
 					]
 			}, 
+			{
+				"Mode": "Actns1",
+				"Sassyaru.MainJob": "Bard",
+				"Macros": [
+						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Sassyaru /attack [t]"
+						},
+						{
+							"Name": "Song1",
+							"Command" : "/ms sendto Sassyaru /mbh brd singsong 1"
+						},
+						{
+							"Name": "Song2",
+							"Command" : "/ms sendto Sassyaru /mbh brd singsong 2"
+						},
+						{
+							"Name": "Mazurka",
+							"Command" : "/ms sendto Sassyaru /ma \"Chocobo Mazurka\" <me>"
+						}
+					]
+			},
+			{
+				"Mode": "Actns2",
+				"Sassyaru.MainJob": "Bard",
+				"Macros": [
+						{
+							"Name": "Mazurka",
+							"Command" : "/ms sendto Sassyaru /ma \"Chocobo Mazurka\" <me>"
+						}
+					]
+			},
 			{
 				"Mode": "Item",
 				"Macros": [ 
