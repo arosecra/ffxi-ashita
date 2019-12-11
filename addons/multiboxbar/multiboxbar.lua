@@ -389,7 +389,7 @@ ashita.register_event('render', function()
 		
 		for i=1,10 do
 			local label = string.rep(' ', 8)
-			if macros ~= nil and #macros >= i then
+			if macros ~= nil and #macros >= i and macros[i].Spacer == nil then
 				label = macros[i].Name
 				if #label > 12 then
 					label = string.sub(label,1,8) .. '..'
