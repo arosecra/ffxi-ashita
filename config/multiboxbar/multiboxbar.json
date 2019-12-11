@@ -714,6 +714,10 @@
 				"Shyaru.MainJob": "White Mage",
 				"Macros": [
 						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Shyaru /attack [t]"
+						},
+						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
 						},
@@ -804,6 +808,9 @@
 							"Command" : "/ms sendto Sassyaru /mbh brd singsong 2"
 						},
 						{
+							"Spacer": "true"
+						},
+						{
 							"Name": "Mazurka",
 							"Command" : "/ms sendto Sassyaru /ma \"Chocobo Mazurka\" <me>"
 						}
@@ -839,8 +846,12 @@
 		"Conditions": [
 			{
 				"Mode": "Actns1",
-				"Sadaru.MainJob": "Red Mage",
+				"Sadaru.MainJob": "Geomancer",
 				"Macros": [
+						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Sadaru /attack [t]"
+						},
 						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Sadaru /ma \"Dia\" [t]"
