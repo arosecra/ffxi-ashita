@@ -1,14 +1,9 @@
 <ashitacast>
 	<settings>
-		<!--Contains settings specific to this xml, must be set to true/false to override default-->
-		<buffupdate>true</buffupdate>
-		<!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
-		<statusupdate>true</statusupdate>
-		<!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
-		<hpupdate>false</hpupdate>
-		<!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
-		<autoupdate>true</autoupdate>
-		<!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
+		<buffupdate>true</buffupdate> <!--Determines if your idlegear will be parsed when you gain/lose a buff. Default: TRUE -->
+		<statusupdate>true</statusupdate> <!--Determines if your idlegear will be parsed when you change status(stand/rest/engage/etc).  Default: TRUE -->
+		<hpupdate>false</hpupdate> <!--Determines if your idlegear will be parsed when your HP % changes.  Default: TRUE -->
+		<autoupdate>true</autoupdate> <!--Determines if your idlegear will be parsed on outgoing status updates(roughly every 350ms).  Default: TRUE-->
 	</settings>
 	<sets>		
 		<set name="Precast">
