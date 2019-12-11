@@ -64,3 +64,78 @@
 /bind !F4 /input /ta <a23>
 /bind !F5 /input /ta <a24>
 /bind !F6 /input /ta <a25>
+
+
+##########################################################################
+# ! - Represents ALT key must be pressed with the keybind.
+# ^ - Represents CTRL key must be pressed with the keybind.
+# @ - Represents Windows key must be pressed with the keybind.
+# # - Represents Apps key must be pressed with the keybind.
+# + - Represents Shift key must be pressed with the keybind.
+##########################################################################
+
+/bind NUMPAD1 /multiboxbar button_from_controller 1
+/bind NUMPAD2 /multiboxbar button_from_controller 2
+/bind NUMPAD3 /multiboxbar button_from_controller 3
+/bind NUMPAD4 /multiboxbar button_from_controller 4
+/bind NUMPAD5 /multiboxbar button_from_controller 5
+/bind NUMPAD6 /multiboxbar button_from_controller 6
+/bind NUMPAD7 /multiboxbar button_from_controller 7
+/bind NUMPAD8 /multiboxbar button_from_controller 8
+/bind NUMPAD9 /multiboxbar button_from_controller 9
+/bind NUMPAD0 /multiboxbar button_from_controller 10
+
+/bind !NUMPAD1 /multiboxbar button_from_controller 1
+/bind !NUMPAD2 /multiboxbar button_from_controller 2
+/bind !NUMPAD3 /multiboxbar button_from_controller 3
+/bind !NUMPAD4 /multiboxbar button_from_controller 4
+/bind !NUMPAD5 /multiboxbar button_from_controller 5
+/bind !NUMPAD6 /multiboxbar button_from_controller 6
+/bind !NUMPAD7 /multiboxbar button_from_controller 7
+/bind !NUMPAD8 /multiboxbar button_from_controller 8
+/bind !NUMPAD9 /multiboxbar button_from_controller 9
+/bind !NUMPAD0 /multiboxbar button_from_controller 10
+
+/bind @NUMPAD1 /multiboxbar button_from_controller 1
+/bind @NUMPAD2 /multiboxbar button_from_controller 2
+/bind @NUMPAD3 /multiboxbar button_from_controller 3
+/bind @NUMPAD4 /multiboxbar button_from_controller 4
+/bind @NUMPAD5 /multiboxbar button_from_controller 5
+/bind @NUMPAD6 /multiboxbar button_from_controller 6
+/bind @NUMPAD7 /multiboxbar button_from_controller 7
+/bind @NUMPAD8 /multiboxbar button_from_controller 8
+/bind @NUMPAD9 /multiboxbar button_from_controller 9
+/bind @NUMPAD0 /multiboxbar button_from_controller 10
+
+/bind ^NUMPAD1 /multiboxbar button_from_controller 1
+/bind ^NUMPAD2 /multiboxbar button_from_controller 2
+/bind ^NUMPAD3 /multiboxbar button_from_controller 3
+/bind ^NUMPAD4 /multiboxbar button_from_controller 4
+/bind ^NUMPAD5 /multiboxbar button_from_controller 5
+/bind ^NUMPAD6 /multiboxbar button_from_controller 6
+/bind ^NUMPAD7 /multiboxbar button_from_controller 7
+/bind ^NUMPAD8 /multiboxbar button_from_controller 8
+/bind ^NUMPAD9 /multiboxbar button_from_controller 9
+/bind ^NUMPAD0 /multiboxbar button_from_controller 10
+
+/bind #NUMPAD1 /multiboxbar button_from_controller 1
+/bind #NUMPAD2 /multiboxbar button_from_controller 2
+/bind #NUMPAD3 /multiboxbar button_from_controller 3
+/bind #NUMPAD4 /multiboxbar button_from_controller 4
+/bind #NUMPAD5 /multiboxbar button_from_controller 5
+/bind #NUMPAD6 /multiboxbar button_from_controller 6
+/bind #NUMPAD7 /multiboxbar button_from_controller 7
+/bind #NUMPAD8 /multiboxbar button_from_controller 8
+/bind #NUMPAD9 /multiboxbar button_from_controller 9
+/bind #NUMPAD0 /multiboxbar button_from_controller 10
+
+/bind +NUMPAD1 /multiboxbar button_from_controller 1
+/bind +NUMPAD2 /multiboxbar button_from_controller 2
+/bind +NUMPAD3 /multiboxbar button_from_controller 3
+/bind +NUMPAD4 /multiboxbar button_from_controller 4
+/bind +NUMPAD5 /multiboxbar button_from_controller 5
+/bind +NUMPAD6 /multiboxbar button_from_controller 6
+/bind +NUMPAD7 /multiboxbar button_from_controller 7
+/bind +NUMPAD8 /multiboxbar button_from_controller 8
+/bind +NUMPAD9 /multiboxbar button_from_controller 9
+/bind +NUMPAD0 /multiboxbar button_from_controller 10
