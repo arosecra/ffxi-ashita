@@ -4,10 +4,14 @@
 		"Conditions": [
 			{
 				"Mode": "Actns1",
-				"Macros": [ 
+				"Macros": [  
 						{
 							"Name": "follon",
 							"Script": "mbox/follon.txt"
+						},
+						{
+							"Name": "pfollon",
+							"Script": "mbox/pfollon.txt"
 						}, {
 							"Name": "follof",
 							"Script": "mbox/follof.txt"
@@ -72,7 +76,10 @@
 			}, 
 			{
 				"Mode": "Item",
-				"Macros": [ 
+				"Macros": [
+						{
+							"Spacer": "true"
+						},
 						{
 							"Command": "/exec \"mbox/trizring.txt\"",
 							"Name": "trizek"
@@ -84,6 +91,10 @@
 						{
 							"Command": "/exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/exec \"di/Specktr_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			},
@@ -459,11 +470,21 @@
 				"Macros": [ 
 						{
 							"Command": "/ms sendto Sternaru /pcmd leave",
-							"Name": "leavept1"
+							"Name": "leavept"
 						},   
+						{
+							"Spacer": "true"
+						},   
+						{
+							"Spacer": "true"
+						},
 						{
 							"Command": "/ms sendto Sternaru /exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/ms sendto Sternaru /exec \"di/Sternaru_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			},
@@ -471,6 +492,10 @@
 				"Mode": "Actns1",
 				"Sternaru.MainJob": "Puppetmaster",
 				"Macros": [
+						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Sternaru /attack [t]"
+						},
 						{
 							"Name": "Dply",
 							"Command" : "/ms sendto Sternaru /ja Deploy [t]"
@@ -541,6 +566,10 @@
 				"Sillyaru.MainJob": "Puppetmaster",
 				"Macros": [
 						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Sillyaru /attack [t]"
+						},
+						{
 							"Name": "Dply",
 							"Command" : "/ms sendto Sillyaru /ja Deploy [t]"
 						},
@@ -605,11 +634,21 @@
 				"Macros": [ 
 						{
 							"Command": "/ms sendto Sillyaru /pcmd leave",
-							"Name": "leavept2"
+							"Name": "leavept"
+						},   
+						{
+							"Spacer": "true"
+						},   
+						{
+							"Spacer": "true"
 						},   
 						{
 							"Command": "/ms sendto Sillyaru /exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/ms sendto Sillyaru /exec \"di/Sillyaru_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			},
@@ -655,6 +694,10 @@
 				"Mode": "Actns1",
 				"Sillyaru.MainJob": "Corsair",
 				"Macros": [
+						{
+							"Name": "Attack",
+							"Command" : "/ms sendto Sillyaru /attack [t]"
+						},
 						{
 							"Name": "DblUp",
 							"Command" : "/ms sendto Sillyaru /ja \"Double-Up\" <me>"
@@ -744,11 +787,21 @@
 				"Macros": [ 
 						{
 							"Command": "/ms sendto Shyaru /pcmd leave",
-							"Name": "leavept3"
+							"Name": "leavept"
+						},   
+						{
+							"Spacer": "true"
+						},   
+						{
+							"Spacer": "true"
 						},   
 						{
 							"Command": "/ms sendto Shyaru /exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/ms sendto Shyaru /exec \"di/Shyaru_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			}
@@ -831,11 +884,21 @@
 				"Macros": [ 
 						{
 							"Command": "/ms sendto Sassyaru /pcmd leave",
-							"Name": "leavept4"
+							"Name": "leavept"
+						},   
+						{
+							"Spacer": "true"
+						},   
+						{
+							"Spacer": "true"
 						},   
 						{
 							"Command": "/ms sendto Sassyaru /exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/ms sendto Sassyaru /exec \"di/Sassyaru_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			}
@@ -863,11 +926,21 @@
 				"Macros": [ 
 						{
 							"Command": "/ms sendto Sadaru /pcmd leave",
-							"Name": "leavept6"
+							"Name": "leavept"
+						},   
+						{
+							"Spacer": "true"
+						},   
+						{
+							"Spacer": "true"
 						},   
 						{
 							"Command": "/ms sendto Sadaru /exec \"mbox/warpring.txt\"",
 							"Name": "warp"
+						},   
+						{
+							"Command": "/ms sendto Sadaru /exec \"di/Sadaru_DI_Trusts.txt\"",
+							"Name": "DITrusts"
 						}
 					]
 			}
