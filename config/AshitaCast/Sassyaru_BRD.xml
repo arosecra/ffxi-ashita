@@ -82,12 +82,14 @@
 		</set>-->
 		
 		<set name="Precast">
+			<hands>Gendewitha Gages</hands>
 			<legs>Orvail Pants +1</legs>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="SongPrecast">
-			<legs>Orvail Pants +1</legs>
+			<hands>Gendewitha Gages</hands>
+			<legs>Gendewitha Spats</legs>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>

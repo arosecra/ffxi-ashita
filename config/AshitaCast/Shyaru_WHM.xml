@@ -12,8 +12,10 @@
 	</settings>
 	<sets>		
 		<set name="Precast">
+			<body>Vrikodara Jupon</body>
 			<legs>Orvail Pants +1</legs>
 			<back>Swith Cape +1</back>
+			<ring1>Prolix Ring</ring1>
 		</set>
 
 
