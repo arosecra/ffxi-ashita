@@ -13,11 +13,11 @@
 
 
 		<set name="Idle">
-			<head>Weath. Corona +1</head>
-			<body>Weath. Robe +1</body>
+			<head>Hagondes Hat +1</head>
+			<body>Hagondes Coat +1</body>
 			<hands>Weath. Cuffs +1</hands>
-			<legs>Weath. Pants +1</legs>
-			<feet>Weath. Souliers +1</feet>
+			<legs>Hagondes Pants +1</legs>
+			<feet>Hag. Sabots +1</feet>
 		</set>
 	</sets>
 	<variables>

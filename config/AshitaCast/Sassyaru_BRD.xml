@@ -82,14 +82,14 @@
 		</set>-->
 		
 		<set name="Precast">
-			<hands>Gendewitha Gages</hands>
+			<hands>Gende. Gages +1</hands>
 			<legs>Orvail Pants +1</legs>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="SongPrecast">
-			<hands>Gendewitha Gages</hands>
-			<legs>Gendewitha Spats</legs>
+			<hands>Gende. Gages +1</hands>
+			<legs>Gende. Spats +1</legs>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>
@@ -97,11 +97,12 @@
 
 		<set name="Idle">
 			<head>Weath. Corona +1</head>
-			<body>Karmesin Vest</body>
-			<hands>Weath. Cuffs +1</hands>
-			<legs>Weath. Pants +1</legs>
-			<feet>Weath. Souliers +1</feet>
+			<body>Gende. Bilaut +1</body>
+			<hands>Gende. Gages +1</hands>
+			<legs>Gende. Spats +1</legs>
+			<feet>Gende. Galosh. +1</feet>
 			<neck>Moonbow Whistle</neck>
+			<back>Swith Cape +1</back>
 		</set>
 	</sets>
 	<variables>

@@ -13,24 +13,30 @@
 	<sets>		
 		<set name="Precast">
 			<body>Vrikodara Jupon</body>
+			<hands>Gende. Gages +1</hands>
 			<legs>Orvail Pants +1</legs>
 			<back>Swith Cape +1</back>
+			<neck>Orison Locket</neck>
 			<ring1>Prolix Ring</ring1>
 		</set>
 
 
 		<set name="Idle">
-			<head>Weath. Corona +1</head>
+			<head>Gende. Caubeen +1</head>
 			<body>Vrikodara Jupon</body>
-			<hands>Weath. Cuffs +1</hands>
+			<hands>Gende. Gages +1</hands>
 			<legs>Sifahir Slacks</legs>
-			<feet>Weath. Souliers +1</feet>
+			<feet>Gende. Galosh. +1</feet>
+			<neck>Orison Locket</neck>
+			<back>Tempered Cape +1</back>
 		</set>
 		<set name="Cure">
+			<head>Gende. Caubeen +1</head>
 			<body>Vrikodara Jupon</body>
-			<hands>Weath. Cuffs +1</hands>
+			<hands>Gende. Gages +1</hands>
 			<legs>Sifahir Slacks</legs>
 			<waist>Bishop's Sash</waist>
+			<neck>Orison Locket</neck>
 			<ring1>Sirona's Ring</ring1>
 			<ring2>Solemn Ring</ring2>
 			<back>Tempered Cape +1</back>
