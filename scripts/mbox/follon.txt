@@ -1,5 +1,3 @@
 /unload MultiSend
 /load MultiSend
-/ms send /partyfollow
-/wait 1
 /ms followme on
