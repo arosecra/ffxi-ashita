@@ -71,7 +71,7 @@ local function run_cure(cure1, cure2, cure3, cure4, args)
 		elseif hpMissing > cure2 then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure II\" " .. lowestName, 1)
 		elseif hpMissing > cure1 then
-			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure I\" " .. lowestName, 1)
+			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure\" " .. lowestName, 1)
 		end
 	end
 
