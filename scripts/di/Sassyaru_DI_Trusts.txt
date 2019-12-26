@@ -1,0 +1,7 @@
+/ma "Mihli Aliapoh" <me>
+/wait 10
+/ma "Kupipi" <me>
+/wait 10
+/ma "Koru-Moru" <me>
+/wait 10
+/ma "Valaineral" <me>

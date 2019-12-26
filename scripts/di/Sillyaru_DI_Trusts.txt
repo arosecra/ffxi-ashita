@@ -1,0 +1,9 @@
+/ma "King Of Hearts" <me>
+/wait 10
+/ma "Amchuchu" <me>
+/wait 10
+/ma "Kupipi" <me>
+/wait 10
+/ma "Koru-Moru" <me>
+/wait 10
+/ma "Valaineral" <me>

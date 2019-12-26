@@ -1,0 +1,9 @@
+/ma "Shantotto II" <me>
+/wait 10
+/ma "Ygnas" <me>
+/wait 10
+/ma "AAEV" <me>
+/wait 10
+/ma "Koru-Moru" <me>
+/wait 10
+/ma "Kupipi" <me>
