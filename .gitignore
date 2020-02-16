@@ -45,3 +45,15 @@ addons/sparks/
 addons/libs/d3d8.lua
 addons/equipviewer/
 addons/Skillchains/
+resources/entities/unity_npcs.xml
+resources/entities/survivalguides.xml
+resources/entities/adoulin_travel.xml
+resources/entities/abyssea_warps.xml
+resources/entities/waypoints.xml
+resources/entities/eschan_portals.xml
+resources/entities/escha_entrances.xml
+resources/entities/abyssea_maws.xml
+resources/entities/protowaypoints.xml
+resources/entities/homepoints.xml
+resources/entities/abyssea_confluxes.xml
+resources/greed/gradient.tga

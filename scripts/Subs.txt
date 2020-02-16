@@ -18,6 +18,7 @@
 /load Screenshot
 /load ashitacast
 /load multisend
+/load uberwarp
 
 ##########################################################################
 # Load Common Addons
@@ -30,8 +31,6 @@
 /addon load tparty
 /addon load blusets
 /addon load autojoin
-/addon load HomePoint
-/addon load SurvivalGuide
 /addon load warptome
 /addon load sneakinvis
 /addon load automaneuver
