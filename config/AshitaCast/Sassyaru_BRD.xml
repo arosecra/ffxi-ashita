@@ -82,16 +82,28 @@
 		</set>-->
 		
 		<set name="Precast">
+			<body>Vrikodara Jupon</body>
 			<hands>Gende. Gages +1</hands>
 			<legs>Orvail Pants +1</legs>
+			<ear1>Loquac. Earring</ear1>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="SongPrecast">
 			<hands>Gende. Gages +1</hands>
 			<legs>Gende. Spats +1</legs>
+			<ear1>Loquac. Earring</ear1>
 			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
+		</set>
+		<set name="Buff">
+			<head>Brioso Roundlet</head>
+			<body>Brioso Just.</body>
+			<hands>Brioso Cuffs</hands>
+			<legs>Brioso Cannions</legs>
+			<feet>Brioso Slippers</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
 		</set>
 
 
@@ -102,6 +114,15 @@
 			<legs>Gende. Spats +1</legs>
 			<feet>Gende. Galosh. +1</feet>
 			<neck>Moonbow Whistle</neck>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="temp">
+			<main augment="D10965218758168">Kali</main>
+			<range augment="M0">Gjallarhorn</range>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
+			<ring1>Prolix Ring</ring1>
+			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>
 	</sets>
@@ -158,10 +179,10 @@
 					<return />
 				</if>
 
-			</if>
+			</if>-->
 			
 
-			<else>	
+			<!--<else>	
 			
 			<if ad_name="Army's Paeon*">
 				<equip set="Paeon" lock="true"></equip>
@@ -182,11 +203,11 @@
 					<equip set="WindAcc" />
 					<return />
 				</elseif>
-			</else>
+			</else>-->
 
 			
 			<equip set="Buff" />
-
+			<!--
 			<if ad_name="Sentinel's Scherzo">
 				<equip>
 					<feet>Aoidos' Cothrn. +2</feet>
@@ -215,8 +236,7 @@
 				<equip>
 					<head>Brioso Roundlet +1</head>
 				</equip>
-			</elseif>
-			-->
+			</elseif>-->
 		</if>
 		<!--<if ad_type="WhiteMagic">
 			<if ad_name="Cure*|Curaga*">

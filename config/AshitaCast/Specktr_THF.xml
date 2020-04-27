@@ -9,46 +9,46 @@
 		<set name="Idle">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
-			<ring2>Defending Ring</ring2>
+			<ring2>Begrudging Ring</ring2>
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="TP-On">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="M3333">Plun. Armlets +1</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
-			<ring2>Defending Ring</ring2>
+			<ring2>Begrudging Ring</ring2>
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="TP-Off">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S17691248205849">Herculean Trousers</legs>
-			<feet augment="S79263899353156">Herculean Boots</feet>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Windbuffet Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
-			<ring2>Defending Ring</ring2>
+			<ring2>Begrudging Ring</ring2>
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="MagWS">
@@ -101,6 +101,23 @@
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Shneddick Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="temp">
+			<main>Nibiru Knife</main>
+			<sub>Sandung</sub>
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet>Skulk. Poulaines +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Windbuffet Belt +1</waist>
+			<ear1>Brutal Earring</ear1>
+			<ear2>Cessance Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Begrudging Ring</ring2>
 			<back>Ground. Mantle +1</back>
 		</set>
 		<include>
