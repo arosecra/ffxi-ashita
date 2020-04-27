@@ -21,7 +21,8 @@ local config = {
 	},
 	pup = {
 		maneuvers = {}
-	}
+	},
+	ws="undefined"
 };
 
 --local hotbar_config = {};
@@ -187,6 +188,15 @@ ashita.register_event('command', function(cmd, nType)
     if (args[2] == 'whm') then
 		run_whm(args);
 	    return true;
+    end
+    	
+    if (args[2] == 'setws') then
+		config.ws = args[3]
+        return true;
+    end
+    if (args[2] == 'ws') then
+		AshitaCore:GetChatManager():QueueCommand("/ws \"" .. config.ws .. "\" <t>", 1)
+        return true;
     end
     if (args[2] == 'pup') then
 		run_pup(args);
