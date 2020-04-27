@@ -92,6 +92,9 @@ local hotbar_variables = {
 	['Mode'] = "Sttngs1"
 }
 
+local run_in_render = {}
+local run_in_render_count = 0
+
 local hotbar_config = {};
 local hotbar_position_config = {};
 local function msg(s)
@@ -176,7 +179,7 @@ function run_macro_command(section_number, macro_number)
 	if current_section ~= nil then
 		local macro = current_section[macro_number]
 		if macro ~= nil then
-			run_macro(macro)
+			run_macro(macro, "commandline")
 		end
 	end
 end
@@ -264,13 +267,19 @@ function get_active_macros(hotbar_section, hotbar_variables)
 	return result
 end
 
-function run_macro(hotbar_macro) 
-	if hotbar_macro.Script then
-		msg(hotbar_macro.Script)
-		AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
-	elseif hotbar_macro.Command then
-		msg(hotbar_macro.Command)
-		AshitaCore:GetChatManager():QueueCommand(hotbar_macro.Command, 1)
+function run_macro(hotbar_macro, mode)
+	--print(mode .. ' ' .. hotbar_macro.RunInRender .. ' ')
+	if hotbar_macro.RunInRender and mode ~= "render" then
+		run_in_render_count = run_in_render_count + 1
+		run_in_render[run_in_render_count] = hotbar_macro
+	else
+		if hotbar_macro.Script then
+			msg(hotbar_macro.Script)
+			AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
+		elseif hotbar_macro.Command then
+			msg(hotbar_macro.Command)
+			AshitaCore:GetChatManager():QueueCommand(hotbar_macro.Command, 2)
+		end
 	end
 end
 
@@ -338,8 +347,15 @@ ashita.register_event('render', function()
     if (playerEntity == nil) then
         return;
     end
+	if run_in_render_count > 0 then
+		for index, hotbar_macro in ipairs(run_in_render) do
+			run_macro(hotbar_macro, "render");
+		end
+		run_in_render = {}
+		run_in_render_count = 0
+	end
     
-    -- Display the pet information..
+    -- Display the macro bar 
 	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
     imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
 	local window_flags = 0
@@ -401,7 +417,7 @@ ashita.register_event('render', function()
 			if (imgui.SmallButton(label)) then 
 				if macros ~= nil and #macros >= i then
 					local hotbar_macro = macros[i]
-					run_macro(hotbar_macro)
+					run_macro(hotbar_macro, "click")
 				end
 			end	
 			imgui.SameLine();			
