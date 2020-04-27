@@ -30,6 +30,12 @@
 						}, {
 							"Name": "sneak",
 							"Command": "/ms send /sneakinvis"
+						},{
+							"Spacer": "true"
+						}, {
+							"Name": "nextchar",
+							"RunInRender": "true",
+							"Command": "/winfocus *nextalpha"
 						}  
 					]
 			}, 
@@ -699,6 +705,10 @@
 							"Command" : "/ms sendto Sillyaru /attack [t]"
 						},
 						{
+							"Name": "WS",
+							"Command" : "/ms sendto Sillyaru /mbh ws"
+						},
+						{
 							"Name": "DblUp",
 							"Command" : "/ms sendto Sillyaru /ja \"Double-Up\" <me>"
 						},
@@ -709,6 +719,16 @@
 						{
 							"Name": "Fold",
 							"Command" : "/ms sendto Sillyaru /ja Fold <me>"
+						}
+					]
+			},
+			{
+				"Mode": "WS",
+				"Sillyaru.MainJob": "Corsair",
+				"Macros": [
+						{
+							"Name": "Vorpal",
+							"Command" : "/ms sendto Sillyaru /mbh setws \"Vorpal Blade\""
 						}
 					]
 			},
@@ -761,6 +781,10 @@
 							"Command" : "/ms sendto Shyaru /attack [t]"
 						},
 						{
+							"Name": "WS",
+							"Command" : "/ms sendto Shyaru /mbh ws"
+						},
+						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Shyaru /ma \"Dia\" [t]"
 						},
@@ -802,6 +826,15 @@
 						{
 							"Command": "/ms sendto Shyaru /exec \"di/Shyaru_DI_Trusts.txt\"",
 							"Name": "DITrusts"
+						}
+					]
+			}, 
+			{
+				"Mode": "WS",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Shyaru /mbh setws \"Hexa Strike\"",
+							"Name": "Hexa"
 						}
 					]
 			}
@@ -853,6 +886,10 @@
 							"Command" : "/ms sendto Sassyaru /attack [t]"
 						},
 						{
+							"Name": "WS",
+							"Command" : "/ms sendto Sassyaru /mbh ws"
+						},
+						{
 							"Name": "Song1",
 							"Command" : "/ms sendto Sassyaru /mbh brd singsong 1"
 						},
@@ -870,12 +907,12 @@
 					]
 			},
 			{
-				"Mode": "Actns2",
+				"Mode": "WS",
 				"Sassyaru.MainJob": "Bard",
 				"Macros": [
 						{
-							"Name": "Mazurka",
-							"Command" : "/ms sendto Sassyaru /ma \"Chocobo Mazurka\" <me>"
+							"Name": "Viper",
+							"Command" : "/ms sendto Sassyaru /mbh setws \"Viper Bite\""
 						}
 					]
 			},
@@ -916,6 +953,10 @@
 							"Command" : "/ms sendto Sadaru /attack [t]"
 						},
 						{
+							"Name": "WS",
+							"Command" : "/ms sendto Sadaru /mbh ws"
+						},
+						{
 							"Name": "Dia",
 							"Command" : "/ms sendto Sadaru /ma \"Dia\" [t]"
 						}
@@ -941,6 +982,19 @@
 						{
 							"Command": "/ms sendto Sadaru /exec \"di/Sadaru_DI_Trusts.txt\"",
 							"Name": "DITrusts"
+						}
+					]
+			}, 
+			{
+				"Mode": "WS",
+				"Macros": [ 
+						{
+							"Command": "/ms sendto Sadaru /mbh setws \"Hexa Strike\"",
+							"Name": "Hexa"
+						},   
+						{
+							"Command": "/ms sendto Sadaru /mbh setws \"Exudation\"",
+							"Name": "Exud"
 						}
 					]
 			}
