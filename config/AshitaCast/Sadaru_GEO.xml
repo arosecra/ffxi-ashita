@@ -7,6 +7,7 @@
 	</settings>
 	<sets>		
 		<set name="Precast">
+			<head>Merlinic Hood</head>
 			<legs>Geomancy Pants</legs>
 			<ear1>Loquac. Earring</ear1>
 			<back>Lifestream Cape</back>
