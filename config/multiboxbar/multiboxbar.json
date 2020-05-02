@@ -32,10 +32,18 @@
 							"Command": "/ms send /sneakinvis"
 						},{
 							"Spacer": "true"
+						}  
+					]
+			}, 
+			{
+				"Mode": "Actns2",
+				"Macros": [  
+						{
+							"Name": "wrp2met",
+							"Command": "/warptometest"
 						}, {
-							"Name": "nextchar",
-							"RunInRender": "true",
-							"Command": "/winfocus *nextalpha"
+							"Name": "w2merld",
+							"Command": "/addon reload warptome"
 						}  
 					]
 			}, 
