@@ -278,6 +278,7 @@ local function escha_di_warp(zone, test_mode)
 	local has_elvorseal = false
 	local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons();
     for slot = 0, 31, 1 do
+		--print(status_list[slot])
 		if status_list[slot] == 603 then
 			has_elvorseal = true
 		end
@@ -289,6 +290,7 @@ local function escha_di_warp(zone, test_mode)
 		result['Type'] = 'ev'
 	end
 	--602 or 603
+	return result
 end
 
 local function escha_portal_warp(zone, test_mode)
