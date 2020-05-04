@@ -17,9 +17,10 @@
 		<set name="Idle">
 			<head>Hagondes Hat +1</head>
 			<body>Hagondes Coat +1</body>
-			<hands>Weath. Cuffs +1</hands>
+			<hands>Geo. Mitaines +1</hands>
 			<legs>Hagondes Pants +1</legs>
 			<feet>Hag. Sabots +1</feet>
+			<back>Nantosuelta's Cape</back>
 		</set>
 	</sets>
 	<variables>
