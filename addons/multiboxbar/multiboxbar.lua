@@ -150,6 +150,21 @@ ashita.register_event('command', function(cmd, nType)
         return true;
     end
 	
+	if (args[2] == 'debug_conditions') then
+		local section = args[3]
+		local index = tonumber(args[4])
+		for hotbar_section_id,hotbar_section in ipairs(hotbar_config) do
+			if hotbar_section.Name == section then
+				for conditions_id,conditions in ipairs(hotbar_section.Conditions) do
+					if index == conditions_id then
+						result = display_macro_section(conditions, hotbar_variables, true);
+						break;
+					end
+				end
+			end
+		end
+	end
+	
     if (args[2] == 'button_from_controller') then
 	
 		--determine the mode, since we can't rely on keybinds entirely (stupid keyboard?)
@@ -238,28 +253,60 @@ function display_macro_button(hotbar_user, macro, hotbar_variables)
 	return result
 end
 
-function display_macro_section(conditions, hotbar_variables)
+function display_macro_section(conditions, hotbar_variables, debug_mode)
 	local result = false
 	
 	if conditions.Static == true then
+		if debug_mode then
+			msg('Condition is static')
+		end
 		result = true
 	elseif conditions ~= nil then
 		result = true
+		local found = true
 		for k,v in pairs(conditions) do
-			if hotbar_variables[k] ~= nil and hotbar_variables[k] ~= v then
-				result = false
-				break
+			if k ~= 'Macros' then
+				if debug_mode then
+					msg('Searching for Condition '..k)
+				end
+				if hotbar_variables[k] ~= nil then
+					found = true
+					if debug_mode then
+						msg('Condition '..k..' found, value is '..hotbar_variables[k])
+					end
+					if hotbar_variables[k] ~= v then
+						result = false
+						if debug_mode then
+							msg('Condition '..k..' value did not match expected '..v)
+						end
+					end
+				else
+					if debug_mode then
+						msg('Condition '..k..' not found in table')
+					end
+					found = false
+				end
 			end
+		end
+		
+		if not found then
+			result = false
 		end
 	end
 	
+	if debug_mode and result then
+		msg('result is true')
+	end
+	if debug_mode and not result then
+		msg('result is false')
+	end
 	return result
 end
 
 function get_active_macros(hotbar_section, hotbar_variables) 
 	local result = {}
 	for conditions_id,conditions in ipairs(hotbar_section.Conditions) do
-		if display_macro_section(conditions, hotbar_variables) then
+		if display_macro_section(conditions, hotbar_variables, false) then
 			result = conditions.Macros;
 			break;
 		end
