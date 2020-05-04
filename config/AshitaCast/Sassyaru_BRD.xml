@@ -87,6 +87,7 @@
 			<legs>Orvail Pants +1</legs>
 			<ear1>Loquac. Earring</ear1>
 			<ring1>Prolix Ring</ring1>
+			<waist>Embla Sash</waist>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="SongPrecast">
@@ -94,13 +95,14 @@
 			<legs>Gende. Spats +1</legs>
 			<ear1>Loquac. Earring</ear1>
 			<ring1>Prolix Ring</ring1>
+			<waist>Embla Sash</waist>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="Buff">
 			<head>Brioso Roundlet</head>
 			<body>Brioso Just.</body>
 			<hands>Brioso Cuffs</hands>
-			<legs>Brioso Cannions</legs>
+			<legs>Inyanga Shalwar</legs>
 			<feet>Brioso Slippers</feet>
 			<neck>Moonbow Whistle</neck>
 			<waist>Corsette</waist>
@@ -111,18 +113,9 @@
 			<head>Weath. Corona +1</head>
 			<body>Gende. Bilaut +1</body>
 			<hands>Gende. Gages +1</hands>
-			<legs>Gende. Spats +1</legs>
+			<legs>Inyanga Shalwar</legs>
 			<feet>Gende. Galosh. +1</feet>
 			<neck>Moonbow Whistle</neck>
-			<back>Swith Cape +1</back>
-		</set>
-		<set name="temp">
-			<main augment="D10965218758168">Kali</main>
-			<range augment="M0">Gjallarhorn</range>
-			<neck>Moonbow Whistle</neck>
-			<waist>Corsette</waist>
-			<ring1>Prolix Ring</ring1>
-			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>
 	</sets>

@@ -70,7 +70,7 @@
 				<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="AvAtk">
-				<head>Tali'ah Turban +1</head>
+				<head>Tali'ah Turban +2</head>
 				<body>Con. Doublet +2</body>
 				<hands augment="S5320670944702526725">Merlinic Dastanas</hands>
 				<legs>Tali'ah Sera. +2</legs>
@@ -83,7 +83,7 @@
 			<back augment="S32893">Campestres's Cape</back>
             </set>
             <set name="AvDebuff">
-				<head>Tali'ah Turban +1</head>
+				<head>Tali'ah Turban +2</head>
 				<body>Tali'ah Manteel +1</body>
 				<hands>Tali'ah Gages +1</hands>
 				<legs>Tali'ah Sera. +2</legs>

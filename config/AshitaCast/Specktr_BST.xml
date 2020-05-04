@@ -151,7 +151,7 @@
 		</set>
 		<set name="Enfeeble">
 			<ammo>Ghastly Tathlum</ammo>
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Tali'ah Gages +1</hands>
 			<legs>Tali'ah Sera. +2</legs>
@@ -177,7 +177,7 @@
 			<back>Argocham. Mantle</back>
 		</set>
 		<set name="PetMag-High">
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs>Tali'ah Sera. +2</legs>
@@ -205,7 +205,7 @@
 		</set>
 		<set name="PetPhys-High">
 			<ammo>Demonry Core</ammo>
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs>Tali'ah Sera. +2</legs>

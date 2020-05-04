@@ -50,7 +50,7 @@
 			<back>Visucius's Mantle</back>
 		</set>
 		<set name="PupEng-PetMelee">
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Pitre Tobe +2</body>
 			<hands augment="S1215535211">Herculean Gloves</hands>
 			<legs augment="S4288230322391422629">Herculean Trousers</legs>
@@ -64,7 +64,7 @@
 			<back>Visucius's Mantle</back>
 		</set>
 		<set name="PupEng-MstrMelee">
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Pitre Tobe +2</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
@@ -114,7 +114,7 @@
 			<ring1>Prolix Ring</ring1>
 		</set>
 		<set name="WS">
-			<head>Tali'ah Turban +1</head>
+			<head>Tali'ah Turban +2</head>
 			<body>Tali'ah Manteel +1</body>
 			<hands augment="S12324424231328425">Herculean Gloves</hands>
 			<legs augment="S22034551767721648663">Herculean Trousers</legs>
