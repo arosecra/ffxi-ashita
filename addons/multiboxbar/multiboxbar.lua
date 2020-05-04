@@ -285,6 +285,7 @@ function display_macro_section(conditions, hotbar_variables, debug_mode)
 						msg('Condition '..k..' not found in table')
 					end
 					found = false
+					break
 				end
 			end
 		end
