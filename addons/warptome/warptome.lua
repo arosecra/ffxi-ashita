@@ -73,7 +73,7 @@ local waypoint_aliases = {
 local skirmish_aliases = {
 	{alias="Rala Waterways", x=-588, y=-7.5}, 
 	{alias="Cirdas Caverns", x=70.000000, y=29.296881}, 
-	{alias="Yorcia Weald", x=170.000000, y=4.685037}, 
+	{alias="Yorcia WealdAG", x=170.000000, y=4.685037}, 
 	{alias="Outer Ra'Kaznar", x=-148.000000, y=-170.000000}
 }
 local ingress_aliases = {
@@ -325,10 +325,10 @@ local function find_warp(test_mode)
 		result = survival_guide_warp(zone, test_mode)
 	end
 	if result == nil then
-		result = waypoint_warp(zone, test_mode)
+		result = augural_conveyor(zone, test_mode)
 	end
 	if result == nil then
-		result = augural_conveyor(zone, test_mode)
+		result = waypoint_warp(zone, test_mode)
 	end
 	if result == nil then
 		result = crystal_warp(zone, test_mode)
