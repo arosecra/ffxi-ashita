@@ -82,22 +82,27 @@
 		</set>-->
 		
 		<set name="Precast">
-			<body>Inyanga Jubbah</body>
-			<hands>Gende. Gages +1</hands>
-			<legs>Orvail Pants +1</legs>
-			<ear1>Loquac. Earring</ear1>
-			<ring1>Prolix Ring</ring1>
-			<waist>Embla Sash</waist>
-			<back>Swith Cape +1</back>
+			<!-- Kali                             07 -->
+			<body>Inyanga Jubbah</body>      <!-- 10 -->
+			<hands>Gende. Gages +1</hands>   <!-- 07 -->
+			<legs>Orvail Pants +1</legs>     <!-- 05 -->
+			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
+			<ring1>Prolix Ring</ring1>       <!-- 02 -->
+			<waist>Embla Sash</waist>        <!-- 05 -->
+			<back>Swith Cape +1</back>       <!-- 04 -->
+			<!-- Total                            42 -->
 		</set>
 		<set name="SongPrecast">
-			<hands>Gende. Gages +1</hands>
-			<legs>Gende. Spats +1</legs>
-			<ear1>Loquac. Earring</ear1>
-			<ring1>Prolix Ring</ring1>
-			<waist>Embla Sash</waist>
-			<back>Swith Cape +1</back>
-		</set>
+			<!-- Kali                             07 -->
+			<body>Inyanga Jubbah</body>      <!-- 10 -->
+			<hands>Gende. Gages +1</hands>   <!-- 12 -->
+			<legs>Gende. Spats +1</legs>     <!-- 09 -->
+			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
+			<ring1>Prolix Ring</ring1>       <!-- 02 -->
+			<waist>Embla Sash</waist>        <!-- 05 -->
+			<back>Swith Cape +1</back>       <!-- 04 -->
+			<!-- Total                            51 -->
+		</set>                               
 		<set name="Buff">
 			<head>Brioso Roundlet</head>
 			<body>Brioso Just.</body>
