@@ -20,7 +20,20 @@
 			<hands>Geo. Mitaines +1</hands>
 			<legs>Hagondes Pants +1</legs>
 			<feet>Hag. Sabots +1</feet>
+			<neck>Sanctity Necklace</neck>
 			<back>Nantosuelta's Cape</back>
+		</set>
+		<set name="ElementMagic">
+			<head>Jhakri Coronal</head>
+			<body>Gyve Doublet</body>
+			<hands>Jhakri Cuffs</hands>
+			<legs>Gyve Trousers</legs>
+			<feet>Jhakri Pigaches</feet>
+			<neck>Sanctity Necklace</neck>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Windurstian Ring</ring1>
+			<ring2>Jhakri Ring</ring2>
+			<back augment="S18948">Nantosuelta's Cape</back>
 		</set>
 	</sets>
 	<variables>
@@ -46,6 +59,9 @@
 				<equip set="Cursna" />
 			</elseif>-->
 		</if>
+		<elseif ad_skill="elementalmagic">
+			<equip set="ElementMagic"/>
+		</elseif>
 	</midmagic>
 
 	<preranged>
