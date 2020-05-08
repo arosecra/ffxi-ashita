@@ -39,6 +39,9 @@
 				"Mode": "Actns2",
 				"Macros": [  
 						{
+							"Name": "Attack",
+							"Command" : "/ms send /attack [t]"
+						}, {
 							"Name": "wrp2met",
 							"Command": "/warptometest"
 						}, {
