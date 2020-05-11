@@ -89,6 +89,11 @@
 	</preranged>
 
 	<idlegear>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<equip set="Idle" />
 	</idlegear>
 

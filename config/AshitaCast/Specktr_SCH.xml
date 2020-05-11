@@ -24,12 +24,12 @@
 		<set name="FastCast">
 			<ammo>Sapience Orb</ammo>                                  <!-- 02 -->
 			<head augment="M1442">Peda. M.Board +3</head>              <!-- 12 -->   
-			<body>Pinga Tunic</body>                                   <!-- 13 -->
+			<body augment="S63789400360985">Merlinic Jubbah</body>     <!-- 11 -->
 			<hands>Gendewitha Gages</hands>                            <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>      <!-- 07 -->
 			<feet augment="S59312917964934886">Merlinic Crackows</feet><!-- 10 -->
 			<neck>Orunmila's Torque</neck>                             <!-- 05 -->
-			<waist>Channeler's Stone</waist>                           <!-- 02 -->
+			<waist>Embla Sash</waist>                                  <!-- 05 -->
 			<ear1>Loquac. Earring</ear1>                               <!-- 02 -->
 			<ear2>Enchntr. Earring +1</ear2>                           <!-- 02 -->
 			<ring1>Prolix Ring</ring1>                                 <!-- 02 -->
@@ -169,7 +169,7 @@
 			<hands augment="S49340584296448">Telchine Gloves</hands>
 			<legs augment="S84524956385280">Telchine Braconi</legs>
 			<feet augment="S58136677318656">Telchine Pigaches</feet>
-			<waist>Olympus Sash</waist>
+			<waist>Embla Sash</waist> 
 			<back>Merciful Cape</back>
 		</set>
 		<set name="Th">

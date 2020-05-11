@@ -9,18 +9,16 @@
 		<set name="FastCast">
 			<ammo>Sapience Orb</ammo>                                          <!-- 02 -->
 			<head augment="D7434751185688">Psycloth Tiara</head>               <!-- 10 -->
-			<body>Pinga Tunic</body>                                           <!-- 13 -->
+			<body augment="S26869861494882">Taeon Tabard</body>                <!-- 09 -->
 			<hands augment="S1061259598500072188">Leyline Gloves</hands>       <!-- 07 -->
 			<legs augment="D7370400354052">Psycloth Lappas</legs>              <!-- 07 -->
-			<feet augment="S26869861498979">Taeon Boots</feet>
+			<feet augment="S26869861498979">Taeon Boots</feet>                 <!-- 05 -->
 			<neck>Orunmila's Torque</neck>                                     <!-- 05 -->
-			<!-- back -->
-			<waist>Windbuffet Belt +1</waist>                                  <!-- 02 -->
 			<back>Swith Cape +1</back>                                         <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>                                       <!-- 02 -->
 			<ear2>Enchntr. Earring +1</ear2>                                   <!-- 02 -->
 			<ring1>Prolix Ring</ring1>                                         <!-- 02 -->
-		</set>                                                                 <!-- 48 -->
+		</set>                                                                 <!-- 55 -->
 		<set name="TP">
 			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
@@ -189,22 +187,6 @@
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
-		</set>
-		<set name="temp">
-			<main augment="S96951404343808">Vampirism</main>
-			<sub augment="D15496561560000">Nibiru Blade</sub>
-			<ammo>Ginsen</ammo>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body augment="D20925277801407">Adhemar Jacket +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet augment="S70476530497559">Herculean Boots</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Warp Ring</ring2>
 		</set>
 		<include>
 		</include>

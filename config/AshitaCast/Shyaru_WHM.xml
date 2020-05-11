@@ -18,11 +18,9 @@
 			<back>Swith Cape +1</back>
 			<neck>Orison Locket</neck>
 			<ear1>Loquac. Earring</ear1>
-			<waist>Embla Sash</waist>
 			<ring1>Prolix Ring</ring1>
+			<waist>Embla Sash</waist>
 		</set>
-
-
 		<set name="Idle">
 			<head>Gende. Caubeen +1</head>
 			<body>Vrikodara Jupon</body>
@@ -37,11 +35,12 @@
 			<body>Vrikodara Jupon</body>
 			<hands>Gende. Gages +1</hands>
 			<legs>Sifahir Slacks</legs>
-			<waist>Bishop's Sash</waist>
 			<neck>Orison Locket</neck>
+			<ear2>Glorious Earring</ear2>
 			<ring1>Sirona's Ring</ring1>
 			<ring2>Solemn Ring</ring2>
 			<back>Tempered Cape +1</back>
+			<waist>Bishop's Sash</waist>
 		</set>
 	</sets>
 	<variables>
@@ -76,6 +75,11 @@
 	</preranged>
 
 	<idlegear>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
 		<equip set="Idle" />
 	</idlegear>
 

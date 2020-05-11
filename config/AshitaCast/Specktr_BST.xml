@@ -166,7 +166,7 @@
 		</set>
 		<set name="PetMag-Low">
 			<head augment="S86879008710757">Valorous Mask</head>
-			<body augment="S26869724780645">Acro Surcoat</body>
+			<body augment="S70828447230053">Valorous Mail</body>
 			<hands>Nukumi Manoplas +1</hands>
 			<legs augment="S86879142930533409671786">Valor. Hose</legs>
 			<feet augment="S141486181">Valorous Greaves</feet>
@@ -352,6 +352,22 @@
 		<set name="PetReady-Swap-Sub-Phys"> <sub augment="D32445013635340">Arktoi</sub> </set>
 		<set name="PetReady-Swap-Sub-Mag"> <sub>Mdomo Axe</sub> </set>
 
+		<set name="temp">
+			<main>Izizoeksi</main>
+			<ammo>Staunch Tathlum</ammo>
+			<head augment="S80601244060165138">Jumalik Helm</head>
+			<body augment="S70828447230053">Valorous Mail</body>
+			<hands augment="S26869591091317">Taeon Gloves</hands>
+			<legs>Tali'ah Sera. +2</legs>
+			<feet augment="S26869861498979">Taeon Boots</feet>
+			<neck>Loricate Torque +1</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Hija Earring</ear1>
+			<ear2>Ferine Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Solemnity Cape</back>
+		</set>
 		<include>
 		</include>
 	</sets>

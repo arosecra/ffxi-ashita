@@ -93,13 +93,15 @@
 				<ring1>Tali'ah Ring</ring1>
             </set>
             <set name="FastCast">
-				<head augment="D7434751185688">Psycloth Tiara</head>
+				<head augment="D7434751185688">Psycloth Tiara</head>  
+				<body augment="S63789400360985">Merlinic Jubbah</body>     <!-- 11 -->
 				<legs augment="D7370400354052">Psycloth Lappas</legs>
 				<feet augment="S123718280093836">Merlinic Crackows</feet>
 				<neck>Orunmila's Torque</neck>
-				<back>Swith Cape +1</back>                                         <!-- 04 -->
 				<ear1>Loquac. Earring</ear1>
 				<ear2>Enchntr. Earring +1</ear2>
+				<back>Swith Cape +1</back>                                         <!-- 04 -->
+				<waist>Embla Sash</waist>                                  <!-- 05 -->
 				<ring1>Prolix Ring</ring1>
             </set>
             <set name="Cure">
