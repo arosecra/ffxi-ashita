@@ -9,11 +9,12 @@
 		<set name="Precast">
 			<!--<main>Solstice</main>             05 -->
 			<head>Merlinic Hood</head>       <!-- 08 -->
+			<body>Merlinic Jubbah</body>     <!-- 05 -->
 			<legs>Geo. Pants +1</legs>       <!-- 11 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<back>Lifestream Cape</back>     <!-- 07 -->
-			<!-- Total                            35 -->
+			<!-- Total                            40 -->
 		</set>
 
 
@@ -30,28 +31,14 @@
 			<head>Jhakri Coronal</head>
 			<body>Gyve Doublet</body>
 			<hands>Jhakri Cuffs</hands>
-			<legs>Gyve Trousers</legs>
+			<legs>Jhakri Slops</legs>
 			<feet>Jhakri Pigaches</feet>
 			<neck>Sanctity Necklace</neck>
-			<ear1>Loquac. Earring</ear1>
-			<ring1>Windurstian Ring</ring1>
+			<ear1>Friomisi Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Mujin Band</ring1>
 			<ring2>Jhakri Ring</ring2>
 			<back augment="S18948">Nantosuelta's Cape</back>
-		</set>
-		<set name="temp">
-			<main augment="D5171200987928">Solstice</main>
-			<sub>Dullahan Shield</sub>
-			<range>Dunna</range>
-			<head>Merlinic Hood</head>
-			<body augment="S167542785513526">Hagondes Coat +1</body>
-			<hands>Geo. Mitaines +1</hands>
-			<legs>Geo. Pants +1</legs>
-			<feet augment="S176351763437622">Hag. Sabots +1</feet>
-			<neck>Sanctity Necklace</neck>
-			<ear1>Loquac. Earring</ear1>
-			<ring1>Prolix Ring</ring1>
-			<ring2>Warp Ring</ring2>
-			<back>Lifestream Cape</back>
 		</set>
 	</sets>
 	<variables>
