@@ -210,7 +210,7 @@ local function homepoint_warp(zone, test_mode)
 	return result
 end
 
-local function survival_guide_warp(result, test_mode)
+local function survival_guide_warp(zone, test_mode)
 
 	local result = nil;
 	for x = 0, 2303 do
