@@ -11,13 +11,12 @@
 			<head>Merlinic Hood</head>       <!-- 08 -->
 			<body>Merlinic Jubbah</body>     <!-- 05 -->
 			<legs>Geo. Pants +1</legs>       <!-- 11 -->
+			<feet>Merlinic Crackows</feet>   <!-- 05 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<back>Lifestream Cape</back>     <!-- 07 -->
 			<!-- Total                            40 -->
 		</set>
-
-
 		<set name="Idle">
 			<head>Hagondes Hat +1</head>
 			<body>Hagondes Coat +1</body>
@@ -27,18 +26,17 @@
 			<neck>Sanctity Necklace</neck>
 			<back>Nantosuelta's Cape</back>
 		</set>
-		<set name="ElementMagic">
+		<set name="ElementalMagic">
 			<head>Jhakri Coronal</head>
 			<body>Gyve Doublet</body>
 			<hands>Jhakri Cuffs</hands>
 			<legs>Jhakri Slops</legs>
 			<feet>Jhakri Pigaches</feet>
-			<neck>Sanctity Necklace</neck>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Handler's Earring +1</ear2>
-			<ring1>Mujin Band</ring1>
-			<ring2>Jhakri Ring</ring2>
-			<back augment="S18948">Nantosuelta's Cape</back>
+			<neck>Sanctity Necklace</neck>                   <!-- replace with tenzen -->
+			<ear1>Friomisi Earring</ear1>-
+			<ring1>Locus Ring</ring1>                        <!-- 05 00 -->
+			<ring2>Mujin Band</ring2>                        <!-- 00 05 -->
+			<back augment="S18948">Nantosuelta's Cape</back> 
 		</set>
 	</sets>
 	<variables>
@@ -65,7 +63,7 @@
 			</elseif>-->
 		</if>
 		<elseif ad_skill="elementalmagic">
-			<equip set="ElementMagic"/>
+			<equip set="ElementalMagic"/>
 		</elseif>
 	</midmagic>
 

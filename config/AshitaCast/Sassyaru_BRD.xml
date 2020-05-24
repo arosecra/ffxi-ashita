@@ -108,7 +108,7 @@
 			<body>Brioso Just.</body>
 			<hands>Brioso Cuffs</hands>
 			<legs>Inyanga Shalwar</legs>
-			<feet>Brioso Slippers</feet>
+			<feet>Brioso Slippers +1</feet>
 			<neck>Moonbow Whistle</neck>
 			<ear1>Musical Earring</ear1>
 			<waist>Corsette</waist>
@@ -122,6 +122,20 @@
 			<legs>Inyanga Shalwar</legs>
 			<feet>Gende. Galosh. +1</feet>
 			<neck>Moonbow Whistle</neck>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="WindAcc">
+			<head>Inyanga Tiara</head>
+			<body>Inyanga Jubbah</body>
+			<hands>Inyanga Dastanas</hands>
+			<legs>Inyanga Shalwar</legs>
+			<feet>Inyanga Crackows</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
+			<ear1>Musical Earring</ear1>
+			<ear2>Gersemi Earring</ear2>
+			<ring1>Inyanga Ring</ring1>
+			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>
 	</sets>
@@ -165,7 +179,12 @@
 			</equip>
 		</if>-->
 		<equip set="Stand" />
-		<if ad_type="BardSong">
+			<if ad_type="BardSong">
+				<if ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody">
+					<equip set="WindAcc" />
+					<return />
+				</if>
+		
 			<!--<if advanced="$StringVar=true">
 				<setvar name="StringVar" value="false" />
 				<equip lock="true">

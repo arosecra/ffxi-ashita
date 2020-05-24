@@ -14,7 +14,7 @@
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
+			<waist>Sailfi Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
@@ -29,7 +29,7 @@
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
+			<waist>Sailfi Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
@@ -44,7 +44,7 @@
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
+			<waist>Sailfi Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
@@ -87,38 +87,6 @@
 			<ring1>Levia. Ring</ring1>
 			<ring2>Levia. Ring</ring2>
 			<back>Merciful Cape</back>
-		</set>
-		<set name="temp">
-			<main>Sandung</main>
-			<ammo>Ginsen</ammo>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body>Meg. Cuirie +1</body>
-			<hands augment="M3333">Plun. Armlets +1</hands>
-			<feet>Skulk. Poulaines +1</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Chaac Belt</waist>
-			<ear1>Brutal Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Shneddick Ring</ring2>
-			<back>Ground. Mantle +1</back>
-		</set>
-		<set name="temp">
-			<main>Nibiru Knife</main>
-			<sub>Sandung</sub>
-			<ammo>Ginsen</ammo>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body augment="D20925277801407">Adhemar Jacket +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet>Skulk. Poulaines +1</feet>
-			<neck>Asperity Necklace</neck>
-			<waist>Windbuffet Belt +1</waist>
-			<ear1>Brutal Earring</ear1>
-			<ear2>Cessance Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Begrudging Ring</ring2>
-			<back>Ground. Mantle +1</back>
 		</set>
 		<include>
 		</include>
