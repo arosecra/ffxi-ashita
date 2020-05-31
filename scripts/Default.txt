@@ -40,6 +40,7 @@
 /addon load automaneuver
 /addon load partyfollow
 /addon load recast
+/addon load debuff
 
 ##########################################################################
 # Set Common Settings

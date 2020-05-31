@@ -36,6 +36,7 @@
 /addon load automaneuver
 /addon load partyfollow
 /addon load multiboxhelper
+/addon load debuff
 
 ##########################################################################
 # Set Common Settings
