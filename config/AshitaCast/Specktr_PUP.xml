@@ -49,20 +49,6 @@
 			<ring2>Varar Ring +1</ring2>
 			<back>Visucius's Mantle</back>
 		</set>
-		<set name="PupEng-PetMelee">
-			<head>Tali'ah Turban +2</head>
-			<body>Pitre Tobe +2</body>
-			<hands augment="S1215535211">Herculean Gloves</hands>
-			<legs augment="S4288230322391422629">Herculean Trousers</legs>
-			<feet augment="S780709702759478293">Herculean Boots</feet>
-			<neck>Shulmanu Collar</neck>
-			<waist>Klouskap Sash</waist>
-			<ear1>Rimeice Earring</ear1>
-			<ear2>Domes. Earring</ear2>
-			<ring1>Varar Ring +1</ring1>
-			<ring2>Varar Ring +1</ring2>
-			<back>Visucius's Mantle</back>
-		</set>
 		<set name="PupEng-MstrMelee">
 			<head>Tali'ah Turban +2</head>
 			<body>Pitre Tobe +2</body>
