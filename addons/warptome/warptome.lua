@@ -283,7 +283,7 @@ local function escha_di_warp(zone, test_mode)
 			has_elvorseal = true
 		end
     end
-	  
+	local result = nil  
 	if has_elvorseal then
 		result = {};
 		result['Alias'] = zone 
