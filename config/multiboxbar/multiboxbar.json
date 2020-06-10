@@ -3,6 +3,33 @@
 		"Name": "MBox",
 		"Conditions": [
 			{
+				"Mode": "Sttngs1",
+				"Macros": [  
+						{
+							"Name": "group",
+							"Script": "mbox/group.txt"
+						}, {
+							"Name": "warp2me",
+							"Script": "mbox/warp2me.txt"
+						}, {
+							"Name": "sneak",
+							"Command": "/ms send /sneakinvis"
+						}, {
+							"Name": "desneak",
+							"Command": "/ms send /exec desneak"
+						}, {
+							"Name": "follon",
+							"Script": "mbox/follon.txt"
+						}, {
+							"Command": "/ms send /mount \"Raptor\"",
+							"Name": "mount"
+						}, {
+							"Command": "/ms send /dismount",
+							"Name": "dismnt"
+						}
+					]
+			},
+			{
 				"Mode": "Actns1",
 				"Macros": [  
 						{
@@ -16,22 +43,11 @@
 							"Name": "follof",
 							"Script": "mbox/follof.txt"
 						}, {
-							"Command": "/ms send /mount \"Raptor\"",
-							"Name": "mount"
-						}, {
-							"Command": "/ms send /dismount",
-							"Name": "dismnt"
-						}, {
 							"Name": "group",
 							"Script": "mbox/group.txt"
 						}, {
 							"Name": "warp2me",
 							"Script": "mbox/warp2me.txt"
-						}, {
-							"Name": "sneak",
-							"Command": "/ms send /sneakinvis"
-						},{
-							"Spacer": "true"
 						}  
 					]
 			}, 
@@ -47,7 +63,10 @@
 						}, {
 							"Name": "w2merld",
 							"Command": "/addon reload warptome"
-						}  
+						}, {
+							"Name": "mbbrld",
+							"Command": "/addon reload multiboxbar"
+						}
 					]
 			}, 
 			{
@@ -488,12 +507,14 @@
 						{
 							"Command": "/ms sendto Sternaru /pcmd leave",
 							"Name": "leavept"
+						}, 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
 						},   
 						{
-							"Spacer": "true"
-						},   
-						{
-							"Spacer": "true"
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
 						},
 						{
 							"Command": "/ms sendto Sternaru /exec \"mbox/warpring.txt\"",
@@ -652,12 +673,14 @@
 						{
 							"Command": "/ms sendto Sillyaru /pcmd leave",
 							"Name": "leavept"
+						}, 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
 						},   
 						{
-							"Spacer": "true"
-						},   
-						{
-							"Spacer": "true"
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
 						},   
 						{
 							"Command": "/ms sendto Sillyaru /exec \"mbox/warpring.txt\"",
@@ -785,12 +808,14 @@
 						{
 							"Command": "/ms sendto Shyaru /pcmd leave",
 							"Name": "leavept"
+						}, 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
 						},   
 						{
-							"Spacer": "true"
-						},   
-						{
-							"Spacer": "true"
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
 						},   
 						{
 							"Command": "/ms sendto Shyaru /exec \"mbox/warpring.txt\"",
@@ -826,7 +851,7 @@
 						},
 						{
 							"Name": "Def5",
-							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Knight's Mine V\""
+							"Command" : "/ms sendto Sassyaru /mbh brd addsong \"Knight's Minne V\""
 						},
 						{
 							"Name": "Att5",
@@ -895,12 +920,14 @@
 						{
 							"Command": "/ms sendto Sassyaru /pcmd leave",
 							"Name": "leavept"
+						}, 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
 						},   
 						{
-							"Spacer": "true"
-						},   
-						{
-							"Spacer": "true"
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
 						},   
 						{
 							"Command": "/ms sendto Sassyaru /exec \"mbox/warpring.txt\"",
@@ -934,6 +961,52 @@
 							"Command" : "/ms sendto Sadaru /ma \"Dia\" [t]"
 						}
 					]
+			}, {
+				"Sadaru.MainJob": "Geomancer",
+				"Mode": "Sttngs1",
+				"Macros": [
+					{
+						"Command": "/ms sendto Sadaru /mbh setbubble 'Geo-INT'",
+						"Name": "bINT+"
+					}
+				]
+			}, {
+				"Sadaru.MainJob": "Geomancer",
+				"Mode": "Sttngs2",
+				"Macros": [
+					{
+						"Command": "/nuke setelement fire",
+						"Name": "fire"
+					}, 
+					{
+						"Command": "/nuke setelement stone",
+						"Name": "stone"
+					}, 
+					{
+						"Command": "/nuke setelement water",
+						"Name": "water"
+					}, 
+					{
+						"Command": "/nuke setelement wind",
+						"Name": "wind"
+					}, 
+					{
+						"Command": "/nuke setelement ice",
+						"Name": "ice"
+					}, 
+					{
+						"Command": "/nuke setelement thunder",
+						"Name": "thunder"
+					}, 
+					{
+						"Command": "/nuke setelement light",
+						"Name": "light"
+					}, 
+					{
+						"Command": "/nuke setelement dark",
+						"Name": "dark"
+					}
+				]
 			}, 
 			{
 				"Mode": "Item",
@@ -941,12 +1014,14 @@
 						{
 							"Command": "/ms sendto Sadaru /pcmd leave",
 							"Name": "leavept"
+						}, 
+						{
+							"Command": "/ms send /exec \"mbox/trizring.txt\"",
+							"Name": "trizek"
 						},   
 						{
-							"Spacer": "true"
-						},   
-						{
-							"Spacer": "true"
+							"Command": "/ms send /exec \"mbox/endring.txt\"",
+							"Name": "endor"
 						},   
 						{
 							"Command": "/ms sendto Sadaru /exec \"mbox/warpring.txt\"",
