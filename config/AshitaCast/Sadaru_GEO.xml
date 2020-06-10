@@ -15,7 +15,8 @@
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<back>Lifestream Cape</back>     <!-- 07 -->
-			<!-- Total                            40 -->
+			<waist>Embla Sash</waist>        <!-- 05 -->
+			<!-- Total                            45 -->
 		</set>
 		<set name="Idle">
 			<head>Hagondes Hat +1</head>
@@ -40,6 +41,14 @@
 			<ring1>Metamor. Ring +1</ring1>
 			<ring2>Mujin Band</ring2>
 			<back augment="S18948">Nantosuelta's Cape</back>
+		</set>
+		<set name="GeomancyMagic">
+			<head>Azimuth Hood</head>
+			<body augment="M11540">Bagua Tunic</body>
+			<hands>Geo. Mitaines +1</hands>
+			<legs augment="M1448">Bagua Pants</legs>
+			<feet>Azimuth Gaiters</feet>
+			<back augment="S39428">Nantosuelta's Cape</back>
 		</set>
 	</sets>
 	<variables>
@@ -67,6 +76,9 @@
 		</if>
 		<elseif ad_skill="elementalmagic">
 			<equip set="ElementalMagic"/>
+		</elseif>
+		<elseif ad_name="Indi*|Geo*">
+			<equip set="GeomancyMagic" />
 		</elseif>
 	</midmagic>
 

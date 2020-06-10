@@ -83,25 +83,29 @@
 		
 		<set name="Precast">
 			<!-- Kali                             07 -->
+			<head>Vanya Hood</head>          <!-- 10 -->
 			<body>Inyanga Jubbah</body>      <!-- 10 -->
 			<hands>Gende. Gages +1</hands>   <!-- 07 -->
 			<legs>Orvail Pants +1</legs>     <!-- 05 -->
+			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<waist>Embla Sash</waist>        <!-- 05 -->
 			<back>Swith Cape +1</back>       <!-- 04 -->
-			<!-- Total                            42 -->
+			<!-- Total                            57 -->
 		</set>
 		<set name="SongPrecast">
-			<!-- Kali                             07 -->
-			<body>Inyanga Jubbah</body>      <!-- 10 -->
-			<hands>Gende. Gages +1</hands>   <!-- 12 -->
-			<legs>Gende. Spats +1</legs>     <!-- 09 -->
-			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
-			<ring1>Prolix Ring</ring1>       <!-- 02 -->
-			<waist>Embla Sash</waist>        <!-- 05 -->
-			<back>Swith Cape +1</back>       <!-- 04 -->
-			<!-- Total                            51 -->
+			<!-- Kali                             07 07 -->
+			<head>Vanya Hood</head>          <!-- 10 10 -->
+			<body>Inyanga Jubbah</body>      <!-- 10 10 -->
+			<hands>Gende. Gages +1</hands>   <!-- 07 12  -->
+			<legs>Gende. Spats +1</legs>     <!-- 00 09 -->
+			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
+			<ear1>Loquac. Earring</ear1>     <!-- 02 02 -->
+			<ring1>Prolix Ring</ring1>       <!-- 02 02 -->
+			<waist>Embla Sash</waist>        <!-- 05 05 -->
+			<back>Swith Cape +1</back>       <!-- 04 04 -->
+			<!-- Total                            61 72 -->
 		</set>                               
 		<set name="Buff">
 			<head>Brioso Roundlet</head>
@@ -135,6 +139,23 @@
 			<ear1>Musical Earring</ear1>
 			<ear2>Gersemi Earring</ear2>
 			<ring1>Inyanga Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="temp">
+			<main augment="D10965218758168">Kali</main>
+			<sub>Dullahan Shield</sub>
+			<range augment="M0">Gjallarhorn</range>
+			<head>Weath. Corona +1</head>
+			<body augment="S19039996287030">Gende. Bilaut +1</body>
+			<hands augment="S557975606">Gende. Gages +1</hands>
+			<legs>Inyanga Shalwar</legs>
+			<feet augment="S546045952">Telchine Pigaches</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ear2>Gersemi Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
 			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>

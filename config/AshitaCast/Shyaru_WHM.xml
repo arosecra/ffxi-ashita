@@ -12,6 +12,7 @@
 	</settings>
 	<sets>		
 		<set name="Precast">
+			<head>Vanya Hood</head>          <!-- 10 -->
 			<body>Inyanga Jubbah</body>
 			<hands>Gende. Gages +1</hands>
 			<legs>Sifahir Slacks</legs>
