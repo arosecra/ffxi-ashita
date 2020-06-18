@@ -108,9 +108,9 @@
 			<!-- Total                            61 72 -->
 		</set>                               
 		<set name="Buff">
-			<head>Brioso Roundlet</head>
-			<body>Brioso Just.</body>
-			<hands>Brioso Cuffs</hands>
+			<head>Fili Calot</head>
+			<body>Fili Hongreline</body>
+			<hands>Fili Manchettes</hands>
 			<legs>Inyanga Shalwar</legs>
 			<feet>Brioso Slippers +1</feet>
 			<neck>Moonbow Whistle</neck>
@@ -139,23 +139,6 @@
 			<ear1>Musical Earring</ear1>
 			<ear2>Gersemi Earring</ear2>
 			<ring1>Inyanga Ring</ring1>
-			<ring2>Warp Ring</ring2>
-			<back>Swith Cape +1</back>
-		</set>
-		<set name="temp">
-			<main augment="D10965218758168">Kali</main>
-			<sub>Dullahan Shield</sub>
-			<range augment="M0">Gjallarhorn</range>
-			<head>Weath. Corona +1</head>
-			<body augment="S19039996287030">Gende. Bilaut +1</body>
-			<hands augment="S557975606">Gende. Gages +1</hands>
-			<legs>Inyanga Shalwar</legs>
-			<feet augment="S546045952">Telchine Pigaches</feet>
-			<neck>Moonbow Whistle</neck>
-			<waist>Embla Sash</waist>
-			<ear1>Loquac. Earring</ear1>
-			<ear2>Gersemi Earring</ear2>
-			<ring1>Shneddick Ring</ring1>
 			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>
@@ -199,7 +182,6 @@
 				<sub>%eq_sub</sub>
 			</equip>
 		</if>-->
-		<equip set="Stand" />
 			<if ad_type="BardSong">
 				<if ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody">
 					<equip set="WindAcc" />

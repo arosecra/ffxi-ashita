@@ -7,7 +7,6 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
@@ -22,14 +21,13 @@
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="TP-On">
-			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body augment="D20925277801407">Adhemar Jacket +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<hands augment="M3333">Plun. Armlets +1</hands>
 			<legs augment="S182074737443842192">Samnuha Tights</legs>
 			<feet>Skulk. Poulaines +1</feet>
 			<neck>Asperity Necklace</neck>
-			<waist>Sailfi Belt +1</waist>
+			<waist augment="O2388156481536292">Sailfi Belt +1</waist>
 			<ear1>Brutal Earring</ear1>
 			<ear2>Cessance Earring</ear2>
 			<ring1>Epona's Ring</ring1>
@@ -37,7 +35,6 @@
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="TP-Off">
-			<ammo>Ginsen</ammo>
 			<head augment="D20925277801407">Adhemar Bonnet +1</head>
 			<body augment="D20925277801407">Adhemar Jacket +1</body>
 			<hands augment="S5500176333007116409">Herculean Gloves</hands>
@@ -52,7 +49,6 @@
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="MagWS">
-			<ammo>Erlene's Notebook</ammo>
 			<head augment="S9465989">Taeon Chapeau</head>
 			<body>Meg. Cuirie +1</body>
 			<hands augment="S4618808102714228805">Herculean Gloves</hands>
@@ -67,7 +63,6 @@
 			<back>Argocham. Mantle</back>
 		</set>
 		<set name="FstCst">
-			<ammo>Sapience Orb</ammo>
 			<body augment="S18073500037218">Taeon Tabard</body>
 			<hands augment="S35756141903895140">Leyline Gloves</hands>
 			<legs augment="S18996783777925">Taeon Tights</legs>
