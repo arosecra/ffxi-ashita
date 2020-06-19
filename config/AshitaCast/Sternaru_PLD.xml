@@ -1,0 +1,77 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="Precast">
+			<body>Odyss. Chestplate</body>
+			<ear1>Loquac. Earring</ear1>
+		</set>
+		<set name="Phalanx">
+			<head >Yorium Barbuta</head>
+			<body >Yorium Cuirass</body>
+			<hands>Souv. Handsch. +1</hands>
+			<legs >Yorium Cuisses</legs>
+			<feet >Yorium Sabatons</feet>
+			<ear1>Mimir Earring</ear1>
+			<waist>Olympus sash</waist>
+		</set>
+		<set name="Idle">
+			<head>Rev. Coronet +1</head>
+			<body>Rev. Surcoat +1</body>
+			<hands augment="D15938765744130">Souv. Handsch. +1</hands>
+			<legs>Rev. Breeches +1</legs>
+			<feet>Sulev. Leggings +1</feet>
+			<neck>Diemer Gorget</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Supershear Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back>Rudianos's Mantle</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<equip set="Idle"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="Precast" />
+	</premagic>
+	<midmagic>
+		<if ad_name="Phalanx">
+			<equip set="Phalanx" />
+		</if>
+	</midmagic>
+	<jobability>
+		<!--<if ad_name="*Maneuver">
+			<equip set="PupMnvr"/>
+		</if>
+		<if ad_name="Overdrive">
+			<equip><body>Pitre Tobe +2</body></equip>
+		</if>-->
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+	<petskill>
+	</petskill>
+	<petspell>
+	</petspell>
+</ashitacast>
