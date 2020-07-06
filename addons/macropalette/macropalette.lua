@@ -212,7 +212,6 @@ ashita.register_event('command', function(cmd, nType)
 end);
 
 function run_macro_command(section_number, macro_number) 
-	print('attempting to run macro ' .. section_number .. ' ' .. macro_number)
 	local current_section = current_hotbar[section_number]
 	if current_section ~= nil then
 		local macro = current_section[macro_number]
