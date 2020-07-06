@@ -7,6 +7,41 @@ require 'common'
 require 'stringex'
 local jobs = require 'windower/res/jobs'
 --local addon_settings = require 'addon_settings'
+local statuses = {
+	[1]  = { status="Doom",         spell="Cursna"   },
+	[2]  = { status="Curse",        spell="Cursna"   },
+	[3]  = { status="Petrifaction", spell="Sonta"    },
+	[4]  = { status="Paralysis",    spell="Paralyna" },
+	[5]  = { status="Plague",       spell="Viruna"   },
+	[6]  = { status="Silence",      spell="Silena"   },
+	[7]  = { status="Blindness",    spell="Blindna"  },
+	[8]  = { status="Poison",       spell="Poisona"  },
+	[9]  = { status="Diseased",     spell="Viruna"   },
+	[10] = { status="Sleep",        spell="Cure"     },
+	[10] = { status="Bio",          spell="Erase"    },
+	[10] = { status="Dia",          spell="Erase"    },
+	[10] = { status="Gravity",      spell="Erase"    },
+	[10] = { status="Flash",        spell="Erase"    },
+	[10] = { status="Addle",        spell="Erase"    },
+	[10] = { status="Slow",         spell="Erase"    },
+	[10] = { status="Elegy",        spell="Erase"    },
+	[10] = { status="Requiem",      spell="Erase"    },
+	[10] = { status="Shock",        spell="Erase"    },
+	[10] = { status="Rasp",         spell="Erase"    },
+	[10] = { status="Choke",        spell="Erase"    },
+	[10] = { status="Frost",        spell="Erase"    },
+	[10] = { status="Burn",         spell="Erase"    },
+	[10] = { status="Drown",        spell="Erase"    },
+	[10] = { status="Pyrohelix",    spell="Erase"    },
+	[10] = { status="Cryohelix",    spell="Erase"    },
+	[10] = { status="Sleep",        spell="Erase"    },
+	[10] = { status="Anemohelix",   spell="Erase"    },
+	[10] = { status="Geohelix",     spell="Erase"    },
+	[10] = { status="Ionohelix",    spell="Erase"    },
+	[10] = { status="Hydrohelix",   spell="Erase"    },
+	[10] = { status="Luminohelix",  spell="Erase"    },
+	[10] = { status="Noctohelix",   spell="Erase"    }
+}
 
 local config = {
 	brd = {
@@ -81,6 +116,15 @@ end
 local function run_cure_t_o_t(args)
 end
 
+local function run_remove_debuff(args)
+
+	for i=0,5 do
+		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
+		local entityId = AshitaCore:GetDataManager():GetParty():GetMemberTargetIndex(i)
+		
+	end
+end
+
 local function run_bard(args)
 	if (args[3] == 'addsong') then
 		if (config.brd.songs['1'] == nil) then
@@ -103,6 +147,17 @@ local function run_bard(args)
 end
 
 local function run_geo(args)
+	if (args[3] == 'setbubble') then
+		config.geo['bubble'] = args[4]
+		msg("Set bubble to " .. config.geo['bubble'])
+	elseif (args[3] == 'setluopan') then
+		config.geo['luopan'] = args[4]
+		msg("Set luopan to " .. config.geo['luopan'])
+	elseif (args[3] == 'bubble') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['bubble'] .. "\" <me>", 1)
+	elseif (args[3] == 'luopan') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['luopan'] .. "\" <me>", 1)
+	end
 end
 local function run_pup(args)
 end
@@ -111,7 +166,9 @@ local function run_whm(args)
 		run_cure(100, 250, 500, 600, args)
 	elseif (args[3] == 'curega') then
 	elseif (args[3] == 'cure_t_o_t') then
+		run_cure_t_o_t(args)
 	elseif (args[3] == 'removedebuff') then
+		run_remove_debuff(args)
 	end
 end
 
