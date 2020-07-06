@@ -42,7 +42,19 @@
 			<ear2>Glorious Earring</ear2>
 			<ring1>Sirona's Ring</ring1>
 			<ring2>Metamorph Ring</ring2>
-			<back>Tempered Cape +1</back>
+			<back>Alaunus's Cape</back>
+		</set>
+		<set name="Cursna">
+			<body augment="M0">Orison Bliaud +1</body>
+			<hands augment="S54189874419766">Gende. Gages +1</hands>
+			<legs>Theo. Pantaloons</legs>
+			<feet augment="S27775959767094">Gende. Galosh. +1</feet>
+			<neck>Malison Medallion</neck>
+			<waist>Bishop's Sash</waist>
+			<ear1>Meili Earring</ear1>
+			<ring1>Haoma's Ring</ring1>
+			<ring2>Ephedra Ring</ring2>
+			<back augment="S542147077">Alaunus's Cape</back>
 		</set>
 	</sets>
 	<variables>
@@ -63,10 +75,10 @@
 			</if>
 		<!--	<elseif ad_name="Stoneskin">
 				<equip set="Stoneskin" />
-			</elseif>
+			</elseif>-->
 			<elseif ad_name="Cursna">
 				<equip set="Cursna" />
-			</elseif>-->
+			</elseif>
 		</if>
 	</midmagic>
 

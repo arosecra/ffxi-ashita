@@ -12,6 +12,7 @@
 			<body>Merlinic Jubbah</body>     <!-- 05 -->
 			<legs>Geo. Pants +1</legs>       <!-- 11 -->
 			<feet>Merlinic Crackows</feet>   <!-- 05 -->
+			<neck>Voltsurge Torque</neck>    <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<back>Lifestream Cape</back>     <!-- 07 -->
@@ -20,7 +21,7 @@
 		</set>
 		<set name="Idle">
 			<head>Hagondes Hat +1</head>
-			<body>Hagondes Coat +1</body>
+			<body>Jhakri Robe +2</body>
 			<hands>Geo. Mitaines +1</hands>
 			<legs>Hagondes Pants +1</legs>
 			<feet>Hag. Sabots +1</feet>
@@ -40,23 +41,23 @@
 			<ear2>Novio Earring</ear2>
 			<ring1>Metamor. Ring +1</ring1>
 			<ring2>Mujin Band</ring2>
-			<back augment="S18948">Nantosuelta's Cape</back>
+			<back>Nantosuelta's Cape</back>
 		</set>
 		<set name="GeomancyMagic">
 			<head>Azimuth Hood</head>
-			<body augment="M11540">Bagua Tunic</body>
+			<body augment="M11540">Bagua Tunic +1</body>
 			<hands>Geo. Mitaines +1</hands>
 			<legs augment="M1448">Bagua Pants</legs>
 			<feet>Azimuth Gaiters</feet>
-			<back augment="S39428">Nantosuelta's Cape</back>
+			<ear1>Fulla Earring</ear1>
+			<ear2>Gna Earring</ear2>
+			<back>Nantosuelta's Cape</back>
 		</set>
 	</sets>
 	<variables>
 	</variables>
 	<inputcommands>
 	</inputcommands>
-
-
 
 	<premagic>
 		<equip set="Precast" />

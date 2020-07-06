@@ -107,7 +107,7 @@
 			<ear2>Hecate's Earring</ear2>
 			<ring1>Acumen Ring</ring1>
 			<ring2>Jhakri Ring</ring2>
-			<back augment="S3740313063270818565">Rosmerta's Cape</back>
+			<back augment="S8138359574374818565">Rosmerta's Cape</back>
 		</set>
 		<set name="BLU_MACC">
 			<ammo>Hydrocera</ammo>
@@ -122,7 +122,7 @@
 			<ear2>Genmei Earring</ear2>
 			<ring1>Jhakri Ring</ring1>
 			<ring2>Acumen Ring</ring2>
-			<back augment="S3740313063270818565">Rosmerta's Cape</back>
+			<back augment="S8138359574374818565">Rosmerta's Cape</back>
 		</set>
 		<set name="BLU_SKILL">
 			<ammo>Mavi Tathlum</ammo>
@@ -147,7 +147,7 @@
 			<ear2>Hecate's Earring</ear2>
 			<ring1>Archon Ring</ring1>
 			<ring2>Jhakri Ring</ring2>
-			<back>Argocham. Mantle</back>
+			<back augment="S8138359574374818565">Rosmerta's Cape</back>
 		</set>
 		<set name="Refresh">
 			<body>Jhakri Robe +2</body>
@@ -187,6 +187,22 @@
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
+		</set>
+		<set name="temp">
+			<main augment="D15479225921796">Nibiru Cudgel</main>
+			<sub augment="D15479225921796">Nibiru Cudgel</sub>
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist augment="O2388156481536292">Sailfi Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<ring2>Petrov Ring</ring2>
 		</set>
 		<include>
 		</include>

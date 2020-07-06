@@ -8,6 +8,7 @@
 	<sets>
 		<set name="Precast">
 			<body>Odyss. Chestplate</body>
+			<neck>Voltsurge Torque</neck>    <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>
 		</set>
 		<set name="Phalanx">
@@ -15,16 +16,17 @@
 			<body >Yorium Cuirass</body>
 			<hands>Souv. Handsch. +1</hands>
 			<legs >Yorium Cuisses</legs>
-			<feet >Yorium Sabatons</feet>
+			<feet>Souveran Schuhs +1</feet>
 			<ear1>Mimir Earring</ear1>
-			<waist>Olympus sash</waist>
+			<waist>Olympus Sash</waist>
+			<back>Weard Mantle</back>
 		</set>
 		<set name="Idle">
-			<head>Rev. Coronet +1</head>
-			<body>Rev. Surcoat +1</body>
-			<hands augment="D15938765744130">Souv. Handsch. +1</hands>
-			<legs>Rev. Breeches +1</legs>
-			<feet>Sulev. Leggings +1</feet>
+			<head>Souv. Schaller +1</head>
+			<body>Souv. Cuirass +1</body>
+			<hands >Souv. Handsch. +1</hands>
+			<legs>Souv. Diechlings +1</legs>
+			<feet>Souveran Schuhs +1</feet>
 			<neck>Diemer Gorget</neck>
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring</ear1>

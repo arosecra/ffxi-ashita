@@ -88,11 +88,12 @@
 			<hands>Gende. Gages +1</hands>   <!-- 07 -->
 			<legs>Orvail Pants +1</legs>     <!-- 05 -->
 			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
+			<neck>Voltsurge Torque</neck>    <!-- 04 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<waist>Embla Sash</waist>        <!-- 05 -->
 			<back>Swith Cape +1</back>       <!-- 04 -->
-			<!-- Total                            57 -->
+			<!-- Total                            61 -->
 		</set>
 		<set name="SongPrecast">
 			<!-- Kali                             07 07 -->
@@ -101,11 +102,12 @@
 			<hands>Gende. Gages +1</hands>   <!-- 07 12  -->
 			<legs>Gende. Spats +1</legs>     <!-- 00 09 -->
 			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
+			<neck>Voltsurge Torque</neck>    <!-- 04 04 -->
 			<ear1>Loquac. Earring</ear1>     <!-- 02 02 -->
 			<ring1>Prolix Ring</ring1>       <!-- 02 02 -->
 			<waist>Embla Sash</waist>        <!-- 05 05 -->
 			<back>Swith Cape +1</back>       <!-- 04 04 -->
-			<!-- Total                            61 72 -->
+			<!-- Total                            58 76 -->
 		</set>                               
 		<set name="Buff">
 			<head>Fili Calot</head>

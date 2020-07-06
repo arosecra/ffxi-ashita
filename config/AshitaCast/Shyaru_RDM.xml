@@ -12,24 +12,39 @@
 	</settings>
 	<sets>		
 		<set name="Precast">
+			<ammo>Clarus Stone</ammo>
+			<head augment="D1610775539972">Vanya Hood</head>
+			<hands augment="S54189874419766">Gende. Gages +1</hands>
 			<legs>Orvail Pants +1</legs>
+			<feet augment="S1232961966675322181">Chironic Slippers</feet>
+			<waist>Embla Sash</waist>
+			<ear1>Loquac. Earring</ear1>
+			<ring1>Prolix Ring</ring1>
 			<back>Swith Cape +1</back>
 		</set>
 
 
 		<set name="Idle">
-			<head>Weath. Corona +1</head>
+			<head>Gende. Caubeen +1</head>
 			<body>Vrikodara Jupon</body>
-			<hands>Weath. Cuffs +1</hands>
-			<legs>Weath. Pants +1</legs>
-			<feet>Weath. Souliers +1</feet>
+			<hands>Gende. Gages +1</hands>
+			<legs>Sifahir Slacks</legs>
+			<feet>Gende. Galosh. +1</feet>
+			<back>Tempered Cape +1</back>
 		</set>
 		<set name="Cure">
+			<ammo>Clarus Stone</ammo>
+			<head augment="S826871862">Gende. Caubeen +1</head>
 			<body>Vrikodara Jupon</body>
-			<hands>Weath. Cuffs +1</hands>
+			<hands augment="S54189874419766">Gende. Gages +1</hands>
+			<legs augment="S1819453843302434886">Chironic Hose</legs>
+			<feet augment="S27775959767094">Gende. Galosh. +1</feet>
 			<waist>Bishop's Sash</waist>
-			<ring1>Sirona's Ring</ring1>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Meili Earring</ear2>
 			<back>Tempered Cape +1</back>
+			<ring1>Sirona's Ring</ring1>
+			<ring2>Metamorph Ring</ring2>
 		</set>
 	</sets>
 	<variables>
