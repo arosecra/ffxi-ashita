@@ -321,7 +321,7 @@ ashita.register_event('prerender', function()
 		current_time - auto_state.last_action_time > 3 and
 		current_time - auto_state.last_action_identified > 3 then
 		if provoke_is_due(current_time) then
-			print('expecting provoke')
+			--print('expecting provoke')
 			auto_state.last_action_identified = current_time
 		elseif flashbulb_is_due(current_time) then
 			--print('expecting flashbulb')
