@@ -8,39 +8,38 @@ require 'stringex'
 local jobs = require 'windower/res/jobs'
 --local addon_settings = require 'addon_settings'
 local statuses = {
-	[1]  = { status="Doom",         spell="Cursna"   },
-	[2]  = { status="Curse",        spell="Cursna"   },
-	[3]  = { status="Petrifaction", spell="Sonta"    },
-	[4]  = { status="Paralysis",    spell="Paralyna" },
-	[5]  = { status="Plague",       spell="Viruna"   },
-	[6]  = { status="Silence",      spell="Silena"   },
-	[7]  = { status="Blindness",    spell="Blindna"  },
-	[8]  = { status="Poison",       spell="Poisona"  },
-	[9]  = { status="Diseased",     spell="Viruna"   },
-	[10] = { status="Sleep",        spell="Cure"     },
-	[10] = { status="Bio",          spell="Erase"    },
-	[10] = { status="Dia",          spell="Erase"    },
-	[10] = { status="Gravity",      spell="Erase"    },
-	[10] = { status="Flash",        spell="Erase"    },
-	[10] = { status="Addle",        spell="Erase"    },
-	[10] = { status="Slow",         spell="Erase"    },
-	[10] = { status="Elegy",        spell="Erase"    },
-	[10] = { status="Requiem",      spell="Erase"    },
-	[10] = { status="Shock",        spell="Erase"    },
-	[10] = { status="Rasp",         spell="Erase"    },
-	[10] = { status="Choke",        spell="Erase"    },
-	[10] = { status="Frost",        spell="Erase"    },
-	[10] = { status="Burn",         spell="Erase"    },
-	[10] = { status="Drown",        spell="Erase"    },
-	[10] = { status="Pyrohelix",    spell="Erase"    },
-	[10] = { status="Cryohelix",    spell="Erase"    },
-	[10] = { status="Sleep",        spell="Erase"    },
-	[10] = { status="Anemohelix",   spell="Erase"    },
-	[10] = { status="Geohelix",     spell="Erase"    },
-	[10] = { status="Ionohelix",    spell="Erase"    },
-	[10] = { status="Hydrohelix",   spell="Erase"    },
-	[10] = { status="Luminohelix",  spell="Erase"    },
-	[10] = { status="Noctohelix",   spell="Erase"    }
+	[1]  = { name="doom",         spell="Cursna"   , priority=1 },
+	[2]  = { name="curse",        spell="Cursna"   , priority=2 },
+	[3]  = { name="petrifaction", spell="Sonta"    , priority=3 },
+	[4]  = { name="paralysis",    spell="Paralyna" , priority=4 },
+	[5]  = { name="plague",       spell="Viruna"   , priority=5 },
+	[6]  = { name="silence",      spell="Silena"   , priority=6 },
+	[7]  = { name="blindness",    spell="Blindna"  , priority=7 },
+	[8]  = { name="poison",       spell="Poisona"  , priority=8 },
+	[9]  = { name="diseased",     spell="Viruna"   , priority=9 },
+	[10] = { name="sleep",        spell="Cure"     , priority=10},
+	[11] = { name="bio",          spell="Erase"    , priority=11},
+	[12] = { name="dia",          spell="Erase"    , priority=12},
+	[13] = { name="gravity",      spell="Erase"    , priority=13},
+	[14] = { name="flash",        spell="Erase"    , priority=14},
+	[15] = { name="addle",        spell="Erase"    , priority=15},
+	[16] = { name="slow",         spell="Erase"    , priority=16},
+	[17] = { name="elegy",        spell="Erase"    , priority=17},
+	[18] = { name="requiem",      spell="Erase"    , priority=18},
+	[19] = { name="shock",        spell="Erase"    , priority=19},
+	[20] = { name="rasp",         spell="Erase"    , priority=20},
+	[21] = { name="choke",        spell="Erase"    , priority=21},
+	[22] = { name="frost",        spell="Erase"    , priority=22},
+	[23] = { name="burn",         spell="Erase"    , priority=23},
+	[24] = { name="drown",        spell="Erase"    , priority=24},
+	[25] = { name="pyrohelix",    spell="Erase"    , priority=25},
+	[26] = { name="cryohelix",    spell="Erase"    , priority=26},
+	[27] = { name="anemohelix",   spell="Erase"    , priority=27},
+	[28] = { name="geohelix",     spell="Erase"    , priority=28},
+	[29] = { name="ionohelix",    spell="Erase"    , priority=29},
+	[30] = { name="hydrohelix",   spell="Erase"    , priority=30},
+	[31] = { name="luminohelix",  spell="Erase"    , priority=31},
+	[32] = { name="noctohelix",   spell="Erase"    , priority=32}
 }
 
 local config = {
@@ -60,6 +59,8 @@ local config = {
 	ws="undefined"
 };
 
+local party_status_effects = {}
+
 --local hotbar_config = {};
 --local hotbar_position_config = {};
 local function msg(s)
@@ -73,7 +74,41 @@ end
 ----------------------------------------------------------------------------------------------------
 ashita.register_event('load', function()
 --	hotbar_config = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
-	
+
+end);
+
+--
+-- copied and modified from status to try track debuffs against party for stna-like feature
+--
+ashita.register_event('incoming_packet', function(id, size, packet)
+	local new_party_status_effects = {}
+	if (id == 0x76) then
+		for i = 0, 4 do
+			local userIndex = struct.unpack('H', packet, 8+1 + (i * 0x30));
+			
+			new_party_status_effects[i] = {}
+			
+			if (AshitaCore:GetDataManager():GetEntity():GetName(userIndex) ~= nil) then
+			
+				new_party_status_effects[i].Name = AshitaCore:GetDataManager():GetEntity():GetName(userIndex);
+				new_party_status_effects[i].Statuses = {}
+				
+				for j = 0, 31 do
+					local BitMask = bit.band(bit.rshift(struct.unpack('b', packet, bit.rshift(j, 2) + 0x0C + (i * 0x30) + 1), 2 * (j % 4)), 3);
+					if (struct.unpack('b', packet, 0x14 + (i * 0x30) + j + 1) ~= -1 or BitMask > 0) then
+						local buffid = bit.bor(struct.unpack('B', packet, 0x14 + (i * 0x30) + j + 1), bit.lshift(BitMask, 8));
+						
+						new_party_status_effects[i].Statuses[j] = {}
+						new_party_status_effects[i].Statuses[j].Id = buffid;
+						new_party_status_effects[i].Statuses[j].StatusName =	AshitaCore:GetResourceManager():GetString("statusnames", buffid, 2)
+						--print('got a status update for ' .. new_party_status_effects[i].Name .. ' ' .. new_party_status_effects[i].Statuses[j].Id .. ' ' .. new_party_status_effects[i].Statuses[j].StatusName)
+					end
+				end
+			end
+		end
+		party_status_effects = new_party_status_effects
+	end
+	return false;
 end);
 
 local function run_cure(cure1, cure2, cure3, cure4, args)
@@ -118,11 +153,23 @@ end
 
 local function run_remove_debuff(args)
 
-	for i=0,5 do
-		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
-		local entityId = AshitaCore:GetDataManager():GetParty():GetMemberTargetIndex(i)
+	for istatus,status in ipairs(statuses) do
 		
+		for i=0,4 do
+			if party_status_effects[i] ~= nil then
+			
+				for j=0,31 do
+					if party_status_effects[i].Statuses[j] ~= nil and party_status_effects[i].Statuses[j].StatusName == status.name then
+						AshitaCore:GetChatManager():QueueCommand("/ma \"" .. status.spell .. "\" " .. party_status_effects[i].Name, 1)
+						break;
+					end
+				end
+			end
+		end
+	
 	end
+
+
 end
 
 local function run_bard(args)
