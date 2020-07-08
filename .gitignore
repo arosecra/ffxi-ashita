@@ -60,3 +60,10 @@ resources/greed/gradient.tga
 resources/entities/escha.xml
 plugins_src/
 addons/debuff/debuff.lua
+addons/status/status.lua
+addons/status/statuseffects.lua
+addons/status/settings/settings.json
+addons/HomePoint/HomePoint.lua
+addons/HomePoint/map.lua
+addons/HomePoint/Readme.md
+addons/HomePoint/data/settings.xml
