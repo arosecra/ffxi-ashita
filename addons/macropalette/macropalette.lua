@@ -5,6 +5,7 @@ _addon.version  = '1.0.0';
 
 require 'common'
 require 'stringex'
+require 'imguidef'
 local jobs = require 'windower/res/jobs'
 local addon_settings = require 'addon_settings'
 
@@ -481,16 +482,20 @@ ashita.register_event('render', function()
 	
 	
     -- Display the macro bar 
-	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
-    imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
+	--imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
+    --imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
 	local window_flags = 0
-	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
-	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
-	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoSavedSettings)
+	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
+	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
+	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoSavedSettings)
     if (imgui.Begin('macropalette', true, window_flags) == false) then
         imgui.End();
         return;
     end
+	
+	
+	
+    imgui.Spacing();
 	
 	imgui.Text(get_button_label_text("Pages", 12));
 	imgui.SameLine();
@@ -550,6 +555,6 @@ ashita.register_event('render', function()
 				
 		imgui.Separator();
 	end
-
+    
     imgui.End();
 end);
