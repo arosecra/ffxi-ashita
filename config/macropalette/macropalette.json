@@ -3,40 +3,17 @@
 		{
 			"Name":"MBox",
 			"Modes":[
-				{
-					"Mode":"Sttngs1",
-					"Macros":[
-						"group",
-						"warp2me",
-						"sneak",
-						"desneak",
-						"follon",
-						"mount",
-						"dismnt"
-					]
+				{	"Mode":"Sttngs1",
+					"Macros":[ "group", "warp2me", "sneak", "desneak", "follon", "mount", "dismnt" ]
 				},
-				{
-					"Mode":"Actns1",
-					"Macros":[
-						"follon",
-						"follof",
-						"group",
-						"warp2me"
-					]
+				{	"Mode":"Actns1",
+					"Macros":[ "follon", "follof", "group", "warp2me" ]
 				},
-				{
-					"Mode":"Actns2",
-					"Macros":[
-						"allatk"
-					]
+				{	"Mode":"Actns2",
+					"Macros":[ "allatk" ]
 				},
-				{
-					"Mode":"Item",
-					"Macros":[
-						"trizek",
-						"endring",
-						"allwrp"
-					]
+				{	"Mode":"Item",
+					"Macros":[ "trizek", "endring", "allwrp" ]
 				}
 			]
 		},
@@ -45,107 +22,29 @@
 			"Modes":[
 				{
 					"Mode":"Sttngs1",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
 				{
 					"Mode":"Sttngs2",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"Actns1",
-					"Macros":[
-						"attack",
-						"ws",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"Actns1",
+					"Macros":[ "attack", "ws", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"Actns2",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"Actns2",
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"Actns3",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"Actns3",
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"WS",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"WS",
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"Buff",
-					"Macros":[
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"Buff",
+					"Macros":[ "job", "job", "job", "job", "job", "job", "job", "job" ]
 				},
-				{
-					"Mode":"Item",
-					"Macros":[
-						"leavept",
-						"trizek",
-						"endor",
-						"warp",
-						"DITrusts",
-						"job",
-						"job",
-						"job"
-					]
+				{	"Mode":"Item",
+					"Macros":[ "leavept", "trizek", "endor", "warp", "DITrusts", "job", "job", "job" ]
 				}
 			]
 		},
