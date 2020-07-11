@@ -67,7 +67,7 @@ ashita.register_event('render', function()
     
 	if petCount > 0 then
 		imgui.SetNextWindowPos(position_config[1], position_config[2]);
-		imgui.SetNextWindowSize(200, 100, ImGuiSetCond_Always);
+		imgui.SetNextWindowSize(200, 110, ImGuiSetCond_Always);
 		if (imgui.Begin('Pets') == false) then
 			imgui.End();
 			return
