@@ -1,0 +1,13 @@
+{
+	"ModeNames": [
+		"JobStngs",
+		"AdnStngs",
+		"Actns1",
+		"Actns2", 
+		"Actns3", 
+		"Twn", 
+		"Buff",  
+		"Items"
+	], 
+	"Default": "JobStngs"
+}

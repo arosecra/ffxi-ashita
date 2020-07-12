@@ -13,17 +13,6 @@ local addon_settings = require 'addon_settings'
 -- Default Configurations
 ----------------------------------------------------------------------------------------------------
 
-local modes = {
-	"Sttngs1",
-	"Sttngs2",
-	"Actns1",
-	"Actns2", 
-	"Actns3", 
-	"WS", 
-	"Buff",  
-	"Item"
-};
-
 --my keyboard doesn't seem to reliably send some keycodes (to lua?)
 --along with the numpad keys. this is a work around for this situation
 
@@ -90,7 +79,10 @@ local control_key_sections = {
 }
 
 local hotbar_variables = {
-	['Mode'] = "Sttngs1"
+}
+
+local job_settings = {
+
 }
 
 local hotbar_config = {};
@@ -116,11 +108,75 @@ local debug_loop_count = 0
 ----------------------------------------------------------------------------------------------------
 ashita.register_event('load', function()
 	--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
-	hotbar_config = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
+	hotbar_config.Palette = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
+	hotbar_config.JobMacros = addon_settings.onload(_addon.name, 'jobmacros', {}, true, false, false)
+	hotbar_config.JobSettings = addon_settings.onload(_addon.name, 'jobsettings', {}, true, false, false)
+	hotbar_config.Macros = addon_settings.onload(_addon.name, 'macros', {}, true, false, false)
+	hotbar_config.Modes = addon_settings.onload(_addon.name, 'modes', {}, true, false, false)
+	hotbar_config.Sections = addon_settings.onload(_addon.name, 'sections', {}, true, false, false)
 	
-	HEIGHT = ((1+#hotbar_config.Palette)*20)+5
+	hotbar_variables['Mode'] = hotbar_config.Modes.Default
+	
+	HEIGHT = ((1+#hotbar_config.Sections)*20)+5
 	WIDTH = (NUMBER_OF_BUTTONS +1) * 72 + 5
 end);
+
+ashita.register_event('unload', function()
+    for char_name, char_settings in ipairs(job_settings) do
+		for char_job_name,char_job_settings in pairs(char_settings) do
+			for k,v in pairs(char_job_settings) do
+				if (char_job_settings[k][1] ~= nil) then
+					imgui.DeleteVar(char_job_settings[k][1]);
+				end
+				char_job_settings[k][1] = nil;
+			end
+		end
+    end
+end);
+
+function init_job_settings_variables(name, jobname)
+	if job_settings[name] == nil then
+		job_settings[name] = {}
+	end
+	if job_settings[name][jobname] == nil then
+		job_settings[name][jobname] = {}
+		
+		--we only initialize the variables once per job per char
+			for k,v in pairs(hotbar_config.JobSettings) do
+				if k == jobname then
+					for x,y in pairs(v) do
+						local list_value = ""
+						for si,sv in pairs(y.Settings) do
+							if sv.MacroName ~= nil and hotbar_config.Macros[sv.MacroName] ~= nil then
+								list_value = list_value .. sv.Name .. '\0'
+								sv['Macro'] = hotbar_config.Macros[sv.MacroName]
+							else 
+								print('Macro for ' .. sv.Name .. ' not found')
+							end
+						end
+						list_value = list_value .. '\0'
+						job_settings[name][jobname][y.Name] = {nil, ImGuiVar_INT32, 0, y.Name, list_value, y}
+					end
+				end
+			end
+				
+			
+			for k, v in pairs(job_settings[name][jobname]) do
+				-- Create the variable..
+				if (v[2] >= ImGuiVar_CDSTRING) then 
+					job_settings[name][jobname][k][1] = imgui.CreateVar(job_settings[name][jobname][k][2], variables[k][3]);
+				else
+					job_settings[name][jobname][k][1] = imgui.CreateVar(job_settings[name][jobname][k][2]);
+				end
+				
+				-- Set a default value if present..
+				--if (#v > 2 and v[2] < ImGuiVar_CDSTRING) then
+				--	imgui.SetVarValue(job_settings[name][jobname][k][1], job_settings[name][jobname][k][3]);
+				--end        
+			end
+	end
+	
+end
 
 ashita.register_event('command', function(cmd, nType)
     -- Skip commands that we should not handle..
@@ -191,7 +247,8 @@ ashita.register_event('command', function(cmd, nType)
 		
 		
 		
-		for hotbar_section_id,hotbar_section in ipairs(hotbar_config.Palette) do
+		for hotbar_section_id,hotbar_section in ipairs(hotbar_config.Sections) do
+			
 			local macro_names = get_active_macro_names(hotbar_section, hotbar_variables)	
 			
 			for i=1,NUMBER_OF_BUTTONS do
@@ -217,17 +274,21 @@ function run_macro_command(section_number, macro_number)
 	if current_section ~= nil then
 		local macro = current_section[macro_number]
 		if macro ~= nil then
-			run_macro(hotbar_config.Palette[section_number], macro, "commandline")
+			run_macro(hotbar_config.Sections[section_number], macro, "commandline")
 		end
 	end
 end
 
 function run_set_mode_command(mode_number) 
-	for k,v in ipairs(modes) do
+	for k,v in ipairs(hotbar_config.Modes.ModeNames) do
 		if k == mode_number then
 			hotbar_variables['Mode'] = v
 		end
 	end
+end
+
+function change_mode(mode_name)
+	hotbar_variables['Mode'] = v
 end
 
 ashita.register_event('key', function(key, down, blocked)
@@ -329,41 +390,31 @@ end
 
 function get_active_macro_names(hotbar_section, hotbar_variables)
 	local macro_names = {}
-	for palette_row_id,palette_row in ipairs(hotbar_section.Modes) do
-			
-		if palette_row.Mode == hotbar_variables['Mode'] then
-			for i=1,NUMBER_OF_BUTTONS do
-				if palette_row.Macros[i] ~= nil 
-					and palette_row.Macros[i] ~= "" 
-					and palette_row.Macros[i] ~= "job"  then
-					--if it is in the top section, it is static
-					macro_names[i] = palette_row.Macros[i]
-				else
-					--check if there is a job specific macro here
-					local job = hotbar_variables[hotbar_section.Name .. '.MainJob']
-					local job_macros = hotbar_config.JobMacros[job]
-					
-					
-					if job_macros ~= nil then
-						for job_row_id, job_row in ipairs(job_macros) do
-						
-							if job_row.Mode == hotbar_variables['Mode'] then
-								if job_row.Macros[i] ~= nil 
-									and job_row.Macros[i] ~= "" 
-									and job_row.Macros[i] ~= "job"  then
-									--if it is in the top section, it is static
-									macro_names[i] = job_row.Macros[i]
-								end
-							end
-						end
-					end
-				end
-			end			
-		
-			break;
-		end
+	local modeName = hotbar_variables['Mode']
+	local palette_row = hotbar_config.Palette[modeName][hotbar_section.Name]
 	
-	end
+	for i=1,NUMBER_OF_BUTTONS do
+		if palette_row[i] ~= nil 
+			and palette_row[i] ~= "" 
+			and palette_row[i] ~= "job"  then
+			--if it is in the top section, it is static
+			macro_names[i] = palette_row[i]
+		else
+			--check if there is a job specific macro here
+			local job = hotbar_variables[hotbar_section.Name .. '.MainJob']
+			local job_macros = hotbar_config.JobMacros[job]
+			if job_macros ~= nil then
+				local job_row = job_macros[modeName]
+				
+				if job_row[i] ~= nil 
+					and job_row[i] ~= "" 
+					and job_row[i] ~= "job"  then
+					--if it is in the top section, it is static
+					macro_names[i] = job_row[i]
+				end
+			end
+		end
+	end	
 	return macro_names;
 end
 
@@ -482,24 +533,22 @@ ashita.register_event('render', function()
 	
 	
     -- Display the macro bar 
-	--imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
-    --imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
+	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
+    imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
 	local window_flags = 0
-	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
-	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
-	--window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoSavedSettings)
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
+	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoSavedSettings)
     if (imgui.Begin('macropalette', true, window_flags) == false) then
         imgui.End();
         return;
     end
 	
-	
-	
     imgui.Spacing();
 	
 	imgui.Text(get_button_label_text("Pages", 12));
 	imgui.SameLine();
-	for index,mode in ipairs(modes) do
+	for index,mode in ipairs(hotbar_config.Modes.ModeNames) do
 		local modeDisplay = mode .. string.rep(' ', 8 - #mode)
 		--print(mode .. ' ' .. modeLength .. ' ' .. padlength .. ' ' .. modeDisplay)
 		if imgui.SmallButton(modeDisplay) then
@@ -509,7 +558,6 @@ ashita.register_event('render', function()
 	end
 	
 	imgui.Separator();
-	
 	imgui.Text(get_button_label_text(hotbar_variables['Mode'] , 8));
 	imgui.SameLine();
 	
@@ -519,42 +567,71 @@ ashita.register_event('render', function()
 	--imgui.SameLine();
 	--imgui.Text("        BK        ST");
 	
-	local section = get_current_macro_row_number()
-	for hotbar_section_id,hotbar_section in ipairs(hotbar_config.Palette) do
-		local sectionName = hotbar_section.Name
-		if hotbar_section_id == section then
-			sectionName = "(*) " .. sectionName .. string.rep(' ', 8 - #sectionName)
-		else 
-			sectionName = "( ) " .. sectionName .. string.rep(' ', 8 - #sectionName)
-		end
-		imgui.Text(sectionName);
-		imgui.SameLine();
-		local macros = get_active_macros(hotbar_section, hotbar_variables)
-		
-		current_hotbar[hotbar_section_id] = macros;
-		
-		for i=1,NUMBER_OF_BUTTONS do
-			local label = string.rep(' ', 8)
-			if macros ~= nil and #macros >= i and macros[i].Spacer == nil then
-				label = macros[i].Name
-				if #label > 12 then
-					label = string.sub(label,1,8) .. '..'
-				else
-					label = label .. string.rep(' ', 8 - #label)
-				end
+	if hotbar_variables['Mode'] == 'JobStngs' then
+		for hotbar_section_id,hotbar_section in ipairs(hotbar_config.Sections) do
+			local sectionName = hotbar_section.Name
+			local jobName = hotbar_variables[hotbar_section.Name .. '.MainJob']
+			if jobName ~= nil and 
+			   jobName ~= 'None' then
+				    if (imgui.TreeNode(sectionName .. '(' .. jobName .. ')')) then
+						init_job_settings_variables(sectionName,jobName)
+						if job_settings[sectionName][jobName] ~= nil then
+							for k, v in pairs(job_settings[sectionName][jobName]) do
+								if (imgui.Combo(job_settings[sectionName][jobName][k][4], job_settings[sectionName][jobName][k][1], job_settings[sectionName][jobName][k][5])) then
+									
+									local index = imgui.GetVarValue(job_settings[sectionName][jobName][k][1])+1
+									local setting = job_settings[sectionName][jobName][k][6].Settings[index]
+									--print(setting.Name)
+									--print(setting.Macro)
+									run_macro(hotbar_section, setting.Macro, 'click')
+								end
+							end
+						else
+							imgui.Text('No settings');
+						end
+						imgui.TreePop();
+					end
 			end
-			
-			if (imgui.SmallButton(label)) then 
-				if macros ~= nil and #macros >= i then
-					local hotbar_macro = macros[i]
-					run_macro(hotbar_section, hotbar_macro, "click")
-				end
-			end	
-			imgui.SameLine();			
 		end
+	else
+		local section = get_current_macro_row_number()
+		for hotbar_section_id,hotbar_section in ipairs(hotbar_config.Sections) do
+			local sectionName = hotbar_section.Name
+			if hotbar_section_id == section then
+				sectionName = "(*) " .. sectionName .. string.rep(' ', 8 - #sectionName)
+			else 
+				sectionName = "( ) " .. sectionName .. string.rep(' ', 8 - #sectionName)
+			end
+			imgui.Text(sectionName);
+			imgui.SameLine();
+			local macros = get_active_macros(hotbar_section, hotbar_variables)
+			
+			current_hotbar[hotbar_section_id] = macros;
+			
+			for i=1,NUMBER_OF_BUTTONS do
+				local label = string.rep(' ', 8)
+				if macros ~= nil and #macros >= i and macros[i].Spacer == nil then
+					label = macros[i].Name
+					if #label > 12 then
+						label = string.sub(label,1,8) .. '..'
+					else
+						label = label .. string.rep(' ', 8 - #label)
+					end
+				end
 				
-		imgui.Separator();
+				if (imgui.SmallButton(label)) then 
+					if macros ~= nil and #macros >= i then
+						local hotbar_macro = macros[i]
+						run_macro(hotbar_section, hotbar_macro, "click")
+					end
+				end	
+				imgui.SameLine();			
+			end
+					
+			imgui.Separator();
+		end
 	end
+	
     
     imgui.End();
 end);

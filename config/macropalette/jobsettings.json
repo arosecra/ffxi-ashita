@@ -1,0 +1,412 @@
+{
+"Bard":{
+		"1": {
+			"Name": "Song One",
+			"Settings": [
+				{"Name": "Ref3", "MacroName": "brdref3" }, 
+				{"Name":"Def5", "MacroName": "brddef5"}, 
+				{"Name":"Att5", "MacroName": "brdatt5"}, 
+				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
+				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
+				{"Name":"Acc1", "MacroName": "brdacc1"}, 
+				{"Name":"Acc2", "MacroName": "brdacc2"}
+			]
+		},
+		"2": {
+			"Name": "Song Two",
+			"Settings": [
+				{"Name": "Ref3", "MacroName": "brdref3" }, 
+				{"Name":"Def5", "MacroName": "brddef5"}, 
+				{"Name":"Att5", "MacroName": "brdatt5"}, 
+				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
+				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
+				{"Name":"Acc1", "MacroName": "brdacc1"}, 
+				{"Name":"Acc2", "MacroName": "brdacc2"}
+			]
+		},
+		"3": {
+			"Name": "Song Three",
+			"Settings": [
+				{"Name": "Ref3", "MacroName": "brdref3" }, 
+				{"Name":"Def5", "MacroName": "brddef5"}, 
+				{"Name":"Att5", "MacroName": "brdatt5"}, 
+				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
+				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
+				{"Name":"Acc1", "MacroName": "brdacc1"}, 
+				{"Name":"Acc2", "MacroName": "brdacc2"}
+			]
+		},
+		"4": {
+			"Name": "Threnody",
+			"Settings": [
+				{"Name": "Ref3", "MacroName": "brdref3" }, 
+				{"Name":"Def5", "MacroName": "brddef5"}, 
+				{"Name":"Att5", "MacroName": "brdatt5"}, 
+				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
+				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
+				{"Name":"Acc1", "MacroName": "brdacc1"}, 
+				{"Name":"Acc2", "MacroName": "brdacc2"}
+			]
+		},
+		"5": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Evisceration", "MacroName": "evisceration" }
+			]
+		}
+	},
+	"Beastmaster":{
+		"1": {
+			"Name": "Accuracy",
+			"Settings": [
+				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
+				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
+			]
+		},
+		"2": {
+			"Name": "IdleMain",
+			"Settings": [
+				{"Name":"NoSwap",   "MacroName": "ac_var_IdleMain_NoSwap"}, 
+				{"Name":"Aymur",   "MacroName": "ac_var_IdleMain_Aymur"}, 
+				{"Name":"PetDt",   "MacroName": "ac_var_IdleMain_PetDt"}, 
+				{"Name":"Arktoi",   "MacroName": "ac_var_IdleMain_Arktoi"}
+			]
+		},
+		"3": {"Name": "IdleSub",
+			"Settings": [
+			{"Name":"Arktoi",   "MacroName": "ac_var_IdleSub_Arktoi" }, 
+			{"Name":"PetPdt",   "MacroName": "ac_var_IdleSub_PetPdt" }, 
+			{"Name":"PetDt",   "MacroName": "ac_var_IdleSub_PetDt" }, 
+			{"Name":"Beatific",   "MacroName": "ac_var_IdleSub_Beatific" }, 
+			{"Name":"Adapa",   "MacroName": "ac_var_IdleSub_Adapa" }
+		]},
+		"4": {"Name": "BlJug",
+			"Settings": [
+			{ "Name":"Lizard",   "MacroName": "ac_var_BlJug_Lizard" },  
+			{ "Name":"Tiger",    "MacroName": "ac_var_BlJug_Tiger" },  
+			{ "Name":"Cricket",  "MacroName": "ac_var_BlJug_Cricket" },  
+			{ "Name":"Bird",     "MacroName": "ac_var_BlJug_Bird" },  
+			{ "Name":"Snapweed", "MacroName": "ac_var_BlJug_Snapweed" },  
+			{ "Name":"Fly",      "MacroName": "ac_var_BlJug_Fly"},  
+			{ "Name":"Piggy",    "MacroName": "ac_var_BlJug_Piggy" },  
+			{ "Name":"Mandy",    "MacroName": "ac_var_BlJug_Mandy" },  
+			{ "Name":"Fish",     "MacroName": "ac_var_BlJug_Fish" },  
+			{ "Name":"Raptor",   "MacroName": "ac_var_BlJug_Raptor" }
+		
+		]},
+		
+		"5": {"Name": "CllBstJug",
+			"Settings": [
+			{ "Name":"Lizard",   "MacroName": "ac_var_CllBstJug_Lizard" },  
+			{ "Name":"Tiger",    "MacroName": "ac_var_CllBstJug_Tiger" },  
+			{ "Name":"Cricket",  "MacroName": "ac_var_CllBstJug_Cricket" },  
+			{ "Name":"Bird",     "MacroName": "ac_var_CllBstJug_Bird" },  
+			{ "Name":"Snapweed", "MacroName": "ac_var_CllBstJug_Snapweed" },  
+			{ "Name":"Fly",      "MacroName": "ac_var_CllBstJug_Fly" },  
+			{ "Name":"Piggy",    "MacroName": "ac_var_CllBstJug_Piggy" },   
+			{ "Name":"Fish",     "MacroName": "ac_var_CllBstJug_Fish"  },  
+			{ "Name":"Raptor",   "MacroName": "ac_var_CllBstJug_Raptor" }
+		
+		]},
+		"6": {"Name": "Strategy",
+			"Settings": [
+			{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee" }, 
+			{"Name":"PetOnly", "MacroName": "ac_var_Strategy_PetOnly" }, 
+			{"Name":"119PetOnly", "MacroName": "ac_var_Strategy_119PetOnly" }, 
+			{"Name":"MasterDT", "MacroName": "ac_var_Strategy_MstrDT" }
+		]},
+		"7": {"Name": "WeaponStrategy",
+			"Settings": [
+			{"Name":"Swap", "MacroName": "ac_var_WeaponStrategy_Swap"}, 
+			{"Name":"NoSwap", "MacroName": "ac_var_WeaponStrategy_NoSwap"}
+		]},
+		"8": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Primal Rend", "MacroName": "primalrend" },
+				{"Name": "Cloud Splitter", "MacroName": "cloudsplitter" },
+				{"Name": "Mistral Axe", "MacroName": "mistralaxe" },
+				{"Name": "Decimation", "MacroName": "decimation" },
+				{"Name": "Ruinator", "MacroName": "ruinator" }
+			]
+		}
+	},
+	"Black Mage":{
+		"1": {
+			"Name": "Element",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
+				{"Name": "Stone", "MacroName": "nuke_element_stone"}, 
+				{"Name": "Water", "MacroName": "nuke_element_water"}, 
+				{"Name": "Wind", "MacroName": "nuke_element_wind"}, 
+				{"Name": "Ice", "MacroName": "nuke_element_ice"}, 
+				{"Name": "Thunder", "MacroName": "nuke_element_thunder"}, 
+				{"Name": "Light", "MacroName": "nuke_element_light"}, 
+				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
+			]
+		},
+		"2": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Shattersoul", "MacroName": "shattersoul" },
+				{"Name": "Myrkr", "MacroName": "myrkr" },
+				{"Name": "Cataclysm", "MacroName": "cataclysm" }
+			]
+		}},
+	"Blue Mage":{
+		"1": {
+			"Name": "Accuracy",
+			"Settings": [
+				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
+				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
+			]
+		},
+		"2": {
+			"Name": "Strategy",
+			"Settings": [
+				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"},
+				{"Name":"MstrDT", "MacroName": "ac_var_Strategy_MstrDT"},
+				{"Name":"Refresh", "MacroName": "ac_var_Strategy_Refresh"}
+			]
+		},
+		"3": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "CDC", "MacroName": "cdc" },
+				{"Name": "Savage Blade", "MacroName": "savageblade" }
+			]
+		}},
+	"Corsair":{
+		"1": {
+			"Name": "Accuracy",
+			"Settings": [
+				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
+				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
+			]
+		},
+		"2": {
+			"Name": "Strategy",
+			"Settings": [
+				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"},
+				{"Name":"MstrDT", "MacroName": "ac_var_Strategy_MstrDT"},
+				{"Name":"TH", "MacroName": "ac_var_Strategy_TH"},
+				{"Name":"Refresh", "MacroName": "ac_var_Strategy_Refresh"}
+			]
+		},
+		"3": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Savage Blade", "MacroName": "savageblade" },
+				{"Name": "Requiescat", "MacroName": "requiescat" },
+				{"Name": "Evisceration", "MacroName": "evisceration" },
+				{"Name": "Leaden Salute", "MacroName": "leadensalute" },
+				{"Name": "Wildfire", "MacroName": "wildfire" },
+				{"Name": "Last Stand", "MacroName": "laststand" }
+			]
+		}},
+	"Dancer":{},
+	"Dark Knight":{},
+	"Dragoon":{},
+	"Geomancer":{
+		"1": {
+			"Name": "Element",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
+				{"Name": "Stone", "MacroName": "nuke_element_stone"}, 
+				{"Name": "Water", "MacroName": "nuke_element_water"}, 
+				{"Name": "Wind", "MacroName": "nuke_element_wind"}, 
+				{"Name": "Ice", "MacroName": "nuke_element_ice"}, 
+				{"Name": "Thunder", "MacroName": "nuke_element_thunder"}, 
+				{"Name": "Light", "MacroName": "nuke_element_light"}, 
+				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
+			]
+		},
+		"2": {
+			"Name": "Bubble",
+			"Settings": [
+				{"Name": "Regen",     "MacroName": "bubble-regen"},
+				{"Name": "Refresh",   "MacroName": "bubble-refresh"},
+				{"Name": "Haste",     "MacroName": "bubble-haste"},
+				{"Name": "Str+",      "MacroName": "bubble-refresh"},
+				{"Name": "Dex+",      "MacroName": "bubble-refresh"},
+				{"Name": "Vit+",      "MacroName": "bubble-refresh"},
+				{"Name": "Agi+",      "MacroName": "bubble-refresh"},
+				{"Name": "Int+",      "MacroName": "bubble-refresh"},
+				{"Name": "Mnd+",      "MacroName": "bubble-refresh"},
+				{"Name": "Chr+",      "MacroName": "bubble-refresh"},
+				{"Name": "PtAtt+",    "MacroName": "bubble-fury"},
+				{"Name": "PtDef+",    "MacroName": "bubble-def"},
+				{"Name": "PtMagAtt+", "MacroName": "bubble-acumen"},
+				{"Name": "PtMagDef+", "MacroName": "bubble-fend"},
+				{"Name": "PtAcc+",    "MacroName": "bubble-precision"},
+				{"Name": "PtEva+",    "MacroName": "bubble-voidance"},
+				{"Name": "PtMagAcc+", "MacroName": "bubble-focus"},
+				{"Name": "PtMagEva+", "MacroName": "bubble-attunement"},
+				{"Name": "EnAtt-",    "MacroName": "bubble-wilt"},
+				{"Name": "EnDef-",    "MacroName": "bubble-frailty"},
+				{"Name": "EnMagAtt-", "MacroName": "bubble-fade"},
+				{"Name": "EnMagDef-", "MacroName": "bubble-malaise"},
+				{"Name": "EnAcc-",    "MacroName": "bubble-slip"},
+				{"Name": "EnEva-",    "MacroName": "bubble-torpor"},
+				{"Name": "EnMagAcc-", "MacroName": "bubble-vex"},
+				{"Name": "EnMagEva-", "MacroName": "bubble-languor"},
+				{"Name": "EnMagEva-", "MacroName": "bubble-languor"}
+			]
+		},
+		"3": {
+			"Name": "Luopan",
+			"Settings": [
+				{"Name": "Regen",     "MacroName": "luopan-regen"},
+				{"Name": "Refresh",   "MacroName": "luopan-refresh"},
+				{"Name": "Haste",     "MacroName": "luopan-haste"},
+				{"Name": "Str+",      "MacroName": "luopan-refresh"},
+				{"Name": "Dex+",      "MacroName": "luopan-refresh"},
+				{"Name": "Vit+",      "MacroName": "luopan-refresh"},
+				{"Name": "Agi+",      "MacroName": "luopan-refresh"},
+				{"Name": "Int+",      "MacroName": "luopan-refresh"},
+				{"Name": "Mnd+",      "MacroName": "luopan-refresh"},
+				{"Name": "Chr+",      "MacroName": "luopan-refresh"},
+				{"Name": "PtAtt+",    "MacroName": "luopan-fury"},
+				{"Name": "PtDef+",    "MacroName": "luopan-def"},
+				{"Name": "PtMagAtt+", "MacroName": "luopan-acumen"},
+				{"Name": "PtMagDef+", "MacroName": "luopan-fend"},
+				{"Name": "PtAcc+",    "MacroName": "luopan-precision"},
+				{"Name": "PtEva+",    "MacroName": "luopan-voidance"},
+				{"Name": "PtMagAcc+", "MacroName": "luopan-focus"},
+				{"Name": "PtMagEva+", "MacroName": "luopan-attunement"},
+				{"Name": "EnAtt-",    "MacroName": "luopan-wilt"},
+				{"Name": "EnDef-",    "MacroName": "luopan-frailty"},
+				{"Name": "EnMagAtt-", "MacroName": "luopan-fade"},
+				{"Name": "EnMagDef-", "MacroName": "luopan-malaise"},
+				{"Name": "EnAcc-",    "MacroName": "luopan-slip"},
+				{"Name": "EnEva-",    "MacroName": "luopan-torpor"},
+				{"Name": "EnMagAcc-", "MacroName": "luopan-vex"},
+				{"Name": "EnMagEva-", "MacroName": "luopan-languor"},
+				{"Name": "EnMagEva-", "MacroName": "luopan-languor"}
+			]
+		},
+		"4": {
+			"Name": "Entrust",
+			"Settings": [
+				{"Name": "Regen",     "MacroName": "entrust-regen"},
+				{"Name": "Refresh",   "MacroName": "entrust-refresh"},
+				{"Name": "Haste",     "MacroName": "entrust-haste"},
+				{"Name": "Str+",      "MacroName": "entrust-refresh"},
+				{"Name": "Dex+",      "MacroName": "entrust-refresh"},
+				{"Name": "Vit+",      "MacroName": "entrust-refresh"},
+				{"Name": "Agi+",      "MacroName": "entrust-refresh"},
+				{"Name": "Int+",      "MacroName": "entrust-refresh"},
+				{"Name": "Mnd+",      "MacroName": "entrust-refresh"},
+				{"Name": "Chr+",      "MacroName": "entrust-refresh"},
+				{"Name": "PtAtt+",    "MacroName": "entrust-fury"},
+				{"Name": "PtDef+",    "MacroName": "entrust-def"},
+				{"Name": "PtMagAtt+", "MacroName": "entrust-acumen"},
+				{"Name": "PtMagDef+", "MacroName": "entrust-fend"},
+				{"Name": "PtAcc+",    "MacroName": "entrust-precision"},
+				{"Name": "PtEva+",    "MacroName": "entrust-voidance"},
+				{"Name": "PtMagAcc+", "MacroName": "entrust-focus"},
+				{"Name": "PtMagEva+", "MacroName": "entrust-attunement"},
+				{"Name": "EnAtt-",    "MacroName": "entrust-wilt"},
+				{"Name": "EnDef-",    "MacroName": "entrust-frailty"},
+				{"Name": "EnMagAtt-", "MacroName": "entrust-fade"},
+				{"Name": "EnMagDef-", "MacroName": "entrust-malaise"},
+				{"Name": "EnAcc-",    "MacroName": "entrust-slip"},
+				{"Name": "EnEva-",    "MacroName": "entrust-torpor"},
+				{"Name": "EnMagAcc-", "MacroName": "entrust-vex"},
+				{"Name": "EnMagEva-", "MacroName": "entrust-languor"},
+				{"Name": "EnMagEva-", "MacroName": "entrust-languor"}
+			]
+		},
+		"5": {
+			"Name": "Entrust Target",
+			"Settings": [
+				{"Name": "Char1", "MacroName": "entrust_target_char1"},
+				{"Name": "Char2", "MacroName": "entrust_target_char2"},
+				{"Name": "Char3", "MacroName": "entrust_target_char3"},
+				{"Name": "Char4", "MacroName": "entrust_target_char4"},
+				{"Name": "Char5", "MacroName": "entrust_target_char5"}
+			]
+		},
+		"6": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Hexastrike", "MacroName": "hexastrike" }
+			]
+		}},
+	"Monk":{},
+	"Ninja":{},
+	"Paladin":{},
+	"Puppetmaster":{
+		"1": {
+			"Name": "Accuracy",
+			"Settings": [
+				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
+				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
+			]
+		},
+		"2": {
+			"Name": "Strategy",
+			"Settings": [
+				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"}, 
+				{"Name":"PetOnly", "MacroName": "ac_var_Strategy_PetOnly"}, 
+				{"Name":"119PetOnly", "MacroName": "ac_var_Strategy_119PetOnly"}, 
+				{"Name":"MstrDT", "MacroName": "ac_var_Strategy_MstrDT"}, 
+				{"Name":"Overdrive", "MacroName": "ac_var_Strategy_Overdrive"}
+			]
+		},
+		"3": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Howling Fist", "MacroName": "howlingfist" },
+				{"Name": "Dragon Kick", "MacroName": "dragonkick" },
+				{"Name": "Stringing Pummel", "MacroName": "stringingpummel" },
+				{"Name": "Shijin Spiral", "MacroName": "shijinspiral" },
+				{"Name": "Victory Smite", "MacroName": "victorysmite" }
+			]
+		}
+	},
+	"Ranger":{},
+	"Red Mage":{},
+	"Rune Fencer":{},
+	"Samurai":{},
+	"Scholar":{
+		"1": {
+			"Name": "Accuracy",
+			"Settings": [
+				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
+				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
+			]
+		},
+		"2": {
+			"Name": "Element",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
+				{"Name": "Stone", "MacroName": "nuke_element_stone"}, 
+				{"Name": "Water", "MacroName": "nuke_element_water"}, 
+				{"Name": "Wind", "MacroName": "nuke_element_wind"}, 
+				{"Name": "Ice", "MacroName": "nuke_element_ice"}, 
+				{"Name": "Thunder", "MacroName": "nuke_element_thunder"}, 
+				{"Name": "Light", "MacroName": "nuke_element_light"}, 
+				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
+			]
+		},
+		"3": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Shattersoul", "MacroName": "shattersoul" },
+				{"Name": "Myrkr", "MacroName": "myrkr" },
+				{"Name": "Cataclysm", "MacroName": "cataclysm" }
+			]
+		}
+	},
+	"Summoner":{},
+	"Thief":{},
+	"Warrior":{},
+	"White Mage":{
+		"1": {
+			"Name": "WS",
+			"Settings": [
+				{"Name": "Hexastrike", "MacroName": "hexastrike" }
+			]
+		}}
+}

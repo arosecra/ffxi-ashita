@@ -1,0 +1,667 @@
+{
+	"group":{
+		"Name":"group",
+		"Script":"mbox/group.txt"
+	},
+	"warp2me":{
+		"Name":"warp2me",
+		"Script":"mbox/warp2me.txt"
+	},
+	"sneak":{
+		"Name":"sneak",
+		"Command":"/ms send /sneakinvis"
+	},
+	"desneak":{
+		"Name":"desneak",
+		"Command":"/ms send /exec desneak"
+	},
+	"follon":{
+		"Name":"follon",
+		"Script":"mbox/follon.txt"
+	},
+	"follof":{
+		"Name":"follof",
+		"Script":"mbox/follof.txt"
+	},
+	"mount":{
+		"Command":"/ms send /mount \"Red Crab\"",
+		"Name":"mount"
+	},
+	"dismnt":{
+		"Command":"/ms send /dismount",
+		"Name":"dismnt"
+	},
+	"allatk":{
+		"Name":"Attack",
+		"Command":"/ms send /attack [t]"
+	},
+	"alltrizek":{
+		"Command":"/ms send /exec \"mbox/trizring.txt\"",
+		"Name":"trizek"
+	},
+	"trizek":{
+		"SendTo":"/exec \"mbox/trizring.txt\"",
+		"Name":"trizek"
+	},
+	"endring":{
+		"SendTo":"/exec \"mbox/endring.txt\"",
+		"Name":"endor"
+	},
+	"allendring":{
+		"Command":"/ms send /exec \"mbox/endring.txt\"",
+		"Name":"endor"
+	},
+	"allwrp":{
+		"Command":"/ms send /exec \"mbox/warpring.txt\"",
+		"Name":"warp"
+	},
+	"wrp":{
+		"SendTo":"/exec \"mbox/warpring.txt\"",
+		"Name":"warp"
+	},
+	"attack":{
+		"SendTo":"/attack [t]",
+		"Name":"attack"
+	},
+	"flash":{
+		"SendTo":"/ma \"Flash\" [t]",
+		"Name":"flash"
+	},
+	"ws":{
+		"SendTo":"/mbh ws",
+		"Name":"ws"
+	},
+	"phalanx":{
+		"SendTo":"/ma Phalanx <me>",
+		"Name":"phalanx"
+	},
+	"corsair_exp":{
+		"Name":"Exp+",
+		"SendTo":"/ja \"Corsair's Roll\" <me>"
+	},
+	"corsair_petatt":{
+		"Name":"PetAtt+",
+		"SendTo":"/ja \"Beast Roll\" <me>"
+	},
+	"corsair_petmab":{
+		"Name":"PetMab+",
+		"SendTo":"/ja \"Puppet's Roll\" <me>"
+	},
+	"corsair_petacc":{
+		"Name":"PetAcc+",
+		"SendTo":"/ja \"Drachen Roll\" <me>"
+	},
+	"corsair_petregen":{
+		"Name":"PetRegen",
+		"SendTo":"/ja \"Companion's Roll\" <me>"
+	},
+	"corsair_ref":{
+		"Name":"Refresh",
+		"SendTo":"/ja \"Evoker's Roll\" <me>"
+	},
+	"corsair_mab":{
+		"Name":"Mab+",
+		"SendTo":"/ja \"Wizard's Roll\" <me>"
+	},
+	"dblup":{
+		"Name":"DblUp",
+		"SendTo":"/ja \"Double-Up\" <me>"
+	},
+	"snkeye":{
+		"Name":"SnkEye",
+		"SendTo":"/ja \"Snake Eye\" <me>"
+	},
+	"fold":{
+		"Name":"Fold",
+		"SendTo":"/ja Fold <me>"
+	},
+	"dia":{
+		"Name":"Dia",
+		"SendTo":"/ma \"Dia\" [t]"
+	},
+	"bardsong1":{
+		"Name":"Song1",
+		"SendTo":"/mbh brd singsong 1"
+	},
+	"bardsong2":{
+		"Name":"Song2",
+		"SendTo":"/mbh brd singsong 2"
+	},
+	"bardsong3":{
+		"Name":"Song3",
+		"SendTo":"/mbh brd singsong 3"
+	},
+	"mazurka":{
+		"Name":"Mazurka",
+		"SendTo":" /ma \"Chocobo Mazurka\" <me>"
+	},
+	"cure":{
+		"Name":"Cure",
+		"SendTo":"/mbh whm cure"
+	},
+	"curega":{
+		"Name":"Curega",
+		"SendTo":"/mbh whm curega"
+	},
+	"curtot":{
+		"Name":"CureToT",
+		"SendTo":"/mbh whm core_t_o_t"
+	},
+	"debuff":{
+		"Name":"debuff",
+		"SendTo":"/mbh whm removedebuff"
+	},
+	"dply":{
+		"Name":"Dply",
+		"SendTo":"/ja Deploy [t]"
+	},
+	"rtr":{
+		"Name":"Rtr",
+		"SendTo":"/ja Retrieve <me>"
+	},
+	"actvt":{
+		"Name":"Actvt",
+		"SendTo":"/ja Activate <me>"
+	},
+	"deactvt":{
+		"Name":"Deactvt",
+		"SendTo":"/ja Deactivate <me>"
+	},
+	"maint":{
+		"Name":"Maint",
+		"SendTo":"/ja Maintenance <me>"
+	},
+	"evisceration":{
+		"SendTo": "/mbh setws \"Evisceration\"",
+		"Name": "Evis"
+	},
+	"hexastrike":{
+		"SendTo": "/mbh setws \"Hexa Strike\"",
+		"Name": "Hexa"
+	},
+	"requiescat":{
+		"SendTo": "/mbh setws \"Requiescat\"",
+		"Name": "rqsct"
+	},
+	"cdc":{
+		"SendTo": "/mbh setws \"Chant du Cygne\"",
+		"Name": "cdc"
+	},
+	"savageblade":{
+		"SendTo": "/mbh setws \"Savage Blade\"",
+		"Name": "svgbld"
+	},
+	"leadensalute":{
+		"SendTo": "/mbh setws \"Leaden Salute\"",
+		"Name": "ldnslt"
+	},
+	"wildfire":{
+		"SendTo": "/mbh setws \"Wildfire\"",
+		"Name": "wldfr"
+	},
+	"laststand":{
+		"SendTo": "/mbh setws \"Last Stand\"",
+		"Name": "lststnd"
+	},
+	"primalrend":{
+		"SendTo": "/mbh setws \"Primal Rend\"",
+		"Name": "prmlrnd"
+	},
+	"cloudsplitter":{
+		"SendTo": "/mbh setws \"Cloud Splitter\"",
+		"Name": "cldsplt"
+	},
+	"mistralaxe":{
+		"SendTo": "/mbh setws \"Mistral Axe\"",
+		"Name": "mstrl"
+	},
+	"decimation":{
+		"SendTo": "/mbh setws \"Decimation\"",
+		"Name": "dcmtn"
+	},
+	"ruinator":{
+		"SendTo": "/mbh setws \"Ruinator\"",
+		"Name": "rntr"
+	},
+	"shattersoul":{
+		"SendTo": "/mbh setws \"Shattersoul\"",
+		"Name": "shtrsl"
+	},
+	"mrkr":{
+		"SendTo": "/mbh setws \"Myrkr\"",
+		"Name": "myrkr"
+	},
+	"cataclysm":{
+		"SendTo": "/mbh setws \"Cataclysm\"",
+		"Name": "ctclsm"
+	},
+	"howlingfist":{
+		"SendTo": "/mbh setws \"Howling Fist\"",
+		"Name": "hwlfst"
+	},
+	"dragonkick":{
+		"SendTo": "/mbh setws \"Dragon Kick\"",
+		"Name": "drgnkck"
+	},
+	"stringingpummel":{
+		"SendTo": "/mbh setws \"Stringing Pummel\"",
+		"Name": "strnpml"
+	},
+	"victorysmite":{
+		"SendTo": "/mbh setws \"Victory Smite\"",
+		"Name": "vctrysmt"
+	},
+	"shijinspiral":{
+		"SendTo": "/mbh setws \"Shijin Spiral\"",
+		"Name": "shijin"
+	},
+	"firem":{
+		"Name": "Fire",
+		"SendTo" : "/ja \"Fire Maneuver\" <me>"
+	},
+	"icem":{
+		"Name": "Ice",
+		"SendTo" : "/ja \"Ice Maneuver\" <me>"
+	},
+	"windm":{
+		"Name": "Wind",
+		"SendTo" : "/ja \"Wind Maneuver\" <me>"
+	},
+	"earthm":{
+		"Name": "Earth",
+		"SendTo" : "/ja \"Earth Maneuver\" <me>"
+	},
+	"thundrm":{
+		"Name": "Thundr",
+		"SendTo" : "/ja \"Thunder Maneuver\" <me>"
+	},
+	"watrm":{
+		"Name": "Water",
+		"SendTo" : "/ja \"Water Maneuver\" <me>"
+	},
+	"lightm":{
+		"Name": "Light",
+		"SendTo" : "/ja \"Light Maneuver\" <me>"
+	},
+	"drkm":{
+		"Name": "Dark",
+		"SendTo" : "/ja \"Dark Maneuver\" <me>"
+	},
+	"brdref3": {
+		"Name": "Ref3",
+		"SendTo" : "/mbh brd addsong \"Mage's Ballad III\""
+	},
+	"brddef5": {
+		"Name": "Def5",
+		"SendTo" : "/mbh brd addsong \"Knight's Minne V\""
+	},
+	"brdatt5": {
+		"Name": "Att5",
+		"SendTo" : "/mbh brd addsong \"Valor Minuet V\""
+	},
+	"brdattdel1": {
+		"Name": "AttDel1",
+		"SendTo" : "/mbh brd addsong \"Advancing March\""
+	},
+	"brdattdel2": {
+		"Name": "AttDel2",
+		"SendTo" : "/mbh brd addsong \"Victory March\""
+	},
+	"brdacc1": {
+		"Name": "Acc1",
+		"SendTo" : "/mbh brd addsong \"Sword Madrigal\""
+	},
+	"brdacc2": {
+		"Name": "Acc2",
+		"SendTo" : "/mbh brd addsong \"Blade Madrigal\""
+	},
+	"ac_var_Strategy_MstrMelee": {
+		"SendTo": "/ac var set Strategy MstrMelee",
+		"Name": "MstrMelee"
+	},
+	"ac_var_Strategy_PetOnly": {
+		"SendTo": "/ac var set Strategy PetOnly",
+		"Name": "PetOnly"
+	},
+	"ac_var_Strategy_119PetOnly": {
+		"SendTo": "/ac var set Strategy 119PetOnly",
+		"Name": "119PetOnly"
+	},
+	"ac_var_Strategy_MstrDT": {
+		"SendTo": "/ac var set Strategy MstrDT",
+		"Name": "MstrDT"
+	},
+	"ac_var_Strategy_Overdrive": {
+		"SendTo": "/ac var set Strategy Overdrive",
+		"Name": "Overdrive"
+	},
+	"ac_var_Strategy_TH": {
+		"SendTo": "/ac var set Strategy TH",
+		"Name": "TH"
+	},
+	"ac_var_Strategy_Refresh": {
+		"SendTo": "/ac var set Strategy Refresh",
+		"Name": "Refresh"
+	},
+	"ac_var_WeaponStrategy_Swap": {
+		"SendTo": "/ac var set WeaponStrategy Swap",
+		"Name": "Swap"
+	},
+	"ac_var_WeaponStrategy_NoSwap": {
+		"SendTo": "/ac var set WeaponStrategy NoSwap",
+		"Name": "NoSwap"
+	},
+	"ac_var_BlJug_Lizard": {
+		"SendTo": "/ac var set BlJug \"Livid Broth\"",
+		"Name": "BLLzrd"
+	},
+	"ac_var_BlJug_Tiger": {
+		"SendTo": "/ac var set BlJug \"Meaty Broth\"",
+		"Name": "BLTgr"
+	},
+	"ac_var_BlJug_Cricket": {
+		"SendTo": "/ac var set BlJug \"Bubbly Broth\"",
+		"Name": "BLCrckt"
+	},
+	"ac_var_BlJug_Bird": {
+		"SendTo": "/ac var set BlJug \"Windy Greens\"",
+		"Name": "BLBrd"
+	},
+	"ac_var_BlJug_Snapweed": {
+		"SendTo": "/ac var set BlJug \"Electrified Broth\"",
+		"Name": "BLSnpwd"
+	},
+	"ac_var_BlJug_Fly": {
+		"SendTo": "/ac var set BlJug \"Blackwater Broth\"",
+		"Name": "BLFly"
+	},
+	"ac_var_BlJug_Piggy": {
+		"SendTo": "/ac var set BlJug \"Tantalizing Broth\"",
+		"Name": "BLPiggy"
+	},
+	"ac_var_BlJug_Mandy": {
+		"SendTo": "/ac var set BlJug \"Saline Broth\"",
+		"Name": "BLMandy"
+	},
+	"ac_var_BlJug_Fish": {
+		"SendTo": "/ac var set BlJug \"Airy Broth\"",
+		"Name": "BLFish"
+	},
+	"ac_var_BlJug_Raptor": {
+		"SendTo": "/ac var set BlJug \"Rapid Broth\"",
+		"Name": "BLRptr"
+	},
+	"ac_var_CllBstJug_Lizard": {
+		"SendTo": "/ac var set CllBstJug \"Livid Broth\"",
+		"Name": "ClBstLzrd"
+	},
+	"ac_var_CllBstJug_Tiger": {
+		"SendTo": "/ac var set CllBstJug \"Meaty Broth\"",
+		"Name": "ClBstTgr"
+	},
+	"ac_var_CllBstJug_Cricket": {
+		"SendTo": "/ac var set CllBstJug \"Spicy Broth\"",
+		"Name": "ClBstCrck"
+	},
+	"ac_var_CllBstJug_Bird": {
+		"SendTo": "/ac var set CllBstJug \"Salubrious Broth\"",
+		"Name": "ClBstBrd"
+	},
+	"ac_var_CllBstJug_Snapweed": {
+		"SendTo": "/ac var set CllBstJug \"Electrified Broth\"",
+		"Name": "ClBstSnpw"
+	},
+	"ac_var_CllBstJug_Fly": {
+		"SendTo": "/ac var set CllBstJug \"Blackwater Broth\"",
+		"Name": "ClBstFly"
+	},
+	"ac_var_CllBstJug_Piggy": {
+		"SendTo": "/ac var set CllBstJug \"Fizzy Broth\"",
+		"Name": "ClBstPggy"
+	},
+	"ac_var_CllBstJug_Fish": {
+		"SendTo": "/ac var set CllBstJug \"Airy Broth\"",
+		"Name": "ClBstFish"
+	},
+	"ac_var_CllBstJug_Raptor": {
+		"SendTo": "/ac var set CllBstJug \"Rapid Broth\"",
+		"Name": "ClBstRptr"
+	},
+	"ac_var_IdleSub_Arktoi": {
+		"SendTo": "/ac var set IdleSub Arktoi",
+		"Name": "SubArk"
+	},
+	"ac_var_IdleSub_PetPdt": {
+		"SendTo": "/ac var set IdleSub PetPdt",
+		"Name": "SubPtPdt"
+	},
+	"ac_var_IdleSub_PetDt": {
+		"SendTo": "/ac var set IdleSub PetDt",
+		"Name": "SubPtDT"
+	},
+	"ac_var_IdleSub_Beatific": {
+		"SendTo": "/ac var set IdleSub Beatific",
+		"Name": "SubBtfc"
+	},
+	"ac_var_IdleSub_Adapa": {
+		"SendTo": "/ac var set IdleSub Adapa",
+		"Name": "SubAdp"
+	},
+	"ac_var_IdleMain_NoSwap": {
+		"SendTo": "/ac var set IdleMain NoSwap",
+		"Name": "MnNoSwp"
+	},
+	"ac_var_IdleMain_Aymur": {
+		"SendTo": "/ac var set IdleMain Adapa",
+		"Name": "MnAymr"
+	},
+	"ac_var_IdleMain_PetDt": {
+		"SendTo": "/ac var set IdleMain Adapa",
+		"Name": "MnPetDt"
+	},
+	"ac_var_IdleMain_Arktoi": {
+		"SendTo": "/ac var set IdleMain Arktoi",
+		"Name": "MnArk"
+	},
+	"ac_var_Accuracy_Low": {
+		"SendTo": "/ac var set Accuracy Low",
+		"Name": "AccLow"
+	},
+	"ac_var_Accuracy_High": {
+		"SendTo": "/ac var set Accuracy High",
+		"Name": "AccHigh"
+	},
+	"nuke_element_fire": {
+		"SendTo": "/nuke setelement fire",
+		"Name": "fire"
+	},
+	"nuke_element_stone": {
+		"SendTo": "/nuke setelement stone",
+		"Name": "stone"
+	},
+	"nuke_element_water": {
+		"SendTo": "/nuke setelement water",
+		"Name": "water"
+	},
+	"nuke_element_wind": {
+		"SendTo": "/nuke setelement wind",
+		"Name": "wind"
+	},
+	"nuke_element_ice": {
+		"SendTo": "/nuke setelement ice",
+		"Name": "ice"
+	},
+	"nuke_element_thunder": {
+		"SendTo": "/nuke setelement thundr",
+		"Name": "thundr"
+	},
+	"nuke_element_light": {
+		"SendTo": "/nuke setelement light",
+		"Name": "light"
+	},
+	"nuke_element_dark": {
+		"SendTo": "/nuke setelement dark",
+		"Name": "dark"
+	},
+	"singdummy": {
+		"Name": "sngdmy",
+		"SendTo" : "/exec brd/sing_dummy_songs"
+	},
+	"song1": {
+		"Name": "Song1",
+		"SendTo" : "/mbh brd singsong 1"
+	},
+	"song2": {
+		"Name": "Song2",
+		"SendTo" : "/mbh brd singsong 2"
+	},
+	"song3": {
+		"Name": "Song3",
+		"SendTo" : "/mbh brd singsong 3"
+	},
+	"mazurka": {
+		"Name": "Mazurka",
+		"SendTo" : "/ma \"Chocobo Mazurka\" <me>"
+	},
+	"spur": {
+		"SendTo": "/ja \"Spur\" <me>",
+		"Name": "Spur"
+	},
+	"callbeast": {
+		"SendTo": "/ja \"Call Beast\" <me>",
+		"Name": "CllBst"
+	},
+	"bl": {
+		"SendTo": "/ja \"Bestial Loyalty\" <me>",
+		"Name": "BL"
+	},
+	"fam": {
+		"SendTo": "/ja \"Familiar\" <me>",
+		"Name": "Fam"
+	},
+	"unlsh": {
+		"SendTo": "/ja \"Unleash\" <me>",
+		"Name": "Unlsh"
+	},
+	"fight": {
+		"SendTo": "/pet \"Fight\" <stnpc>",
+		"Name": "Fght"
+	},
+	"stay": {
+		"SendTo": "/pet \"Stay\" <me>",
+		"Name": "Stay"
+	},
+	"heel": {
+		"SendTo": "/pet \"Heel\" <me>",
+		"Name": "Heel"
+	},
+	"reward": {
+		"SendTo": "/ja \"Reward\" <me>",
+		"Name": "Reward"
+	},
+	"pet1": {
+		"SendTo": "/bstpet 1 <me>",
+		"Name": "Pet1"
+	},
+	"pet2": {
+		"SendTo": "/bstpet 2 <me>",
+		"Name": "Pet2"
+	},
+	"pet3": {
+		"SendTo": "/bstpet 3 <me>",
+		"Name": "Pet3"
+	},
+	"pet4": {
+		"SendTo": "/bstpet 4 <me>",
+		"Name": "Pet4"
+	},
+	"storm1": {
+		"Command": "/nuke stormI",
+		"Name": "stormI"
+	}, 
+	"storm2": {
+		"Command": "/nuke stormII",
+		"Name": "stormII"
+	}, 
+	"klima": {
+		"Command": "/ma Klimaform <me>",
+		"Name": "klima"
+	},
+	
+	"liq_f": {
+		"Script": "scholar_self_sc/Liquefaction_Fire.txt",
+		"Name": "Liq/F"
+	},
+	"sci_s": {
+		"Script": "scholar_self_sc/Scission_Stone.txt",
+		"Name": "Sci/S"
+	},
+	"rev_w": {
+		"Script": "scholar_self_sc/Reverberation_Water.txt",
+		"Name": "Rev/W"
+	},
+	"det_a": {
+		"Script": "scholar_self_sc/Detonation_Aero.txt",
+		"Name": "Det/A"
+	},
+	"ind_b": {
+		"Script": "scholar_self_sc/Induration_Blizzard.txt",
+		"Name": "Ind/B"
+	},
+	"imp_t": {
+		"Script": "scholar_self_sc/Impaction_Thunder.txt",
+		"Name": "Imp/T"
+	},
+	"trns_l": {
+		"Script": "scholar_self_sc/Transfiction_Light.txt",
+		"Name": "Trns/L"
+	},
+	"com_d": {
+		"Script": "scholar_self_sc/Compression_Dark.txt",
+		"Name": "Com/D"
+	},
+	"frag_at": {
+		"Script": "scholar_self_sc/Fragmentation_Aero_Thunder.txt",
+		"Name": "Frag/AT"
+	},
+	"fus_fl": {
+		"Script": "scholar_self_sc/Fusion_Fire_Light.txt",
+		"Name": "Fus/FL"
+	},
+	"grav_ds": {
+		"Script": "scholar_self_sc/Gravitation_Dark_Stone.txt",
+		"Name": "Grav/DS"
+	},
+	"dist_wb": {
+		"Script": "scholar_self_sc/Distortion_Water_Blizzard.txt",
+		"Name": "Dist/WB"
+	},
+	"helix1": {
+		"Command": "/nuke helixI",
+		"Name": "helixI"
+	}, 
+	"helix2": {
+		"Command": "/nuke helixII",
+		"Name": "helixII"
+	}, 
+	"nuke1": {
+		"Command": "/nuke nukeI",
+		"Name": "nukeI"
+	}, 
+	"nuke2": {
+		"Command": "/nuke nukeII",
+		"Name": "nukeII"
+	}, 
+	"nuke3": {
+		"Command": "/nuke nukeIII",
+		"Name": "nukeIII"
+	}, 
+	"nuke4": {
+		"Command": "/nuke nukeIV",
+		"Name": "nukeIV"
+	}, 
+	"nuke5": {
+		"Command": "/nuke nukeV",
+		"Name": "nukeV"
+	}
+}
