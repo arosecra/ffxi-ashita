@@ -249,7 +249,7 @@ end
 -- mbh brd singdummysong [n]
 -- mbh brd setcarolelement [n]
 -- mbh brd setthrenodyelement [n]
--- mbh cor setroll [n] [roll name]
+-- mbh cor addroll [roll name]
 -- mbh cor roll [n]
 -- mbh geo setbubble [spell name]
 -- mbh geo setluopan [spell name]
