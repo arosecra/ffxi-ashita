@@ -24,7 +24,49 @@
 			<ring1>Varar Ring +1</ring1>
 			<back>Visucius's Mantle</back>
 		</set>
-		<set name="PupEng-PetDT">
+		<set name="PupEng-119PetOnly">
+			<head>Anwig Salade</head>
+			<body>Heyoka Harness</body>
+			<hands>Rao Kote +1</hands>
+			<legs>Rao Haidate +1</legs>
+			<feet>Rao Sune-Ate +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Rimeice Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Overbearing Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-PetOnly">
+			<head>Anwig Salade</head>
+			<body>Heyoka Harness</body>
+			<hands>Rao Kote +1</hands>
+			<legs>Rao Haidate +1</legs>
+			<feet>Rao Sune-Ate +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Rimeice Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Overbearing Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-MstrMelee">
+			<head>Anwig Salade</head>
+			<body>Heyoka Harness</body>
+			<hands>Rao Kote +1</hands>
+			<legs>Rao Haidate +1</legs>
+			<feet>Rao Sune-Ate +1</feet>
+			<neck>Shepherd's Chain</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Rimeice Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Overbearing Ring</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-MstrDT">
 			<head>Anwig Salade</head>
 			<body>Heyoka Harness</body>
 			<hands>Rao Kote +1</hands>
@@ -58,7 +100,7 @@
 		</include>
 	</sets>
 	<variables>
-		<var name="Strategy">Overdrive</var>
+		<var name="Strategy">PetOnly</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
