@@ -75,34 +75,6 @@
 		"SendTo":"/ma Phalanx <me>",
 		"Name":"phalanx"
 	},
-	"corsair_exp":{
-		"Name":"Exp+",
-		"SendTo":"/ja \"Corsair's Roll\" <me>"
-	},
-	"corsair_petatt":{
-		"Name":"PetAtt+",
-		"SendTo":"/ja \"Beast Roll\" <me>"
-	},
-	"corsair_petmab":{
-		"Name":"PetMab+",
-		"SendTo":"/ja \"Puppet's Roll\" <me>"
-	},
-	"corsair_petacc":{
-		"Name":"PetAcc+",
-		"SendTo":"/ja \"Drachen Roll\" <me>"
-	},
-	"corsair_petregen":{
-		"Name":"PetRegen",
-		"SendTo":"/ja \"Companion's Roll\" <me>"
-	},
-	"corsair_ref":{
-		"Name":"Refresh",
-		"SendTo":"/ja \"Evoker's Roll\" <me>"
-	},
-	"corsair_mab":{
-		"Name":"Mab+",
-		"SendTo":"/ja \"Wizard's Roll\" <me>"
-	},
 	"dblup":{
 		"Name":"DblUp",
 		"SendTo":"/ja \"Double-Up\" <me>"
@@ -576,15 +548,15 @@
 		"Name": "Pet4"
 	},
 	"storm1": {
-		"Command": "/nuke stormI",
+		"SendTo": "/nuke stormI",
 		"Name": "stormI"
 	}, 
 	"storm2": {
-		"Command": "/nuke stormII",
+		"SendTo": "/nuke stormII",
 		"Name": "stormII"
 	}, 
 	"klima": {
-		"Command": "/ma Klimaform <me>",
+		"SendTo": "/ma Klimaform <me>",
 		"Name": "klima"
 	},
 	
@@ -637,31 +609,99 @@
 		"Name": "Dist/WB"
 	},
 	"helix1": {
-		"Command": "/nuke helixI",
+		"SendTo": "/nuke helixI",
 		"Name": "helixI"
 	}, 
 	"helix2": {
-		"Command": "/nuke helixII",
+		"SendTo": "/nuke helixII",
 		"Name": "helixII"
 	}, 
 	"nuke1": {
-		"Command": "/nuke nukeI",
+		"SendTo": "/nuke nukeI",
 		"Name": "nukeI"
 	}, 
 	"nuke2": {
-		"Command": "/nuke nukeII",
+		"SendTo": "/nuke nukeII",
 		"Name": "nukeII"
 	}, 
 	"nuke3": {
-		"Command": "/nuke nukeIII",
+		"SendTo": "/nuke nukeIII",
 		"Name": "nukeIII"
 	}, 
 	"nuke4": {
-		"Command": "/nuke nukeIV",
+		"SendTo": "/nuke nukeIV",
 		"Name": "nukeIV"
 	}, 
 	"nuke5": {
-		"Command": "/nuke nukeV",
+		"SendTo": "/nuke nukeV",
 		"Name": "nukeV"
+	}, 
+	"cor_roll_corsairs": {
+		"SendTo": "/mbh cor addroll \"Corsair's Roll\"",
+		"Name": "exp+"
+	}, 
+	"cor_roll_fighters": {
+		"SendTo": "/mbh cor addroll \"Fighter's Roll\"",
+		"Name": "DblAtt+"
+	},
+	"cor_roll_beast":{
+		"Name":"PetAtt+",
+		"SendTo":"/mbh cor addroll \"Beast Roll\" <me>"
+	},
+	"cor_roll_puppet":{
+		"Name":"PetMab+",
+		"SendTo":"/mbh cor addroll \"Puppet's Roll\" <me>"
+	},
+	"cor_roll_drachen":{
+		"Name":"PetAcc+",
+		"SendTo":"/mbh cor addroll \"Drachen Roll\" <me>"
+	},
+	"cor_roll_companion":{
+		"Name":"PetRegen",
+		"SendTo":"/mbh cor addroll \"Companion's Roll\" <me>"
+	},
+	"cor_roll_evokers":{
+		"Name":"Refresh",
+		"SendTo":"/mbh cor addroll \"Evoker's Roll\" <me>"
+	},
+	"cor_roll_wizards":{
+		"Name":"Mab+",
+		"SendTo":"/mbh cor addroll \"Wizard's Roll\" <me>"
+	},
+	"cor_roll_warlocks":{
+		"Name":"Macc+",
+		"SendTo":"/mbh cor addroll \"Warlock's Roll\" <me>"
+	},
+	"cor_roll_rogues":{
+		"Name":"Crit+",
+		"SendTo":"/mbh cor addroll \"Rogue's Roll\" <me>"
+	},
+	"cor_roll_chaos":{
+		"Name":"Att+",
+		"SendTo":"/mbh cor addroll \"Chaos Roll\" <me>"
+	},
+	"cor_roll_hunters":{
+		"Name":"Acc+",
+		"SendTo":"/mbh cor addroll \"Hunter's Roll\" <me>"
+	},
+	"cor_roll_samurais":{
+		"Name":"Stp+",
+		"SendTo":"/mbh cor addroll \"Samurai's Roll\" <me>"
+	},
+	"cor_roll_tacticians":{
+		"Name":"Regain",
+		"SendTo":"/mbh cor addroll \"Tactician's Roll\" <me>"
+	},
+	"roll1":{
+		"Name":"roll1",
+		"SendTo":"//mbh cor roll 1"
+	},
+	"roll2":{
+		"Name":"roll2",
+		"SendTo":"/mbh cor roll 2"
+	},
+	"ra":{
+		"Name":"ra",
+		"SendTo":"/ra [t]"
 	}
 }

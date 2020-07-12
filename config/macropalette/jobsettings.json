@@ -194,6 +194,44 @@
 			]
 		},
 		"3": {
+			"Name": "Roll One",
+			"Settings": [
+				{"Name": "Exp+", "MacroName": "cor_roll_corsairs"},
+				{"Name": "DblAtt+", "MacroName": "cor_roll_fighters"},
+				{"Name": "Mab+", "MacroName": "cor_roll_wizards"},
+				{"Name": "Macc+", "MacroName": "cor_roll_warlocks"},
+				{"Name": "Crit+", "MacroName": "cor_roll_rogues"},
+				{"Name": "Att+", "MacroName": "cor_roll_chaos"},
+				{"Name": "Acc+", "MacroName": "cor_roll_hunters"},
+				{"Name": "Stp+", "MacroName": "cor_roll_samurais"},
+				{"Name": "Regain", "MacroName": "cor_roll_tacticians"},
+				{"Name": "Refresh", "MacroName": "cor_roll_evokers"},
+				{"Name": "PetAcc+", "MacroName": "cor_roll_drachen"},
+				{"Name": "PetMacMab+", "MacroName": "cor_roll_puppet"},
+				{"Name": "PetAtt+", "MacroName": "cor_roll_beast"},
+				{"Name": "PetReg+", "MacroName": "cor_roll_companion"}
+			]
+		},
+		"4": {
+			"Name": "Roll Two",
+			"Settings": [
+				{"Name": "Exp+", "MacroName": "cor_roll_corsairs"},
+				{"Name": "DblAtt+", "MacroName": "cor_roll_fighters"},
+				{"Name": "Mab+", "MacroName": "cor_roll_wizards"},
+				{"Name": "Macc+", "MacroName": "cor_roll_warlocks"},
+				{"Name": "Crit+", "MacroName": "cor_roll_rogues"},
+				{"Name": "Att+", "MacroName": "cor_roll_chaos"},
+				{"Name": "Acc+", "MacroName": "cor_roll_hunters"},
+				{"Name": "Stp+", "MacroName": "cor_roll_samurais"},
+				{"Name": "Regain", "MacroName": "cor_roll_tacticians"},
+				{"Name": "Refresh", "MacroName": "cor_roll_evokers"},
+				{"Name": "PetAcc+", "MacroName": "cor_roll_drachen"},
+				{"Name": "PetMacMab+", "MacroName": "cor_roll_puppet"},
+				{"Name": "PetAtt+", "MacroName": "cor_roll_beast"},
+				{"Name": "PetReg+", "MacroName": "cor_roll_companion"}
+			]
+		},
+		"5": {
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Savage Blade", "MacroName": "savageblade" },
