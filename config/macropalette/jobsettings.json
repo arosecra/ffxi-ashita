@@ -9,7 +9,9 @@
 				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
 				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
 				{"Name":"Acc1", "MacroName": "brdacc1"}, 
-				{"Name":"Acc2", "MacroName": "brdacc2"}
+				{"Name":"Acc2", "MacroName": "brdacc2"}, 
+				{"Name":"Carol 1", "MacroName": "brdcarol1"}, 
+				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
 		"2": {
@@ -20,8 +22,9 @@
 				{"Name":"Att5", "MacroName": "brdatt5"}, 
 				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
 				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
-				{"Name":"Acc1", "MacroName": "brdacc1"}, 
-				{"Name":"Acc2", "MacroName": "brdacc2"}
+				{"Name":"Acc1", "MacroName": "brdacc1"},
+				{"Name":"Carol 1", "MacroName": "brdcarol1"}, 
+				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
 		"3": {
@@ -33,22 +36,38 @@
 				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
 				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
 				{"Name":"Acc1", "MacroName": "brdacc1"}, 
-				{"Name":"Acc2", "MacroName": "brdacc2"}
+				{"Name":"Acc2", "MacroName": "brdacc2"},
+				{"Name":"Carol 1", "MacroName": "brdcarol1"}, 
+				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
 		"4": {
-			"Name": "Threnody",
+			"Name": "Threnody Element",
 			"Settings": [
-				{"Name": "Ref3", "MacroName": "brdref3" }, 
-				{"Name":"Def5", "MacroName": "brddef5"}, 
-				{"Name":"Att5", "MacroName": "brdatt5"}, 
-				{"Name":"AttDel1", "MacroName": "brdattdel1"}, 
-				{"Name":"AttDel2", "MacroName": "brdattdel2"}, 
-				{"Name":"Acc1", "MacroName": "brdacc1"}, 
-				{"Name":"Acc2", "MacroName": "brdacc2"}
+				{"Name": "Fire", "MacroName": "brd_threnody_element_fire"}, 
+				{"Name": "Stone", "MacroName": "brd_threnody_element_stone"}, 
+				{"Name": "Water", "MacroName": "brd_threnody_element_water"}, 
+				{"Name": "Wind", "MacroName": "brd_threnody_element_wind"}, 
+				{"Name": "Ice", "MacroName": "brd_threnody_element_ice"}, 
+				{"Name": "Thunder", "MacroName": "brd_threnody_element_thunder"}, 
+				{"Name": "Light", "MacroName": "brd_threnody_element_light"}, 
+				{"Name": "Dark", "MacroName": "brd_threnody_element_dark"} 
 			]
 		},
 		"5": {
+			"Name": "Carol Element",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "brd_carol_element_fire"}, 
+				{"Name": "Stone", "MacroName": "brd_carol_element_stone"}, 
+				{"Name": "Water", "MacroName": "brd_carol_element_water"}, 
+				{"Name": "Wind", "MacroName": "brd_carol_element_wind"}, 
+				{"Name": "Ice", "MacroName": "brd_carol_element_ice"}, 
+				{"Name": "Thunder", "MacroName": "brd_carol_element_thunder"}, 
+				{"Name": "Light", "MacroName": "brd_carol_element_light"}, 
+				{"Name": "Dark", "MacroName": "brd_carol_element_dark"} 
+			]
+		},
+		"6": {
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Evisceration", "MacroName": "evisceration" }
@@ -265,13 +284,13 @@
 				{"Name": "Regen",     "MacroName": "bubble-regen"},
 				{"Name": "Refresh",   "MacroName": "bubble-refresh"},
 				{"Name": "Haste",     "MacroName": "bubble-haste"},
-				{"Name": "Str+",      "MacroName": "bubble-refresh"},
-				{"Name": "Dex+",      "MacroName": "bubble-refresh"},
-				{"Name": "Vit+",      "MacroName": "bubble-refresh"},
-				{"Name": "Agi+",      "MacroName": "bubble-refresh"},
-				{"Name": "Int+",      "MacroName": "bubble-refresh"},
-				{"Name": "Mnd+",      "MacroName": "bubble-refresh"},
-				{"Name": "Chr+",      "MacroName": "bubble-refresh"},
+				{"Name": "Str+",      "MacroName": "bubble-str"},
+				{"Name": "Dex+",      "MacroName": "bubble-dex"},
+				{"Name": "Vit+",      "MacroName": "bubble-vit"},
+				{"Name": "Agi+",      "MacroName": "bubble-agi"},
+				{"Name": "Int+",      "MacroName": "bubble-int"},
+				{"Name": "Mnd+",      "MacroName": "bubble-mnd"},
+				{"Name": "Chr+",      "MacroName": "bubble-chr"},
 				{"Name": "PtAtt+",    "MacroName": "bubble-fury"},
 				{"Name": "PtDef+",    "MacroName": "bubble-def"},
 				{"Name": "PtMagAtt+", "MacroName": "bubble-acumen"},
@@ -287,7 +306,6 @@
 				{"Name": "EnAcc-",    "MacroName": "bubble-slip"},
 				{"Name": "EnEva-",    "MacroName": "bubble-torpor"},
 				{"Name": "EnMagAcc-", "MacroName": "bubble-vex"},
-				{"Name": "EnMagEva-", "MacroName": "bubble-languor"},
 				{"Name": "EnMagEva-", "MacroName": "bubble-languor"}
 			]
 		},
@@ -297,13 +315,13 @@
 				{"Name": "Regen",     "MacroName": "luopan-regen"},
 				{"Name": "Refresh",   "MacroName": "luopan-refresh"},
 				{"Name": "Haste",     "MacroName": "luopan-haste"},
-				{"Name": "Str+",      "MacroName": "luopan-refresh"},
-				{"Name": "Dex+",      "MacroName": "luopan-refresh"},
-				{"Name": "Vit+",      "MacroName": "luopan-refresh"},
-				{"Name": "Agi+",      "MacroName": "luopan-refresh"},
-				{"Name": "Int+",      "MacroName": "luopan-refresh"},
-				{"Name": "Mnd+",      "MacroName": "luopan-refresh"},
-				{"Name": "Chr+",      "MacroName": "luopan-refresh"},
+				{"Name": "Str+",      "MacroName": "luopan-str"},
+				{"Name": "Dex+",      "MacroName": "luopan-dex"},
+				{"Name": "Vit+",      "MacroName": "luopan-vit"},
+				{"Name": "Agi+",      "MacroName": "luopan-agi"},
+				{"Name": "Int+",      "MacroName": "luopan-int"},
+				{"Name": "Mnd+",      "MacroName": "luopan-mnd"},
+				{"Name": "Chr+",      "MacroName": "luopan-chr"},
 				{"Name": "PtAtt+",    "MacroName": "luopan-fury"},
 				{"Name": "PtDef+",    "MacroName": "luopan-def"},
 				{"Name": "PtMagAtt+", "MacroName": "luopan-acumen"},
@@ -319,7 +337,6 @@
 				{"Name": "EnAcc-",    "MacroName": "luopan-slip"},
 				{"Name": "EnEva-",    "MacroName": "luopan-torpor"},
 				{"Name": "EnMagAcc-", "MacroName": "luopan-vex"},
-				{"Name": "EnMagEva-", "MacroName": "luopan-languor"},
 				{"Name": "EnMagEva-", "MacroName": "luopan-languor"}
 			]
 		},
@@ -329,13 +346,13 @@
 				{"Name": "Regen",     "MacroName": "entrust-regen"},
 				{"Name": "Refresh",   "MacroName": "entrust-refresh"},
 				{"Name": "Haste",     "MacroName": "entrust-haste"},
-				{"Name": "Str+",      "MacroName": "entrust-refresh"},
-				{"Name": "Dex+",      "MacroName": "entrust-refresh"},
-				{"Name": "Vit+",      "MacroName": "entrust-refresh"},
-				{"Name": "Agi+",      "MacroName": "entrust-refresh"},
-				{"Name": "Int+",      "MacroName": "entrust-refresh"},
-				{"Name": "Mnd+",      "MacroName": "entrust-refresh"},
-				{"Name": "Chr+",      "MacroName": "entrust-refresh"},
+				{"Name": "Str+",      "MacroName": "entrust-str"},
+				{"Name": "Dex+",      "MacroName": "entrust-dex"},
+				{"Name": "Vit+",      "MacroName": "entrust-vit"},
+				{"Name": "Agi+",      "MacroName": "entrust-agi"},
+				{"Name": "Int+",      "MacroName": "entrust-int"},
+				{"Name": "Mnd+",      "MacroName": "entrust-mnd"},
+				{"Name": "Chr+",      "MacroName": "entrust-chr"},
 				{"Name": "PtAtt+",    "MacroName": "entrust-fury"},
 				{"Name": "PtDef+",    "MacroName": "entrust-def"},
 				{"Name": "PtMagAtt+", "MacroName": "entrust-acumen"},
@@ -351,7 +368,6 @@
 				{"Name": "EnAcc-",    "MacroName": "entrust-slip"},
 				{"Name": "EnEva-",    "MacroName": "entrust-torpor"},
 				{"Name": "EnMagAcc-", "MacroName": "entrust-vex"},
-				{"Name": "EnMagEva-", "MacroName": "entrust-languor"},
 				{"Name": "EnMagEva-", "MacroName": "entrust-languor"}
 			]
 		},
@@ -445,6 +461,42 @@
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Hexastrike", "MacroName": "hexastrike" }
+			]
+		}, 
+		"2": {
+			"Name": "Boost",
+			"Settings": [
+				{"Name": "Str", "MacroName": "mbh_setboost_str" },
+				{"Name": "Dex", "MacroName": "mbh_setboost_dex" },
+				{"Name": "Vit", "MacroName": "mbh_setboost_vit" },
+				{"Name": "Agi", "MacroName": "mbh_setboost_agi" },
+				{"Name": "Int", "MacroName": "mbh_setboost_int" },
+				{"Name": "Mnd", "MacroName": "mbh_setboost_mnd" },
+				{"Name": "Chr", "MacroName": "mbh_setboost_chr" }
+			]
+		}, 
+		"3": {
+			"Name": "Bar Element",
+			"Settings": [
+				{"Name": "Fire",    "MacroName": "mbh_whm_setbarelement_fire" },
+				{"Name": "Ice",     "MacroName": "mbh_whm_setbarelement_ice" },
+				{"Name": "Wind",    "MacroName": "mbh_whm_setbarelement_wind" },
+				{"Name": "Stone",   "MacroName": "mbh_whm_setbarelement_stone" },
+				{"Name": "Thunder", "MacroName": "mbh_whm_setbarelement_thunder" },
+				{"Name": "Water",   "MacroName": "mbh_whm_setbarelement_water" }
+			]
+		}, 
+		"4": {
+			"Name": "Bar Status",
+			"Settings": [
+				{"Name": "Amnesia",       "MacroName": "mbh_whm_setbarstatus_amnesia" },
+				{"Name": "Blind",         "MacroName": "mbh_whm_setbarstatus_blind" },
+				{"Name": "Paralysis",     "MacroName": "mbh_whm_setbarstatus_paralysis" },
+				{"Name": "Petrification", "MacroName": "mbh_whm_setbarstatus_petrification" },
+				{"Name": "Plague",        "MacroName": "mbh_whm_setbarstatus_plague" },
+				{"Name": "Poison",        "MacroName": "mbh_whm_setbarstatus_poison" },
+				{"Name": "Silence",       "MacroName": "mbh_whm_setbarstatus_silence" },
+				{"Name": "Sleep",         "MacroName": "mbh_whm_setbarstatus_sleep" }
 			]
 		}}
 }

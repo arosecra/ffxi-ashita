@@ -287,6 +287,14 @@
 		"Name": "Acc2",
 		"SendTo" : "/mbh brd addsong \"Blade Madrigal\""
 	},
+	"brdcarol1":{
+		"Name":"Carol1",
+		"SendTo":"/mbh brd addson \"Carol 1\""
+	},
+	"brdcarol2":{
+		"Name":"Carol2",
+		"SendTo":"/mbh brd addson \"Carol 2\""
+	},
 	"ac_var_Strategy_MstrMelee": {
 		"SendTo": "/ac var set Strategy MstrMelee",
 		"Name": "MstrMelee"
@@ -694,7 +702,7 @@
 	},
 	"roll1":{
 		"Name":"roll1",
-		"SendTo":"//mbh cor roll 1"
+		"SendTo":"/mbh cor roll 1"
 	},
 	"roll2":{
 		"Name":"roll2",
@@ -703,5 +711,195 @@
 	"ra":{
 		"Name":"ra",
 		"SendTo":"/ra [t]"
-	}
+	},
+	"brd_threnody_element_fire":{
+		"Name":"ThFire",
+		"SendTo":"/mbh brd setthrenodyelement Fire"
+	},
+	"brd_threnody_element_stone":{
+		"Name":"ThStone",
+		"SendTo":"/mbh brd setthrenodyelement Earth"
+	},
+	"brd_threnody_element_water":{
+		"Name":"ThWater",
+		"SendTo":"/mbh brd setthrenodyelement Water"
+	},
+	"brd_threnody_element_wind":{
+		"Name":"ThWind",
+		"SendTo":"/mbh brd setthrenodyelement Wind"
+	},
+	"brd_threnody_element_ice":{
+		"Name":"ThIce",
+		"SendTo":"/mbh brd setthrenodyelement Ice"
+	},
+	"brd_threnody_element_thunder":{
+		"Name":"ThThndr",
+		"SendTo":"/mbh brd setthrenodyelement Lightning"
+	},
+	"brd_threnody_element_light":{
+		"Name":"ThLight",
+		"SendTo":"/mbh brd setthrenodyelement Light"
+	},
+	"brd_threnody_element_dark":{
+		"Name":"ThDark",
+		"SendTo":"/mbh brd setthrenodyelement Dark"
+	},
+	"brd_carol_element_fire":{
+		"Name":"CrlFire",
+		"SendTo":"/mbh brd setcarolelement Fire"
+	},
+	"brd_carol_element_stone":{
+		"Name":"CrlStone",
+		"SendTo":"/mbh brd setcarolelement Earth"
+	},
+	"brd_carol_element_water":{
+		"Name":"CrlWater",
+		"SendTo":"/mbh brd setcarolelement Water"
+	},
+	"brd_carol_element_wind":{
+		"Name":"CrlWind",
+		"SendTo":"/mbh brd setcarolelement Wind"
+	},
+	"brd_carol_element_ice":{
+		"Name":"CrlIce",
+		"SendTo":"/mbh brd setcarolelement Ice"
+	},
+	"brd_carol_element_thunder":{
+		"Name":"CrlCrlndr",
+		"SendTo":"/mbh brd setcarolelement Lightning"
+	},
+	"brd_carol_element_light":{
+		"Name":"CrlLight",
+		"SendTo":"/mbh brd setcarolelement Light"
+	},
+	"brd_carol_element_dark":{
+		"Name":"CrlDark",
+		"SendTo":"/mbh brd setcarolelement Dark"
+	},
+	"threnody1":{
+		"Name":"thrndy",
+		"SendTo":"/mbh brd threnody1 [t]"
+	},
+	"threnody1":{
+		"Name":"thrndy",
+		"SendTo":"/mbh brd threnody2 [t]"
+	},
+	
+	"bubble-regen"     : {"Name": "bubble-regen"      , "SendTo": "/mbh geo setbubble \"Indi-Regen\""       },
+    "bubble-refresh"   : {"Name": "bubble-refresh"    , "SendTo": "/mbh geo setbubble \"Indi-Refresh\""     },
+    "bubble-haste"     : {"Name": "bubble-haste"      , "SendTo": "/mbh geo setbubble \"Indi-Haste\""       },
+    "bubble-str"       : {"Name": "bubble-str"        , "SendTo": "/mbh geo setbubble \"Indi-Str\""         },
+    "bubble-dex"       : {"Name": "bubble-dex"        , "SendTo": "/mbh geo setbubble \"Indi-Dex\""         },
+    "bubble-vit"       : {"Name": "bubble-vit"        , "SendTo": "/mbh geo setbubble \"Indi-Vit\""         },
+    "bubble-agi"       : {"Name": "bubble-agi"        , "SendTo": "/mbh geo setbubble \"Indi-Agi\""         },
+    "bubble-int"       : {"Name": "bubble-int"        , "SendTo": "/mbh geo setbubble \"Indi-Int\""         },
+    "bubble-mnd"       : {"Name": "bubble-mnd"        , "SendTo": "/mbh geo setbubble \"Indi-Mnd\""         },
+    "bubble-chr"       : {"Name": "bubble-chr"        , "SendTo": "/mbh geo setbubble \"Indi-Chr\""         },
+    "bubble-fury"      : {"Name": "bubble-fury"       , "SendTo": "/mbh geo setbubble \"Indi-Fury\""        },
+    "bubble-def"       : {"Name": "bubble-def"        , "SendTo": "/mbh geo setbubble \"Indi-Barrier\""     },
+    "bubble-acumen"    : {"Name": "bubble-acumen"     , "SendTo": "/mbh geo setbubble \"Indi-Acumen\""      },
+    "bubble-fend"      : {"Name": "bubble-fend"       , "SendTo": "/mbh geo setbubble \"Indi-Fend\""        },
+    "bubble-precision" : {"Name": "bubble-precision"  , "SendTo": "/mbh geo setbubble \"Indi-Precision\""   },
+    "bubble-voidance"  : {"Name": "bubble-voidance"   , "SendTo": "/mbh geo setbubble \"Indi-Voidance\""    },
+    "bubble-focus"     : {"Name": "bubble-focus"      , "SendTo": "/mbh geo setbubble \"Indi-Focus\""       },
+    "bubble-attunement": {"Name": "bubble-attunement" , "SendTo": "/mbh geo setbubble \"Indi-Attunement\""  },
+    "bubble-wilt"      : {"Name": "bubble-wilt"       , "SendTo": "/mbh geo setbubble \"Indi-Wilt\""        },
+    "bubble-frailty"   : {"Name": "bubble-frailty"    , "SendTo": "/mbh geo setbubble \"Indi-Frailty\""     },
+    "bubble-fade"      : {"Name": "bubble-fade"       , "SendTo": "/mbh geo setbubble \"Indi-Fade\""        },
+    "bubble-malaise"   : {"Name": "bubble-malaise"    , "SendTo": "/mbh geo setbubble \"Indi-Malaise\""     },
+    "bubble-slip"      : {"Name": "bubble-slip"       , "SendTo": "/mbh geo setbubble \"Indi-Slip\""        },
+    "bubble-torpor"    : {"Name": "bubble-torpor"     , "SendTo": "/mbh geo setbubble \"Indi-Torpor\""      },
+    "bubble-vex"       : {"Name": "bubble-vex"        , "SendTo": "/mbh geo setbubble \"Indi-Vex\""         },
+    "bubble-languor"   : {"Name": "bubble-languor"    , "SendTo": "/mbh geo setbubble \"Indi-Languor\""     },
+	
+	
+	"entrust-regen"     : {"Name": "entrust-regen"      , "SendTo": "/mbh geo setentrust \"Indi-Regen\""       },
+    "entrust-refresh"   : {"Name": "entrust-refresh"    , "SendTo": "/mbh geo setentrust \"Indi-Refresh\""     },
+    "entrust-haste"     : {"Name": "entrust-haste"      , "SendTo": "/mbh geo setentrust \"Indi-Haste\""       },
+    "entrust-str"       : {"Name": "entrust-str"        , "SendTo": "/mbh geo setentrust \"Indi-Str\""         },
+    "entrust-dex"       : {"Name": "entrust-dex"        , "SendTo": "/mbh geo setentrust \"Indi-Dex\""         },
+    "entrust-vit"       : {"Name": "entrust-vit"        , "SendTo": "/mbh geo setentrust \"Indi-Vit\""         },
+    "entrust-agi"       : {"Name": "entrust-agi"        , "SendTo": "/mbh geo setentrust \"Indi-Agi\""         },
+    "entrust-int"       : {"Name": "entrust-int"        , "SendTo": "/mbh geo setentrust \"Indi-Int\""         },
+    "entrust-mnd"       : {"Name": "entrust-mnd"        , "SendTo": "/mbh geo setentrust \"Indi-Mnd\""         },
+    "entrust-chr"       : {"Name": "entrust-chr"        , "SendTo": "/mbh geo setentrust \"Indi-Chr\""         },
+    "entrust-fury"      : {"Name": "entrust-fury"       , "SendTo": "/mbh geo setentrust \"Indi-Fury\""        },
+    "entrust-def"       : {"Name": "entrust-def"        , "SendTo": "/mbh geo setentrust \"Indi-Barrier\""     },
+    "entrust-acumen"    : {"Name": "entrust-acumen"     , "SendTo": "/mbh geo setentrust \"Indi-Acumen\""      },
+    "entrust-fend"      : {"Name": "entrust-fend"       , "SendTo": "/mbh geo setentrust \"Indi-Fend\""        },
+    "entrust-precision" : {"Name": "entrust-precision"  , "SendTo": "/mbh geo setentrust \"Indi-Precision\""   },
+    "entrust-voidance"  : {"Name": "entrust-voidance"   , "SendTo": "/mbh geo setentrust \"Indi-Voidance\""    },
+    "entrust-focus"     : {"Name": "entrust-focus"      , "SendTo": "/mbh geo setentrust \"Indi-Focus\""       },
+    "entrust-attunement": {"Name": "entrust-attunement" , "SendTo": "/mbh geo setentrust \"Indi-Attunement\""  },
+    "entrust-wilt"      : {"Name": "entrust-wilt"       , "SendTo": "/mbh geo setentrust \"Indi-Wilt\""        },
+    "entrust-frailty"   : {"Name": "entrust-frailty"    , "SendTo": "/mbh geo setentrust \"Indi-Frailty\""     },
+    "entrust-fade"      : {"Name": "entrust-fade"       , "SendTo": "/mbh geo setentrust \"Indi-Fade\""        },
+    "entrust-malaise"   : {"Name": "entrust-malaise"    , "SendTo": "/mbh geo setentrust \"Indi-Malaise\""     },
+    "entrust-slip"      : {"Name": "entrust-slip"       , "SendTo": "/mbh geo setentrust \"Indi-Slip\""        },
+    "entrust-torpor"    : {"Name": "entrust-torpor"     , "SendTo": "/mbh geo setentrust \"Indi-Torpor\""      },
+    "entrust-vex"       : {"Name": "entrust-vex"        , "SendTo": "/mbh geo setentrust \"Indi-Vex\""         },
+    "entrust-languor"   : {"Name": "entrust-languor"    , "SendTo": "/mbh geo setentrust \"Indi-Languor\""     },
+	
+	
+	"luopan-regen"     : {"Name": "luopan-regen"      , "SendTo": "/mbh geo setluopan \"Geo-Regen\""       },
+    "luopan-refresh"   : {"Name": "luopan-refresh"    , "SendTo": "/mbh geo setluopan \"Geo-Refresh\""     },
+    "luopan-haste"     : {"Name": "luopan-haste"      , "SendTo": "/mbh geo setluopan \"Geo-Haste\""       },
+    "luopan-str"       : {"Name": "luopan-str"        , "SendTo": "/mbh geo setluopan \"Geo-Str\""         },
+    "luopan-dex"       : {"Name": "luopan-dex"        , "SendTo": "/mbh geo setluopan \"Geo-Dex\""         },
+    "luopan-vit"       : {"Name": "luopan-vit"        , "SendTo": "/mbh geo setluopan \"Geo-Vit\""         },
+    "luopan-agi"       : {"Name": "luopan-agi"        , "SendTo": "/mbh geo setluopan \"Geo-Agi\""         },
+    "luopan-int"       : {"Name": "luopan-int"        , "SendTo": "/mbh geo setluopan \"Geo-Int\""         },
+    "luopan-mnd"       : {"Name": "luopan-mnd"        , "SendTo": "/mbh geo setluopan \"Geo-Mnd\""         },
+    "luopan-chr"       : {"Name": "luopan-chr"        , "SendTo": "/mbh geo setluopan \"Geo-Chr\""         },
+    "luopan-fury"      : {"Name": "luopan-fury"       , "SendTo": "/mbh geo setluopan \"Geo-Fury\""        },
+    "luopan-def"       : {"Name": "luopan-def"        , "SendTo": "/mbh geo setluopan \"Geo-Barrier\""     },
+    "luopan-acumen"    : {"Name": "luopan-acumen"     , "SendTo": "/mbh geo setluopan \"Geo-Acumen\""      },
+    "luopan-fend"      : {"Name": "luopan-fend"       , "SendTo": "/mbh geo setluopan \"Geo-Fend\""        },
+    "luopan-precision" : {"Name": "luopan-precision"  , "SendTo": "/mbh geo setluopan \"Geo-Precision\""   },
+    "luopan-voidance"  : {"Name": "luopan-voidance"   , "SendTo": "/mbh geo setluopan \"Geo-Voidance\""    },
+    "luopan-focus"     : {"Name": "luopan-focus"      , "SendTo": "/mbh geo setluopan \"Geo-Focus\""       },
+    "luopan-attunement": {"Name": "luopan-attunement" , "SendTo": "/mbh geo setluopan \"Geo-Attunement\""  },
+    "luopan-wilt"      : {"Name": "luopan-wilt"       , "SendTo": "/mbh geo setluopan \"Geo-Wilt\""        },
+    "luopan-frailty"   : {"Name": "luopan-frailty"    , "SendTo": "/mbh geo setluopan \"Geo-Frailty\""     },
+    "luopan-fade"      : {"Name": "luopan-fade"       , "SendTo": "/mbh geo setluopan \"Geo-Fade\""        },
+    "luopan-malaise"   : {"Name": "luopan-malaise"    , "SendTo": "/mbh geo setluopan \"Geo-Malaise\""     },
+    "luopan-slip"      : {"Name": "luopan-slip"       , "SendTo": "/mbh geo setluopan \"Geo-Slip\""        },
+    "luopan-torpor"    : {"Name": "luopan-torpor"     , "SendTo": "/mbh geo setluopan \"Geo-Torpor\""      },
+    "luopan-vex"       : {"Name": "luopan-vex"        , "SendTo": "/mbh geo setluopan \"Geo-Vex\""         },
+    "luopan-languor"   : {"Name": "luopan-languor"    , "SendTo": "/mbh geo setluopan \"Geo-Languor\""     },
+
+	"bubble" : {"Name": "bubble", "SendTo": "/mbh geo bubble"},
+	"luopan" : {"Name": "luopan", "SendTo": "/mbh geo luopan"},
+	"entrust" : {"Name": "entrust", "SendTo": "/mbh geo entrust"},
+	
+	"mbh_setboost_str": { "Name": "BoostStr", "SendTo": "/mbh whm setboost \"Boost-STR\""},
+	"mbh_setboost_dex": { "Name": "BoostDex", "SendTo": "/mbh whm setboost \"Boost-DEX\""},
+   "mbh_setboost_vit": { "Name": "BoostVit", "SendTo": "/mbh whm setboost \"Boost-VIT\""},
+    "mbh_setboost_agi": { "Name": "BoostAgi", "SendTo": "/mbh whm setboost \"Boost-AGI\""},
+    "mbh_setboost_int": { "Name": "BoostInt", "SendTo": "/mbh whm setboost \"Boost-INT\""},
+    "mbh_setboost_mnd": { "Name": "BoostMnd", "SendTo": "/mbh whm setboost \"Boost-MND\""},
+    "mbh_setboost_chr": { "Name": "BoostChr", "SendTo": "/mbh whm setboost \"Boost-CHR\""},
+    
+	"mbh_whm_setbarelement_fire"   : {"Name": "BarEFr", "SendTo": "/mbh whm setbarelement \"Barfira\""},
+    "mbh_whm_setbarelement_ice"    : {"Name": "BarEIc", "SendTo": "/mbh whm setbarelement \"Barblizzara\""},
+    "mbh_whm_setbarelement_wind"   : {"Name": "BarEWn", "SendTo": "/mbh whm setbarelement \"Baraera\""},
+    "mbh_whm_setbarelement_stone"  : {"Name": "BarESt", "SendTo": "/mbh whm setbarelement \"Barstonra\""},
+    "mbh_whm_setbarelement_thunder": {"Name": "BarETh", "SendTo": "/mbh whm setbarelement \"Barthundra\""},
+    "mbh_whm_setbarelement_water"  : {"Name": "BarEWr", "SendTo": "/mbh whm setbarelement \"Barwatera\""},
+	
+	"mbh_whm_setbarstatus_amnesia"       : {"Name": "BarStsAmn", "SendTo": "/mbh whm setbarstatus \"Baramnesra\""},
+    "mbh_whm_setbarstatus_blind"         : {"Name": "BarStsBln", "SendTo": "/mbh whm setbarstatus \"Barblindra\""},
+    "mbh_whm_setbarstatus_paralysis"     : {"Name": "BarStsPar", "SendTo": "/mbh whm setbarstatus \"Barparalyzra\""},
+    "mbh_whm_setbarstatus_petrification" : {"Name": "BarStsPet", "SendTo": "/mbh whm setbarstatus \"Barpetra\""},
+    "mbh_whm_setbarstatus_plague"        : {"Name": "BarStsPlg", "SendTo": "/mbh whm setbarstatus \"Barvira\""},
+    "mbh_whm_setbarstatus_poison"        : {"Name": "BarStsPsn", "SendTo": "/mbh whm setbarstatus \"Barpoisonra\""},
+    "mbh_whm_setbarstatus_silence"       : {"Name": "BarStsSln", "SendTo": "/mbh whm setbarstatus \"Barsilencra\""},
+    "mbh_whm_setbarstatus_sleep"         : {"Name": "BarStsSlp", "SendTo": "/mbh whm setbarstatus \"Barsleepra\""},
+	
+	"mbh_boost": { "Name": "Boost", "SendTo": "/mbh whm boost"},
+	"mbh_whm_barelement": { "Name": "BarEle", "SendTo": "/mbh whm boost barelement"},
+	"mbh_whm_barstatus": { "Name": "BarSts", "SendTo": "/mbh whm boost barstatus"},
+	
+	"protrectrav": { "Name": "PrtctraV", "SendTo": "/ma \"Protectra V\" <me>"},
+	"shellrav": { "Name": "ShellraV", "SendTo": "/ma \"Shellra V\" <me>"}
 }

@@ -189,14 +189,28 @@ local function run_bard(args)
 			msg("Set song 2 to " .. config.brd.songs['2'])
 		end
 	elseif (args[3] == 'singsong') then
-		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.songs[args[4]] .. "\" <me>", 1)
+		if config.brd.songs[args[4]] == 'Carol 1' then
+			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.carolelement .. " Carol\" <me>", 1)
+		elseif config.brd.songs[args[4]] == 'Carol 2' then
+			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.carolelement .. " Carol II\" <me>", 1)
+		else
+			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.songs[args[4]] .. "\" <me>", 1)
+		end
+	elseif (args[3] == 'setcarolelement') then
+		config.brd.carolelement = args[4]
+	elseif (args[3] == 'setthrenodyelement') then
+		config.brd.threnodyelement = args[4]
+	elseif (args[3] == 'threnody1') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.threnodyelement .. "\" <t>", 1)
+	elseif (args[3] == 'threnody2') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.threnodyelement .. " II\" <t>", 1)
 	end
 end
 
 local function run_geo(args)
 	if (args[3] == 'setbubble') then
 		config.geo['bubble'] = args[4]
-		msg("Set bubble to " .. config.geo['bubble'])
+		msg("Set bubble to " .. args[4])
 	elseif (args[3] == 'setluopan') then
 		config.geo['luopan'] = args[4]
 		msg("Set luopan to " .. config.geo['luopan'])
@@ -216,6 +230,18 @@ local function run_whm(args)
 		run_cure_t_o_t(args)
 	elseif (args[3] == 'removedebuff') then
 		run_remove_debuff(args)
+	elseif (args[3] == 'setbarstatus') then
+		config.whm.barstatus = args[4]
+	elseif (args[3] == 'setbarelement') then
+		config.whm.barelement = args[4]
+	elseif (args[3] == 'setboost') then
+		config.whm.boost = args[4]
+	elseif (args[3] == 'boost') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.whm.boost .. "\" <me>", 1)
+	elseif (args[3] == 'barstatus') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.whm.barstatus .. "\" <me>", 1)
+	elseif (args[3] == 'barelement') then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.whm.barelement .. "\" <me>", 1)
 	end
 end
 
@@ -244,19 +270,31 @@ end
 -- mbh whm curega
 -- mbh whm cure_t_o_t
 -- mbh whm removedebuff
+-- mbh whm setbarstatus
+-- mbh whm setbarelement
+-- mbh whm setboost
+-- mbh whm boost
+-- mbh whm barelement
+-- mbh whm barstatus
+--
 -- mbh brd addsong [song name]
 -- mbh brd singsong [n]
 -- mbh brd singdummysong [n]
 -- mbh brd setcarolelement [n]
 -- mbh brd setthrenodyelement [n]
+-- mbh brd threnody1
+-- mbh brd threnody2
+--
 -- mbh cor addroll [roll name]
 -- mbh cor roll [n]
+--
 -- mbh geo setbubble [spell name]
 -- mbh geo setluopan [spell name]
 -- mbh geo setentrust [spell name]
 -- mbh geo bubble
 -- mbh geo entrust
 -- mbh geo luopan
+--
 -- mbh pup addmaneuver [element]
 -- mbh pup maneuver
 ashita.register_event('command', function(cmd, nType)
