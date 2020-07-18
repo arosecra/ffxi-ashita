@@ -34,4 +34,5 @@
   <setting name="game_showopeningmovie">0</setting>
   <setting name="game_simplecharcreation">0</setting>
   <setting name="game_stablegraphics">0</setting>
+  <setting name="input_disable_manual_acquire">true</setting>
 </settings>
