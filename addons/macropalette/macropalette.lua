@@ -116,6 +116,7 @@ function load_configuration()
 		local imported_macros = addon_settings.onload(_addon.name, v, {}, true, false, false)
 		
 		for macro_name,macro in pairs(imported_macros) do
+			macro.id = macro_name
 			hotbar_config.Macros[macro_name] = macro
 		end
 	end
@@ -461,6 +462,28 @@ function get_active_macros(hotbar_section, hotbar_variables)
 end
 
 function run_macro(section, hotbar_macro, mode)
+
+	if hotbar_config.Timers[section.Name] ~= nil and
+		hotbar_config.Timers[section.Name][hotbar_macro.id] ~= nil then
+		if hotbar_config.TimerData == nil then
+			hotbar_config.TimerData = {}
+		end
+		if hotbar_config.TimerData[section.Name] == nil then
+			hotbar_config.TimerData[section.Name] = {}
+		end
+		local current_time = os.time()
+		local end_time = current_time + hotbar_config.Timers[section.Name][hotbar_macro.id].Time
+		
+		print(current_time)
+		print(end_time)
+		
+		hotbar_config.TimerData[section.Name][end_time] = {
+			reset = end_time,
+			name = hotbar_config.Timers[section.Name][hotbar_macro.id].Name
+		}
+		table.sort(hotbar_config.TimerData[section.Name])
+	end
+
 	if hotbar_macro.Script then
 		msg(hotbar_macro.Script)
 		AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
@@ -527,6 +550,14 @@ function get_button_label_text(original_label, size)
 	return original_label .. string.rep(' ', size - #original_label)
 end
 
+function get_table_length(t)
+	local result = 0
+	for k,v in pairs(t) do
+		result = result + 1
+	end
+	return result
+end
+
 ashita.register_event('render', function()
     -- Obtain the local player..
 	if hotbar_position_config[1] == nil then
@@ -550,8 +581,12 @@ ashita.register_event('render', function()
 	
 	
     -- Display the macro bar 
+	local width = WIDTH
+	if hotbar_config.TimerData ~= nil and hotbar_variables['Mode'] ~= 'JobStngs' then
+		width = width + 120
+	end
 	imgui.SetNextWindowPos(hotbar_position_config[1], hotbar_position_config[2]);
-    imgui.SetNextWindowSize(WIDTH, HEIGHT, ImGuiSetCond_Always);
+    imgui.SetNextWindowSize(width, HEIGHT, ImGuiSetCond_Always);
 	local window_flags = 0
 	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoTitleBar)
 	window_flags = bit.bor(window_flags, ImGuiWindowFlags_NoCollapse)
@@ -643,6 +678,37 @@ ashita.register_event('render', function()
 					end
 				end	
 				imgui.SameLine();			
+			end
+			
+			if hotbar_config.TimerData ~= nil and hotbar_config.TimerData[hotbar_section.Name] ~= nil then
+				local displayed = false
+				local current_time = os.time()
+					
+				for reset_time,reset_info in pairs(hotbar_config.TimerData[hotbar_section.Name]) do
+					--print(reset_time)
+					if reset_time < current_time then
+						print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers before removal')
+						hotbar_config.TimerData[hotbar_section.Name][reset_time] = nil
+						print('removed timer')
+						print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers after removal')
+					end
+					
+					if not displayed and reset_time > current_time then
+						local text = reset_info.name .. ' ' .. (reset_time - current_time)
+						imgui.Text(text);
+						displayed = true
+					end
+				end
+				if get_table_length(hotbar_config.TimerData[hotbar_section.Name]) == 0 then
+					hotbar_config.TimerData[hotbar_section.Name] = nil
+					print('removed hotbar section')
+				end
+				if get_table_length(hotbar_config.TimerData) == 0 then
+					hotbar_config.TimerData = nil
+					print('removed timerdata')
+				end
+				
+				imgui.SameLine();
 			end
 					
 			imgui.Separator();
