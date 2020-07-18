@@ -102,23 +102,36 @@ local NUMBER_OF_BUTTONS = 8
 
 local debug_loop_count = 0
 
-----------------------------------------------------------------------------------------------------
--- func: load
--- desc: Event called when the addon is being loaded.
-----------------------------------------------------------------------------------------------------
-ashita.register_event('load', function()
-	--addon_settings.onload(addon_name, config_filename, default_config_object, create_if_dne, check_for_player_entity, user_specific)
+function load_configuration()
 	hotbar_config.Palette = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
 	hotbar_config.JobMacros = addon_settings.onload(_addon.name, 'jobmacros', {}, true, false, false)
 	hotbar_config.JobSettings = addon_settings.onload(_addon.name, 'jobsettings', {}, true, false, false)
-	hotbar_config.Macros = addon_settings.onload(_addon.name, 'macros', {}, true, false, false)
+	hotbar_config.MacroIncludes = addon_settings.onload(_addon.name, 'macros', {}, true, false, false)
 	hotbar_config.Modes = addon_settings.onload(_addon.name, 'modes', {}, true, false, false)
 	hotbar_config.Sections = addon_settings.onload(_addon.name, 'sections', {}, true, false, false)
+	hotbar_config.Timers = addon_settings.onload(_addon.name, 'timers', {}, true, false, false)
+	
+	hotbar_config.Macros = {}
+	for k,v in ipairs(hotbar_config.MacroIncludes) do
+		local imported_macros = addon_settings.onload(_addon.name, v, {}, true, false, false)
+		
+		for macro_name,macro in pairs(imported_macros) do
+			hotbar_config.Macros[macro_name] = macro
+		end
+	end
 	
 	hotbar_variables['Mode'] = hotbar_config.Modes.Default
 	
 	HEIGHT = ((1+#hotbar_config.Sections)*20)+5
 	WIDTH = (NUMBER_OF_BUTTONS +1) * 72 + 5
+end
+
+----------------------------------------------------------------------------------------------------
+-- func: load
+-- desc: Event called when the addon is being loaded.
+----------------------------------------------------------------------------------------------------
+ashita.register_event('load', function()
+	load_configuration()
 end);
 
 ashita.register_event('unload', function()
@@ -242,8 +255,12 @@ ashita.register_event('command', function(cmd, nType)
 		run_macro_command(tonumber(args[3]), tonumber(args[4]))
         return true;
     end
+	if (args[2] == 'reload') then
+		load_configuration()
+		return true
+	end
 	
-	if (args[2] == 'validate_macro_names') then
+	if (args[2] == 'validate') then
 		
 		
 		

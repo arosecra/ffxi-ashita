@@ -1,0 +1,53 @@
+{
+	"dia":{
+		"Name":"Dia",
+		"SendTo":"/ma \"Dia\" [t]"
+	},
+	"cure":{
+		"Name":"Cure",
+		"SendTo":"/mbh whm cure"
+	},
+	"curega":{
+		"Name":"Curega",
+		"SendTo":"/mbh whm curega"
+	},
+	"curtot":{
+		"Name":"CureToT",
+		"SendTo":"/mbh whm core_t_o_t"
+	},
+	"debuff":{
+		"Name":"debuff",
+		"SendTo":"/mbh whm removedebuff"
+	},
+	
+	"mbh_setboost_str": { "Name": "BoostStr", "SendTo": "/mbh whm setboost \"Boost-STR\""},
+	"mbh_setboost_dex": { "Name": "BoostDex", "SendTo": "/mbh whm setboost \"Boost-DEX\""},
+	"mbh_setboost_vit": { "Name": "BoostVit", "SendTo": "/mbh whm setboost \"Boost-VIT\""},
+    "mbh_setboost_agi": { "Name": "BoostAgi", "SendTo": "/mbh whm setboost \"Boost-AGI\""},
+    "mbh_setboost_int": { "Name": "BoostInt", "SendTo": "/mbh whm setboost \"Boost-INT\""},
+    "mbh_setboost_mnd": { "Name": "BoostMnd", "SendTo": "/mbh whm setboost \"Boost-MND\""},
+    "mbh_setboost_chr": { "Name": "BoostChr", "SendTo": "/mbh whm setboost \"Boost-CHR\""},
+    
+	"mbh_whm_setbarelement_fire"   : {"Name": "BarEFr", "SendTo": "/mbh whm setbarelement \"Barfira\""},
+    "mbh_whm_setbarelement_ice"    : {"Name": "BarEIc", "SendTo": "/mbh whm setbarelement \"Barblizzara\""},
+    "mbh_whm_setbarelement_wind"   : {"Name": "BarEWn", "SendTo": "/mbh whm setbarelement \"Baraera\""},
+    "mbh_whm_setbarelement_stone"  : {"Name": "BarESt", "SendTo": "/mbh whm setbarelement \"Barstonra\""},
+    "mbh_whm_setbarelement_thunder": {"Name": "BarETh", "SendTo": "/mbh whm setbarelement \"Barthundra\""},
+    "mbh_whm_setbarelement_water"  : {"Name": "BarEWr", "SendTo": "/mbh whm setbarelement \"Barwatera\""},
+	
+	"mbh_whm_setbarstatus_amnesia"       : {"Name": "BarStsAmn", "SendTo": "/mbh whm setbarstatus \"Baramnesra\""},
+    "mbh_whm_setbarstatus_blind"         : {"Name": "BarStsBln", "SendTo": "/mbh whm setbarstatus \"Barblindra\""},
+    "mbh_whm_setbarstatus_paralysis"     : {"Name": "BarStsPar", "SendTo": "/mbh whm setbarstatus \"Barparalyzra\""},
+    "mbh_whm_setbarstatus_petrification" : {"Name": "BarStsPet", "SendTo": "/mbh whm setbarstatus \"Barpetra\""},
+    "mbh_whm_setbarstatus_plague"        : {"Name": "BarStsPlg", "SendTo": "/mbh whm setbarstatus \"Barvira\""},
+    "mbh_whm_setbarstatus_poison"        : {"Name": "BarStsPsn", "SendTo": "/mbh whm setbarstatus \"Barpoisonra\""},
+    "mbh_whm_setbarstatus_silence"       : {"Name": "BarStsSln", "SendTo": "/mbh whm setbarstatus \"Barsilencra\""},
+    "mbh_whm_setbarstatus_sleep"         : {"Name": "BarStsSlp", "SendTo": "/mbh whm setbarstatus \"Barsleepra\""},
+	
+	"mbh_boost": { "Name": "Boost", "SendTo": "/mbh whm boost"},
+	"mbh_whm_barelement": { "Name": "BarEle", "SendTo": "/mbh whm boost barelement"},
+	"mbh_whm_barstatus": { "Name": "BarSts", "SendTo": "/mbh whm boost barstatus"},
+	
+	"protrectrav": { "Name": "PrtctraV", "SendTo": "/ma \"Protectra V\" <me>"},
+	"shellrav": { "Name": "ShellraV", "SendTo": "/ma \"Shellra V\" <me>"}
+}

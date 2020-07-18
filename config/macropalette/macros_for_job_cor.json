@@ -1,0 +1,78 @@
+{
+	"dblup":{
+		"Name":"DblUp",
+		"SendTo":"/ja \"Double-Up\" <me>"
+	},
+	"snkeye":{
+		"Name":"SnkEye",
+		"SendTo":"/ja \"Snake Eye\" <me>"
+	},
+	"fold":{
+		"Name":"Fold",
+		"SendTo":"/ja Fold <me>"
+	},
+	"cor_roll_corsairs": {
+		"SendTo": "/mbh cor addroll \"Corsair's Roll\"",
+		"Name": "exp+"
+	}, 
+	"cor_roll_fighters": {
+		"SendTo": "/mbh cor addroll \"Fighter's Roll\"",
+		"Name": "DblAtt+"
+	},
+	"cor_roll_beast":{
+		"Name":"PetAtt+",
+		"SendTo":"/mbh cor addroll \"Beast Roll\" <me>"
+	},
+	"cor_roll_puppet":{
+		"Name":"PetMab+",
+		"SendTo":"/mbh cor addroll \"Puppet's Roll\" <me>"
+	},
+	"cor_roll_drachen":{
+		"Name":"PetAcc+",
+		"SendTo":"/mbh cor addroll \"Drachen Roll\" <me>"
+	},
+	"cor_roll_companion":{
+		"Name":"PetRegen",
+		"SendTo":"/mbh cor addroll \"Companion's Roll\" <me>"
+	},
+	"cor_roll_evokers":{
+		"Name":"Refresh",
+		"SendTo":"/mbh cor addroll \"Evoker's Roll\" <me>"
+	},
+	"cor_roll_wizards":{
+		"Name":"Mab+",
+		"SendTo":"/mbh cor addroll \"Wizard's Roll\" <me>"
+	},
+	"cor_roll_warlocks":{
+		"Name":"Macc+",
+		"SendTo":"/mbh cor addroll \"Warlock's Roll\" <me>"
+	},
+	"cor_roll_rogues":{
+		"Name":"Crit+",
+		"SendTo":"/mbh cor addroll \"Rogue's Roll\" <me>"
+	},
+	"cor_roll_chaos":{
+		"Name":"Att+",
+		"SendTo":"/mbh cor addroll \"Chaos Roll\" <me>"
+	},
+	"cor_roll_hunters":{
+		"Name":"Acc+",
+		"SendTo":"/mbh cor addroll \"Hunter's Roll\" <me>"
+	},
+	"cor_roll_samurais":{
+		"Name":"Stp+",
+		"SendTo":"/mbh cor addroll \"Samurai's Roll\" <me>"
+	},
+	"cor_roll_tacticians":{
+		"Name":"Regain",
+		"SendTo":"/mbh cor addroll \"Tactician's Roll\" <me>"
+	},
+	"roll1":{
+		"Name":"roll1",
+		"SendTo":"/mbh cor roll 1"
+	},
+	"roll2":{
+		"Name":"roll2",
+		"SendTo":"/mbh cor roll 2"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	
+	"evisceration":{
+		"SendTo": "/mbh setws \"Evisceration\"",
+		"Name": "Evis"
+	}
+}

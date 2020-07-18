@@ -174,7 +174,7 @@
 		"AdnStngs": [ "", "", "", "", "", "", "", "" ],
 		"Actns1":   [ "", "", "nuke1", "nuke2", "nuke3", "nuke4", "nuke5", "" ],
 		"Actns2":   [ "liq_f", "sci_s", "rev_w", "det_a", "ind_b", "imp_t", "helix1", "helix2" ],
-		"Actns3":   [ "trans_l", "com_d", "frag_at", "fus_fl", "grav_ds", "dist_wb", "", "" ],
+		"Actns3":   [ "trns_l", "com_d", "frag_at", "fus_fl", "grav_ds", "dist_wb", "", "" ],
 		"Twn":      [ "", "", "", "", "", "", "", "" ],
 		"Buff":     [ "storm2", "klima", "", "", "", "", "", "" ],
 		"Items":    [ "", "", "", "", "", "", "", "" ]

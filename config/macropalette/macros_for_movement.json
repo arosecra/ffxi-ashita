@@ -1,0 +1,30 @@
+{
+	"warp2me":{
+		"Name":"warp2me",
+		"Script":"mbox/warp2me.txt"
+	},
+	"sneak":{
+		"Name":"sneak",
+		"Command":"/ms send /sneakinvis"
+	},
+	"desneak":{
+		"Name":"desneak",
+		"Command":"/ms send /exec desneak"
+	},
+	"follon":{
+		"Name":"follon",
+		"Script":"mbox/follon.txt"
+	},
+	"follof":{
+		"Name":"follof",
+		"Script":"mbox/follof.txt"
+	},
+	"mount":{
+		"Command":"/ms send /mount \"Red Crab\"",
+		"Name":"mount"
+	},
+	"dismnt":{
+		"Command":"/ms send /dismount",
+		"Name":"dismnt"
+	}
+}

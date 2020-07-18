@@ -1,0 +1,134 @@
+{
+	"mazurka":{
+		"Name":"Mazurka",
+		"SendTo":" /ma \"Chocobo Mazurka\" <me>"
+	},
+	"brdref3": {
+		"Name": "Ref3",
+		"SendTo" : "/mbh brd addsong \"Mage's Ballad III\""
+	},
+	"brddef5": {
+		"Name": "Def5",
+		"SendTo" : "/mbh brd addsong \"Knight's Minne V\""
+	},
+	"brdatt5": {
+		"Name": "Att5",
+		"SendTo" : "/mbh brd addsong \"Valor Minuet V\""
+	},
+	"brdattdel1": {
+		"Name": "AttDel1",
+		"SendTo" : "/mbh brd addsong \"Advancing March\""
+	},
+	"brdattdel2": {
+		"Name": "AttDel2",
+		"SendTo" : "/mbh brd addsong \"Victory March\""
+	},
+	"brdacc1": {
+		"Name": "Acc1",
+		"SendTo" : "/mbh brd addsong \"Sword Madrigal\""
+	},
+	"brdacc2": {
+		"Name": "Acc2",
+		"SendTo" : "/mbh brd addsong \"Blade Madrigal\""
+	},
+	"brdcarol1":{
+		"Name":"Carol1",
+		"SendTo":"/mbh brd addson \"Carol 1\""
+	},
+	"brdcarol2":{
+		"Name":"Carol2",
+		"SendTo":"/mbh brd addson \"Carol 2\""
+	},
+	"singdummy": {
+		"Name": "sngdmy",
+		"SendTo" : "/exec brd/sing_dummy_songs"
+	},
+	"song1": {
+		"Name": "Song1",
+		"SendTo" : "/mbh brd singsong 1"
+	},
+	"song2": {
+		"Name": "Song2",
+		"SendTo" : "/mbh brd singsong 2"
+	},
+	"song3": {
+		"Name": "Song3",
+		"SendTo" : "/mbh brd singsong 3"
+	},
+	"mazurka": {
+		"Name": "Mazurka",
+		"SendTo" : "/ma \"Chocobo Mazurka\" <me>"
+	},
+	"brd_threnody_element_fire":{
+		"Name":"ThFire",
+		"SendTo":"/mbh brd setthrenodyelement Fire"
+	},
+	"brd_threnody_element_stone":{
+		"Name":"ThStone",
+		"SendTo":"/mbh brd setthrenodyelement Earth"
+	},
+	"brd_threnody_element_water":{
+		"Name":"ThWater",
+		"SendTo":"/mbh brd setthrenodyelement Water"
+	},
+	"brd_threnody_element_wind":{
+		"Name":"ThWind",
+		"SendTo":"/mbh brd setthrenodyelement Wind"
+	},
+	"brd_threnody_element_ice":{
+		"Name":"ThIce",
+		"SendTo":"/mbh brd setthrenodyelement Ice"
+	},
+	"brd_threnody_element_thunder":{
+		"Name":"ThThndr",
+		"SendTo":"/mbh brd setthrenodyelement Lightning"
+	},
+	"brd_threnody_element_light":{
+		"Name":"ThLight",
+		"SendTo":"/mbh brd setthrenodyelement Light"
+	},
+	"brd_threnody_element_dark":{
+		"Name":"ThDark",
+		"SendTo":"/mbh brd setthrenodyelement Dark"
+	},
+	"brd_carol_element_fire":{
+		"Name":"CrlFire",
+		"SendTo":"/mbh brd setcarolelement Fire"
+	},
+	"brd_carol_element_stone":{
+		"Name":"CrlStone",
+		"SendTo":"/mbh brd setcarolelement Earth"
+	},
+	"brd_carol_element_water":{
+		"Name":"CrlWater",
+		"SendTo":"/mbh brd setcarolelement Water"
+	},
+	"brd_carol_element_wind":{
+		"Name":"CrlWind",
+		"SendTo":"/mbh brd setcarolelement Wind"
+	},
+	"brd_carol_element_ice":{
+		"Name":"CrlIce",
+		"SendTo":"/mbh brd setcarolelement Ice"
+	},
+	"brd_carol_element_thunder":{
+		"Name":"CrlCrlndr",
+		"SendTo":"/mbh brd setcarolelement Lightning"
+	},
+	"brd_carol_element_light":{
+		"Name":"CrlLight",
+		"SendTo":"/mbh brd setcarolelement Light"
+	},
+	"brd_carol_element_dark":{
+		"Name":"CrlDark",
+		"SendTo":"/mbh brd setcarolelement Dark"
+	},
+	"threnody1":{
+		"Name":"thrndy",
+		"SendTo":"/mbh brd threnody1 [t]"
+	},
+	"threnody1":{
+		"Name":"thrndy",
+		"SendTo":"/mbh brd threnody2 [t]"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"primalrend":{
+		"SendTo": "/mbh setws \"Primal Rend\"",
+		"Name": "prmlrnd"
+	},
+	"cloudsplitter":{
+		"SendTo": "/mbh setws \"Cloud Splitter\"",
+		"Name": "cldsplt"
+	},
+	"mistralaxe":{
+		"SendTo": "/mbh setws \"Mistral Axe\"",
+		"Name": "mstrl"
+	},
+	"decimation":{
+		"SendTo": "/mbh setws \"Decimation\"",
+		"Name": "dcmtn"
+	},
+	"ruinator":{
+		"SendTo": "/mbh setws \"Ruinator\"",
+		"Name": "rntr"
+	}
+}

@@ -1,0 +1,154 @@
+{
+	"ac_var_Strategy_MstrMelee": {
+		"SendTo": "/ac var set Strategy MstrMelee",
+		"Name": "MstrMelee"
+	},
+	"ac_var_Strategy_PetOnly": {
+		"SendTo": "/ac var set Strategy PetOnly",
+		"Name": "PetOnly"
+	},
+	"ac_var_Strategy_119PetOnly": {
+		"SendTo": "/ac var set Strategy 119PetOnly",
+		"Name": "119PetOnly"
+	},
+	"ac_var_Strategy_MstrDT": {
+		"SendTo": "/ac var set Strategy MstrDT",
+		"Name": "MstrDT"
+	},
+	"ac_var_Strategy_Overdrive": {
+		"SendTo": "/ac var set Strategy Overdrive",
+		"Name": "Overdrive"
+	},
+	"ac_var_Strategy_TH": {
+		"SendTo": "/ac var set Strategy TH",
+		"Name": "TH"
+	},
+	"ac_var_Strategy_Refresh": {
+		"SendTo": "/ac var set Strategy Refresh",
+		"Name": "Refresh"
+	},
+	"ac_var_WeaponStrategy_Swap": {
+		"SendTo": "/ac var set WeaponStrategy Swap",
+		"Name": "Swap"
+	},
+	"ac_var_WeaponStrategy_NoSwap": {
+		"SendTo": "/ac var set WeaponStrategy NoSwap",
+		"Name": "NoSwap"
+	},
+	"ac_var_BlJug_Lizard": {
+		"SendTo": "/ac var set BlJug \"Livid Broth\"",
+		"Name": "BLLzrd"
+	},
+	"ac_var_BlJug_Tiger": {
+		"SendTo": "/ac var set BlJug \"Meaty Broth\"",
+		"Name": "BLTgr"
+	},
+	"ac_var_BlJug_Cricket": {
+		"SendTo": "/ac var set BlJug \"Bubbly Broth\"",
+		"Name": "BLCrckt"
+	},
+	"ac_var_BlJug_Bird": {
+		"SendTo": "/ac var set BlJug \"Windy Greens\"",
+		"Name": "BLBrd"
+	},
+	"ac_var_BlJug_Snapweed": {
+		"SendTo": "/ac var set BlJug \"Electrified Broth\"",
+		"Name": "BLSnpwd"
+	},
+	"ac_var_BlJug_Fly": {
+		"SendTo": "/ac var set BlJug \"Blackwater Broth\"",
+		"Name": "BLFly"
+	},
+	"ac_var_BlJug_Piggy": {
+		"SendTo": "/ac var set BlJug \"Tantalizing Broth\"",
+		"Name": "BLPiggy"
+	},
+	"ac_var_BlJug_Mandy": {
+		"SendTo": "/ac var set BlJug \"Saline Broth\"",
+		"Name": "BLMandy"
+	},
+	"ac_var_BlJug_Fish": {
+		"SendTo": "/ac var set BlJug \"Airy Broth\"",
+		"Name": "BLFish"
+	},
+	"ac_var_BlJug_Raptor": {
+		"SendTo": "/ac var set BlJug \"Rapid Broth\"",
+		"Name": "BLRptr"
+	},
+	"ac_var_CllBstJug_Lizard": {
+		"SendTo": "/ac var set CllBstJug \"Livid Broth\"",
+		"Name": "ClBstLzrd"
+	},
+	"ac_var_CllBstJug_Tiger": {
+		"SendTo": "/ac var set CllBstJug \"Meaty Broth\"",
+		"Name": "ClBstTgr"
+	},
+	"ac_var_CllBstJug_Cricket": {
+		"SendTo": "/ac var set CllBstJug \"Spicy Broth\"",
+		"Name": "ClBstCrck"
+	},
+	"ac_var_CllBstJug_Bird": {
+		"SendTo": "/ac var set CllBstJug \"Salubrious Broth\"",
+		"Name": "ClBstBrd"
+	},
+	"ac_var_CllBstJug_Snapweed": {
+		"SendTo": "/ac var set CllBstJug \"Electrified Broth\"",
+		"Name": "ClBstSnpw"
+	},
+	"ac_var_CllBstJug_Fly": {
+		"SendTo": "/ac var set CllBstJug \"Blackwater Broth\"",
+		"Name": "ClBstFly"
+	},
+	"ac_var_CllBstJug_Piggy": {
+		"SendTo": "/ac var set CllBstJug \"Fizzy Broth\"",
+		"Name": "ClBstPggy"
+	},
+	"ac_var_CllBstJug_Fish": {
+		"SendTo": "/ac var set CllBstJug \"Airy Broth\"",
+		"Name": "ClBstFish"
+	},
+	"ac_var_CllBstJug_Raptor": {
+		"SendTo": "/ac var set CllBstJug \"Rapid Broth\"",
+		"Name": "ClBstRptr"
+	},
+	"ac_var_IdleSub_Arktoi": {
+		"SendTo": "/ac var set IdleSub Arktoi",
+		"Name": "SubArk"
+	},
+	"ac_var_IdleSub_PetPdt": {
+		"SendTo": "/ac var set IdleSub PetPdt",
+		"Name": "SubPtPdt"
+	},
+	"ac_var_IdleSub_PetDt": {
+		"SendTo": "/ac var set IdleSub PetDt",
+		"Name": "SubPtDT"
+	},
+	"ac_var_IdleSub_Beatific": {
+		"SendTo": "/ac var set IdleSub Beatific",
+		"Name": "SubBtfc"
+	},
+	"ac_var_IdleSub_Adapa": {
+		"SendTo": "/ac var set IdleSub Adapa",
+		"Name": "SubAdp"
+	},
+	"ac_var_IdleMain_NoSwap": {
+		"SendTo": "/ac var set IdleMain NoSwap",
+		"Name": "MnNoSwp"
+	},
+	"ac_var_IdleMain_Aymur": {
+		"SendTo": "/ac var set IdleMain Adapa",
+		"Name": "MnAymr"
+	},
+	"ac_var_IdleMain_PetDt": {
+		"SendTo": "/ac var set IdleMain Adapa",
+		"Name": "MnPetDt"
+	},
+	"ac_var_IdleMain_Arktoi": {
+		"SendTo": "/ac var set IdleMain Arktoi",
+		"Name": "MnArk"
+	},
+	"ac_var_Accuracy_Low": {
+		"SendTo": "/ac var set Accuracy Low",
+		"Name": "AccLow"
+	}
+}

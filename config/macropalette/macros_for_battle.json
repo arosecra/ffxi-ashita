@@ -1,0 +1,18 @@
+{
+	"allatk":{
+		"Name":"Attack",
+		"Command":"/ms send /attack [t]"
+	},
+	"attack":{
+		"SendTo":"/attack [t]",
+		"Name":"attack"
+	},
+	"ra":{
+		"Name":"ra",
+		"SendTo":"/ra [t]"
+	},
+	"ws":{
+		"SendTo":"/mbh ws",
+		"Name":"ws"
+	}
+}

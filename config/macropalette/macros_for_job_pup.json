@@ -1,0 +1,54 @@
+{
+	"dply":{
+		"Name":"Dply",
+		"SendTo":"/ja Deploy [t]"
+	},
+	"rtr":{
+		"Name":"Rtr",
+		"SendTo":"/ja Retrieve <me>"
+	},
+	"actvt":{
+		"Name":"Actvt",
+		"SendTo":"/ja Activate <me>"
+	},
+	"deactvt":{
+		"Name":"Deactvt",
+		"SendTo":"/ja Deactivate <me>"
+	},
+	"maint":{
+		"Name":"Maint",
+		"SendTo":"/ja Maintenance <me>"
+	},
+	"firem":{
+		"Name": "Fire",
+		"SendTo" : "/ja \"Fire Maneuver\" <me>"
+	},
+	"icem":{
+		"Name": "Ice",
+		"SendTo" : "/ja \"Ice Maneuver\" <me>"
+	},
+	"windm":{
+		"Name": "Wind",
+		"SendTo" : "/ja \"Wind Maneuver\" <me>"
+	},
+	"earthm":{
+		"Name": "Earth",
+		"SendTo" : "/ja \"Earth Maneuver\" <me>"
+	},
+	"thundrm":{
+		"Name": "Thundr",
+		"SendTo" : "/ja \"Thunder Maneuver\" <me>"
+	},
+	"watrm":{
+		"Name": "Water",
+		"SendTo" : "/ja \"Water Maneuver\" <me>"
+	},
+	"lightm":{
+		"Name": "Light",
+		"SendTo" : "/ja \"Light Maneuver\" <me>"
+	},
+	"drkm":{
+		"Name": "Dark",
+		"SendTo" : "/ja \"Dark Maneuver\" <me>"
+	}
+}

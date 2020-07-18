@@ -1,0 +1,9 @@
+{
+	"Sternaru": {
+		"flash": {"Name": "Flash", "Time": 40}
+	}, 
+	"Sillyaru": {
+		"roll1": {"Name": "Ph. Roll", "Time": 45},
+		"roll2": {"Name": "Ph. Roll", "Time": 45}
+	}
+}

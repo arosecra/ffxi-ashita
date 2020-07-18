@@ -1,0 +1,55 @@
+{
+	
+	"spur": {
+		"SendTo": "/ja \"Spur\" <me>",
+		"Name": "Spur"
+	},
+	"callbeast": {
+		"SendTo": "/ja \"Call Beast\" <me>",
+		"Name": "CllBst"
+	},
+	"bl": {
+		"SendTo": "/ja \"Bestial Loyalty\" <me>",
+		"Name": "BL"
+	},
+	"fam": {
+		"SendTo": "/ja \"Familiar\" <me>",
+		"Name": "Fam"
+	},
+	"unlsh": {
+		"SendTo": "/ja \"Unleash\" <me>",
+		"Name": "Unlsh"
+	},
+	"fight": {
+		"SendTo": "/pet \"Fight\" <stnpc>",
+		"Name": "Fght"
+	},
+	"stay": {
+		"SendTo": "/pet \"Stay\" <me>",
+		"Name": "Stay"
+	},
+	"heel": {
+		"SendTo": "/pet \"Heel\" <me>",
+		"Name": "Heel"
+	},
+	"reward": {
+		"SendTo": "/ja \"Reward\" <me>",
+		"Name": "Reward"
+	},
+	"pet1": {
+		"SendTo": "/bstpet 1 <me>",
+		"Name": "Pet1"
+	},
+	"pet2": {
+		"SendTo": "/bstpet 2 <me>",
+		"Name": "Pet2"
+	},
+	"pet3": {
+		"SendTo": "/bstpet 3 <me>",
+		"Name": "Pet3"
+	},
+	"pet4": {
+		"SendTo": "/bstpet 4 <me>",
+		"Name": "Pet4"
+	}
+}

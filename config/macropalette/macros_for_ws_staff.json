@@ -1,0 +1,14 @@
+{
+	"shattersoul":{
+		"SendTo": "/mbh setws \"Shattersoul\"",
+		"Name": "shtrsl"
+	},
+	"mrkr":{
+		"SendTo": "/mbh setws \"Myrkr\"",
+		"Name": "myrkr"
+	},
+	"cataclysm":{
+		"SendTo": "/mbh setws \"Cataclysm\"",
+		"Name": "ctclsm"
+	}
+}

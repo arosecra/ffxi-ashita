@@ -1,0 +1,14 @@
+{
+	"requiescat":{
+		"SendTo": "/mbh setws \"Requiescat\"",
+		"Name": "rqsct"
+	},
+	"cdc":{
+		"SendTo": "/mbh setws \"Chant du Cygne\"",
+		"Name": "cdc"
+	},
+	"savageblade":{
+		"SendTo": "/mbh setws \"Savage Blade\"",
+		"Name": "svgbld"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"flash":{
+		"SendTo":"/ma \"Flash\" [t]",
+		"Name":"flash"
+	},
+	"phalanx":{
+		"SendTo":"/ma Phalanx <me>",
+		"Name":"phalanx"
+	}
+}

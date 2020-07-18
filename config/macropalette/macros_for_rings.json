@@ -1,0 +1,26 @@
+{
+	"alltrizek":{
+		"Command":"/ms send /exec \"mbox/trizring.txt\"",
+		"Name":"trizek"
+	},
+	"trizek":{
+		"SendTo":"/exec \"mbox/trizring.txt\"",
+		"Name":"trizek"
+	},
+	"endring":{
+		"SendTo":"/exec \"mbox/endring.txt\"",
+		"Name":"endor"
+	},
+	"allendring":{
+		"Command":"/ms send /exec \"mbox/endring.txt\"",
+		"Name":"endor"
+	},
+	"allwrp":{
+		"Command":"/ms send /exec \"mbox/warpring.txt\"",
+		"Name":"warp"
+	},
+	"wrp":{
+		"SendTo":"/exec \"mbox/warpring.txt\"",
+		"Name":"warp"
+	}
+}

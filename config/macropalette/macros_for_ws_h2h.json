@@ -1,0 +1,22 @@
+{
+	"howlingfist":{
+		"SendTo": "/mbh setws \"Howling Fist\"",
+		"Name": "hwlfst"
+	},
+	"dragonkick":{
+		"SendTo": "/mbh setws \"Dragon Kick\"",
+		"Name": "drgnkck"
+	},
+	"stringingpummel":{
+		"SendTo": "/mbh setws \"Stringing Pummel\"",
+		"Name": "strnpml"
+	},
+	"victorysmite":{
+		"SendTo": "/mbh setws \"Victory Smite\"",
+		"Name": "vctrysmt"
+	},
+	"shijinspiral":{
+		"SendTo": "/mbh setws \"Shijin Spiral\"",
+		"Name": "shijin"
+	}
+}

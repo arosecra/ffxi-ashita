@@ -1,0 +1,14 @@
+{
+	"leadensalute":{
+		"SendTo": "/mbh setws \"Leaden Salute\"",
+		"Name": "ldnslt"
+	},
+	"wildfire":{
+		"SendTo": "/mbh setws \"Wildfire\"",
+		"Name": "wldfr"
+	},
+	"laststand":{
+		"SendTo": "/mbh setws \"Last Stand\"",
+		"Name": "lststnd"
+	}
+}
