@@ -1,0 +1,124 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="PupMnvr">
+			<neck>Buffoon's Collar</neck>
+			<!--<body>Kara. Farsetto +1</body>-->
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-Overdrive">
+			<head>Weath. Corona +1</head>
+			<body>Taeon Tabard</body>
+			<hands>Taeon Gloves</hands>
+			<legs>Taeon Tights</legs>
+			<feet>Taeon Boots</feet>
+			<neck>Buffoon's Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-119PetOnly">
+			<head>Weath. Corona +1</head>
+			<body>Taeon Tabard</body>
+			<hands>Taeon Gloves</hands>
+			<legs>Taeon Tights</legs>
+			<feet>Taeon Boots</feet>
+			<neck>Buffoon's Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-PetOnly">
+			<head>Weath. Corona +1</head>
+			<body>Taeon Tabard</body>
+			<hands>Taeon Gloves</hands>
+			<legs>Taeon Tights</legs>
+			<feet>Taeon Boots</feet>
+			<neck>Buffoon's Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-MstrMelee">
+			<head>Weath. Corona +1</head>
+			<body>Taeon Tabard</body>
+			<hands>Taeon Gloves</hands>
+			<legs>Taeon Tights</legs>
+			<feet>Taeon Boots</feet>
+			<neck>Buffoon's Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="PupEng-MstrDT">
+			<head>Weath. Corona +1</head>
+			<body>Taeon Tabard</body>
+			<hands>Taeon Gloves</hands>
+			<legs>Taeon Tights</legs>
+			<feet>Taeon Boots</feet>
+			<neck>Buffoon's Collar</neck>
+			<waist>Klouskap Sash</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Varar Ring +1</ring1>
+			<ring2>Varar Ring +1</ring2>
+			<back>Visucius's Mantle</back>
+		</set>
+		<set name="temp">
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Strategy">PetOnly</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<equip set="PupEng-$Strategy"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+		<if ad_name="*Maneuver">
+			<equip set="PupMnvr"/>
+		</if>
+		<if ad_name="Overdrive">
+			<equip><body>Pitre Tobe +2</body></equip>
+		</if>
+	</jobability>
+	<weaponskill>
+	</weaponskill>
+	<petskill>
+	</petskill>
+	<petspell>
+	</petspell>
+</ashitacast>
