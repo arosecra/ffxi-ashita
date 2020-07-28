@@ -42,6 +42,46 @@ local statuses = {
 	[32] = { name="noctohelix",   spell="Erase"    , priority=32}
 }
 
+local geospelltargets = {
+	["Geo-Regen"] = "<me>",
+	["Geo-Refresh"] = "<me>",
+	["Geo-Haste"] = "<me>",
+	["Geo-Str"] = "<me>",
+	["Geo-Dex"] = "<me>",
+	["Geo-Vit"] = "<me>",
+	["Geo-Agi"] = "<me>",
+	["Geo-Int"] = "<me>",
+	["Geo-Mnd"] = "<me>",
+	["Geo-Chr"] = "<me>",
+	["Geo-Fury"] = "<me>",
+	["Geo-Barrier"] = "<me>",
+	["Geo-Acumen"] = "<me>",
+	["Geo-Fend"] = "<me>",
+	["Geo-Precision"] = "<me>",
+	["Geo-Voidance"] = "<me>",
+	["Geo-Focus"] = "<me>",
+	["Geo-Attunement"] = "<me>",
+	["Geo-Wilt"] = "<t>",
+	["Geo-Frailty"] = "<t>",
+	["Geo-Fade"] = "<t>",
+	["Geo-Malaise"] = "<t>",
+	["Geo-Slip"] = "<t>",
+	["Geo-Torpor"] = "<t>",
+	["Geo-Vex"] = "<t>",
+	["Geo-Languor"] = "<t>"
+}
+
+local maneuver_elements = {
+	[300]='Fire', 
+	[301]='Ice', 
+	[302]='Wind', 
+	[303]='Earth', 
+	[304]='Thunder', 
+	[305]='Water', 
+	[306]='Light', 
+	[307]='Dark'
+}
+
 local config = {
 	brd = {
 		songs = {}
@@ -54,7 +94,10 @@ local config = {
 	whm = {
 	},
 	pup = {
-		maneuvers = {}
+		maneuvers = {},
+		appliedmaneuvers = false,
+		autorenewmaneuver = "true",
+		lastautorenewtime = 0
 	},
 	ws="undefined"
 };
@@ -108,6 +151,14 @@ ashita.register_event('incoming_packet', function(id, size, packet)
 		end
 		party_status_effects = new_party_status_effects
 	end
+	return false;
+end);
+
+ashita.register_event('outgoing_packet', function(id, size, packet, packet_modified, blocked) 
+	if id == 0x00D then
+		config.pup.appliedmaneuvers = false
+	end
+	
 	return false;
 end);
 
@@ -189,20 +240,20 @@ local function run_bard(args)
 			msg("Set song 2 to " .. config.brd.songs['2'])
 		end
 	elseif (args[3] == 'singsong') then
-		if config.brd.songs[args[4]] == 'Carol 1' then
+		if config.brd.songs[args[4]] == 'Carol 1' and config.brd.carolelement ~= nil then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.carolelement .. " Carol\" <me>", 1)
-		elseif config.brd.songs[args[4]] == 'Carol 2' then
+		elseif config.brd.songs[args[4]] == 'Carol 2' and config.brd.carolelement ~= nil then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.carolelement .. " Carol II\" <me>", 1)
-		else
+		elseif config.brd.songs[args[4]] ~= nil then
 			AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.songs[args[4]] .. "\" <me>", 1)
 		end
 	elseif (args[3] == 'setcarolelement') then
 		config.brd.carolelement = args[4]
 	elseif (args[3] == 'setthrenodyelement') then
 		config.brd.threnodyelement = args[4]
-	elseif (args[3] == 'threnody1') then
+	elseif (args[3] == 'threnody1' and config.brd.threnodyelement ~= nil) then
 		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.threnodyelement .. "\" <t>", 1)
-	elseif (args[3] == 'threnody2') then
+	elseif (args[3] == 'threnody2' and config.brd.threnodyelement ~= nil) then
 		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.brd.threnodyelement .. " II\" <t>", 1)
 	end
 end
@@ -214,14 +265,94 @@ local function run_geo(args)
 	elseif (args[3] == 'setluopan') then
 		config.geo['luopan'] = args[4]
 		msg("Set luopan to " .. config.geo['luopan'])
-	elseif (args[3] == 'bubble') then
+	elseif (args[3] == 'bubble' and config.geo['bubble'] ~= nil) then
 		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['bubble'] .. "\" <me>", 1)
-	elseif (args[3] == 'luopan') then
-		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['luopan'] .. "\" <me>", 1)
+	elseif (args[3] == 'luopan' and config.geo['luopan'] ~= nil) then
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['luopan'] .. "\" " .. geospelltargets[config.geo['luopan']], 1)
 	end
 end
-local function run_pup(args)
+
+local function maneuver(maneuver_count, maneuver)
+	local result = false
+	if(maneuver ~= nil) then
+		if(maneuver_count[maneuver] > 0) then
+			maneuver_count[maneuver] = maneuver_count[maneuver] -1
+		else
+			config.pup.appliedmaneuvers = true
+			AshitaCore:GetChatManager():QueueCommand("/ja \"" .. maneuver .. " Maneuver\" <me>", 1)
+			result = true;
+		end
+			
+	end
+	return result
 end
+
+local function count_current_maneuvers()
+	local maneuver_count = {
+		['Fire']=0, 
+		['Ice']=0, 
+		['Wind']=0, 
+		['Earth']=0, 
+		['Thunder']=0, 
+		['Water']=0, 
+		['Light']=0, 
+		['Dark']=0
+	}
+	local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons();
+	for slot = 0, 31, 1 do
+		--print(status_list[slot])
+		if status_list[slot] >= 300 and status_list[slot] <=307 then
+			local element = maneuver_elements[status_list[slot]]
+			maneuver_count[element] = maneuver_count[element] + 1
+		end
+	end
+	return maneuver_count
+end
+
+local function run_maneuver()
+	local maneuver_count = count_current_maneuvers()
+	
+	if maneuver(maneuver_count, config.pup.maneuvers['1']) then
+		return true;
+	end
+	if maneuver(maneuver_count, config.pup.maneuvers['2']) then
+		return true;
+	end
+	if maneuver(maneuver_count, config.pup.maneuvers['3']) then
+		return true;
+	end
+end
+
+local function run_pup(args)
+	if (args[3] == 'addmaneuver') then
+		if (config.pup.maneuvers['1'] == nil) then
+			config.pup.maneuvers['1'] = args[4]
+		elseif (config.pup.maneuvers['2'] == nil) then
+			config.pup.maneuvers['2'] = args[4]
+		elseif (config.pup.maneuvers['3'] == nil) then
+			config.pup.maneuvers['3'] = args[4]
+		else
+			config.pup.maneuvers['1'] = config.pup.maneuvers['2']
+			config.pup.maneuvers['2'] = config.pup.maneuvers['3']
+			config.pup.maneuvers['3'] = args[4]
+		end
+		if(config.pup.maneuvers['1'] ~= nil) then
+			msg("Set maneuver 1 to " .. config.pup.maneuvers['1'])
+		end
+		if(config.pup.maneuvers['2'] ~= nil) then
+			msg("Set maneuver 2 to " .. config.pup.maneuvers['2'])
+		end
+		if(config.pup.maneuvers['3'] ~= nil) then
+			msg("Set maneuver 3 to " .. config.pup.maneuvers['3'])
+		end
+	elseif (args[3] == 'maneuver') then
+		run_maneuver()
+	
+	elseif (args[3] == 'autorenewmaneuver') then
+		config.pup.autorenewmaneuver = args[4]	
+	end
+end
+
 local function run_whm(args)
 	if (args[3] == 'cure') then
 		run_cure(100, 250, 500, 600, args)
@@ -265,6 +396,30 @@ local function run_cor(args)
 		AshitaCore:GetChatManager():QueueCommand("/ja \"" .. config.cor.rolls[args[4]] .. "\" <me>", 1)
 	end
 end
+
+ashita.register_event('render', function()
+    -- Obtain the local player..
+    local player = AshitaCore:GetDataManager():GetPlayer();
+    local playerEntity = GetPlayerEntity();
+    if (player == nil or playerEntity == nil) then
+        return;
+    end
+    
+	local mainjob = jobs[player:GetMainJob()].en
+    
+	if mainjob == 'Puppetmaster' then
+		-- do pup stuff here
+		if config.pup.appliedmaneuvers and 
+			config.pup.autorenewmaneuver == "true" and
+			os.time() > config.pup.lastautorenewtime + 12
+			then
+			if run_maneuver() then
+				config.pup.lastautorenewtime = os.time()
+			end
+		end
+	end
+	
+end);
 
 -- mbh whm cure
 -- mbh whm curega
