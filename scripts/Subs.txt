@@ -33,7 +33,6 @@
 /addon load autojoin
 /addon load warptome
 /addon load sneakinvis
-/addon load automaneuver
 /addon load partyfollow
 /addon load multiboxhelper
 /addon load debuff

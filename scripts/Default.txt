@@ -36,7 +36,7 @@
 /addon load macropalette
 /addon load sneakinvis
 /addon load mbpetbar
-/addon load automaneuver
+/addon load multiboxhelper
 /addon load partyfollow
 /addon load recast
 /addon load debuff
