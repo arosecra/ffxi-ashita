@@ -121,12 +121,12 @@
 	},
 	"Puppetmaster":{
 		"JbSttngs": {},
-		"AdnStngs": [ "", "", "", "", "", "", "", "" ],
+		"AdnStngs": [ "mnvroff", "mnvron", "", "", "", "", "", "" ],
 		"Actns1":   [ "", "", "dply", "rtr", "actvt", "deactvt", "maint", "" ],
 		"Actns2":   [ "", "", "", "", "", "", "", "" ],
 		"Actns3":   [ "", "", "", "", "", "", "", "" ],
 		"Twn":      [ "", "", "", "", "", "", "", "" ],
-		"Buff":     [ "firem", "icem", "windm", "earthm", "thundrm", "watrm", "lightm", "drkm" ],
+		"Buff":     [ "maneuver", "", "", "", "", "", "", "" ],
 		"Items":    [ "", "", "", "", "", "", "", "" ]
 	},
 	"Ranger":{

@@ -1,6 +1,6 @@
 {
-"Bard":{
-		"1": {
+"Bard":[
+		{
 			"Name": "Song One",
 			"Settings": [
 				{"Name": "Ref3", "MacroName": "brdref3" }, 
@@ -14,7 +14,7 @@
 				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
-		"2": {
+		{
 			"Name": "Song Two",
 			"Settings": [
 				{"Name": "Ref3", "MacroName": "brdref3" }, 
@@ -27,7 +27,7 @@
 				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
-		"3": {
+		{
 			"Name": "Song Three",
 			"Settings": [
 				{"Name": "Ref3", "MacroName": "brdref3" }, 
@@ -41,7 +41,7 @@
 				{"Name":"Carol 2", "MacroName": "brdcarol2"}
 			]
 		},
-		"4": {
+		{
 			"Name": "Threnody Element",
 			"Settings": [
 				{"Name": "Fire", "MacroName": "brd_threnody_element_fire"}, 
@@ -54,7 +54,7 @@
 				{"Name": "Dark", "MacroName": "brd_threnody_element_dark"} 
 			]
 		},
-		"5": {
+		{
 			"Name": "Carol Element",
 			"Settings": [
 				{"Name": "Fire", "MacroName": "brd_carol_element_fire"}, 
@@ -67,22 +67,22 @@
 				{"Name": "Dark", "MacroName": "brd_carol_element_dark"} 
 			]
 		},
-		"6": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Evisceration", "MacroName": "evisceration" }
 			]
 		}
-	},
-	"Beastmaster":{
-		"1": {
+	],
+	"Beastmaster":[
+		{
 			"Name": "Accuracy",
 			"Settings": [
 				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
 				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
 			]
 		},
-		"2": {
+		{
 			"Name": "IdleMain",
 			"Settings": [
 				{"Name":"NoSwap",   "MacroName": "ac_var_IdleMain_NoSwap"}, 
@@ -91,7 +91,7 @@
 				{"Name":"Arktoi",   "MacroName": "ac_var_IdleMain_Arktoi"}
 			]
 		},
-		"3": {"Name": "IdleSub",
+		{"Name": "IdleSub",
 			"Settings": [
 			{"Name":"Arktoi",   "MacroName": "ac_var_IdleSub_Arktoi" }, 
 			{"Name":"PetPdt",   "MacroName": "ac_var_IdleSub_PetPdt" }, 
@@ -99,7 +99,7 @@
 			{"Name":"Beatific",   "MacroName": "ac_var_IdleSub_Beatific" }, 
 			{"Name":"Adapa",   "MacroName": "ac_var_IdleSub_Adapa" }
 		]},
-		"4": {"Name": "BlJug",
+		{"Name": "BlJug",
 			"Settings": [
 			{ "Name":"Lizard",   "MacroName": "ac_var_BlJug_Lizard" },  
 			{ "Name":"Tiger",    "MacroName": "ac_var_BlJug_Tiger" },  
@@ -114,7 +114,7 @@
 		
 		]},
 		
-		"5": {"Name": "CllBstJug",
+		{"Name": "CllBstJug",
 			"Settings": [
 			{ "Name":"Lizard",   "MacroName": "ac_var_CllBstJug_Lizard" },  
 			{ "Name":"Tiger",    "MacroName": "ac_var_CllBstJug_Tiger" },  
@@ -127,19 +127,19 @@
 			{ "Name":"Raptor",   "MacroName": "ac_var_CllBstJug_Raptor" }
 		
 		]},
-		"6": {"Name": "Strategy",
+		{"Name": "Strategy",
 			"Settings": [
 			{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee" }, 
 			{"Name":"PetOnly", "MacroName": "ac_var_Strategy_PetOnly" }, 
 			{"Name":"119PetOnly", "MacroName": "ac_var_Strategy_119PetOnly" }, 
 			{"Name":"MasterDT", "MacroName": "ac_var_Strategy_MstrDT" }
 		]},
-		"7": {"Name": "WeaponStrategy",
+		{"Name": "WeaponStrategy",
 			"Settings": [
 			{"Name":"Swap", "MacroName": "ac_var_WeaponStrategy_Swap"}, 
 			{"Name":"NoSwap", "MacroName": "ac_var_WeaponStrategy_NoSwap"}
 		]},
-		"8": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Primal Rend", "MacroName": "primalrend" },
@@ -147,11 +147,10 @@
 				{"Name": "Mistral Axe", "MacroName": "mistralaxe" },
 				{"Name": "Decimation", "MacroName": "decimation" },
 				{"Name": "Ruinator", "MacroName": "ruinator" }
-			]
-		}
-	},
-	"Black Mage":{
-		"1": {
+		]}
+	],
+	"Black Mage":[
+		{
 			"Name": "Element",
 			"Settings": [
 				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
@@ -164,23 +163,24 @@
 				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
 			]
 		},
-		"2": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Shattersoul", "MacroName": "shattersoul" },
 				{"Name": "Myrkr", "MacroName": "myrkr" },
 				{"Name": "Cataclysm", "MacroName": "cataclysm" }
 			]
-		}},
-	"Blue Mage":{
-		"1": {
+		}
+	],
+	"Blue Mage":[
+		{
 			"Name": "Accuracy",
 			"Settings": [
 				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
 				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
 			]
 		},
-		"2": {
+		{
 			"Name": "Strategy",
 			"Settings": [
 				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"},
@@ -188,22 +188,23 @@
 				{"Name":"Refresh", "MacroName": "ac_var_Strategy_Refresh"}
 			]
 		},
-		"3": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "CDC", "MacroName": "cdc" },
 				{"Name": "Savage Blade", "MacroName": "savageblade" }
 			]
-		}},
-	"Corsair":{
-		"1": {
+		}
+	],
+	"Corsair":[
+		{
 			"Name": "Accuracy",
 			"Settings": [
 				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
 				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
 			]
 		},
-		"2": {
+		{
 			"Name": "Strategy",
 			"Settings": [
 				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"},
@@ -212,7 +213,7 @@
 				{"Name":"Refresh", "MacroName": "ac_var_Strategy_Refresh"}
 			]
 		},
-		"3": {
+		{
 			"Name": "Roll One",
 			"Settings": [
 				{"Name": "Exp+", "MacroName": "cor_roll_corsairs"},
@@ -231,7 +232,7 @@
 				{"Name": "PetReg+", "MacroName": "cor_roll_companion"}
 			]
 		},
-		"4": {
+		{
 			"Name": "Roll Two",
 			"Settings": [
 				{"Name": "Exp+", "MacroName": "cor_roll_corsairs"},
@@ -250,7 +251,7 @@
 				{"Name": "PetReg+", "MacroName": "cor_roll_companion"}
 			]
 		},
-		"5": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Savage Blade", "MacroName": "savageblade" },
@@ -260,12 +261,13 @@
 				{"Name": "Wildfire", "MacroName": "wildfire" },
 				{"Name": "Last Stand", "MacroName": "laststand" }
 			]
-		}},
+		}
+	],
 	"Dancer":{},
 	"Dark Knight":{},
 	"Dragoon":{},
-	"Geomancer":{
-		"1": {
+	"Geomancer":[
+		{
 			"Name": "Element",
 			"Settings": [
 				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
@@ -278,7 +280,7 @@
 				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
 			]
 		},
-		"2": {
+		{
 			"Name": "Bubble",
 			"Settings": [
 				{"Name": "Regen",     "MacroName": "bubble-regen"},
@@ -309,7 +311,7 @@
 				{"Name": "EnMagEva-", "MacroName": "bubble-languor"}
 			]
 		},
-		"3": {
+		{
 			"Name": "Luopan",
 			"Settings": [
 				{"Name": "Regen",     "MacroName": "luopan-regen"},
@@ -340,7 +342,7 @@
 				{"Name": "EnMagEva-", "MacroName": "luopan-languor"}
 			]
 		},
-		"4": {
+		{
 			"Name": "Entrust",
 			"Settings": [
 				{"Name": "Regen",     "MacroName": "entrust-regen"},
@@ -371,7 +373,7 @@
 				{"Name": "EnMagEva-", "MacroName": "entrust-languor"}
 			]
 		},
-		"5": {
+		{
 			"Name": "Entrust Target",
 			"Settings": [
 				{"Name": "Char1", "MacroName": "entrust_target_char1"},
@@ -381,24 +383,25 @@
 				{"Name": "Char5", "MacroName": "entrust_target_char5"}
 			]
 		},
-		"6": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Hexastrike", "MacroName": "hexastrike" }
 			]
-		}},
-	"Monk":{},
-	"Ninja":{},
-	"Paladin":{},
-	"Puppetmaster":{
-		"1": {
+		}
+	],
+	"Monk":[],
+	"Ninja":[],
+	"Paladin":[],
+	"Puppetmaster":[
+		{
 			"Name": "Accuracy",
 			"Settings": [
 				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
 				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
 			]
 		},
-		"2": {
+		{
 			"Name": "Strategy",
 			"Settings": [
 				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"}, 
@@ -408,7 +411,7 @@
 				{"Name":"Overdrive", "MacroName": "ac_var_Strategy_Overdrive"}
 			]
 		},
-		"3": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Howling Fist", "MacroName": "howlingfist" },
@@ -417,21 +420,60 @@
 				{"Name": "Shijin Spiral", "MacroName": "shijinspiral" },
 				{"Name": "Victory Smite", "MacroName": "victorysmite" }
 			]
+		},
+		{
+			"Name": "Maneuver 1",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "firem" },
+				{"Name": "Ice", "MacroName": "icem" },
+				{"Name": "Wind", "MacroName": "windm" },
+				{"Name": "Earth", "MacroName": "earthm" },
+				{"Name": "Thunder", "MacroName": "thunderm" },
+				{"Name": "Water", "MacroName": "waterm" },
+				{"Name": "Light", "MacroName": "lightm" },
+				{"Name": "Dark", "MacroName": "darkm" }
+			]
+		},
+		{
+			"Name": "Maneuver 2",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "firem" },
+				{"Name": "Ice", "MacroName": "icem" },
+				{"Name": "Wind", "MacroName": "windm" },
+				{"Name": "Earth", "MacroName": "earthm" },
+				{"Name": "Thunder", "MacroName": "thunderm" },
+				{"Name": "Water", "MacroName": "waterm" },
+				{"Name": "Light", "MacroName": "lightm" },
+				{"Name": "Dark", "MacroName": "darkm" }
+			]
+		},
+		{
+			"Name": "Maneuver 3",
+			"Settings": [
+				{"Name": "Fire", "MacroName": "firem" },
+				{"Name": "Ice", "MacroName": "icem" },
+				{"Name": "Wind", "MacroName": "windm" },
+				{"Name": "Earth", "MacroName": "earthm" },
+				{"Name": "Thunder", "MacroName": "thunderm" },
+				{"Name": "Water", "MacroName": "waterm" },
+				{"Name": "Light", "MacroName": "lightm" },
+				{"Name": "Dark", "MacroName": "darkm" }
+			]
 		}
-	},
-	"Ranger":{},
-	"Red Mage":{},
-	"Rune Fencer":{},
-	"Samurai":{},
-	"Scholar":{
-		"1": {
+	],
+	"Ranger":[],
+	"Red Mage":[],
+	"Rune Fencer":[],
+	"Samurai":[],
+	"Scholar":[
+		{
 			"Name": "Accuracy",
 			"Settings": [
 				{"Name":"Low",   "MacroName": "ac_var_Accuracy_Low"}, 
 				{"Name":"High",   "MacroName": "ac_var_Accuracy_High"}
 			]
 		},
-		"2": {
+		{
 			"Name": "Element",
 			"Settings": [
 				{"Name": "Fire", "MacroName": "nuke_element_fire"}, 
@@ -444,7 +486,7 @@
 				{"Name": "Dark", "MacroName": "nuke_element_dark"} 
 			]
 		},
-		"3": {
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Shattersoul", "MacroName": "shattersoul" },
@@ -452,18 +494,18 @@
 				{"Name": "Cataclysm", "MacroName": "cataclysm" }
 			]
 		}
-	},
-	"Summoner":{},
-	"Thief":{},
-	"Warrior":{},
-	"White Mage":{
-		"1": {
+	],
+	"Summoner":[],
+	"Thief":[],
+	"Warrior":[],
+	"White Mage":[
+		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Hexastrike", "MacroName": "hexastrike" }
 			]
 		}, 
-		"2": {
+		{
 			"Name": "Boost",
 			"Settings": [
 				{"Name": "Str", "MacroName": "mbh_setboost_str" },
@@ -475,7 +517,7 @@
 				{"Name": "Chr", "MacroName": "mbh_setboost_chr" }
 			]
 		}, 
-		"3": {
+		{
 			"Name": "Bar Element",
 			"Settings": [
 				{"Name": "Fire",    "MacroName": "mbh_whm_setbarelement_fire" },
@@ -486,7 +528,7 @@
 				{"Name": "Water",   "MacroName": "mbh_whm_setbarelement_water" }
 			]
 		}, 
-		"4": {
+		{
 			"Name": "Bar Status",
 			"Settings": [
 				{"Name": "Amnesia",       "MacroName": "mbh_whm_setbarstatus_amnesia" },
@@ -498,5 +540,6 @@
 				{"Name": "Silence",       "MacroName": "mbh_whm_setbarstatus_silence" },
 				{"Name": "Sleep",         "MacroName": "mbh_whm_setbarstatus_sleep" }
 			]
-		}}
+		}
+	]
 }

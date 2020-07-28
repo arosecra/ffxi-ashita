@@ -473,10 +473,7 @@ function run_macro(section, hotbar_macro, mode)
 		end
 		local current_time = os.time()
 		local end_time = current_time + hotbar_config.Timers[section.Name][hotbar_macro.id].Time
-		
-		print(current_time)
-		print(end_time)
-		
+				
 		hotbar_config.TimerData[section.Name][end_time] = {
 			reset = end_time,
 			name = hotbar_config.Timers[section.Name][hotbar_macro.id].Name
@@ -567,18 +564,7 @@ ashita.register_event('render', function()
 	local playerEntity = GetPlayerEntity()
     if (playerEntity == nil) then
         return;
-    end
-	
-	--if (imgui.Begin('settings', true) == false) then
-    --    imgui.End();
-    --    return;
-    --end
-	--
-	--imgui.Checkbox('MP+', false)
-    --
-	--
-	--imgui.End()
-	
+    end	
 	
     -- Display the macro bar 
 	local width = WIDTH
@@ -687,10 +673,10 @@ ashita.register_event('render', function()
 				for reset_time,reset_info in pairs(hotbar_config.TimerData[hotbar_section.Name]) do
 					--print(reset_time)
 					if reset_time < current_time then
-						print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers before removal')
+						--print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers before removal')
 						hotbar_config.TimerData[hotbar_section.Name][reset_time] = nil
-						print('removed timer')
-						print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers after removal')
+						--print('removed timer')
+						--print(get_table_length(hotbar_config.TimerData[hotbar_section.Name]) .. ' timers after removal')
 					end
 					
 					if not displayed and reset_time > current_time then
@@ -701,11 +687,11 @@ ashita.register_event('render', function()
 				end
 				if get_table_length(hotbar_config.TimerData[hotbar_section.Name]) == 0 then
 					hotbar_config.TimerData[hotbar_section.Name] = nil
-					print('removed hotbar section')
+					--print('removed hotbar section')
 				end
 				if get_table_length(hotbar_config.TimerData) == 0 then
 					hotbar_config.TimerData = nil
-					print('removed timerdata')
+					--print('removed timerdata')
 				end
 				
 				imgui.SameLine();

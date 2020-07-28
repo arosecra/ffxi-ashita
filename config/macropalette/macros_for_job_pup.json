@@ -21,34 +21,46 @@
 	},
 	"firem":{
 		"Name": "Fire",
-		"SendTo" : "/ja \"Fire Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Fire"
 	},
 	"icem":{
 		"Name": "Ice",
-		"SendTo" : "/ja \"Ice Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Ice"
 	},
 	"windm":{
 		"Name": "Wind",
-		"SendTo" : "/ja \"Wind Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Wind"
 	},
 	"earthm":{
 		"Name": "Earth",
-		"SendTo" : "/ja \"Earth Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Earth"
 	},
-	"thundrm":{
+	"thunderm":{
 		"Name": "Thundr",
-		"SendTo" : "/ja \"Thunder Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Thunder"
 	},
-	"watrm":{
+	"waterm":{
 		"Name": "Water",
-		"SendTo" : "/ja \"Water Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Water"
 	},
 	"lightm":{
 		"Name": "Light",
-		"SendTo" : "/ja \"Light Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Light"
 	},
-	"drkm":{
+	"darkm":{
 		"Name": "Dark",
-		"SendTo" : "/ja \"Dark Maneuver\" <me>"
+		"SendTo" : "/mbh pup addmaneuver Dark"
+	},
+	"maneuver":{
+		"Name": "Mnvr",
+		"SendTo" : "/mbh pup maneuver"
+	},
+	"mnvroff":{
+		"Name": "MnvrOff",
+		"SendTo" : "/mbh pup autorenewmaneuver false"
+	},
+	"mnvron":{
+		"Name": "MnvrOn",
+		"SendTo" : "/mbh pup autorenewmaneuver true"
 	}
 }
