@@ -55,7 +55,7 @@
 		"Sadaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ]
 	},
 	"Items": {
-		"MBox":     [ "alltrizek", "allendring", "allwrp", "job", "job", "job", "job", "job" ],
+		"MBox":     [ "disband", "alltrizek", "allendring", "allwrp", "job", "job", "job", "job" ],
 		"Specktr":  [ "leavept", "trizek", "endor", "wrp", "DITrusts", "job", "job", "job" ],
 		"Sternaru": [ "leavept", "trizek", "endor", "wrp", "DITrusts", "job", "job", "job" ],
 		"Sillyaru": [ "leavept", "trizek", "endor", "wrp", "DITrusts", "job", "job", "job" ],

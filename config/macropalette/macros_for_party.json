@@ -2,5 +2,9 @@
 	"group":{
 		"Name":"group",
 		"Script":"mbox/group.txt"
+	}, 
+	"DITrusts":{
+		"Name":"DITrusts",
+		"SendTo":"/extexec di/$NAME_DI_Trusts.txt"
 	}
 }
