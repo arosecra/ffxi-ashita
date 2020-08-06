@@ -350,6 +350,9 @@ local function run_pup(args)
 	
 	elseif (args[3] == 'autorenewmaneuver') then
 		config.pup.autorenewmaneuver = args[4]	
+		if (config.pup.autorenewmaneuver == 'false') then
+			config.pup.appliedmaneuvers = false
+		end
 	end
 end
 
