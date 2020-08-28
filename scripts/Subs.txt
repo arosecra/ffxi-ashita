@@ -35,6 +35,7 @@
 /addon load sneakinvis
 /addon load partyfollow
 /addon load multiboxhelper
+/addon load extexec
 /addon load debuff
 
 ##########################################################################

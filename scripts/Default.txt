@@ -37,6 +37,7 @@
 /addon load sneakinvis
 /addon load mbpetbar
 /addon load multiboxhelper
+/addon load extexec
 /addon load partyfollow
 /addon load recast
 /addon load debuff
