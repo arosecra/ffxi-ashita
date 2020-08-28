@@ -5,6 +5,8 @@ _addon.version  = '1.0.0';
 
 require 'common'
 require 'stringex'
+require 'packets'
+require 'autofollow'
 local jobs = require 'windower/res/jobs'
 --local addon_settings = require 'addon_settings'
 local statuses = {
@@ -99,8 +101,19 @@ local config = {
 		autorenewmaneuver = "true",
 		lastautorenewtime = 0
 	},
-	ws="undefined"
+	ws="undefined",
+	follow = {
+		destX = nil,
+		destZ = nil,
+		followName = nil,
+		following = nil,
+		inAction = false
+	}
 };
+local dataManager = AshitaCore:GetDataManager();
+local chatManager = AshitaCore:GetChatManager();
+
+local autofollowObject = autoFollow;
 
 local party_status_effects = {}
 
@@ -117,8 +130,43 @@ end
 ----------------------------------------------------------------------------------------------------
 ashita.register_event('load', function()
 --	hotbar_config = addon_settings.onload(_addon.name, _addon.name, {}, true, false, false)
-
+    autofollowObject.baseAddress = ashita.memory.read_int32(ashita.memory.find("FFXiMain.dll", 0, "F6C4447A42D905????????D81D????????", 7, 0)); 
+	if (autofollowObject.baseAddress) then
+		-- Do nothing; Addon was able to load
+	else
+		print("Unable to find autofollow pointer");
+		chatManager:QueueCommand("/addon unload " .. _addon.name, 1);
+	end;
 end);
+
+function start_action() 
+	config.follow.inAction = true
+	if (config.follow.following and autofollowObject.running) then
+		autofollowObject.running = false;
+		autofollowObject:setAutoRun(false);
+		config.follow.inAction = true
+	end
+end
+
+function end_action()
+	config.follow.inAction = false
+	if(config.follow.following) then
+		local currX = dataManager:GetEntity():GetLocalX(dataManager:GetParty():GetMemberTargetIndex(0));
+		local currZ = dataManager:GetEntity():GetLocalZ(dataManager:GetParty():GetMemberTargetIndex(0));
+		local dist = math.sqrt(math.pow((currX - destX), 2.0) + math.pow((currZ - destZ), 2.0));
+		if (dist > 0.5 and dist < 30) then
+			autofollowObject:setAutoRun(true)
+			autofollowObject.running = true;
+		config.follow.inAction = false
+		end
+		
+	end
+
+end
+
+function band(a, b)
+	return bit.band(bit.rshift(a, b), 1)
+end
 
 --
 -- copied and modified from status to try track debuffs against party for stna-like feature
@@ -150,6 +198,63 @@ ashita.register_event('incoming_packet', function(id, size, packet)
 			end
 		end
 		party_status_effects = new_party_status_effects
+	elseif (id == 0x0D) then
+		local pkt = {
+			id = struct.unpack('i4', packet, 0x04+1), 
+			index = struct.unpack('H', packet, 0x08+1),
+			update = {
+				raw = struct.unpack('B', packet, 0x0A+1)
+			},
+			heading = struct.unpack('B', packet, 0x0B+1),
+			x = struct.unpack('f', packet, 0x0C+1),
+			z = struct.unpack('f', packet, 0x14+1),
+			race = struct.unpack('B', packet, 0x49+1)
+		}
+		pkt.update.position = band(pkt.update.raw, 0x01)
+		pkt.update.status   = band(pkt.update.raw, 0x02)
+		pkt.update.hp       = band(pkt.update.raw, 0x04)
+		pkt.update.combat   = band(pkt.update.raw, 0x07)
+		pkt.update.name     = band(pkt.update.raw, 0x08)
+		pkt.update.look     = band(pkt.update.raw, 0x10)
+		pkt.update.mob      = band(pkt.update.raw, 0x0F)
+		pkt.update.all      = band(pkt.update.raw, 0x1F)
+		pkt.update.despawn  = band(pkt.update.raw, 0x20)
+		local e = GetEntity(pkt.index);
+		if (e ~= nil) then
+			pkt.entity = e
+		end
+		
+		if pkt.entity ~= nil and 
+		   pkt.entity.Name == config.follow.followName and
+		   pkt.x ~= 0 and
+		   pkt.y ~= 0 then
+			config.follow.destX = pkt.x
+			config.follow.destZ = pkt.z
+			--print('updating follow dest')
+		end
+		
+		--print('id ' .. pkt.id)
+		--print('index ' .. pkt.index)
+		--print('update ' .. pkt.update.raw)
+		--
+		--print('heading ' .. pkt.heading)
+		--print('x ' .. pkt.x)
+		--print('z ' .. pkt.z)
+		--print('race ' .. pkt.race)
+		--if (pkt.entity ~= nil) then
+		--	print(pkt.entity.Name)
+		--end
+	elseif(id == 0x28) then
+		local pkt = packets_parser.parse_action(packet)
+		--print(pkt.actor_id)
+		local playerEntity = GetPlayerEntity();
+		if(playerEntity.ServerId == pkt.actor_id) then
+			if pkt.category == 12 or pkt.category == 8 then
+				start_action();
+			elseif pkt.category == 2 or pkt.category == 4 then
+				end_action();
+			end
+		end
 	end
 	return false;
 end);
@@ -161,6 +266,10 @@ ashita.register_event('outgoing_packet', function(id, size, packet, packet_modif
 	
 	return false;
 end);
+
+local function run_command_after_timer(command)
+	AshitaCore:GetChatManager():QueueCommand(command, 1)
+end
 
 local function run_cure(cure1, cure2, cure3, cure4, args)
 	local lowestHpp = 100;
@@ -185,16 +294,19 @@ local function run_cure(cure1, cure2, cure3, cure4, args)
 	--cure iv = 680
 	--cure iii = 364
 	if lowestHpp < 100 then
-	
+		start_action()
+		local command = ""
 		if hpMissing > cure4 then
-			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure IV\" " .. lowestName, 1)
+			command = "/ma \"Cure IV\" " .. lowestName
 		elseif hpMissing > cure3 then
-			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure III\" " .. lowestName, 1)
+			command = "/ma \"Cure IV\" " .. lowestName
 		elseif hpMissing > cure2 then
-			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure II\" " .. lowestName, 1)
+			command = "/ma \"Cure IV\" " .. lowestName
 		elseif hpMissing > cure1 then
-			AshitaCore:GetChatManager():QueueCommand("/ma \"Cure\" " .. lowestName, 1)
+			command = "/ma \"Cure IV\" " .. lowestName
 		end
+		
+		ashita.timer.once(1, run_command_after_timer, command)
 	end
 
 end
@@ -211,6 +323,7 @@ local function run_remove_debuff(args)
 			
 				for j=0,31 do
 					if party_status_effects[i].Statuses[j] ~= nil and party_status_effects[i].Statuses[j].StatusName == status.name then
+						start_action()
 						AshitaCore:GetChatManager():QueueCommand("/ma \"" .. status.spell .. "\" " .. party_status_effects[i].Name, 1)
 						break;
 					end
@@ -347,7 +460,6 @@ local function run_pup(args)
 		end
 	elseif (args[3] == 'maneuver') then
 		run_maneuver()
-	
 	elseif (args[3] == 'autorenewmaneuver') then
 		config.pup.autorenewmaneuver = args[4]	
 		if (config.pup.autorenewmaneuver == 'false') then
@@ -421,6 +533,39 @@ ashita.register_event('render', function()
 			end
 		end
 	end
+	
+	local currX = dataManager:GetEntity():GetLocalX(dataManager:GetParty():GetMemberTargetIndex(0));
+	local currZ = dataManager:GetEntity():GetLocalZ(dataManager:GetParty():GetMemberTargetIndex(0));
+	
+	if  (os.time() >= (autofollowObject.timer + autofollowObject.delay)) then
+        autofollowObject.timer = os.time();
+	end;
+	
+	if not autofollowObject.running and 
+	   config.follow.destX ~= nil and 
+	   config.follow.destZ ~= nil and
+	   not config.follow.inAction then
+		autofollowObject:setAutoRun(true)
+		autofollowObject.running = true;
+	end
+
+	-- Has to be ran faster than timing loop
+	if (autofollowObject.running) then		
+		local dist = math.sqrt(math.pow((currX - config.follow.destX), 2.0) + math.pow((currZ - config.follow.destZ), 2.0));
+		--print(dist);
+		if (dist > 0.5 and dist < 30) then
+			autofollowObject:runTowards(currX, currZ, config.follow.destX, config.follow.destZ);
+		elseif (dist < 0.5) then
+			autofollowObject.running = false;
+			autofollowObject:setAutoRun(false);
+			config.follow.destX = nil
+			config.follow.destZ = nil
+		else
+			autofollowObject.running = false;
+			autofollowObject:setAutoRun(false);
+			print("Unable to get to path");
+		end;
+	end;
 	
 end);
 
@@ -514,6 +659,10 @@ ashita.register_event('command', function(cmd, nType)
 		run_cor(args);
 	    return true;
     end
+	
+	if (args[2] == 'follow') then
+		config.follow.followName = args[3]
+	end
 	
     return true;
 end);
