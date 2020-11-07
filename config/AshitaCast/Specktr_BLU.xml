@@ -32,7 +32,7 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back augment="S46186337966593143">Rosmerta's Cape</back>
+			<back augment="S4618633796659318575">Rosmerta's Cape</back>
 		</set>                                                               
 		<set name="TP-High">
 			<ammo>Ginsen</ammo>
@@ -47,7 +47,7 @@
 			<ear2>Brutal Earring</ear2>
 			<ring1>Epona's Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back augment="S46186337966593143">Rosmerta's Cape</back>
+			<back augment="S4618633796659318575">Rosmerta's Cape</back>
 		</set>
 		<set name="DT">
 			<ammo>Staunch Tathlum</ammo>
@@ -187,22 +187,6 @@
 			<head>Wh. Rarab Cap +1</head>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
-		</set>
-		<set name="temp">
-			<main augment="D15479225921796">Nibiru Cudgel</main>
-			<sub augment="D15479225921796">Nibiru Cudgel</sub>
-			<ammo>Ginsen</ammo>
-			<head augment="D20925277801407">Adhemar Bonnet +1</head>
-			<body augment="D20925277801407">Adhemar Jacket +1</body>
-			<hands augment="S5500176333007116409">Herculean Gloves</hands>
-			<legs augment="S182074737443842192">Samnuha Tights</legs>
-			<feet augment="S70476530497559">Herculean Boots</feet>
-			<neck>Asperity Necklace</neck>
-			<waist augment="O2388156481536292">Sailfi Belt +1</waist>
-			<ear1>Cessance Earring</ear1>
-			<ear2>Brutal Earring</ear2>
-			<ring1>Epona's Ring</ring1>
-			<ring2>Petrov Ring</ring2>
 		</set>
 		<include>
 		</include>

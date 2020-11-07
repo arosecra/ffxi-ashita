@@ -1,0 +1,197 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="TP">
+			<head>Flam. Zucchetto +1</head>
+			<body>Kasuga Domaru +1</body>
+			<hands>Wakido Kote +2</hands>
+			<legs augment="S1232441083638448217">Valorous Hose</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Asperity Necklace</neck>
+			<waist>Sailfi Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="WS">
+			<head>Flam. Zucchetto +1</head>
+			<body>Tartarus Platemail</body>
+			<hands>Wakido Kote +2</hands>
+			<legs>Hiza. Hizayoroi</legs>
+			<feet>Flam. Gambieras +1</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear2>Thrud Earring</ear2>
+			<ear2 augment="S560011289">Moonshade Earring</ear2>
+			<ring1>Apate Ring</ring1>
+			<ring2>Petrov Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="IdleMode">TP</var>
+	    <var name="BluMagPhys">Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide</var>
+        <var name="BluMagMag">Subduction</var>       
+        <var name="BluMagDebuff">Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar</var>      
+        <var name="BluMagBuff">Metallic Body|Cocoon|Refueling|Feather Barrier|Memento Mori|Zephyr Mantle|Diamondhide|Warm-Up|Amplification|Triumphant Roar|Saline Coat|Reactor Cool|Exuviation|Plasma Charge|Regeneration|Animating Wail|Magic Barrier|Fantod|Occultation|Winds of Promyvion|Barrier Tusk|Orcish Counterstance|Harden Shell|Pyric Bulwark|Nature\s Meditation|Carcharian Verve|Erratic Flutter|Restoral|Mighty Guard</var>
+		<var name="BluMagCure">Pollen|Healing Breeze|Wild Carrot|Magic Fruit|White Wind|Plenilune Embrace</var>
+		<var name="BluEnhDuration">Battery Charge</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if p_ismoving="True">
+			<equip lock="true">
+				<lring>Shneddick Ring</lring>
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="$IdleMode"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		
+		<if ad_name="Dia*"> <equip set="TH"/> </if>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if eq_rring="Trizek Ring">
+			<equip lock="true">
+				<rring>Trizek Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Capacity Ring">
+			<equip lock="true">
+				<rring>Capacity Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Vocation Ring">
+			<equip lock="true">
+				<rring>Vocation Ring</rring>                
+			</equip>
+		</if>
+		<if eq_rring="Facility Ring">
+			<equip lock="true">
+				<rring>Facility Ring</rring>                
+			</equip>
+		</if>
+		<if eq_back="Mecisto. Mantle">
+			<equip lock="true">
+			<back augment="S26530015289419">Mecisto. Mantle</back>              
+			</equip>
+		</if>
+		<if eq_rring="Warp Ring">
+			<equip lock="true">
+				<rring>Warp Ring</rring>				
+			</equip>
+		</if>
+		<command>/echo weaponskill %ad_name</command>
+		
+		<equip set="WS" />
+	</weaponskill>
+</ashitacast>
