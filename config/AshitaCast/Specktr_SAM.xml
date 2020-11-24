@@ -10,7 +10,7 @@
 			<head>Flam. Zucchetto +1</head>
 			<body>Kasuga Domaru +1</body>
 			<hands>Wakido Kote +2</hands>
-			<legs augment="S1232441083638448217">Valorous Hose</legs>
+			<legs>Wakido Haidate +2</legs>
 			<feet>Flam. Gambieras +1</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Sailfi Belt +1</waist>
@@ -24,7 +24,7 @@
 			<head>Flam. Zucchetto +1</head>
 			<body>Tartarus Platemail</body>
 			<hands>Wakido Kote +2</hands>
-			<legs>Hiza. Hizayoroi</legs>
+			<legs>Wakido Haidate +2</legs>
 			<feet>Flam. Gambieras +1</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
@@ -33,6 +33,11 @@
 			<ring1>Apate Ring</ring1>
 			<ring2>Petrov Ring</ring2>
 			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="Midshot-Ranged">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="S94305489548834587588">Valorous Mitts</hands>
+			<waist>Chaac Belt</waist>
 		</set>
 		<include>
 		</include>
@@ -89,6 +94,7 @@
 	<preranged>
 	</preranged>
 	<midranged>
+		<equip set="Midshot-Ranged"/>
 	</midranged>
 	<premagic>
 		<if eq_rring="Trizek Ring">

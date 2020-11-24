@@ -84,7 +84,7 @@
 		<set name="Precast">
 			<!-- Kali                             07 -->
 			<head>Vanya Hood</head>          <!-- 10 -->
-			<body>Inyanga Jubbah</body>      <!-- 10 -->
+			<body>Inyanga Jubbah +1</body>   <!-- 13 -->
 			<hands>Gende. Gages +1</hands>   <!-- 07 -->
 			<legs>Orvail Pants +1</legs>     <!-- 05 -->
 			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
@@ -93,12 +93,12 @@
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<waist>Embla Sash</waist>        <!-- 05 -->
 			<back>Swith Cape +1</back>       <!-- 04 -->
-			<!-- Total                            61 -->
+			<!-- Total                            64 -->
 		</set>
 		<set name="SongPrecast">
 			<!-- Kali                             07 07 -->
 			<head>Vanya Hood</head>          <!-- 10 10 -->
-			<body>Inyanga Jubbah</body>      <!-- 10 10 -->
+			<body>Inyanga Jubbah +1</body>   <!-- 13 13 -->
 			<hands>Gende. Gages +1</hands>   <!-- 07 12  -->
 			<legs>Gende. Spats +1</legs>     <!-- 00 09 -->
 			<feet>Telchine Pigaches</feet>   <!-- 05 11 -->
@@ -107,13 +107,13 @@
 			<ring1>Prolix Ring</ring1>       <!-- 02 02 -->
 			<waist>Embla Sash</waist>        <!-- 05 05 -->
 			<back>Swith Cape +1</back>       <!-- 04 04 -->
-			<!-- Total                            58 76 -->
+			<!-- Total                            61 79 -->
 		</set>                               
 		<set name="Buff">
 			<head>Fili Calot</head>
 			<body>Fili Hongreline</body>
 			<hands>Fili Manchettes</hands>
-			<legs>Inyanga Shalwar</legs>
+			<legs>Inyanga Shalwar +2</legs>
 			<feet>Brioso Slippers +1</feet>
 			<neck>Moonbow Whistle</neck>
 			<ear1>Musical Earring</ear1>
@@ -122,25 +122,40 @@
 
 
 		<set name="Idle">
-			<head>Weath. Corona +1</head>
+			<head>Brioso Roundlet +1</head>
 			<body>Gende. Bilaut +1</body>
 			<hands>Gende. Gages +1</hands>
-			<legs>Inyanga Shalwar</legs>
+			<legs>Inyanga Shalwar +2</legs>
 			<feet>Gende. Galosh. +1</feet>
 			<neck>Moonbow Whistle</neck>
 			<back>Swith Cape +1</back>
 		</set>
 		<set name="WindAcc">
 			<head>Inyanga Tiara</head>
-			<body>Inyanga Jubbah</body>
+			<body>Inyanga Jubbah +1</body>
 			<hands>Inyanga Dastanas</hands>
-			<legs>Inyanga Shalwar</legs>
+			<legs>Inyanga Shalwar +2</legs>
 			<feet>Inyanga Crackows</feet>
 			<neck>Moonbow Whistle</neck>
 			<waist>Corsette</waist>
 			<ear1>Musical Earring</ear1>
 			<ear2>Gersemi Earring</ear2>
 			<ring1>Inyanga Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Swith Cape +1</back>
+		</set>
+		<set name="temp">
+			<main augment="D10965218758168">Kali</main>
+			<sub>Jody Shield</sub>
+			<range augment="M0">Gjallarhorn</range>
+			<head>Brioso Roundlet +1</head>
+			<hands augment="S557975606">Gende. Gages +1</hands>
+			<feet augment="S36572052789302">Gende. Galosh. +1</feet>
+			<neck>Moonbow Whistle</neck>
+			<waist>Corsette</waist>
+			<ear1>Musical Earring</ear1>
+			<ear2>Gersemi Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
 			<ring2>Warp Ring</ring2>
 			<back>Swith Cape +1</back>
 		</set>
@@ -185,7 +200,7 @@
 			</equip>
 		</if>-->
 			<if ad_type="BardSong">
-				<if ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody">
+				<if ad_name="Pining Nocturne|Foe Requiem*|*Elegy|Magic Finale|*Threnody*">
 					<equip set="WindAcc" />
 					<return />
 				</if>

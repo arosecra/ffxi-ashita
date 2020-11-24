@@ -7,7 +7,7 @@
 	</settings>
 	<sets>
 		<set name="Idle">
-			<ammo>Homiliary</ammo>
+			<ammo>Staunch Tathlum</ammo>
 			<head augment="M1442">Peda. M.Board +3</head>
 			<body>Jhakri Robe +2</body>
 			<hands augment="S631930638080675698756">Chironic Gloves</hands>

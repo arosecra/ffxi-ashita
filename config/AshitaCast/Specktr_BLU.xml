@@ -49,7 +49,7 @@
 			<ring2>Petrov Ring</ring2>
 			<back augment="S4618633796659318575">Rosmerta's Cape</back>
 		</set>
-		<set name="DT">
+		<set name="MstrDT">
 			<ammo>Staunch Tathlum</ammo>
 			<head augment="S70476420356167">Herculean Helm</head>
 			<body>Ayanmo Corazza +2</body>
@@ -192,7 +192,7 @@
 		</include>
 	</sets>
 	<variables>
-		<var name="IdleMode">TP</var>
+		<var name="Strategy">TP</var>
 	    <var name="BluMagPhys">Foot Kick|Sprout Smack|Wild Oats|Power Attack|Queasyshroom|Battle Dance|Feather Storm|Head Butt|Helldive|Bludgeon|Claw Cyclone|Screwdriver|Grand Slam|Smite of Rage|Pinecone Bomb|Jet Stream|Uppercut|Terror Touch|Mandibular Bite|Sickle Slash|Dimensional Death|Spiral Spin|Death Scissors|Seedspray|Body Slam|Hydro Shot|Frypan|Frenetic Rip|Spinal Cleave|Tail Slap|Hysteric Barrage|Asuran Claws|Cannonball|Disseverment|Sub-zero Smash|Ram Charge|Vertical Cleave|Final Sting|Goblin Rush|Vanity Dive|Whirl of Rage|Benthic Typhoon|Quad. Continuum|Empty Thrash|Delta Thrust|Heavy Strike|Sudden Lunge|Quadrastrike|Tourbillion|Amorphic Spikes|Barbed Crescent|Bilgestorm|Bloodrake|Glutinous Dart|Paralyzing Triad|Thrashing Assault|Sinker Drill|Sweeping Gouge|Saurian Slide</var>
         <var name="BluMagMag">Subduction</var>       
         <var name="BluMagDebuff">Filamented Hold|Cimicine Discharge|Demoralizing Roar|Venom Shell|Light of Penance|Sandspray|Auroral Drape|Frightful Roar|Enervation|Infrasonics|Lowing|Cold Wave|Awful Eye|Voracious Trunk|Sheep Song|Soporific|Yawn|Dream Flower|Chaotic Eye|Sound Blast|Blank Gaze|Stinking Gas|Geist Wall|Jettatura|Feather Tickle|Temporal Shift|Actinic Burst|Reaving Wind|Mortal Ray|Absolute Terror|Blistering Roar</var>      
@@ -238,7 +238,7 @@
 				<rring>Warp Ring</rring>				
 			</equip>
 		</if>
-		<equip set="$IdleMode"/>
+		<equip set="$Strategy"/>
 	</idlegear>
 	<preranged>
 	</preranged>
