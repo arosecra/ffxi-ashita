@@ -374,16 +374,6 @@
 			]
 		},
 		{
-			"Name": "Entrust Target",
-			"Settings": [
-				{"Name": "Char1", "MacroName": "entrust_target_char1"},
-				{"Name": "Char2", "MacroName": "entrust_target_char2"},
-				{"Name": "Char3", "MacroName": "entrust_target_char3"},
-				{"Name": "Char4", "MacroName": "entrust_target_char4"},
-				{"Name": "Char5", "MacroName": "entrust_target_char5"}
-			]
-		},
-		{
 			"Name": "WS",
 			"Settings": [
 				{"Name": "Hexastrike", "MacroName": "hexastrike" }
