@@ -12,14 +12,16 @@ local cor = require 'job_cor'
 local geo = require 'job_geo'
 local pup = require 'job_pup'
 local whm = require 'job_whm'
+local nuke = require 'ma_nuke'
 
 local movement = require 'act_movement'
 
 local config = {
-	ws="undefined"
+	ws="undefined",
+	party_status_effects = {},
+	queued_command = nil,
+	cycle = 0
 };
-
-local party_status_effects = {}
 
 --local hotbar_config = {};
 --local hotbar_position_config = {};
@@ -38,6 +40,7 @@ ashita.register_event('load', function()
 	geo:init_config(config)
 	pup:init_config(config)
 	whm:init_config(config)
+	nuke:init_config(config)
 	movement:init_config(config)
 end);
 
@@ -99,7 +102,7 @@ ashita.register_event('incoming_packet', function(id, size, packet)
 				end
 			end
 		end
-		party_status_effects = new_party_status_effects
+		config.party_status_effects = new_party_status_effects
 	elseif (id == 0x0D) then
 		local pkt = {
 			id = struct.unpack('i4', packet, 0x04+1), 
@@ -169,13 +172,27 @@ ashita.register_event('outgoing_packet', function(id, size, packet, packet_modif
 	return false;
 end);
 
-function run_command_after_timer(command)
-	AshitaCore:GetChatManager():QueueCommand(command, 1)
+function run_command(command)
+	if (config.movement.following and autofollowObject.running) then
+	else 
+		AshitaCore:GetChatManager():QueueCommand(command, 1)
+	end
 end
 
 
 ashita.register_event('render', function()
     
+	if config.cycle > 0 then
+		config.cycle = config.cycle + 1
+	end
+	if config.cycle > 40 then
+		if config.queued_command ~= nil then
+			AshitaCore:GetChatManager():QueueCommand(config.queued_command, 1)
+		end
+		config.cycle = 0
+		config.queued_command = nil
+	end
+	
 	pup:render(config)
 	movement:render(config)
 	
@@ -262,6 +279,10 @@ ashita.register_event('command', function(cmd, nType)
     end
     if (args[2] == 'cor') then
 		cor:command(config, args);
+	    return true;
+    end
+    if (args[2] == 'nuke') then
+		nuke:command(config, args);
 	    return true;
     end
 	

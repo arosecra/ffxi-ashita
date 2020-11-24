@@ -45,7 +45,7 @@ function geo:command(config, args)
 	elseif (args[3] == 'bubble' and config.geo['bubble'] ~= nil) then
 		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['bubble'] .. "\" <me>", 1)
 	elseif (args[3] == 'luopan' and config.geo['luopan'] ~= nil) then
-		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['luopan'] .. "\" " .. geospelltargets[config.geo['luopan']], 1)
+		AshitaCore:GetChatManager():QueueCommand("/ma \"" .. config.geo['luopan'] .. "\" " .. geo.spelltargets[config.geo['luopan']], 1)
 	end
 end
 

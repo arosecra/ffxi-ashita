@@ -42,14 +42,27 @@ function whm:init_config(config)
 	}
 end
 
+-- 11/22/2020
+-- cure i     - 107
+-- cure ii    - 226
+-- cure iii   - 514
+-- cure iv    - 959
+-- cure v     - 1182
+-- cure vi    - 1513
+-- curega i   - 169
+-- curega ii  - 346
+-- curega iii - 700
+-- curega iv  - 1255
+-- curega v   - 1637
 function whm:command(config, args)
 	if (args[3] == 'cure') then
-		whm:run_cure(100, 250, 500, 600, args)
+		whm:run_cure(100, 250, 400, 800, 1000, 1300, args)
 	elseif (args[3] == 'curega') then
+		whm:run_curega(100, 250, 500, 600, args)
 	elseif (args[3] == 'cure_t_o_t') then
 		whm:run_cure_t_o_t(args)
 	elseif (args[3] == 'removedebuff') then
-		whm:run_remove_debuff(args)
+		whm:run_remove_debuff(config, args)
 	elseif (args[3] == 'setbarstatus') then
 		config.whm.barstatus = args[4]
 	elseif (args[3] == 'setbarelement') then
@@ -68,7 +81,50 @@ end
 function whm:render(config)
 end
 
-function whm:run_cure(cure1, cure2, cure3, cure4, args)
+function whm:run_cure(cure1, cure2, cure3, cure4, cure5, cure6, args)
+	local lowestHpp = 100;
+	local lowestHp = 0;
+	local lowestName;
+	local hpMissing = 0;
+	for i=0,5 do
+		local name = AshitaCore:GetDataManager():GetParty():GetMemberName(i)
+		local hp = AshitaCore:GetDataManager():GetParty():GetMemberCurrentHP(i)
+		local hpp = AshitaCore:GetDataManager():GetParty():GetMemberCurrentHPP(i)
+		if (name ~= "") then
+			if (hpp < lowestHpp and hpp > 0) then
+				lowestHpp = hpp;
+				lowsetHp = hp;
+				lowestName = name;
+				--local playerEntity = GetEntity(AshitaCore:GetDataManager():GetParty():GetMemberTargetIndex(i))
+				hpMissing = (hp/(hpp / 100))-hp;
+				print(name .. " " .. hpp .. " " .. hp .. " " .. hpMissing)
+			end
+		end
+	end
+	
+	if lowestHpp < 100 then
+		start_action()
+		local command = ""
+		if hpMissing > cure6 then
+			command = "/ma \"Cure VI\" " .. lowestName
+		elseif hpMissing > cure5 then
+			command = "/ma \"Cure V\" " .. lowestName
+		elseif hpMissing > cure4 then
+			command = "/ma \"Cure IV\" " .. lowestName
+		elseif hpMissing > cure3 then
+			command = "/ma \"Cure III\" " .. lowestName
+		elseif hpMissing > cure2 then
+			command = "/ma \"Cure II\" " .. lowestName
+		elseif hpMissing > cure1 then
+			command = "/ma \"Cure\" " .. lowestName
+		end
+		
+		run_command(command)
+	end
+
+end
+
+function whm:run_curega(cure1, cure2, cure3, cure4, args)
 	local lowestHpp = 100;
 	local lowestHp = 0;
 	local lowestName;
@@ -94,31 +150,31 @@ function whm:run_cure(cure1, cure2, cure3, cure4, args)
 		start_action()
 		local command = ""
 		if hpMissing > cure4 then
-			command = "/ma \"Cure IV\" " .. lowestName
+			command = "/ma \"Curega IV\" " .. lowestName
 		elseif hpMissing > cure3 then
-			command = "/ma \"Cure IV\" " .. lowestName
+			command = "/ma \"Curega III\" " .. lowestName
 		elseif hpMissing > cure2 then
-			command = "/ma \"Cure IV\" " .. lowestName
+			command = "/ma \"Curega II\" " .. lowestName
 		elseif hpMissing > cure1 then
-			command = "/ma \"Cure IV\" " .. lowestName
+			command = "/ma \"Curega\" " .. lowestName
 		end
 		
-		ashita.timer.once(2, run_command_after_timer, command)
+		run_command(command)
 	end
 
 end
 
-function whm:run_remove_debuff(args)
+function whm:run_remove_debuff(config, args)
 
 	for istatus,status in ipairs(whm.statuses) do
 		
 		for i=0,4 do
-			if party_status_effects[i] ~= nil then
+			if config.party_status_effects[i] ~= nil then
 			
 				for j=0,31 do
-					if party_status_effects[i].Statuses[j] ~= nil and party_status_effects[i].Statuses[j].StatusName == status.name then
+					if config.party_status_effects[i].Statuses[j] ~= nil and config.party_status_effects[i].Statuses[j].StatusName == status.name then
 						start_action()
-						AshitaCore:GetChatManager():QueueCommand("/ma \"" .. status.spell .. "\" " .. party_status_effects[i].Name, 1)
+						AshitaCore:GetChatManager():QueueCommand("/ma \"" .. status.spell .. "\" " .. config.party_status_effects[i].Name, 1)
 						break;
 					end
 				end
