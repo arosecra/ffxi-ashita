@@ -1,7 +1,8 @@
 {
 	"flash":{
 		"SendTo":"/ma \"Flash\" [t]",
-		"Name":"flash"
+		"Name":"flash",
+		"SendTarget": "true"
 	},
 	"phalanx":{
 		"SendTo":"/ma Phalanx <me>",

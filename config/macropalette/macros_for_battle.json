@@ -1,18 +1,22 @@
 {
 	"allatk":{
 		"Name":"Attack",
-		"Command":"/ms send /attack [t]"
+		"Command":"/ms send /attack [t]",
+		"SendTarget": "true"
 	},
 	"attack":{
 		"SendTo":"/attack [t]",
-		"Name":"attack"
+		"Name":"attack",
+		"SendTarget": "true"
 	},
 	"ra":{
 		"Name":"ra",
-		"SendTo":"/ra [t]"
+		"SendTo":"/ra [t]",
+		"SendTarget": "true"
 	},
 	"ws":{
 		"SendTo":"/mbh ws",
-		"Name":"ws"
+		"Name":"ws",
+		"SendTarget": "true"
 	}
 }

@@ -45,8 +45,8 @@
     "mbh_whm_setbarstatus_sleep"         : {"Name": "BarStsSlp", "SendTo": "/mbh whm setbarstatus \"Barsleepra\""},
 	
 	"mbh_boost": { "Name": "Boost", "SendTo": "/mbh whm boost"},
-	"mbh_whm_barelement": { "Name": "BarEle", "SendTo": "/mbh whm boost barelement"},
-	"mbh_whm_barstatus": { "Name": "BarSts", "SendTo": "/mbh whm boost barstatus"},
+	"mbh_whm_barelement": { "Name": "BarEle", "SendTo": "/mbh whm barelement"},
+	"mbh_whm_barstatus": { "Name": "BarSts", "SendTo": "/mbh whm barstatus"},
 	
 	"protrectrav": { "Name": "PrtctraV", "SendTo": "/ma \"Protectra V\" <me>"},
 	"shellrav": { "Name": "ShellraV", "SendTo": "/ma \"Shellra V\" <me>"}

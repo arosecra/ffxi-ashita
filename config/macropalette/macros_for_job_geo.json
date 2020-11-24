@@ -82,7 +82,19 @@
     "luopan-vex"       : {"Name": "luopan-vex"        , "SendTo": "/mbh geo setluopan \"Geo-Vex\" [t]"         },
     "luopan-languor"   : {"Name": "luopan-languor"    , "SendTo": "/mbh geo setluopan \"Geo-Languor\" [t]"     },
 
-	"bubble" : {"Name": "bubble", "SendTo": "/mbh geo bubble"},
-	"luopan" : {"Name": "luopan", "SendTo": "/mbh geo luopan"},
-	"entrust" : {"Name": "entrust", "SendTo": "/mbh geo entrust"}
+	"bubble" : {
+		"Name": "bubble", 
+		"SendTo": "/mbh geo bubble",
+		"SendTarget": "true"
+	},
+	"luopan" : {
+		"Name": "luopan", 
+		"SendTo": "/mbh geo luopan",
+		"SendTarget": "true"
+	},
+	"entrust" : {
+		"Name": "entrust", 
+		"SendTo": "/mbh geo entrust",
+		"SendTarget": "true"
+	}
 }

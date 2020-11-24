@@ -1,70 +1,77 @@
 {
 	"nuke_element_fire": {
-		"SendTo": "/nuke setelement fire",
+		"SendTo": "/mbh nuke setelement fire",
 		"Name": "fire"
 	},
 	"nuke_element_stone": {
-		"SendTo": "/nuke setelement stone",
+		"SendTo": "/mbh nuke setelement stone",
 		"Name": "stone"
 	},
 	"nuke_element_water": {
-		"SendTo": "/nuke setelement water",
+		"SendTo": "/mbh nuke setelement water",
 		"Name": "water"
 	},
 	"nuke_element_wind": {
-		"SendTo": "/nuke setelement wind",
+		"SendTo": "/mbh nuke setelement wind",
 		"Name": "wind"
 	},
 	"nuke_element_ice": {
-		"SendTo": "/nuke setelement ice",
+		"SendTo": "/mbh nuke setelement ice",
 		"Name": "ice"
 	},
 	"nuke_element_thunder": {
-		"SendTo": "/nuke setelement thundr",
+		"SendTo": "/mbh nuke setelement thundr",
 		"Name": "thundr"
 	},
 	"nuke_element_light": {
-		"SendTo": "/nuke setelement light",
+		"SendTo": "/mbh nuke setelement light",
 		"Name": "light"
 	},
 	"nuke_element_dark": {
-		"SendTo": "/nuke setelement dark",
+		"SendTo": "/mbh nuke setelement dark",
 		"Name": "dark"
 	},
 	"storm1": {
-		"SendTo": "/nuke stormI",
+		"SendTo": "/mbh nuke stormI",
 		"Name": "stormI"
 	}, 
 	"storm2": {
-		"SendTo": "/nuke stormII",
+		"SendTo": "/mbh nuke stormII",
 		"Name": "stormII"
 	},
 	"helix1": {
-		"SendTo": "/nuke helixI",
-		"Name": "helixI"
+		"SendTo": "/mbh nuke helixI",
+		"Name": "helixI",
+		"SendTarget": "true"
 	}, 
 	"helix2": {
-		"SendTo": "/nuke helixII",
-		"Name": "helixII"
+		"SendTo": "/mbh nuke helixII",
+		"Name": "helixII",
+		"SendTarget": "true"
 	}, 
 	"nuke1": {
-		"SendTo": "/nuke nukeI",
-		"Name": "nukeI"
+		"SendTo": "/mbh nuke nukeI",
+		"Name": "nukeI",
+		"SendTarget": "true"
 	}, 
 	"nuke2": {
-		"SendTo": "/nuke nukeII",
-		"Name": "nukeII"
+		"SendTo": "/mbh nuke nukeII",
+		"Name": "nukeII",
+		"SendTarget": "true"
 	}, 
 	"nuke3": {
-		"SendTo": "/nuke nukeIII",
-		"Name": "nukeIII"
+		"SendTo": "/mbh nuke nukeIII",
+		"Name": "nukeIII",
+		"SendTarget": "true"
 	}, 
 	"nuke4": {
-		"SendTo": "/nuke nukeIV",
-		"Name": "nukeIV"
+		"SendTo": "/mbh nuke nukeIV",
+		"Name": "nukeIV",
+		"SendTarget": "true"
 	}, 
 	"nuke5": {
-		"SendTo": "/nuke nukeV",
-		"Name": "nukeV"
+		"SendTo": "/mbh nuke nukeV",
+		"Name": "nukeV",
+		"SendTarget": "true"
 	}
 }

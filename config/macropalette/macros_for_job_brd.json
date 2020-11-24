@@ -125,10 +125,12 @@
 	},
 	"threnody1":{
 		"Name":"thrndy",
-		"SendTo":"/mbh brd threnody1 [t]"
+		"SendTo":"/mbh brd threnody1 [t]",
+		"SendTarget": "true"
 	},
-	"threnody1":{
-		"Name":"thrndy",
-		"SendTo":"/mbh brd threnody2 [t]"
+	"threnody2":{
+		"Name":"thrndy2",
+		"SendTo":"/mbh brd threnody2 [t]",
+		"SendTarget": "true"
 	}
 }

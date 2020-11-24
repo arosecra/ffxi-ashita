@@ -20,7 +20,7 @@
 		"Script":"mbox/follof.txt"
 	},
 	"mount":{
-		"Command":"/ms send /mount \"Red Crab\"",
+		"Command":"/ms send /mount \"Golden Bomb\"",
 		"Name":"mount"
 	},
 	"dismnt":{

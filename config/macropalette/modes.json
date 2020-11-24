@@ -2,8 +2,8 @@
 	"ModeNames": [
 		"JobStngs",
 		"AdnStngs",
-		"Actns1",
-		"Actns2", 
+		"Combat",
+		"NonCmbt", 
 		"Actns3", 
 		"Twn", 
 		"Buff",  

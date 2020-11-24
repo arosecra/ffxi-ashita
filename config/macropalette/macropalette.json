@@ -9,17 +9,17 @@
 		"Sassyaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],
 		"Sadaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ]
 	},
-	"Actns1": {
-		"MBox":     ["follon", "follof", "group", "warp2me", "mount", "dismnt", "sneak", "desneak"],
-		"Specktr":  ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ],
-		"Sternaru": ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ],
-		"Sillyaru": ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ],
-		"Shyaru":   ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ],
-		"Sassyaru": ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ],
-		"Sadaru":   ["attack", "ws",     "job",   "job", "job", "job", "job", "job" ]
+	"Combat": {
+		"MBox":     ["follon", "follof", "", "", "", "", "", ""],
+		"Specktr":  ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
+		"Sternaru": ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
+		"Sillyaru": ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
+		"Shyaru":   ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
+		"Sassyaru": ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
+		"Sadaru":   ["attack", "ws",     "", "job", "job", "job", "job", "job" ]
 	},
-	"Actns2": {
-		"MBox":     ["allatk", "", "", "", "", "", "", ""],
+	"NonCmbt": {
+		"MBox":     ["follon", "follof", "group", "warp2me", "mount", "dismnt", "sneak", "desneak"],
 		"Specktr":  [ "job", "job", "job", "job", "job", "job", "job", "job" ],
 		"Sternaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],
 		"Sillyaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],

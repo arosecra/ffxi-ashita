@@ -61,7 +61,7 @@
 	},
 	"cor_roll_samurais":{
 		"Name":"Stp+",
-		"SendTo":"/mbh cor addroll \"Samurai's Roll\" <me>"
+		"SendTo":"/mbh cor addroll \"Samurai Roll\" <me>"
 	},
 	"cor_roll_tacticians":{
 		"Name":"Regain",
