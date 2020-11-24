@@ -480,6 +480,11 @@ function run_macro(section, hotbar_macro, mode)
 		}
 		table.sort(hotbar_config.TimerData[section.Name])
 	end
+	
+	if hotbar_macro.SendTarget ~= nil then
+		msg('/ms sendto ' .. section.Name .. ' /target [t]')
+		AshitaCore:GetChatManager():QueueCommand('/ms sendto ' .. section.Name .. ' /target [t]', 1)
+	end
 
 	if hotbar_macro.Script then
 		msg(hotbar_macro.Script)
