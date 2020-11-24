@@ -1,0 +1,9 @@
+/equip Range "Blurred Harp"
+/wait 1
+/ma "Army's Paeon" <me>
+/wait 7
+/ma "Army's Paeon II" <me>
+/wait 7
+/ma "Army's Paeon III" <me>
+/wait 7
+/equip Range Gjallarhorn
