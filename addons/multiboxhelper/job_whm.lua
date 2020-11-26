@@ -150,13 +150,13 @@ function whm:run_curega(cure1, cure2, cure3, cure4, args)
 		start_action()
 		local command = ""
 		if hpMissing > cure4 then
-			command = "/ma \"Curega IV\" " .. lowestName
+			command = "/ma \"Curaga IV\" " .. lowestName
 		elseif hpMissing > cure3 then
-			command = "/ma \"Curega III\" " .. lowestName
+			command = "/ma \"Curaga III\" " .. lowestName
 		elseif hpMissing > cure2 then
-			command = "/ma \"Curega II\" " .. lowestName
+			command = "/ma \"Curaga II\" " .. lowestName
 		elseif hpMissing > cure1 then
-			command = "/ma \"Curega\" " .. lowestName
+			command = "/ma \"Curaga\" " .. lowestName
 		end
 		
 		run_command(command)
