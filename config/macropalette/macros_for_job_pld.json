@@ -1,6 +1,6 @@
 {
 	"flash":{
-		"SendTo":"/ma \"Flash\" [t]",
+		"SendTo":"/ma Flash <t>",
 		"Name":"flash",
 		"SendTarget": "true"
 	},
@@ -9,7 +9,7 @@
 		"Name":"phalanx"
 	},
 	"cocn":{
-		"SendTo":"/ma Coccoon <me>",
+		"SendTo":"/ma Cocoon <me>",
 		"Name":"cocn"
 	},
 	"gaze":{
