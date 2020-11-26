@@ -483,6 +483,23 @@
 				{"Name": "Myrkr", "MacroName": "myrkr" },
 				{"Name": "Cataclysm", "MacroName": "cataclysm" }
 			]
+		},
+		{
+			"Name": "Skillchain",
+			"Settings": [
+				{"Name": "Liq/F", "MacroName": "sch_liq_f" },
+				{"Name": "Sci/S", "MacroName": "sch_sci_s" },
+				{"Name": "Rev/W", "MacroName": "sch_rev_w" },
+				{"Name": "Det/A", "MacroName": "sch_det_a" },
+				{"Name": "Ind/B", "MacroName": "sch_ind_b" },
+				{"Name": "Inp/T", "MacroName": "sch_imp_t" },
+				{"Name": "Trns/L", "MacroName": "sch_trns_l" },
+				{"Name": "Com/D", "MacroName": "sch_com_d" },
+				{"Name": "Frag/AT", "MacroName": "sch_frag_at" },
+				{"Name": "Fus/FL", "MacroName": "sch_fus_fl" },
+				{"Name": "Grav/DS", "MacroName": "sch_grav_ds" },
+				{"Name": "Dist/WB", "MacroName": "sch_dist_wb" }
+			]
 		}
 	],
 	"Summoner":[],

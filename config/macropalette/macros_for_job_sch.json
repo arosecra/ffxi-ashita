@@ -3,52 +3,21 @@
 		"SendTo": "/ma Klimaform <me>",
 		"Name": "klima"
 	},
-	"liq_f": {
-		"Script": "scholar_self_sc/Liquefaction_Fire.txt",
-		"Name": "Liq/F"
+	"slfsc": {
+		"SendTo": "/mbh sch slfsc",
+		"Name": "SelfSC"
 	},
-	"sci_s": {
-		"Script": "scholar_self_sc/Scission_Stone.txt",
-		"Name": "Sci/S"
-	},
-	"rev_w": {
-		"Script": "scholar_self_sc/Reverberation_Water.txt",
-		"Name": "Rev/W"
-	},
-	"det_a": {
-		"Script": "scholar_self_sc/Detonation_Aero.txt",
-		"Name": "Det/A"
-	},
-	"ind_b": {
-		"Script": "scholar_self_sc/Induration_Blizzard.txt",
-		"Name": "Ind/B"
-	},
-	"imp_t": {
-		"Script": "scholar_self_sc/Impaction_Thunder.txt",
-		"Name": "Imp/T"
-	},
-	"trns_l": {
-		"Script": "scholar_self_sc/Transfiction_Light.txt",
-		"Name": "Trns/L"
-	},
-	"com_d": {
-		"Script": "scholar_self_sc/Compression_Dark.txt",
-		"Name": "Com/D"
-	},
-	"frag_at": {
-		"Script": "scholar_self_sc/Fragmentation_Aero_Thunder.txt",
-		"Name": "Frag/AT"
-	},
-	"fus_fl": {
-		"Script": "scholar_self_sc/Fusion_Fire_Light.txt",
-		"Name": "Fus/FL"
-	},
-	"grav_ds": {
-		"Script": "scholar_self_sc/Gravitation_Dark_Stone.txt",
-		"Name": "Grav/DS"
-	},
-	"dist_wb": {
-		"Script": "scholar_self_sc/Distortion_Water_Blizzard.txt",
-		"Name": "Dist/WB"
-	}
+	
+	"sch_liq_f"   : {"Name": "Liq/F",   "SendTo": "/mbh sch setslfsc liq_f"  , "SendTarget": "true"},
+	"sch_sci_s"   : {"Name": "Sci/S",   "SendTo": "/mbh sch setslfsc sci_s"  , "SendTarget": "true"},
+	"sch_rev_w"   : {"Name": "Rev/W",   "SendTo": "/mbh sch setslfsc rev_w"  , "SendTarget": "true"},
+	"sch_det_a"   : {"Name": "Det/A",   "SendTo": "/mbh sch setslfsc det_a"  , "SendTarget": "true"},
+	"sch_ind_b"   : {"Name": "Ind/B",   "SendTo": "/mbh sch setslfsc ind_b"  , "SendTarget": "true"},
+	"sch_imp_t"   : {"Name": "Imp/T",   "SendTo": "/mbh sch setslfsc imp_t"  , "SendTarget": "true"},
+	"sch_trns_l"  : {"Name": "Trns/L",  "SendTo": "/mbh sch setslfsc trns_l" , "SendTarget": "true"},
+	"sch_com_d"   : {"Name": "Com/D",   "SendTo": "/mbh sch setslfsc com_d"  , "SendTarget": "true"},
+	"sch_frag_at" : {"Name": "Frag/AT", "SendTo": "/mbh sch setslfsc frag_at", "SendTarget": "true"},
+	"sch_fus_fl"  : {"Name": "Fus/FL",  "SendTo": "/mbh sch setslfsc fus_fl" , "SendTarget": "true"},
+	"sch_grav_ds" : {"Name": "Grav/DS", "SendTo": "/mbh sch setslfsc grav_ds", "SendTarget": "true"},
+	"sch_dist_wb" : {"Name": "Dist/WB", "SendTo": "/mbh sch setslfsc dist_wb", "SendTarget": "true"}
 }
