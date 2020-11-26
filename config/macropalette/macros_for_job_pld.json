@@ -7,5 +7,17 @@
 	"phalanx":{
 		"SendTo":"/ma Phalanx <me>",
 		"Name":"phalanx"
+	},
+	"cocn":{
+		"SendTo":"/ma Coccoon <me>",
+		"Name":"cocn"
+	},
+	"gaze":{
+		"SendTo":"/ma \"Blank Gaze\" <t>",
+		"Name":"gaze"
+	},
+	"jett":{
+		"SendTo":"/ma Jettatura <t>",
+		"Name":"jett"
 	}
 }

@@ -420,7 +420,11 @@ function get_active_macro_names(hotbar_section, hotbar_variables)
 		else
 			--check if there is a job specific macro here
 			local job = hotbar_variables[hotbar_section.Name .. '.MainJob']
+			local subjob = hotbar_variables[hotbar_section.Name .. '.SubJob']
 			local job_macros = hotbar_config.JobMacros[job]
+			if subjob ~= nil and hotbar_config.JobMacros[job .. '/' .. subjob] ~= nil then
+				job_macros = hotbar_config.JobMacros[job .. '/' .. subjob]
+			end
 			if job_macros ~= nil then
 				local job_row = job_macros[modeName]
 				
