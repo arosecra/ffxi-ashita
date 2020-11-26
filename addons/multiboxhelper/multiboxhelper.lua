@@ -13,6 +13,7 @@ local geo = require 'job_geo'
 local pup = require 'job_pup'
 local whm = require 'job_whm'
 local nuke = require 'ma_nuke'
+local sch = require 'job_sch'
 
 local movement = require 'act_movement'
 
@@ -39,6 +40,7 @@ ashita.register_event('load', function()
 	cor:init_config(config)
 	geo:init_config(config)
 	pup:init_config(config)
+	sch:init_config(config)
 	whm:init_config(config)
 	nuke:init_config(config)
 	movement:init_config(config)
@@ -275,6 +277,10 @@ ashita.register_event('command', function(cmd, nType)
     end
     if (args[2] == 'geo') then
 		geo:command(config, args);
+	    return true;
+    end
+    if (args[2] == 'sch') then
+		sch:command(config, args);
 	    return true;
     end
     if (args[2] == 'cor') then
