@@ -144,8 +144,7 @@ function whm:run_curega(cure1, cure2, cure3, cure4, args)
 			end
 		end
 	end
-	--cure iv = 680
-	--cure iii = 364
+	
 	if lowestHpp < 100 then
 		start_action()
 		local command = ""
