@@ -10,11 +10,12 @@
 			<ammo>Incantor Stone</ammo>
 			<head augment="D4071815123724">Carmine Mask +1</head>
 			<body augment="S572338219148">Odyss. Chestplate</body>
-			<hands augment="S37396692090905814045219">Odyssean Gauntlets</hands>
-			<legs augment="S46192919316505">Odyssean Cuisses</legs>
+			<!--<hands augment="S37396692090905814045219">Odyssean Gauntlets</hands>
+			<legs augment="S46192919316505">Odyssean Cuisses</legs> -->
 			<feet augment="S8138574716122112323">Odyssean Greaves</feet>
 			<neck>Voltsurge Torque</neck>
 			<ear1>Loquac. Earring</ear1>
+			<ear2>Tuisto Earring</ear2>
 			<ring1>Prolix Ring</ring1>
 			<ring2>Meridian Ring</ring2>
 			<waist>Steppe Sash</waist>
@@ -26,6 +27,7 @@
 			<legs >Yorium Cuisses</legs>
 			<feet>Souveran Schuhs +1</feet>
 			<ear1>Mimir Earring</ear1>
+			<ear2>Tuisto Earring</ear2>
 			<waist>Olympus Sash</waist>
 			<back>Weard Mantle</back>
 		</set>
