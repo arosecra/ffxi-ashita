@@ -18,6 +18,7 @@
 /load Screenshot
 /load ashitacast
 /load multisend
+/load shorthand
 /load uberwarp
 
 ##########################################################################
