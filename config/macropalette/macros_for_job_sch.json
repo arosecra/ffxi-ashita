@@ -5,7 +5,8 @@
 	},
 	"slfsc": {
 		"SendTo": "/mbh sch slfsc",
-		"Name": "SelfSC"
+		"Name": "SelfSC",
+		"SendTarget": "true"
 	},
 	
 	"sch_liq_f"   : {"Name": "Liq/F",   "SendTo": "/mbh sch setslfsc liq_f"  , "SendTarget": "true"},
