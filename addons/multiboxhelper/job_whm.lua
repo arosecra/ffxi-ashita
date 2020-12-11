@@ -43,17 +43,17 @@ function whm:init_config(config)
 end
 
 -- 11/22/2020
--- cure i     - 107
--- cure ii    - 226
--- cure iii   - 514
--- cure iv    - 959
--- cure v     - 1182
--- cure vi    - 1513
--- curega i   - 169
--- curega ii  - 346
--- curega iii - 700
--- curega iv  - 1255
--- curega v   - 1637
+-- cure i     - 107    215
+-- cure ii    - 226    403
+-- cure iii   - 514    812
+-- cure iv    - 959   1313
+-- cure v     - 1182  1595
+-- cure vi    - 1513  1944
+-- curega i   - 169    293
+-- curega ii  - 346    520
+-- curega iii - 700    893 
+-- curega iv  - 1255  1599
+-- curega v   - 1637  2325
 function whm:command(config, args)
 	if (args[3] == 'cure') then
 		whm:run_cure(100, 250, 400, 800, 1000, 1300, args)
