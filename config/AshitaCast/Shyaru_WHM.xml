@@ -15,7 +15,7 @@
 			<head>Vanya Hood</head>          <!-- 10 -->
 			<body>Inyanga Jubbah</body>
 			<hands>Gende. Gages +1</hands>
-			<legs>Sifahir Slacks</legs>
+			<legs>Ebers Pant. +1</legs>
 			<back>Swith Cape +1</back>
 			<neck>Orison Locket</neck>
 			<ear1>Loquac. Earring</ear1>
@@ -33,9 +33,9 @@
 		</set>
 		<set name="Cure">
 			<head>Gende. Caubeen +1</head>
-			<body>Vrikodara Jupon</body>
+			<body augment="M0">Orison Bliaud +1</body>
 			<hands>Gende. Gages +1</hands>
-			<legs>Sifahir Slacks</legs>
+			<legs>Ebers Pant. +1</legs>
 			<feet>Gende. Galosh. +1</feet>
 			<waist>Bishop's Sash</waist>
 			<ear1>Meili Earring</ear1>
@@ -45,7 +45,6 @@
 			<back>Alaunus's Cape</back>
 		</set>
 		<set name="Cursna">
-			<body augment="M0">Orison Bliaud +1</body>
 			<hands augment="S54189874419766">Gende. Gages +1</hands>
 			<legs>Theo. Pantaloons</legs>
 			<feet augment="S27775959767094">Gende. Galosh. +1</feet>
@@ -55,6 +54,21 @@
 			<ring1>Haoma's Ring</ring1>
 			<ring2>Ephedra Ring</ring2>
 			<back augment="S542147077">Alaunus's Cape</back>
+		</set>
+		<set name="temp">
+			<main>Chatoyant Staff</main>
+			<ammo>Clarus Stone</ammo>
+			<head augment="S826871862">Gende. Caubeen +1</head>
+			<body>Ebers Bliaud +1</body>
+			<hands augment="S54189874419766">Gende. Gages +1</hands>
+			<feet augment="S27775959767094">Gende. Galosh. +1</feet>
+			<neck>Orison Locket</neck>
+			<waist>Bishop's Sash</waist>
+			<ear1>Meili Earring</ear1>
+			<ear2>Glorious Earring</ear2>
+			<ring1>Shneddick Ring</ring1>
+			<ring2>Warp Ring</ring2>
+			<back>Tempered Cape +1</back>
 		</set>
 	</sets>
 	<variables>
