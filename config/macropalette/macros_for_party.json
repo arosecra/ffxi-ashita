@@ -6,5 +6,9 @@
 	"DITrusts":{
 		"Name":"DITrusts",
 		"SendTo":"/extexec di/$NAME_DI_Trusts.txt"
+	}, 
+	"dump_tp":{
+		"Name":"DumpTp",
+		"SendTo":"/extexec delve/$NAME_Delve_MainHand.txt"
 	}
 }

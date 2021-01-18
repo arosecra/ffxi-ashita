@@ -86,7 +86,7 @@
 		"NonCmbt":  [ "", "", "", "", "", "", "", "" ],
 		"Actns3":   [ "", "", "", "", "", "", "", "" ],
 		"Twn":      [ "", "", "", "", "", "", "", "" ],
-		"Buff":     [ "storm1", "klima", "bubble", "luopan", "entrust", "", "", "" ],
+		"Buff":     [ "storm1", "adblk", "bubble", "luopan", "entrust", "", "", "" ],
 		"Items":    [ "", "", "", "", "", "", "", "" ]
 	},
 	"Monk":{

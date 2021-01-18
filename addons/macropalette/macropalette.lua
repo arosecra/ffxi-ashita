@@ -45,6 +45,9 @@ local MENU			= 221;
 local LEFT_SHIFT	= 42 ;
 local RIGHT_SHIFT	= 54 ;
 
+local BREAK = 69
+local INSERT = 210
+
 local NUMPAD_0		= 82 ;
 local NUMPAD_1		= 79 ;
 local NUMPAD_2		= 80 ;
@@ -60,22 +63,22 @@ local NUMPAD_9		= 73 ;
 local control_key_states = {
 	[LEFT_ALT]		 = false,
 	[RIGHT_ALT]		 = false,
-	[WIN]			 = false,
+	[INSERT]		 = false,
 	[LEFT_CONTROL]	 = false,
 	[RIGHT_CONTROL]	 = false,
-	[MENU]			 = false,
+	[BREAK]			 = false,
 	[LEFT_SHIFT]	 = false,
 	[RIGHT_SHIFT]	 = false,
 }
 local control_key_sections = {
-	[LEFT_ALT]		 = 4,
-	[RIGHT_ALT]		 = 5,
-	[WIN]			 = 3,
-	[LEFT_CONTROL]	 = 2,
-	[RIGHT_CONTROL]	 = 7,
-	[MENU]			 = 6,
 	[LEFT_SHIFT]	 = 1,
-	[RIGHT_SHIFT]	 = 8,
+	[LEFT_CONTROL]	 = 2,
+	[RIGHT_SHIFT]	 = 3,
+	[BREAK]		     = 4,
+	[RIGHT_ALT]		 = 5,
+	[MENU]			 = 6,
+	[RIGHT_CONTROL]	 = 7,
+	[INSERT]	     = 8,
 }
 
 local hotbar_variables = {
@@ -311,7 +314,7 @@ end
 
 ashita.register_event('key', function(key, down, blocked)
     
-	--msg('key event ' .. key)
+	--print('key event ' .. key)
 	if key == LEFT_ALT or 
 		key == RIGHT_ALT or
 		key == LEFT_CONTROL or 
@@ -319,7 +322,9 @@ ashita.register_event('key', function(key, down, blocked)
 		key == LEFT_SHIFT or
 		key == RIGHT_SHIFT or
 		key == WIN or 
-		key == MENU
+		key == MENU or
+		key == INSERT or
+		key == BREAK
 	then
 		if down then
 			--print("key down " .. key)

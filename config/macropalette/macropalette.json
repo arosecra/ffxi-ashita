@@ -10,7 +10,7 @@
 		"Sadaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ]
 	},
 	"Combat": {
-		"MBox":     ["follon", "follof", "", "", "", "", "", ""],
+		"MBox":     ["follon", "follof", "", "warp2me", "", "", "", ""],
 		"Specktr":  ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
 		"Sternaru": ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
 		"Sillyaru": ["attack", "ws",     "", "job", "job", "job", "job", "job" ],
@@ -28,13 +28,13 @@
 		"Sadaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ]
 	},
 	"Actns3": {
-		"MBox":     [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Specktr":  [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Sternaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Sillyaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Shyaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Sassyaru": [ "job", "job", "job", "job", "job", "job", "job", "job" ],
-		"Sadaru":   [ "job", "job", "job", "job", "job", "job", "job", "job" ]
+		"MBox":     [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Specktr":  [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Sternaru": [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Sillyaru": [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Shyaru":   [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Sassyaru": [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ],
+		"Sadaru":   [ "dump_tp", "job", "job", "job", "job", "job", "job", "job" ]
 	},
 	"Twn": {
 		"MBox":     [ "job", "job", "job", "job", "job", "job", "job", "job" ],

@@ -9,6 +9,11 @@
 		"SendTarget": "true"
 	},
 	
+	"adblk": {
+		"SendTo": "/exec AddendumBlack",
+		"Name": "AddnBlk",
+		"SendTarget": "false"
+	},
 	"sch_liq_f"   : {"Name": "Liq/F",   "SendTo": "/mbh sch setslfsc liq_f"  , "SendTarget": "true"},
 	"sch_sci_s"   : {"Name": "Sci/S",   "SendTo": "/mbh sch setslfsc sci_s"  , "SendTarget": "true"},
 	"sch_rev_w"   : {"Name": "Rev/W",   "SendTo": "/mbh sch setslfsc rev_w"  , "SendTarget": "true"},
