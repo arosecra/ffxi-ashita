@@ -1,0 +1,7 @@
+/ac disable Main
+/wait 1
+/equip Main "Vanir Knife"
+/wait 1
+/equip Main "Naegling"
+/wait 1
+/ac enable Main

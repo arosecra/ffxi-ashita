@@ -1,0 +1,7 @@
+/ac disable Main
+/wait 1
+/equip Main "Nibiru Cudgel"
+/wait 1
+/equip Main "Queller Rod"
+/wait 1
+/ac enable Main

@@ -1,0 +1,7 @@
+/ac disable Main
+/wait 1
+/equip Main "Condemners"
+/wait 1
+/equip Main "Ohtas"
+/wait 1
+/ac enable Main
