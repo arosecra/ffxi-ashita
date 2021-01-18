@@ -7,7 +7,7 @@
 	</settings>
 	<sets>		
 		<set name="Precast">
-			<!--<main>Solstice</main>             05 -->
+			<main>Solstice</main>            <!-- 05 -->
 			<head>Merlinic Hood</head>       <!-- 08 -->
 			<body>Merlinic Jubbah</body>     <!-- 05 -->
 			<legs>Geo. Pants +1</legs>       <!-- 11 -->
@@ -20,6 +20,7 @@
 			<!-- Total                            45 -->
 		</set>
 		<set name="Idle">
+			<main>Idris</main> 
 			<head>Hagondes Hat +1</head>
 			<body>Jhakri Robe +2</body>
 			<hands>Geo. Mitaines +1</hands>
@@ -32,9 +33,10 @@
 			<back>Nantosuelta's Cape</back>
 		</set>
 		<set name="ElementalMagic">
+			<main>Gada</main> 
 			<head augment="S5499828608422920515">Merlinic Hood</head>
 			<body augment="S123717360199715">Merlinic Jubbah</body>
-			<hands>Jhakri Cuffs</hands>
+			<hands>Jhakri Cuffs +1</hands>
 			<legs>Merlinic Shalwar</legs>
 			<feet augment="S28605846267974">Merlinic Crackows</feet>
 			<neck>Sanctity Necklace</neck>
@@ -45,6 +47,7 @@
 			<back>Nantosuelta's Cape</back>
 		</set>
 		<set name="GeomancyMagic">
+			<main>Idris</main> 
 			<head>Azimuth Hood</head>
 			<body augment="M11540">Bagua Tunic +1</body>
 			<hands>Geo. Mitaines +1</hands>

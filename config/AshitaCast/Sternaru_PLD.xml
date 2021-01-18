@@ -7,31 +7,38 @@
 	</settings>
 	<sets>
 		<set name="Precast">
+			<sub priority="1">Priwen</sub>
+			<ear1 priority="1">Odnowa Earring</ear1>                           <!-- 100  ___ -->
+			<ear2 priority="1">Tuisto Earring</ear2>                           <!-- 150  ___ -->
+			<ring1 priority="1">Moonbeam Ring</ring1>                          <!-- 100  000 -->
+			<ring2 priority="1">Meridian Ring</ring2>                          <!-- 090  ___ -->
+			<waist priority="1">Steppe Sash</waist>                            <!-- 060  ___ -->
+			<back augment="S7950240013319918572">Rudianos's Mantle</back>      <!-- 080  010 -->
+			<body priority="1">Rev. Surcoat +2</body>                          <!-- 244  005 -->
 			<ammo>Incantor Stone</ammo>
-			<head augment="D4071815123724">Carmine Mask +1</head>
-			<body augment="S572338219148">Odyss. Chestplate</body>
-			<!--<hands augment="S37396692090905814045219">Odyssean Gauntlets</hands>
-			<legs augment="S46192919316505">Odyssean Cuisses</legs> -->
-			<feet augment="S8138574716122112323">Odyssean Greaves</feet>
-			<neck>Voltsurge Torque</neck>
-			<ear1>Loquac. Earring</ear1>
-			<ear2>Tuisto Earring</ear2>
-			<ring1>Prolix Ring</ring1>
-			<ring2>Meridian Ring</ring2>
-			<waist>Steppe Sash</waist>
-		</set>
+			<head>Carmine Mask +1</head>                                       <!-- 038  014 -->
+			<hands>Odyssean Gauntlets</hands>
+			<!--<legs >Odyssean Cuisses</legs> -->
+			<feet>Odyssean Greaves</feet>                                      <!-- 020  009 -->
+			<neck>Voltsurge Torque</neck>                                      <!-- 000  005 -->
+		</set> <!-- 2629 from 2813 -->
 		<set name="Phalanx">
+			<sub priority="1">Priwen</sub>
+			<ear2 priority="1">Tuisto Earring</ear2>
+			<hands priority="1">Souv. Handsch. +1</hands>
+			<feet priority="1">Souveran Schuhs +1</feet>
+			<ring1 priority="1">Moonbeam Ring</ring1>
+			<ring2 priority="1">Meridian Ring</ring2>
+			<neck priority="1">Dualism Collar +1</neck>
 			<head >Yorium Barbuta</head>
-			<body >Yorium Cuirass</body>
-			<hands>Souv. Handsch. +1</hands>
+			<body >Valorous Mail</body>
 			<legs >Yorium Cuisses</legs>
-			<feet>Souveran Schuhs +1</feet>
 			<ear1>Mimir Earring</ear1>
-			<ear2>Tuisto Earring</ear2>
 			<waist>Olympus Sash</waist>
 			<back>Weard Mantle</back>
 		</set>
 		<set name="Idle">
+			<sub>Aegis</sub>
 			<head>Souv. Schaller +1</head>
 			<body>Souv. Cuirass +1</body>
 			<hands >Souv. Handsch. +1</hands>
@@ -42,9 +49,23 @@
 			<waist>Isa Belt</waist>
 			<ear1>Handler's Earring</ear1>
 			<ear2>Handler's Earring +1</ear2>
-			<ring1>Supershear Ring</ring1>
+			<ring1>Moonbeam Ring</ring1>
 			<ring2>Defending Ring</ring2>
-			<back>Rudianos's Mantle</back>
+			<back augment="S81375005874690541542439">Rudianos's Mantle</back>
+		</set>
+		<set name="Enmity">
+			<sub priority="1">Priwen</sub>
+			<ear1 priority="1">Odnowa Earring</ear1>
+			<ear2 priority="1">Tuisto Earring</ear2>
+			<body priority="1">Rev. Surcoat +2</body>
+			<ring1 priority="1">Moonbeam Ring</ring1>
+			<ring2 priority="1">Meridian Ring</ring2>
+			<head augment="S19173944524800">Yorium Barbuta</head>
+			<hands augment="S1076297728">Yorium Gauntlets</hands>
+			<legs augment="D15938765744130">Souv. Diechlings +1</legs>
+			<feet augment="D15938765744130">Souveran Schuhs +1</feet>
+			<neck>Unmoving Collar</neck>
+			<back augment="S81375005874690541542439">Rudianos's Mantle</back>
 		</set>
 		<include>
 		</include>
@@ -71,6 +92,9 @@
 	<midmagic>
 		<if ad_name="Phalanx">
 			<equip set="Phalanx" />
+		</if>
+		<elseif ad_name="Flash|Blank Gaze|Jettatura">
+			<equip set="Enmity"/>
 		</if>
 	</midmagic>
 	<jobability>

@@ -7,11 +7,11 @@
 	</settings>
 	<sets>
 		<set name="TP">
-			<head>Flam. Zucchetto +1</head>
+			<head>Flam. Zucchetto +2</head>
 			<body>Kasuga Domaru +1</body>
 			<hands>Wakido Kote +2</hands>
 			<legs>Wakido Haidate +3</legs>
-			<feet>Flam. Gambieras +1</feet>
+			<feet>Flam. Gambieras +2</feet>
 			<neck>Asperity Necklace</neck>
 			<waist>Sailfi Belt +1</waist>
 			<ear1>Cessance Earring</ear1>
@@ -21,18 +21,18 @@
 			<back>Ground. Mantle +1</back>
 		</set>
 		<set name="WS">
-			<head>Flam. Zucchetto +1</head>
+			<head>Flam. Zucchetto +2</head>
 			<body>Tartarus Platemail</body>
 			<hands>Wakido Kote +2</hands>
 			<legs>Wakido Haidate +3</legs>
-			<feet>Flam. Gambieras +1</feet>
+			<feet>Flam. Gambieras +2</feet>
 			<neck>Fotia Gorget</neck>
 			<waist>Fotia Belt</waist>
 			<ear2>Thrud Earring</ear2>
 			<ear2 augment="S560011289">Moonshade Earring</ear2>
 			<ring1>Apate Ring</ring1>
 			<ring2>Petrov Ring</ring2>
-			<back>Ground. Mantle +1</back>
+			<back>Smertrios's Mantle</back>
 		</set>
 		<set name="Midshot-Ranged">
 			<head>Wh. Rarab Cap +1</head>
