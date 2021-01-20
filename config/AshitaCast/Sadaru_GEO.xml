@@ -8,6 +8,7 @@
 	<sets>		
 		<set name="Precast">
 			<main>Solstice</main>            <!-- 05 -->
+			<sub>Chanter's Shield</sub>      <!-- 03 -->
 			<head>Merlinic Hood</head>       <!-- 08 -->
 			<body>Merlinic Jubbah</body>     <!-- 05 -->
 			<legs>Geo. Pants +1</legs>       <!-- 11 -->
@@ -17,10 +18,11 @@
 			<ring1>Prolix Ring</ring1>       <!-- 02 -->
 			<back>Lifestream Cape</back>     <!-- 07 -->
 			<waist>Embla Sash</waist>        <!-- 05 -->
-			<!-- Total                            45 -->
+			<!-- Total                            57 -->
 		</set>
 		<set name="Idle">
 			<main>Idris</main> 
+			<sub>Culminus</sub>
 			<head>Hagondes Hat +1</head>
 			<body>Jhakri Robe +2</body>
 			<hands>Geo. Mitaines +1</hands>
@@ -34,17 +36,19 @@
 		</set>
 		<set name="ElementalMagic">
 			<main>Gada</main> 
-			<head augment="S5499828608422920515">Merlinic Hood</head>
+			<sub>Culminus</sub>
+			<head augment="S12537078838893424709">Merlinic Hood</head>
 			<body augment="S123717360199715">Merlinic Jubbah</body>
-			<hands>Jhakri Cuffs +1</hands>
-			<legs>Merlinic Shalwar</legs>
-			<feet augment="S28605846267974">Merlinic Crackows</feet>
-			<neck>Sanctity Necklace</neck>
-			<ear1>Friomisi Earring</ear1>
-			<ear2>Novio Earring</ear2>
-			<ring1>Metamor. Ring +1</ring1>
+			<hands augment="D20976940616643">Amalric Gages +1</hands>
+			<legs augment="S198093505884391216700451">Merlinic Shalwar</legs>
+			<feet>Jhakri Pigaches +2</feet>
+			<neck>Mizu. Kubikazari</neck>
+			<waist>Embla Sash</waist>
+			<ear1>Barkaro. Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1 augment="O2456978194432306">Metamor. Ring +1</ring1>
 			<ring2>Mujin Band</ring2>
-			<back>Nantosuelta's Cape</back>
+			<back augment="S8072217078016418565">Nantosuelta's Cape</back>
 		</set>
 		<set name="GeomancyMagic">
 			<main>Idris</main> 
