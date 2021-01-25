@@ -19,5 +19,22 @@
 	"jett":{
 		"SendTo":"/ma Jettatura <t>",
 		"Name":"jett"
+	},
+	"plddply":{
+		"SendTo":"/mbh pld engage",
+		"Name":"plddply",
+		"SendTarget": "true"
+	},
+	"pldrtr":{
+		"SendTo":"/mbh pld disengage",
+		"Name":"pldrtr"
+	},
+	"shldbsh":{
+		"SendTo":"/ja \"Shield Bash\" <t>",
+		"Name":"shldbsh"
+	},
+	"sntnl":{
+		"SendTo":"/ja Sentinel <me>",
+		"Name":"sntnl"
 	}
 }

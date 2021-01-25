@@ -6,8 +6,30 @@
 		<autoupdate>true</autoupdate>
 	</settings>
 	<sets>
+		<set name="Idle-Sub-Aegis">
+			<sub>Aegis</sub>
+		</set>
+		<set name="Idle-Sub-Priwen">
+			<sub>Priwen</sub>
+		</set>
+		<set name="Idle">
+			<head>Souv. Schaller +1</head>
+			<body>Souv. Cuirass +1</body>
+			<hands >Souv. Handsch. +1</hands>
+			<legs>Souv. Diechlings +1</legs>
+			<feet>Souveran Schuhs +1</feet>
+			<ammo>Staunch Tathlum</ammo>
+			<neck>Diemer Gorget</neck>
+			<waist>Isa Belt</waist>
+			<ear1>Handler's Earring</ear1>
+			<ear2>Handler's Earring +1</ear2>
+			<ring1>Moonbeam Ring</ring1>
+			<ring2>Defending Ring</ring2>
+			<back augment="S81375005874690541542439">Rudianos's Mantle</back>
+		</set>
+	
 		<set name="Precast">
-			<sub priority="1">Priwen</sub>
+			<sub priority="1">Nibiru Shield</sub>
 			<ear1 priority="1">Odnowa Earring</ear1>                           <!-- 100  ___ -->
 			<ear2 priority="1">Tuisto Earring</ear2>                           <!-- 150  ___ -->
 			<ring1 priority="1">Moonbeam Ring</ring1>                          <!-- 100  000 -->
@@ -37,22 +59,6 @@
 			<waist>Olympus Sash</waist>
 			<back>Weard Mantle</back>
 		</set>
-		<set name="Idle">
-			<sub>Aegis</sub>
-			<head>Souv. Schaller +1</head>
-			<body>Souv. Cuirass +1</body>
-			<hands >Souv. Handsch. +1</hands>
-			<legs>Souv. Diechlings +1</legs>
-			<feet>Souveran Schuhs +1</feet>
-			<ammo>Staunch Tathlum</ammo>
-			<neck>Diemer Gorget</neck>
-			<waist>Isa Belt</waist>
-			<ear1>Handler's Earring</ear1>
-			<ear2>Handler's Earring +1</ear2>
-			<ring1>Moonbeam Ring</ring1>
-			<ring2>Defending Ring</ring2>
-			<back augment="S81375005874690541542439">Rudianos's Mantle</back>
-		</set>
 		<set name="Enmity">
 			<sub priority="1">Priwen</sub>
 			<ear1 priority="1">Odnowa Earring</ear1>
@@ -71,6 +77,7 @@
 		</include>
 	</sets>
 	<variables>
+		<var name="IdleSub">Aegis</var>
 	</variables>
 	<inputcommands>
 	</inputcommands>
@@ -80,6 +87,7 @@
 				<lring>Shneddick Ring</lring>
 			</equip>
 		</if>
+		<equip set="Idle-Sub-$IdleSub"/>
 		<equip set="Idle"/>
 	</idlegear>
 	<preranged>

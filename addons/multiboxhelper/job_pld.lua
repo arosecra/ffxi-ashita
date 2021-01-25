@@ -2,25 +2,35 @@
 
 local jobs = require 'windower/res/jobs'
 require 'ffxi.recast'
+require 'ffxi.targets'
 
 local pld = {}
-pld.statuses = {
-	['KO']=0, 
-	['SLEEP']=2, 
-	['SILENCE']='Wind', 
-	[303]='Earth', 
-	[304]='Thunder', 
-	[305]='Water', 
-	[306]='Light', 
-	[307]='Dark'
+pld.abilities = {
 }
+
+function pld:add_ability(config, ability) 
+	config.pld.numberofabilities = config.pld.numberofabilities + 1
+	config.pld.abilities[config.pld.numberofabilities] = ability
+end
 
 function pld:init_config(config)
 	config.pld = {
 		engaged = false,
 		mode = "tank_no_attack", --tank_no_attack, back_tank, tank_attack, aoe_tank
-		nextexectime = 0
+		nextexectime = 0,
+		numberofabilities = -1,
+		abilities = {}
 	}
+	
+	pld:add_ability(config, {id=547, ability=false, command="/ma Cocoon <me>" , time=2, status= 93, mp=10})
+	pld:add_ability(config, {id=106, ability=false, command="/ma Phalanx <me>" , time=5, status=116, mp=21})
+	--pld:add_ability(config, {id= 97, ability=false, command="/ma Reprisal <me>", time=2, status=nil, mp=24})
+	pld:add_ability(config, {id=73,  ability=true , command="/ja Shield Bash '<t>'", time=2, status=255, mp=0})
+	pld:add_ability(config, {id=75,  ability=true , command="/ja Sentinel <me>"  , time=2, status=62, mp=0})
+	pld:add_ability(config, {id=77,  ability=true , command="/ja Rampart <me>"   , time=2, status=255, mp=0})
+	pld:add_ability(config, {id=112, ability=false, command="/ma Flash <t>"          , time=1, status=255, mp=25})
+	pld:add_ability(config, {id=575, ability=false, command="/ma Jettatura <t>"      , time=1, status=255, mp=37})
+	pld:add_ability(config, {id=592, ability=false, command="/ma \"Blank Gaze\" <t>" , time=5, status=255, mp=25})
 end
 
 function pld:command(config, args)
@@ -38,21 +48,28 @@ function pld:command(config, args)
 end
 
 function pld:render(config)
-	local player = AshitaCore:GetDataManager():GetPlayer();
-    local playerEntity = GetPlayerEntity();
+	local player = AshitaCore:GetDataManager():GetPlayer()
+    local playerEntity = GetPlayerEntity()
     if (player == nil or playerEntity == nil) then
-        return;
+        return
     end
+	
+	local target = ashita.ffxi.targets.get_target('t')
     
 	local mainjob = jobs[player:GetMainJob()].en
 	local subjob = jobs[player:GetSubJob()].en
     
-	if mainjob == 'paladin' then
+	
+	if mainjob == 'Paladin' then
 		if config.pld.engaged 
 		and os.time() > config.pld.nextexectime
+		and target ~= nil 
+		and target.Name ~= ''
+		and target.TargetIndex ~= 0
 		then
-			local status = get_status()
+			local status = pld:get_status()
 			if status.can_act then
+				--print("can act")
 			--am i in range?
 			
 			--if it is off cooldown, should i shield bash?
@@ -73,10 +90,62 @@ function pld:render(config)
 				-- flash
 				-- jettatura
 				-- blank gaze
-		
+				local command = nil
+				local action = pld:get_action_to_perform(config)				
+				if action ~= nil then
+					local command = action.command
+					print(command)
+					AshitaCore:GetChatManager():QueueCommand(command, 1)
+					config.pld.nextexectime = action.time + 10 + os.time()
+				else
+					--print("no action")
+					config.pld.nextexectime = 10 + os.time()
+				end
+			else
+				--print('deferring action for x seconds')
+				config.pld.nextexectime = 10 + os.time()
 			end
 		end
 	end
+end
+
+function pld:has_status(status)
+	local result = false
+	if status < 255 then
+		local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons()
+		for slot = 0, 31, 1 do
+			if (status_list[slot] == status) then
+				result = true
+			end
+		end
+	end
+	return result
+
+end
+
+function pld:get_action_to_perform(config)
+	local result = nil
+	
+	for i = 0, config.pld.numberofabilities, 1 do
+		if ( result == nil and
+			 not pld:has_status(config.pld.abilities[i].status) and 
+		   (
+			(
+			    config.pld.abilities[i].ability and 
+				ashita.ffxi.recast.get_ability_recast_by_index(config.pld.abilities[i].id) == 0
+			)
+			or
+			(
+				not config.pld.abilities[i].ability and 
+				ashita.ffxi.recast.get_spell_recast_by_index(config.pld.abilities[i].id) == 0) and
+				AshitaCore:GetDataManager():GetParty():GetMemberCurrentMP(0) > config.pld.abilities[i].mp
+		   )
+		) then
+			result = config.pld.abilities[i]
+		end
+	end
+	
+	return result
 end
 
 function pld:get_status()
@@ -92,7 +161,7 @@ function pld:get_status()
 	status.petrification = false
 	status.can_act = true
 	
-	local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons();
+	local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons()
     for slot = 0, 31, 1 do
 		--print(status_list[slot])
 		if status_list[slot] == 0 then
@@ -132,7 +201,7 @@ function pld:get_status()
 			status.can_act = false
 		end
     end
-
+	return status
 end
 
 return pld

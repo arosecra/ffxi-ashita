@@ -382,7 +382,15 @@
 	],
 	"Monk":[],
 	"Ninja":[],
-	"Paladin":[],
+	"Paladin":[
+		{
+			"Name": "IdleSub",
+			"Settings": [
+				{"Name":"Aegis",   "MacroName": "ac_var_IdleSub_Aegis" }, 
+				{"Name":"Priwen",  "MacroName": "ac_var_IdleSub_Priwen"}
+			]
+		}
+	],
 	"Puppetmaster":[
 		{
 			"Name": "Accuracy",

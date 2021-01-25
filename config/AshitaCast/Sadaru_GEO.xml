@@ -37,24 +37,25 @@
 		<set name="ElementalMagic">
 			<main>Gada</main> 
 			<sub>Culminus</sub>
-			<head augment="S12537078838893424709">Merlinic Hood</head>
-			<body augment="S123717360199715">Merlinic Jubbah</body>
-			<hands augment="D20976940616643">Amalric Gages +1</hands>
-			<legs augment="S198093505884391216700451">Merlinic Shalwar</legs>
+			<head>Merlinic Hood</head>
+			<body>Merlinic Jubbah</body>
+			<hands>Amalric Gages +1</hands>
+			<legs>Merlinic Shalwar</legs>
 			<feet>Jhakri Pigaches +2</feet>
 			<neck>Mizu. Kubikazari</neck>
 			<waist>Embla Sash</waist>
 			<ear1>Barkaro. Earring</ear1>
 			<ear2>Friomisi Earring</ear2>
-			<ring1 augment="O2456978194432306">Metamor. Ring +1</ring1>
+			<ring1>Metamor. Ring +1</ring1>
 			<ring2>Mujin Band</ring2>
-			<back augment="S8072217078016418565">Nantosuelta's Cape</back>
+			<back>Nantosuelta's Cape</back>
 		</set>
 		<set name="GeomancyMagic">
 			<main>Idris</main> 
+			<sub>Culminus</sub>
 			<head>Azimuth Hood</head>
 			<body augment="M11540">Bagua Tunic +1</body>
-			<hands>Geo. Mitaines +1</hands>
+			<hands>Geo. Mitaines +2</hands>
 			<legs augment="M1448">Bagua Pants</legs>
 			<feet>Azimuth Gaiters</feet>
 			<ear1>Fulla Earring</ear1>

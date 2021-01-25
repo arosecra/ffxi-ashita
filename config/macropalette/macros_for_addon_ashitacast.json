@@ -32,6 +32,8 @@
 "ac_var_IdleSub_PetDt":         { 	"SendTo": "/ac var set IdleSub PetDt", "Name": "SubPtDT" }, 
 "ac_var_IdleSub_Beatific":      { 	"SendTo": "/ac var set IdleSub Beatific", "Name": "SubBtfc" }, 
 "ac_var_IdleSub_Adapa":         { 	"SendTo": "/ac var set IdleSub Adapa", "Name": "SubAdp" }, 
+"ac_var_IdleSub_Aegis":         { 	"SendTo": "/ac var set IdleSub Aegis", "Name": "SubAegis" }, 
+"ac_var_IdleSub_Priwen":        { 	"SendTo": "/ac var set IdleSub Priwen", "Name": "SubPriwen" }, 
 "ac_var_IdleMain_NoSwap":       { 	"SendTo": "/ac var set IdleMain NoSwap", "Name": "MnNoSwp" }, 
 "ac_var_IdleMain_Aymur":        { 	"SendTo": "/ac var set IdleMain Adapa", "Name": "MnAymr" }, 
 "ac_var_IdleMain_PetDt":        { 	"SendTo": "/ac var set IdleMain Adapa", "Name": "MnPetDt" }, 

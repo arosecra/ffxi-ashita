@@ -6,6 +6,7 @@ _addon.version  = '1.0.0';
 require 'common'
 require 'stringex'
 require 'packets'
+require 'ffxi.targets'
 
 local brd = require 'job_brd'
 local cor = require 'job_cor'
@@ -14,6 +15,7 @@ local pup = require 'job_pup'
 local whm = require 'job_whm'
 local nuke = require 'ma_nuke'
 local sch = require 'job_sch'
+local pld = require 'job_pld'
 
 local movement = require 'act_movement'
 
@@ -39,6 +41,7 @@ ashita.register_event('load', function()
 	brd:init_config(config)
 	cor:init_config(config)
 	geo:init_config(config)
+	pld:init_config(config)
 	pup:init_config(config)
 	sch:init_config(config)
 	whm:init_config(config)
@@ -153,7 +156,7 @@ ashita.register_event('incoming_packet', function(id, size, packet)
 		--end
 	elseif(id == 0x28) then
 		local pkt = packets_parser.parse_action(packet)
-		--print(pkt.actor_id)
+		--print(pkt.actor_id .. ' ' .. pkt.category)
 		local playerEntity = GetPlayerEntity();
 		if(playerEntity.ServerId == pkt.actor_id) then
 			if pkt.category == 12 or pkt.category == 8 then
@@ -169,6 +172,7 @@ end);
 ashita.register_event('outgoing_packet', function(id, size, packet, packet_modified, blocked) 
 	if id == 0x00D then
 		config.pup.appliedmaneuvers = false
+		config.pld.engaged = false
 	end
 	
 	return false;
@@ -196,6 +200,7 @@ ashita.register_event('render', function()
 	end
 	
 	pup:render(config)
+	pld:render(config)
 	movement:render(config)
 	
 	
@@ -287,6 +292,10 @@ ashita.register_event('command', function(cmd, nType)
 		cor:command(config, args);
 	    return true;
     end
+    if (args[2] == 'pld') then
+		pld:command(config, args);
+	    return true;
+    end
     if (args[2] == 'nuke') then
 		nuke:command(config, args);
 	    return true;
@@ -294,6 +303,15 @@ ashita.register_event('command', function(cmd, nType)
 	
 	if (args[2] == 'follow') then
 		config.movement.followName = args[3]
+	end
+	
+	if (args[2] == 'status') then
+		local status_list = AshitaCore:GetDataManager():GetPlayer():GetStatusIcons();
+		for slot = 0, 31, 1 do
+			if (status_list[slot] < 255) then
+				print(status_list[slot])
+			end
+		end
 	end
 	
     return true;
