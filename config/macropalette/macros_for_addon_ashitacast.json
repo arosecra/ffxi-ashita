@@ -1,5 +1,5 @@
 {
-"ac_var_Strategy_MstrMelee":    { 	"SendTo": "/ac var set Strategy MstrMelee", "Name": "MstrMelee" },
+"ac_var_Strategy_MstrMelee":    { 	"SendTo": "/ac var set Strategy MstrMelee", "Name": "MstrMel" },
 "ac_var_Strategy_PetOnly":      { 	"SendTo": "/ac var set Strategy PetOnly", "Name": "PetOnly" }, 
 "ac_var_Strategy_119PetOnly":   { 	"SendTo": "/ac var set Strategy 119PetOnly", "Name": "119PetOnly" }, 
 "ac_var_Strategy_MstrDT":       { 	"SendTo": "/ac var set Strategy MstrDT", "Name": "MstrDT" }, 
@@ -26,7 +26,11 @@
 "ac_var_CllBstJug_Fly":         { 	"SendTo": "/ac var set CllBstJug \"Blackwater Broth\"", "Name": "ClBstFly" }, 
 "ac_var_CllBstJug_Piggy":       { 	"SendTo": "/ac var set CllBstJug \"Fizzy Broth\"", "Name": "ClBstPggy" }, 
 "ac_var_CllBstJug_Fish":        { 	"SendTo": "/ac var set CllBstJug \"Airy Broth\"", "Name": "ClBstFish" }, 
-"ac_var_CllBstJug_Raptor":      { 	"SendTo": "/ac var set CllBstJug \"Rapid Broth\"", "Name": "ClBstRptr" }, 
+"ac_var_CllBstJug_Raptor":      { 	"SendTo": "/ac var set CllBstJug \"Rapid Broth\"", "Name": "ClBstRptr" },
+
+
+"ac_var_cycle_IdleMain":       { 	"Cycle": "IdleMain", "Name": "CclMain" },
+ 
 "ac_var_IdleSub_Arktoi":        { 	"SendTo": "/ac var set IdleSub Arktoi", "Name": "SubArk" }, 
 "ac_var_IdleSub_PetPdt":        { 	"SendTo": "/ac var set IdleSub PetPdt", "Name": "SubPtPdt" }, 
 "ac_var_IdleSub_PetDt":         { 	"SendTo": "/ac var set IdleSub PetDt", "Name": "SubPtDT" }, 
@@ -38,5 +42,22 @@
 "ac_var_IdleMain_Aymur":        { 	"SendTo": "/ac var set IdleMain Adapa", "Name": "MnAymr" }, 
 "ac_var_IdleMain_PetDt":        { 	"SendTo": "/ac var set IdleMain Adapa", "Name": "MnPetDt" }, 
 "ac_var_IdleMain_Arktoi":       { 	"SendTo": "/ac var set IdleMain Arktoi", "Name": "MnArk" }, 
+
+
+"ac_var_IdleMain_Tancho":       { 	"SendTo": "/ac var set IdleMain Tancho", "Name": "Tancho" }, 
+"ac_var_IdleMain_Tokko":       { 	"SendTo": "/ac var set IdleMain Tokko", "Name": "Tokko" }, 
+"ac_var_IdleMain_AbysseaProcDagger":       { 	"SendTo": "/ac var set IdleMain AbysseaProcDagger", "Name": "APDagr" }, 
+"ac_var_IdleMain_AbysseaProcSword":       { 	"SendTo": "/ac var set IdleMain AbysseaProcSword", "Name": "APSword" }, 
+"ac_var_IdleMain_AbysseaProcGreatSword":       { 	"SendTo": "/ac var set IdleMain AbysseaProcGreatSword", "Name": "APGSwrd" }, 
+"ac_var_IdleMain_AbysseaProcScythe":       { 	"SendTo": "/ac var set IdleMain AbysseaProcScythe", "Name": "APScythe" }, 
+"ac_var_IdleMain_AbysseaProcPolearm":       { 	"SendTo": "/ac var set IdleMain AbysseaProcPolearm", "Name": "APPlrm" }, 
+"ac_var_IdleMain_AbysseaProcKatana":       { 	"SendTo": "/ac var set IdleMain AbysseaProcKatana", "Name": "APKtna" }, 
+"ac_var_IdleMain_AbysseaProcGreatKatana":       { 	"SendTo": "/ac var set IdleMain AbysseaProcGreatKatana", "Name": "APGktna" }, 
+"ac_var_IdleMain_AbysseaProcClub":       { 	"SendTo": "/ac var set IdleMain AbysseaProcClub", "Name": "APClb" }, 
+"ac_var_IdleMain_AbysseaProcStaff":       { 	"SendTo": "/ac var set IdleMain AbysseaProcStaff", "Name": "APStff" }, 
+
+
+
+
 "ac_var_Accuracy_Low":          { 	"SendTo": "/ac var set Accuracy Low", "Name": "AccLow" }
 }

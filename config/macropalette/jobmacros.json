@@ -102,7 +102,7 @@
 	"Ninja":{
 		"JbSttngs": {},
 		"AdnStngs": [ "", "", "", "", "", "", "", "" ],
-		"Combat":   [ "", "", "", "", "", "", "", "" ],
+		"Combat":   [ "", "", "ac_var_cycle_IdleMain", "ac_var_Strategy_MstrMelee", "ac_var_Strategy_TH", "", "", "" ],
 		"NonCmbt":  [ "", "", "", "", "", "", "", "" ],
 		"Actns3":   [ "", "", "", "", "", "", "", "" ],
 		"Twn":      [ "", "", "", "", "", "", "", "" ],

@@ -381,7 +381,33 @@
 		}
 	],
 	"Monk":[],
-	"Ninja":[],
+	"Ninja":[
+	
+		{
+			"Name": "IdleMain",
+			"Settings": [
+				{ "MacroName": "ac_var_IdleMain_Tancho", "Name": "Tancho" }, 
+				{ "MacroName": "ac_var_IdleMain_Tokko", "Name": "Tokko" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcDagger", "Name": "APDagr" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcSword", "Name": "APSword" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcGreatSword", "Name": "APGSwrd" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcScythe", "Name": "APScythe" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcPolearm", "Name": "APPlrm" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcKatana", "Name": "APKtna" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcGreatKatana", "Name": "APGktna" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcClub", "Name": "APClb" }, 
+				{ "MacroName": "ac_var_IdleMain_AbysseaProcStaff", "Name": "APStff" }
+			]
+		},
+		{
+			"Name": "Strategy",
+			"Settings": [
+				{"Name": "MstrMelee", "MacroName": "ac_var_Strategy_MstrMelee"}, 
+				{"Name":"TH", "MacroName": "ac_var_Strategy_TG"}
+			]
+		}
+	
+	],
 	"Paladin":[
 		{
 			"Name": "IdleSub",

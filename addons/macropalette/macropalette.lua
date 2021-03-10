@@ -294,8 +294,9 @@ function run_macro_command(section_number, macro_number)
 	local current_section = current_hotbar[section_number]
 	if current_section ~= nil then
 		local macro = current_section[macro_number]
+		local section = hotbar_config.Sections[section_number]
 		if macro ~= nil then
-			run_macro(hotbar_config.Sections[section_number], macro, "commandline")
+			run_macro(section, macro, hotbar_variables[section.Name .. '.MainJob'])
 		end
 	end
 end
@@ -470,7 +471,7 @@ function get_active_macros(hotbar_section, hotbar_variables)
 	return result
 end
 
-function run_macro(section, hotbar_macro, mode)
+function run_macro(section, hotbar_macro, jobName)
 
 	if hotbar_config.Timers[section.Name] ~= nil and
 		hotbar_config.Timers[section.Name][hotbar_macro.id] ~= nil then
@@ -490,11 +491,26 @@ function run_macro(section, hotbar_macro, mode)
 		table.sort(hotbar_config.TimerData[section.Name])
 	end
 	
+	if hotbar_macro.Cycle ~= nil then
+		if jobName ~= nil then
+			local index = imgui.GetVarValue(job_settings[section.Name][jobName][hotbar_macro.Cycle][1])
+			local settings = job_settings[section.Name][jobName][hotbar_macro.Cycle][6].Settings
+			if index == #settings then
+				index = 0
+			end
+			imgui.SetVarValue(job_settings[section.Name][jobName][hotbar_macro.Cycle][1], index+1)
+			local setting = job_settings[section.Name][jobName][hotbar_macro.Cycle][6].Settings[index+1]
+			hotbar_macro = setting.Macro
+		else
+		
+		end
+	end	
+	
 	if hotbar_macro.SendTarget ~= nil then
 		msg('/ms sendto ' .. section.Name .. ' /target [t]')
 		AshitaCore:GetChatManager():QueueCommand('/ms sendto ' .. section.Name .. ' /target [t]', 1)
-	end
-
+	end 
+	
 	if hotbar_macro.Script then
 		msg(hotbar_macro.Script)
 		AshitaCore:GetChatManager():QueueCommand('/exec "' .. hotbar_macro.Script, 1)
@@ -633,9 +649,8 @@ ashita.register_event('render', function()
 									
 									local index = imgui.GetVarValue(job_settings[sectionName][jobName][k][1])+1
 									local setting = job_settings[sectionName][jobName][k][6].Settings[index]
-									--print(setting.Name)
 									--print(setting.Macro)
-									run_macro(hotbar_section, setting.Macro, 'click')
+									run_macro(hotbar_section, setting.Macro, hotbar_variables[hotbar_section.Name .. '.MainJob'])
 								end
 							end
 						else
@@ -674,7 +689,7 @@ ashita.register_event('render', function()
 				if (imgui.SmallButton(label)) then 
 					if macros ~= nil and #macros >= i then
 						local hotbar_macro = macros[i]
-						run_macro(hotbar_section, hotbar_macro, "click")
+						run_macro(hotbar_section, hotbar_macro, hotbar_variables[hotbar_section.Name .. '.MainJob'])
 					end
 				end	
 				imgui.SameLine();			
