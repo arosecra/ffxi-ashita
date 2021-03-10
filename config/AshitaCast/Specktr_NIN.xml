@@ -1,0 +1,112 @@
+<ashitacast>
+	<settings>
+		<buffupdate>false</buffupdate>
+		<statusupdate>false</statusupdate>
+		<hpupdate>false</hpupdate>
+		<autoupdate>true</autoupdate>
+	</settings>
+	<sets>
+		<set name="MstrMelee">
+			<ammo>Ginsen</ammo>
+			<head augment="D20925277801407">Adhemar Bonnet +1</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S5500176333007116409">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Asperity Necklace</neck>
+			<waist augment="O2456978194432292">Sailfi Belt +1</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Brutal Earring</ear2>
+			<ring1>Epona's Ring</ring1>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<set name="TH">
+			<head>Wh. Rarab Cap +1</head>
+			<hands augment="S632685664585">Herculean Gloves</hands>
+			<feet augment="S63163773754018502">Herculean Boots</feet>
+			<waist>Chaac Belt</waist>
+		</set>
+		<set name="Tancho">
+			<main>Tancho</main>
+			<sub>Shuhansadamune</sub>
+		</set>
+		<set name="Tokko">
+			<main>Tokko Knife</main>
+			<sub>Shuhansadamune</sub>
+		</set>
+		<set name="AbysseaProcDagger">
+			<main>Chicken Knife II</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcSword">
+			<main>Save the Queen II</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcGreatSword">
+			<main>Lament</main>
+		</set>
+		<set name="AbysseaProcScythe">
+			<main>Lost Sickle</main>
+		</set>
+		<set name="AbysseaProcPolearm">
+			<main>Tzee Xicu's Blade</main>
+		</set>
+		<set name="AbysseaProcKatana">
+			<main>Trainee Burin</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcGreatKatana">
+			<main>Mutsunokami</main>
+		</set>
+		<set name="AbysseaProcClub">
+			<main>Soulflayer's Wand</main>
+			<sub>Legion Scutum</sub>
+		</set>
+		<set name="AbysseaProcStaff">
+			<main>Fed. Signet Staff</main>
+		</set>
+		<set name="WS">
+			<ammo>Ghastly Tathlum</ammo>
+			<head augment="S26869861478533">Taeon Chapeau</head>
+			<body augment="D20925277801407">Adhemar Jacket +1</body>
+			<hands augment="S4618808102714228805">Herculean Gloves</hands>
+			<legs augment="S182074737443842192">Samnuha Tights</legs>
+			<feet augment="S70476530497559">Herculean Boots</feet>
+			<neck>Fotia Gorget</neck>
+			<waist>Fotia Belt</waist>
+			<ear1>Cessance Earring</ear1>
+			<ear2>Friomisi Earring</ear2>
+			<ring1>Acumen Ring</ring1>
+			<ring2>Shneddick Ring</ring2>
+			<back>Ground. Mantle +1</back>
+		</set>
+		<include>
+		</include>
+	</sets>
+	<variables>
+		<var name="Strategy">MstrMelee</var>
+	    <var name="IdleMain">Tancho</var>
+	</variables>
+	<inputcommands>
+	</inputcommands>
+	<idlegear>
+		<equip set="$IdleMain"/>
+		<equip set="$Strategy"/>
+	</idlegear>
+	<preranged>
+	</preranged>
+	<midranged>
+	</midranged>
+	<premagic>
+		<equip set="FastCast"/>
+	</premagic>
+	<midmagic>
+	</midmagic>
+	<jobability>
+	</jobability>
+	<weaponskill>
+		<if ad_name="Aeolian Edge">
+		<equip set="WS" />
+		</if>
+	</weaponskill>
+</ashitacast>

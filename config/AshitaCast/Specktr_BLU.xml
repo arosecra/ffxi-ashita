@@ -183,8 +183,8 @@
 			<waist>Gishdubar Sash</waist>
 		</set>
 		<set name="TH">
-			<ammo>Living Bullet</ammo>
 			<head>Wh. Rarab Cap +1</head>
+			<hands augment="S632685664585">Herculean Gloves</hands>
 			<feet augment="S63163773754018502">Herculean Boots</feet>
 			<waist>Chaac Belt</waist>
 		</set>
